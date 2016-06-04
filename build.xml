@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<project default="main" name="PiratesRoyal">
+    <property environment="env"/>
+    <property file="build.config"/>
+
+    <!-- SDK properties -->
+    <property name="SDK_HOME" value="${sdk.flex}"/>
+    <property name="MXMLC.JAR" value="${SDK_HOME}/lib/mxmlc-cli.jar"/>
+    <property name="MXMLC.EXE" value="${SDK_HOME}/bin/mxmlc.bat"/>
+    <property name="ADT.JAR" value="${SDK_HOME}/lib/adt.jar"/>
+    <property name="ADT.EXE" value="${SDK_HOME}/bin/adt.bat"/>
+
+    <!-- Project properties -->
+    <property name="APP_ROOT_DIR" value="${basedir}"/>
+    <property name="APP_NAME" value="${name}"/>
+    <property name="APP_FILE_NAME" value="${APP_NAME}"/>
+    <property name="APP_FILE_NAME_ANDROID" value="${APP_NAME}-ANDROID"/>
+    <property name="APP_FILE_NAME_IOS" value="${APP_NAME}-IOS"/>
+    <property name="APP_SOURCE_DIR" value="${APP_ROOT_DIR}/src"/>
+    <property name="MAIN_SOURCE" value="${APP_SOURCE_DIR}/Preloader.as"/>
+    <property name="APP_DESCRIPTOR_SOURCE" value="${basedir}/application.xml"/>
+
+    <property name="NATIVE_EXTENSIONS_DIR" value="libs"/>
+    <property name="build.dir" value="build"/>
+
+    <target name="clean" description="Cleanup build directory">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="prepare" depends="clean" description="Prepare for build">
+        <mkdir dir="${build.dir}"/>
+    </target>
+	
+    <target name="swf-debug" depends="" description="Compile Debug SWF">
+        <!-- <java jar="${MXMLC.JAR}" fork="true" failonerror="true" dir="${basedir}"> -->
+        <exec dir="${basedir}" executable="${MXMLC.EXE}">
+            <arg value="+configname=flex"/>
+            <arg value="-debug=true"/>
+            <arg value="-inline=true"/>
+            <arg value="-load-config+=${basedir}/general.config"/>
+			<arg value="-load-config+=${basedir}/libs.config"/>
+			<arg value="-load-config+=${basedir}/defines.config"/>
+            <arg value="+flexlib=${SDK_HOME}/frameworks"/>
+            <arg value="-output=${build.dir}/${APP_FILE_NAME}-DEBUG.swf"/>
+        <!-- </java> -->
+        </exec>
+    </target>
+	
+	<target name="swf-embed-debug" depends="" description="Compile Debug SWF">
+        <!-- <java jar="${MXMLC.JAR}" fork="true" failonerror="true" dir="${basedir}"> -->
+        <exec dir="${basedir}" executable="${MXMLC.EXE}">
+            <arg value="+configname=flex"/>
+            <arg value="-debug=true"/>
+            <arg value="-inline=true"/>
+			<arg value="-define+=CONFIG::EMBED,true" />
+            <arg value="-load-config+=${basedir}/general.config"/>
+			<arg value="-load-config+=${basedir}/libs.config"/>
+			<arg value="-load-config+=${basedir}/defines.config"/>
+            <arg value="+flexlib=${SDK_HOME}/frameworks"/>
+            <arg value="-output=${build.dir}/${APP_FILE_NAME}-EMBED-DEBUG.swf"/>
+        <!-- </java> -->
+        </exec>
+    </target>
+	
+    <target name="swf-android-release" depends="" description="Compile SWF for Android release">
+        <!-- <java jar="${MXMLC.JAR}" fork="true" failonerror="true" dir="${basedir}"> -->
+        <exec dir="${basedir}" executable="${MXMLC.EXE}">
+            <arg value="+configname=airmobile"/>
+            <arg value="-inline=true"/>
+            <arg value="-load-config+=${basedir}/general.config"/>
+			<arg value="-load-config+=${basedir}/libs.config"/>
+			<arg value="-load-config+=${basedir}/defines.config"/>
+			<arg value="-define+=CONFIG::MOBILE,true" />
+			<arg value="-define+=CONFIG::ANDROID,true" />
+            <arg value="+flexlib=${SDK_HOME}/frameworks"/>
+            <arg value="-output=${build.dir}/${APP_FILE_NAME_ANDROID}-RELEASE.swf"/>
+        <!-- </java> -->
+        </exec>
+        <copy filtering="true" file="${APP_DESCRIPTOR_SOURCE}" tofile="${build.dir}/${APP_FILE_NAME_ANDROID}-RELEASE-app.xml" overwrite="true" />
+        <replace file="${build.dir}/${APP_FILE_NAME_ANDROID}-RELEASE-app.xml">
+            <replacefilter token="${APP_NAME}.swf" value="${APP_FILE_NAME_ANDROID}-RELEASE.swf"/>
+        </replace>
+    </target>
+	
+    <target name="apk-copy-icons" description="Copy icons for APK">
+        <mkdir dir="${build.dir}/icons"/>
+        <copy todir="${build.dir}/icons">
+            <fileset dir="${basedir}/icons/android/icons">
+                <include name="*"/>
+            </fileset>
+        </copy>
+    </target>
+	
+    <target name="apk-copy-resources" depends="apk-copy-icons" description="Copy resources for APK"></target>
+
+    <target name="apk-post-cleanup" description="Deletes icons and other stuff from resulting build.">
+        <delete dir="${build.dir}\icons" />
+    </target>
+	
+    <target name="apk-release" depends="swf-android-release, apk-copy-resources" description="Pack APK for RELEASE">
+        <!--<java jar="${ADT.JAR}" fork="true" failonerror="true" dir="${build.dir}">-->
+		<exec dir="${build.dir}" executable="${ADT.EXE}" failonerror="true">
+            <arg value="-package"/>
+            <arg value="-target"/>
+            <!--<arg value="apk"/>-->
+            <arg value="apk-captive-runtime"/>
+            <arg value="-storetype"/>
+            <arg value="pkcs12"/>
+            <arg value="-keystore"/>
+            <arg value="${keystore.apk_cert}"/>
+            <arg value="-storepass"/>
+            <arg value="${keystore.apk_password}"/>
+            <arg value="${APP_NAME}-RELEASE.apk"/>
+            <arg value="${APP_FILE_NAME_ANDROID}-RELEASE-app.xml"/>
+            <arg value="${APP_FILE_NAME_ANDROID}-RELEASE.swf"/>
+            <arg value="icons/" />
+            <arg value="-extdir"/>
+            <arg value="../${NATIVE_EXTENSIONS_DIR}/" />
+		 </exec>
+         <!--</java>-->
+
+		 <delete file="${build.dir}\${APP_FILE_NAME_ANDROID}-RELEASE.swf" />
+		 <delete file="${build.dir}\${APP_FILE_NAME_ANDROID}-RELEASE-app.xml" />
+    </target>
+
+    <target name="swf" depends="prepare, swf-debug, swf-embed-debug" description="Build SWF files">
+    </target>
+	<target name="swf-embed" depends="prepare, swf-embed-debug" description="Build SWF-EMBED files">
+    </target>
+    <target name="apk" depends="prepare, apk-release, apk-post-cleanup" description="Make APK">
+    </target>
+    <target name="main" depends="swf, swf-embed, apk" description="Build Royal Client">
+        <echo message="Begin buildng Royal" />
+    </target>
+
+</project>
+
