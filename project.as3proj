@@ -5,26 +5,41 @@
     <movie outputType="Application" />
     <movie input="" />
     <movie path="bin\project.swf" />
-    <movie fps="30" />
-    <movie width="480" />
-    <movie height="762" />
-    <movie version="18" />
+    <movie fps="60" />
+    <movie width="760" />
+    <movie height="740" />
+    <movie version="21" />
     <movie minorVersion="0" />
-    <movie platform="AIR Mobile" />
+    <movie platform="AIR" />
     <movie background="#FFFFFF" />
+    <movie preferredSDK="AIR 21.0.0;21.0.0;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
+    <class path="submodules\library\src" />
+    <class path="submodules\starling\starling\src" />
+    <class path="submodules\feathers\source" />
+    <class path="submodules\starling-builder-engine\src" />
+    <class path="submodules\console\src" />
+    <class path="submodules\firetype\src\main\flash" />
+    <class path="submodules\graphics\extension\src" />
+    <class path="submodules\particles\src" />
+    <class path="submodules\stardust-sim-loader\src\main\flex" />
+    <class path="submodules\stardust-library-plumbee\src\main\flex" />
+    <class path="submodules\dragonbones\src" />
+    <class path="submodules\soundAS\lib\src" />
+    <class path="submodules\as3-signals\src" />
+    <class path="resources\src" />
   </classpaths>
   <!-- Build options -->
   <build>
     <option accessible="False" />
-    <option advancedTelemetry="False" />
+    <option advancedTelemetry="True" />
     <option allowSourcePathOverlap="False" />
     <option benchmark="False" />
     <option es="False" />
-    <option inline="False" />
+    <option inline="True" />
     <option locale="" />
     <option loadConfig="" />
     <option optimize="True" />
@@ -42,7 +57,7 @@
     <option linkReport="" />
     <option loadExterns="" />
     <option staticLinkRSL="True" />
-    <option additional="" />
+    <option additional="-load-config+=general.config&#xA;-load-config+=defines.config&#xA;-load-config+=libs.config" />
     <option compilerConstants="" />
     <option minorVersion="" />
   </build>

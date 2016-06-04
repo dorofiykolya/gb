@@ -1,0 +1,43 @@
+[submodule "submodules/library"]
+	path = submodules/library
+	url = git@github.com:dorofiykolya/library.git
+	branch = master
+[submodule "submodules/starling"]
+	path = submodules/starling
+	url = git@github.com:dorofiykolya/starling-mod.git
+[submodule "submodules/feathers"]
+	path = submodules/feathers
+	url = git@github.com:dorofiykolya/feathers.git
+[submodule "submodules/starling-builder-engine"]
+	path = submodules/starling-builder-engine
+	url = git@github.com:mindjolt/starling-builder-engine.git
+[submodule "submodules/console"]
+	path = submodules/console
+	url = git@github.com:junkbyte/flash-console.git
+	branch = master
+[submodule "submodules/firetype"]
+	path = submodules/firetype
+	url = git@github.com:MaxDidIt/firetype.git
+[submodule "submodules/graphics"]
+	path = submodules/graphics
+	url = git@github.com:StarlingGraphics/Starling-Extension-Graphics.git
+[submodule "submodules/particles"]
+	path = submodules/particles
+	url = git@github.com:dorofiykolya/Starling-Extension-Particle-System.git
+	branch = v1.8.x
+[submodule "submodules/stardust-library-plumbee"]
+	path = submodules/stardust-library-plumbee
+	url = git@github.com:dorofiykolya/stardust-library-plumbee.git
+[submodule "submodules/stardust-sim-loader"]
+	path = submodules/stardust-sim-loader
+	url = git@github.com:dorofiykolya/stardust-sim-loader.git
+[submodule "submodules/dragonbones"]
+	path = submodules/dragonbones
+	url = git@github.com:DragonBones/DragonBonesAS.git
+	branch = 4.5
+[submodule "submodules/soundAS"]
+	path = submodules/soundAS
+	url = git@github.com:treefortress/SoundAS.git
+[submodule "submodules/as3-signals"]
+	path = submodules/as3-signals
+	url = git@github.com:robertpenner/as3-signals.git

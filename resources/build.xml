@@ -1,0 +1,83 @@
+<!--ANT-->
+<project name="batch process" basedir="." default="">
+
+	<property name="SDK_HOME" value="C:/AIR" />
+	<property name="build.dir" value="bin" />
+	<property name="src.dir" value="src" />
+	<property name="MXMLC.EXE" value="${SDK_HOME}/bin/mxmlc.bat" />
+	
+	<target name="sounds">
+		<exec dir="${basedir}" executable="sounds.bat">
+		</exec>
+		<antcall target="swf">
+			<param name="fileName" value="sounds" />
+			<param name="source" value="SoundsExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="backgrounds">
+		<antcall target="swf">
+			<param name="fileName" value="backgrounds" />
+			<param name="source" value="BackgroundsExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="buildings">
+		<antcall target="swf">
+			<param name="fileName" value="buildings" />
+			<param name="source" value="BuildingsExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="cards1">
+		<antcall target="swf">
+			<param name="fileName" value="cards1" />
+			<param name="source" value="Cards1ExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="cards2">
+		<antcall target="swf">
+			<param name="fileName" value="cards2" />
+			<param name="source" value="Cards2ExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="cards3">
+		<antcall target="swf">
+			<param name="fileName" value="cards3" />
+			<param name="source" value="Cards3ExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="effects">
+		<antcall target="swf">
+			<param name="fileName" value="effects" />
+			<param name="source" value="EffectsExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="shadows">
+		<antcall target="swf">
+			<param name="fileName" value="shadows" />
+			<param name="source" value="ShadowsExternalEmbeds.as" />
+		</antcall>
+	</target>
+	
+	<target name="barrels">
+		<antcall target="swf">
+			<param name="fileName" value="barrels" />
+			<param name="source" value="BarrelsExternalEmbeds.as" />
+		</antcall>
+	</target>
+
+	<target name="swf" depends="" description="Compile Debug SWF">
+		<exec dir="${basedir}" executable="${MXMLC.EXE}">
+			<arg value="-debug=true" />
+			<arg value="+flexlib=${SDK_HOME}/frameworks" />
+			<arg value="${src.dir}/${source}" />
+			<arg value="-output=${build.dir}/${fileName}.swf" />
+		</exec>
+	</target>
+
+</project>
