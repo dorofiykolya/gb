@@ -31,6 +31,7 @@
     <class path="submodules\soundAS\lib\src" />
     <class path="submodules\as3-signals\src" />
     <class path="resources\src" />
+    <class path="submodules\starling-game-mvc\src" />
   </classpaths>
   <!-- Build options -->
   <build>

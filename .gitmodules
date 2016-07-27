@@ -41,3 +41,6 @@
 [submodule "submodules/as3-signals"]
 	path = submodules/as3-signals
 	url = git@github.com:robertpenner/as3-signals.git
+[submodule "submodules/starling-game-mvc"]
+	path = submodules/starling-game-mvc
+	url = git@github.com:dorofiykolya/starling-game-mvc.git
