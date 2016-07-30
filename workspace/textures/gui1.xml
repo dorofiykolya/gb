@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:21882988faad960cee599a39c364dc4d:a2794793fdbc30c186a122035f9b2cd2:d7ab1b4498bf72fdb71dd9720501eeab$ -->
+<TextureAtlas imagePath="gui1.png" width="2048" height="2048">
+    <SubTexture name="BallonImages_downRightBitmapClass" x="145" y="1104" width="65" height="72"/>
+    <SubTexture name="BorderGameSkin__embed_mxml__ui_ew_ui_userpic2_png_259015611" x="214" y="493" width="91" height="91"/>
+    <SubTexture name="ButtonCloseGameSkin__embed_mxml__ui_btn_btnClose_closebutton_inactive_png_1198072747" x="655" y="661" width="46" height="46"/>
+    <SubTexture name="ButtonCloseGameSkin__embed_mxml__ui_btn_btnClose_closebutton_pressed_png_639958573" x="550" y="736" width="46" height="45"/>
+    <SubTexture name="ButtonHelpMinGameSkin__embed_mxml__ui_ew_mm_questionbutton_mark_png_1976298793" x="1" y="2017" width="27" height="28"/>
+    <SubTexture name="ButtonHelpSkin__embed_mxml__ui_btn_ew_mm_questionbutton_mark_png_989410598" x="1" y="2017" width="27" height="28"/>
+    <SubTexture name="ButtonRightEmpireGameSkin__embed_mxml__ui_btn_btnEmpireArrow_right_ew_ui_empire_arrow_right_mouseover_png_642782644" x="145" y="289" width="67" height="106"/>
+    <SubTexture name="ButtonRightEmpireGameSkin__embed_mxml__ui_btn_btnEmpireArrow_right_ew_ui_empire_arrow_right_png_1151232120" x="145" y="397" width="67" height="106"/>
+    <SubTexture name="ButtonRightEmpireGameSkin__embed_mxml__ui_btn_btnEmpireArrow_right_ew_ui_empire_arrow_right_press_png_1761395336" x="145" y="505" width="67" height="106"/>
+    <SubTexture name="ButtonRightGameSkin__embed_mxml__ui_btn_btnEmpireArrow_right_ew_ui_empire_arrow_right_mouseover_png_642782644" x="145" y="289" width="67" height="106"/>
+    <SubTexture name="ButtonRightGameSkin__embed_mxml__ui_btn_btnEmpireArrow_right_ew_ui_empire_arrow_right_png_1151232120" x="145" y="397" width="67" height="106"/>
+    <SubTexture name="ButtonRightGameSkin__embed_mxml__ui_btn_btnEmpireArrow_right_ew_ui_empire_arrow_right_press_png_1761395336" x="145" y="505" width="67" height="106"/>
+    <SubTexture name="GameDialogParts_leftBottomCornerClass" x="145" y="874" width="74" height="75"/>
+    <SubTexture name="GameDialogParts_leftVariationClass1" x="2017" y="70" width="24" height="60"/>
+    <SubTexture name="GameDialogParts_rightBottomCornerClass" x="145" y="951" width="74" height="75"/>
+    <SubTexture name="GameDialogParts_rightTopCornerClass" x="305" y="392" width="74" height="76"/>
+    <SubTexture name="GameDialogSkin_beltClass" x="145" y="1028" width="71" height="74"/>
+    <SubTexture name="MedievalResources_friendBorderClass" x="255" y="653" width="66" height="64"/>
+    <SubTexture name="MedievalResources_friendInviteBorder1Class" x="255" y="653" width="66" height="64"/>
+    <SubTexture name="MedievalResources_friendInviteBorder2Class" x="292" y="719" width="66" height="64"/>
+    <SubTexture name="MedievalResources_friendInviteBorder3Class" x="307" y="470" width="66" height="64"/>
+    <SubTexture name="MedievalResources_friendLobbyBorderClass" x="145" y="613" width="108" height="105"/>
+    <SubTexture name="MedievalResources_slotClass" x="145" y="1178" width="69" height="69"/>
+    <SubTexture name="MedievalResources_slotOverClass" x="212" y="1104" width="69" height="69"/>
+    <SubTexture name="MedievelSpellFrames_disabled0" x="222" y="787" width="66" height="65"/>
+    <SubTexture name="MedievelSpellFrames_disabled1" x="409" y="1296" width="62" height="63"/>
+    <SubTexture name="MedievelSpellFrames_disabled2" x="481" y="1052" width="62" height="62"/>
+    <SubTexture name="MedievelSpellFrames_disabled3" x="484" y="983" width="62" height="62"/>
+    <SubTexture name="MedievelSpellFrames_disabled4" x="221" y="874" width="68" height="65"/>
+    <SubTexture name="MedievelSpellFrames_enabled0" x="290" y="787" width="66" height="65"/>
+    <SubTexture name="MedievelSpellFrames_enabled1" x="409" y="1361" width="62" height="63"/>
+    <SubTexture name="MedievelSpellFrames_enabled2" x="545" y="1047" width="62" height="62"/>
+    <SubTexture name="MedievelSpellFrames_enabled3" x="473" y="1360" width="62" height="62"/>
+    <SubTexture name="MedievelSpellFrames_enabled4" x="221" y="941" width="68" height="65"/>
+    <SubTexture name="MedievelSpellFrames_wait0" x="255" y="586" width="66" height="65"/>
+    <SubTexture name="MedievelSpellFrames_wait1" x="409" y="1426" width="62" height="63"/>
+    <SubTexture name="MedievelSpellFrames_wait2" x="473" y="1424" width="62" height="62"/>
+    <SubTexture name="MedievelSpellFrames_wait3" x="489" y="849" width="62" height="62"/>
+    <SubTexture name="MedievelSpellFrames_wait4" x="222" y="720" width="68" height="65"/>
+    <SubTexture name="PopupParts_bottomVariationClass1" x="307" y="536" width="46" height="47"/>
+    <SubTexture name="PopupParts_bottomVariationClass2" x="355" y="536" width="46" height="47"/>
+    <SubTexture name="PopupParts_leftBottomCornerClass" x="655" y="289" width="45" height="47"/>
+    <SubTexture name="PopupParts_leftSideClass" x="693" y="709" width="45" height="37"/>
+    <SubTexture name="PopupParts_leftTopCornerClass" x="608" y="665" width="45" height="47"/>
+    <SubTexture name="PopupParts_rightBottomCornerClass" x="614" y="612" width="45" height="47"/>
+    <SubTexture name="PopupParts_rightTopCornerClass" x="646" y="714" width="45" height="47"/>
+    <SubTexture name="PopupParts_topSideClass" x="403" y="536" width="46" height="47"/>
+    <SubTexture name="PopupParts_topVariationClass1" x="638" y="420" width="46" height="47"/>
+    <SubTexture name="PopupParts_topVariationClass2" x="645" y="354" width="46" height="47"/>
+    <SubTexture name="RoleQuealityViewSkin__embed_mxml__ui_star_ew_ui_stats_star1_png_886234172" x="88" y="2017" width="22" height="21"/>
+    <SubTexture name="RoleQuealityViewSkin__embed_mxml__ui_star_ew_ui_stats_star2_png_885922874" x="112" y="2017" width="22" height="21"/>
+    <SubTexture name="ScrollBarImages_bottomFocusClass" x="30" y="2017" width="27" height="21"/>
+    <SubTexture name="ScrollBarThumbVGameSkin__embed_mxml__ui_scrollBar_ew_scroll_mid_png_1763411740" x="59" y="2017" width="27" height="21"/>
+    <SubTexture name="SurrenderButtonSkin__embed_mxml__pic_bf_options_button_active_png_473757352" x="598" y="736" width="46" height="45"/>
+    <SubTexture name="SurrenderButtonSkin__embed_mxml__pic_bf_options_button_inactive_png_317988250" x="637" y="539" width="46" height="45"/>
+    <SubTexture name="build.unit.cavalry_tatars.image" x="579" y="612" width="33" height="51"/>
+    <SubTexture name="build.unit.settler_europe.image" x="2017" y="132" width="21" height="41"/>
+    <SubTexture name="interface.game_type.random.icon" x="490" y="783" width="89" height="61" frameX="-10" frameY="-28" frameWidth="110" frameHeight="110"/>
+    <SubTexture name="items.fog.icon_medium" x="579" y="553" width="56" height="57" frameX="0" frameY="-4" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="payments.vk.battle_points.icon" x="314" y="289" width="75" height="75"/>
+    <SubTexture name="payments.vk.month_account.icon" x="145" y="720" width="75" height="75"/>
+    <SubTexture name="payments.vk.week_account.icon" x="145" y="797" width="75" height="75"/>
+    <SubTexture name="spells.cataclysm.cursor" x="218" y="1028" width="66" height="68"/>
+    <SubTexture name="spells.strengthening.cursor" x="2017" y="1" width="30" height="33" frameX="-2" frameY="0" frameWidth="33" frameHeight="33"/>
+    <SubTexture name="spells.strengthening.icon" x="583" y="487" width="49" height="50"/>
+    <SubTexture name="spells.tornado.icon" x="634" y="487" width="49" height="50"/>
+    <SubTexture name="supply.potions.icon" x="214" y="289" width="98" height="101" frameX="-11" frameY="-9" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="supply.potions.minicon" x="2017" y="36" width="30" height="32" frameX="-1" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="supply.reagents.icon" x="214" y="392" width="89" height="99" frameX="-15" frameY="-11" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="technology.ability.icon" x="323" y="585" width="64" height="64"/>
+    <SubTexture name="technology.agility.icon" x="553" y="846" width="56" height="59"/>
+    <SubTexture name="technology.agility.lvl1.icon" x="375" y="470" width="64" height="64"/>
+    <SubTexture name="technology.agility.lvl2.icon" x="323" y="651" width="64" height="64"/>
+    <SubTexture name="technology.agility.lvl3.icon" x="381" y="366" width="64" height="64"/>
+    <SubTexture name="technology.agility.lvl4.icon" x="391" y="289" width="64" height="64"/>
+    <SubTexture name="technology.agility.lvl5.icon" x="145" y="1249" width="64" height="64"/>
+    <SubTexture name="technology.agility.lvl6.icon" x="145" y="1315" width="64" height="64"/>
+    <SubTexture name="technology.agility.lvl7.icon" x="145" y="1381" width="64" height="64"/>
+    <SubTexture name="technology.assistance.icon" x="548" y="976" width="56" height="59"/>
+    <SubTexture name="technology.assistance.lvl1.icon" x="145" y="1447" width="64" height="64"/>
+    <SubTexture name="technology.assistance.lvl2.icon" x="145" y="1513" width="64" height="64"/>
+    <SubTexture name="technology.assistance.lvl3.icon" x="145" y="1579" width="64" height="64"/>
+    <SubTexture name="technology.assistance.lvl4.icon" x="145" y="1645" width="64" height="64"/>
+    <SubTexture name="technology.assistance.lvl5.icon" x="145" y="1711" width="64" height="64"/>
+    <SubTexture name="technology.assistance.lvl6.icon" x="145" y="1777" width="64" height="64"/>
+    <SubTexture name="technology.assistance.lvl7.icon" x="145" y="1843" width="64" height="64"/>
+    <SubTexture name="technology.attack.icon" x="555" y="907" width="56" height="59"/>
+    <SubTexture name="technology.attack.lvl1.icon" x="145" y="1909" width="64" height="64"/>
+    <SubTexture name="technology.attack.lvl2.icon" x="145" y="1975" width="64" height="64"/>
+    <SubTexture name="technology.attack.lvl3.icon" x="211" y="1249" width="64" height="64"/>
+    <SubTexture name="technology.attack.lvl4.icon" x="216" y="1175" width="64" height="64"/>
+    <SubTexture name="technology.attack.lvl5.icon" x="211" y="1315" width="64" height="64"/>
+    <SubTexture name="technology.attack.lvl6.icon" x="211" y="1381" width="64" height="64"/>
+    <SubTexture name="technology.attack.lvl7.icon" x="573" y="421" width="63" height="64" frameX="0" frameY="0" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.cataclysm.icon" x="606" y="968" width="56" height="59"/>
+    <SubTexture name="technology.cataclysm.lvl1.icon" x="211" y="1447" width="64" height="64"/>
+    <SubTexture name="technology.cataclysm.lvl2.icon" x="211" y="1513" width="64" height="64"/>
+    <SubTexture name="technology.cataclysm.lvl3.icon" x="211" y="1579" width="64" height="64"/>
+    <SubTexture name="technology.cataclysm.lvl4.icon" x="211" y="1645" width="64" height="64"/>
+    <SubTexture name="technology.cataclysm.lvl5.icon" x="211" y="1711" width="64" height="64"/>
+    <SubTexture name="technology.cataclysm.lvl6.icon" x="211" y="1777" width="64" height="64"/>
+    <SubTexture name="technology.cataclysm.lvl7.icon" x="211" y="1843" width="64" height="64"/>
+    <SubTexture name="technology.cooldown.icon" x="492" y="695" width="56" height="59"/>
+    <SubTexture name="technology.cooldown.lvl1.icon" x="579" y="355" width="64" height="63" frameX="0" frameY="-1" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.cooldown.lvl2.icon" x="409" y="1491" width="64" height="62" frameX="0" frameY="-2" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.cooldown.lvl3.icon" x="211" y="1909" width="64" height="64"/>
+    <SubTexture name="technology.cooldown.lvl4.icon" x="211" y="1975" width="64" height="64"/>
+    <SubTexture name="technology.cooldown.lvl5.icon" x="277" y="1241" width="64" height="64"/>
+    <SubTexture name="technology.cooldown.lvl6.icon" x="282" y="1175" width="64" height="64"/>
+    <SubTexture name="technology.cooldown.lvl7.icon" x="283" y="1098" width="64" height="64"/>
+    <SubTexture name="technology.defense.icon" x="521" y="553" width="56" height="59"/>
+    <SubTexture name="technology.defense.lvl1.icon" x="473" y="1296" width="64" height="62" frameX="0" frameY="-2" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.defense.lvl2.icon" x="286" y="1008" width="64" height="64"/>
+    <SubTexture name="technology.defense.lvl3.icon" x="589" y="289" width="64" height="63" frameX="0" frameY="-1" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.defense.lvl4.icon" x="291" y="854" width="64" height="64"/>
+    <SubTexture name="technology.defense.lvl5.icon" x="291" y="920" width="64" height="64"/>
+    <SubTexture name="technology.defense.lvl6.icon" x="277" y="1307" width="64" height="64"/>
+    <SubTexture name="technology.defense.lvl7.icon" x="277" y="1373" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.icon" x="521" y="614" width="56" height="59"/>
+    <SubTexture name="technology.firestorm.lvl1.icon" x="277" y="1439" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.lvl2.icon" x="277" y="1505" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.lvl3.icon" x="277" y="1571" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.lvl4.icon" x="277" y="1637" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.lvl5.icon" x="277" y="1703" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.lvl6.icon" x="277" y="1769" width="64" height="64"/>
+    <SubTexture name="technology.firestorm.lvl7.icon" x="277" y="1835" width="64" height="64"/>
+    <SubTexture name="technology.mana.icon" x="550" y="675" width="56" height="59"/>
+    <SubTexture name="technology.mana.lvl1.icon" x="277" y="1901" width="64" height="64"/>
+    <SubTexture name="technology.mana.lvl2.icon" x="277" y="1967" width="64" height="64"/>
+    <SubTexture name="technology.mana.lvl3.icon" x="343" y="1241" width="64" height="64"/>
+    <SubTexture name="technology.mana.lvl3.icon_post" x="1" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.mana.lvl4.icon" x="348" y="1164" width="64" height="64"/>
+    <SubTexture name="technology.mana.lvl4.icon_post" x="1" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.mana.lvl5.icon" x="349" y="1074" width="64" height="64"/>
+    <SubTexture name="technology.mana.lvl5.icon_post" x="1" y="289" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.mana.lvl6.icon" x="475" y="1206" width="64" height="62" frameX="0" frameY="-1" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.mana.lvl6.icon_post" x="1" y="433" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.mana.lvl7.icon" x="352" y="986" width="64" height="64"/>
+    <SubTexture name="technology.mana.lvl7.icon_post" x="1" y="577" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.icon" x="581" y="783" width="56" height="59"/>
+    <SubTexture name="technology.speed.lvl1.icon" x="357" y="854" width="64" height="64"/>
+    <SubTexture name="technology.speed.lvl1.icon_post" x="1" y="721" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.lvl2.icon" x="357" y="920" width="64" height="64"/>
+    <SubTexture name="technology.speed.lvl2.icon_post" x="1" y="865" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.lvl3.icon" x="358" y="785" width="64" height="64"/>
+    <SubTexture name="technology.speed.lvl3.icon_post" x="1" y="1009" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.lvl4.icon" x="360" y="717" width="64" height="64"/>
+    <SubTexture name="technology.speed.lvl4.icon_post" x="1" y="1153" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.lvl5.icon" x="489" y="913" width="64" height="61" frameX="0" frameY="-3" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.speed.lvl5.icon_post" x="1" y="1297" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.lvl6.icon" x="389" y="585" width="64" height="64"/>
+    <SubTexture name="technology.speed.lvl6.icon_post" x="1" y="1441" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.speed.lvl7.icon" x="389" y="651" width="64" height="64"/>
+    <SubTexture name="technology.speed.lvl7.icon_post" x="1" y="1585" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.icon" x="611" y="844" width="56" height="59"/>
+    <SubTexture name="technology.strengthening.lvl1.icon" x="441" y="432" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl1.icon_post" x="1" y="1729" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.lvl2.icon" x="447" y="355" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl2.icon_post" x="1" y="1873" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.lvl3.icon" x="457" y="289" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl3.icon_post" x="145" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.lvl4.icon" x="451" y="498" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl4.icon_post" x="289" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.lvl5.icon" x="507" y="421" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl5.icon_post" x="433" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.lvl6.icon" x="513" y="355" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl6.icon_post" x="577" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.strengthening.lvl7.icon" x="523" y="289" width="64" height="64"/>
+    <SubTexture name="technology.strengthening.lvl7.icon_post" x="721" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.support.icon" x="343" y="1307" width="64" height="64"/>
+    <SubTexture name="technology.tornado.icon" x="639" y="783" width="56" height="59"/>
+    <SubTexture name="technology.tornado.lvl1.icon" x="343" y="1373" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl1.icon_post" x="865" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tornado.lvl2.icon" x="343" y="1439" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl2.icon_post" x="1009" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tornado.lvl3.icon" x="343" y="1505" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl3.icon_post" x="1153" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tornado.lvl4.icon" x="343" y="1571" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl4.icon_post" x="1297" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tornado.lvl5.icon" x="343" y="1637" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl5.icon_post" x="1441" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tornado.lvl6.icon" x="343" y="1703" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl6.icon_post" x="1585" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tornado.lvl7.icon" x="343" y="1769" width="64" height="64"/>
+    <SubTexture name="technology.tornado.lvl7.icon_post" x="1729" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.icon" x="613" y="905" width="56" height="59"/>
+    <SubTexture name="technology.tower.lvl1.icon" x="343" y="1835" width="64" height="64"/>
+    <SubTexture name="technology.tower.lvl1.icon_post" x="1873" y="1" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.lvl2.icon" x="343" y="1901" width="64" height="64"/>
+    <SubTexture name="technology.tower.lvl2.icon_post" x="145" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.lvl3.icon" x="480" y="1118" width="64" height="62" frameX="0" frameY="-1" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.tower.lvl3.icon_post" x="289" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.lvl4.icon" x="343" y="1967" width="64" height="64"/>
+    <SubTexture name="technology.tower.lvl4.icon_post" x="433" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.lvl5.icon" x="409" y="1230" width="64" height="64"/>
+    <SubTexture name="technology.tower.lvl5.icon_post" x="577" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.lvl6.icon" x="414" y="1140" width="64" height="64"/>
+    <SubTexture name="technology.tower.lvl6.icon_post" x="721" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.tower.lvl7.icon" x="415" y="1052" width="64" height="64"/>
+    <SubTexture name="technology.tower.lvl7.icon_post" x="865" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit.icon" x="418" y="986" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.icon" x="669" y="844" width="56" height="59"/>
+    <SubTexture name="technology.unit_start.lvl1.icon" x="423" y="851" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.lvl1.icon_post" x="1009" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit_start.lvl2.icon" x="424" y="783" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.lvl2.icon_post" x="1153" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit_start.lvl3.icon" x="426" y="717" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.lvl3.icon_post" x="1297" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit_start.lvl4.icon" x="455" y="630" width="64" height="63" frameX="0" frameY="-1" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="technology.unit_start.lvl4.icon_post" x="1441" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit_start.lvl5.icon" x="423" y="917" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.lvl5.icon_post" x="1585" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit_start.lvl6.icon" x="455" y="564" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.lvl6.icon_post" x="1729" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.unit_start.lvl7.icon" x="517" y="487" width="64" height="64"/>
+    <SubTexture name="technology.unit_start.lvl7.icon_post" x="1873" y="145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+</TextureAtlas>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:21882988faad960cee599a39c364dc4d:a2794793fdbc30c186a122035f9b2cd2:d7ab1b4498bf72fdb71dd9720501eeab$ -->
+<TextureAtlas imagePath="gui0.png" width="2048" height="2048">
+    <SubTexture name="BFCounter_bgColoredClass" x="662" y="1772" width="19" height="17"/>
+    <SubTexture name="BFCounter_bgGreyClass" x="2006" y="1241" width="34" height="33"/>
+    <SubTexture name="BFCounter_blinkClass" x="662" y="1574" width="32" height="32"/>
+    <SubTexture name="BattlePointIconSkin__embed_mxml__pic_fight_points_png_409460055" x="179" y="2011" width="45" height="32"/>
+    <SubTexture name="ButtonBalloonSkin__embed_mxml__ui_btnBaloon_ew_chat_balloon_button1_png_1761618722" x="1269" y="1719" width="16" height="16"/>
+    <SubTexture name="ButtonBalloonSkin__embed_mxml__ui_btnBaloon_ew_chat_balloon_button2_png_1761900592" x="734" y="841" width="16" height="16"/>
+    <SubTexture name="ButtonBuySkin__embed_mxml__ui_fight_points_ew_ui_top_points_button_mouseover_png_734892998" x="224" y="1969" width="161" height="40"/>
+    <SubTexture name="ButtonBuySkin__embed_mxml__ui_fight_points_ew_ui_top_points_button_png_2076057094" x="903" y="1003" width="161" height="40"/>
+    <SubTexture name="ButtonBuySkin__embed_mxml__ui_fight_points_ew_ui_top_points_button_press_png_854348870" x="882" y="1045" width="161" height="40"/>
+    <SubTexture name="ButtonChatSkin__embed_mxml__ui_btn_ew_chat_balloon_send2_png_200144730" x="667" y="1921" width="42" height="29"/>
+    <SubTexture name="ButtonCloseBalloonSkin__embed_mxml__ui_btn_btnCloseBaloon_ew_chat_balloon_close1_png_727333743" x="453" y="524" width="13" height="13"/>
+    <SubTexture name="ButtonCloseBalloonSkin__embed_mxml__ui_btn_btnCloseBaloon_ew_chat_balloon_close2_png_729475691" x="468" y="524" width="13" height="13"/>
+    <SubTexture name="ButtonCloseGameSkin__embed_mxml__ui_btn_btnClose_closebutton_active_png_420511853" x="387" y="1969" width="46" height="46"/>
+    <SubTexture name="ButtonCloseGameSkin__embed_mxml__ui_ew_ui_frame_close_png_999301925" x="1852" y="169" width="86" height="82"/>
+    <SubTexture name="ButtonCloseMinGameSkin__embed_mxml__ui_btn_btnCloseMin_ew_lobby_close2_png_1264239491" x="1156" y="2018" width="29" height="29" frameX="-2" frameY="-2" frameWidth="34" frameHeight="33"/>
+    <SubTexture name="ButtonCloseMinGameSkin__embed_mxml__ui_btn_btnCloseMin_ew_lobby_close3_png_1264497283" x="1187" y="2018" width="29" height="29" frameX="-2" frameY="-2" frameWidth="34" frameHeight="33"/>
+    <SubTexture name="ButtonCloseMinGameSkin__embed_mxml__ui_btn_btnCloseMin_ew_lobby_close4_png_1264222595" x="1218" y="2018" width="29" height="29" frameX="-2" frameY="-2" frameWidth="34" frameHeight="33"/>
+    <SubTexture name="ButtonLeftEmpireGameSkin__embed_mxml__ui_btn_btnEmpireArrow_left_ew_ui_empire_arrow_left_mouseover_png_162685786" x="1928" y="1577" width="67" height="106"/>
+    <SubTexture name="ButtonLeftEmpireGameSkin__embed_mxml__ui_btn_btnEmpireArrow_left_ew_ui_empire_arrow_left_png_2072786550" x="529" y="1921" width="67" height="106"/>
+    <SubTexture name="ButtonLeftEmpireGameSkin__embed_mxml__ui_btn_btnEmpireArrow_left_ew_ui_empire_arrow_left_press_png_2065945150" x="598" y="1921" width="67" height="106"/>
+    <SubTexture name="ButtonLeftGameSkin__embed_mxml__ui_btn_btnEmpireArrow_left_ew_ui_empire_arrow_left_mouseover_png_162685786" x="1928" y="1577" width="67" height="106"/>
+    <SubTexture name="ButtonLeftGameSkin__embed_mxml__ui_btn_btnEmpireArrow_left_ew_ui_empire_arrow_left_png_2072786550" x="529" y="1921" width="67" height="106"/>
+    <SubTexture name="ButtonLeftGameSkin__embed_mxml__ui_btn_btnEmpireArrow_left_ew_ui_empire_arrow_left_press_png_2065945150" x="598" y="1921" width="67" height="106"/>
+    <SubTexture name="ButtonPlusSkin__embed_mxml__ui_btn_btnPlus_ew_shop_plus1_png_2058570515" x="453" y="395" width="41" height="41"/>
+    <SubTexture name="ButtonPlusSkin__embed_mxml__ui_btn_btnPlus_ew_shop_plus2_png_2063010579" x="453" y="438" width="41" height="41"/>
+    <SubTexture name="ButtonPlusSkin__embed_mxml__ui_btn_btnPlus_ew_shop_plus3_png_2062764771" x="453" y="481" width="41" height="41"/>
+    <SubTexture name="ButtonReadySkin__embed_mxml__ui_btn_btnReady_ew_lobby_readybutton1_png_2011189133" x="1268" y="2007" width="120" height="40"/>
+    <SubTexture name="ButtonReadySkin__embed_mxml__ui_btn_btnReady_ew_lobby_readybutton2_png_2009075341" x="1390" y="2007" width="120" height="40"/>
+    <SubTexture name="ButtonReadySkin__embed_mxml__ui_btn_btnReady_ew_lobby_readybutton3a_png_1772348599" x="1512" y="2007" width="120" height="40"/>
+    <SubTexture name="ButtonShopPlusSkin__embed_mxml__ui_btn_btnPlus_ew_shop_plus2_png_2063010579" x="453" y="438" width="41" height="41"/>
+    <SubTexture name="ButtonShopPlusSkin__embed_mxml__ui_btn_btnPlus_ew_shop_plus3_png_2062764771" x="453" y="481" width="41" height="41"/>
+    <SubTexture name="ButtonTechLevelSkin__embed_mxml__ui_tech_level_ew_ui_top_techlevel_button_mouseover_png_374046932" x="1" y="1969" width="221" height="40"/>
+    <SubTexture name="ButtonTechLevelSkin__embed_mxml__ui_tech_level_ew_ui_top_techlevel_button_png_408012184" x="1044" y="505" width="221" height="40"/>
+    <SubTexture name="ButtonTechLevelSkin__embed_mxml__ui_tech_level_ew_ui_top_techlevel_button_press_png_1046288600" x="1267" y="505" width="221" height="40"/>
+    <SubTexture name="ButtonView__embed_mxml__ui_btn_btn_button_active_png_1691538067" x="1490" y="505" width="191" height="40"/>
+    <SubTexture name="ButtonView__embed_mxml__ui_btn_btn_button_inactive_png_588095395" x="1683" y="505" width="191" height="40"/>
+    <SubTexture name="ButtonView__embed_mxml__ui_btn_btn_button_pressed_png_816096147" x="710" y="1003" width="191" height="40"/>
+    <SubTexture name="CheckBoxGameSkin__embed_mxml__ui_checkBox_checkbox_png_695712168" x="1951" y="486" width="17" height="17"/>
+    <SubTexture name="CheckBoxGameSkin__embed_mxml__ui_checkBox_checkmark_png_1333987962" x="710" y="841" width="22" height="16"/>
+    <SubTexture name="EmpireInfoViewSkin__embed_mxml__ui_empire_stats_ew_ui_stats1_png_1875506904" x="1918" y="636" width="129" height="93"/>
+    <SubTexture name="GameDialogParts_bgClass" x="453" y="1791" width="256" height="128"/>
+    <SubTexture name="GameDialogParts_bottomSideClass" x="1634" y="2007" width="87" height="20"/>
+    <SubTexture name="GameDialogParts_bottomVariationClass1" x="1" y="2011" width="87" height="20"/>
+    <SubTexture name="GameDialogParts_bottomVariationClass2" x="1723" y="2007" width="87" height="20"/>
+    <SubTexture name="GameDialogParts_leftSideClass" x="1096" y="1510" width="24" height="60"/>
+    <SubTexture name="GameDialogParts_leftTopCornerClass" x="1066" y="1003" width="74" height="76"/>
+    <SubTexture name="GameDialogParts_leftVariationClass2" x="2006" y="1058" width="24" height="60"/>
+    <SubTexture name="GameDialogParts_topSideClass" x="971" y="2028" width="87" height="19"/>
+    <SubTexture name="GameDialogParts_topVariationClass1" x="90" y="2011" width="87" height="19"/>
+    <SubTexture name="GameDialogSkin__embed_mxml__ui_ew_ui_frame_decor_png_1248811767" x="496" y="253" width="549" height="90"/>
+    <SubTexture name="GameDialogSkin_clampClass" x="710" y="1045" width="170" height="47"/>
+    <SubTexture name="GameDialogWithoutTopSkin__embed_mxml__ui_ew_ui_frame_decor_png_1248811767" x="496" y="253" width="549" height="90"/>
+    <SubTexture name="GameDialogWithoutTopSkin_beltBigClass" x="1083" y="1916" width="71" height="113"/>
+    <SubTexture name="LoadDialogSkin__embed_mxml__pic_load_ew_splash1_png_1188952776" x="1" y="1" width="493" height="392"/>
+    <SubTexture name="Main_bgTileClass" x="453" y="539" width="300" height="300"/>
+    <SubTexture name="ManaProgressBarSkin__embed_mxml__pic_bf_mana_frame_png_2030282188" x="1" y="1907" width="380" height="60"/>
+    <SubTexture name="MedievalCursors_attackClass" x="2006" y="1346" width="32" height="32"/>
+    <SubTexture name="MedievalCursors_buffClass" x="335" y="2011" width="30" height="32" frameX="-1" frameY="0" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="MedievalCursors_normalClass" x="2006" y="1380" width="32" height="32"/>
+    <SubTexture name="MedievalCursors_reinforceClass" x="267" y="2011" width="32" height="32"/>
+    <SubTexture name="MedievalCursors_tornadoClass" x="301" y="2011" width="32" height="32"/>
+    <SubTexture name="MedievalResources_inBattleClass" x="226" y="2011" width="39" height="27"/>
+    <SubTexture name="MedievalResources_place1Class" x="2006" y="857" width="41" height="33"/>
+    <SubTexture name="MedievalResources_place2Class" x="2006" y="892" width="41" height="33"/>
+    <SubTexture name="MedievalResources_place3Class" x="2006" y="927" width="41" height="33"/>
+    <SubTexture name="MedievalResources_place4Class" x="2006" y="962" width="41" height="33"/>
+    <SubTexture name="NoAvatar_noAvatarBigClass" x="842" y="345" width="200" height="200"/>
+    <SubTexture name="NoAvatar_noAvatarMediumClass" x="796" y="1238" width="100" height="100"/>
+    <SubTexture name="NoAvatar_noAvatarSmallClass" x="1997" y="1554" width="50" height="50"/>
+    <SubTexture name="PanelLowerGameSkin__embed_mxml__ui_panel_png_1253398419" x="437" y="1921" width="90" height="90"/>
+    <SubTexture name="PopupParts_bgClass" x="1221" y="1719" width="46" height="37"/>
+    <SubTexture name="PopupParts_bottomSideClass" x="1990" y="1974" width="46" height="47"/>
+    <SubTexture name="PriceViewSkin__embed_mxml__ui_shop_ew_ui_upgrade_grey2_png_396261626" x="1094" y="1716" width="125" height="46"/>
+    <SubTexture name="PriceViewSkin__embed_mxml__ui_shop_ew_ui_upgrade_yellow2_png_1779764036" x="1863" y="1974" width="125" height="46"/>
+    <SubTexture name="ProgressBarSkin__embed_mxml__pic_load_ew_splash2_png_1186475206" x="496" y="345" width="344" height="192"/>
+    <SubTexture name="ProgressBarSkin_progressFrontClass" x="1816" y="1686" width="37" height="31"/>
+    <SubTexture name="RadioButtonGameSkin__embed_mxml__ui_checkBox_checkbox_png_695712168" x="1951" y="486" width="17" height="17"/>
+    <SubTexture name="RadioButtonGameSkin__embed_mxml__ui_checkBox_radiobutton_png_198390150" x="1848" y="1419" width="12" height="12"/>
+    <SubTexture name="ScrollBarImages_bottomClass" x="1997" y="1658" width="27" height="21"/>
+    <SubTexture name="ScrollBarImages_bottomDownClass" x="667" y="2005" width="27" height="21"/>
+    <SubTexture name="ShopBorderSkin__embed_mxml__ui_shop_ew_ui_upgrade_grey1_png_395999236" x="844" y="1916" width="125" height="124"/>
+    <SubTexture name="ShopBorderSkin__embed_mxml__ui_shop_ew_ui_upgrade_yellow1_png_1781603398" x="1918" y="731" width="125" height="124"/>
+    <SubTexture name="TechLevelIconSkin__embed_mxml__pic_tech_png_642283343" x="2006" y="1204" width="34" height="35"/>
+    <SubTexture name="TechLockSkin__embed_mxml__ui_ew_ui_upgrade_lock_png_900169673" x="1992" y="1492" width="46" height="60"/>
+    <SubTexture name="build.unit.cavalry_europe.image" x="667" y="1952" width="34" height="51"/>
+    <SubTexture name="build.unit.cavalry_russia.image" x="2006" y="997" width="34" height="59"/>
+    <SubTexture name="build.unit.infantry_europe.image" x="1876" y="505" width="29" height="40"/>
+    <SubTexture name="build.unit.infantry_russia.image" x="2006" y="1163" width="31" height="39"/>
+    <SubTexture name="build.unit.infantry_tatars.image" x="2006" y="1120" width="31" height="41"/>
+    <SubTexture name="build.unit.settler_russia.image" x="1812" y="2007" width="23" height="40" frameX="-1" frameY="0" frameWidth="24" frameHeight="40"/>
+    <SubTexture name="build.unit.settler_tatars.image" x="1837" y="2007" width="22" height="40" frameX="-2" frameY="0" frameWidth="24" frameHeight="40"/>
+    <SubTexture name="buildings.altar1.e.1.t.default.image_post" x="755" y="715" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar1.e.2.t.default.image_post" x="1043" y="702" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar1.e.3.t.default.image_post" x="1187" y="708" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar2.e.1.t.default.image_post" x="1331" y="711" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar2.e.2.t.default.image_post" x="1774" y="547" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar2.e.3.t.default.image_post" x="710" y="859" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar3.e.1.t.default.image_post" x="854" y="859" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar3.e.2.t.default.image_post" x="899" y="547" width="142" height="164" frameX="-12" frameY="-2" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.altar3.e.3.t.default.image_post" x="691" y="1094" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home1.e.1.t.default.image_post" x="696" y="1340" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home1.e.2.t.default.image_post" x="696" y="1484" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home1.e.3.t.default.image_post" x="662" y="1628" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home2.e.1.t.default.image_post" x="711" y="1772" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home2.e.2.t.default.image_post" x="806" y="1628" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home2.e.3.t.default.image_post" x="855" y="1772" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home3.e.1.t.default.image_post" x="1852" y="1" width="142" height="166" frameX="-12" frameY="0" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home3.e.2.t.default.image_post" x="755" y="547" width="142" height="166" frameX="-12" frameY="0" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.home3.e.3.t.default.image_post" x="1198" y="547" width="142" height="159" frameX="-12" frameY="-7" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower1.e.1.t.default.image_post" x="1774" y="691" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower1.e.2.t.default.image_post" x="1630" y="699" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower1.e.3.t.default.image_post" x="1486" y="705" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower2.e.1.t.default.image_post" x="835" y="1094" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower2.e.2.t.default.image_post" x="840" y="1340" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower2.e.3.t.default.image_post" x="899" y="713" width="142" height="144" frameX="-12" frameY="-22" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower3.e.1.t.default.image_post" x="1342" y="547" width="142" height="162" frameX="-12" frameY="-4" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower3.e.2.t.default.image_post" x="1630" y="547" width="142" height="150" frameX="-12" frameY="-16" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="buildings.tower3.e.3.t.default.image_post" x="1486" y="547" width="142" height="156" frameX="-12" frameY="-10" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="circle.in" x="1918" y="505" width="129" height="129"/>
+    <SubTexture name="circle.normal" x="711" y="1916" width="131" height="131"/>
+    <SubTexture name="circle.out" x="1043" y="547" width="153" height="153"/>
+    <SubTexture name="empire.europe.logo" x="453" y="1574" width="207" height="215"/>
+    <SubTexture name="empire.russia.logo" x="453" y="1340" width="241" height="232"/>
+    <SubTexture name="empire.tatars.logo" x="453" y="1093" width="236" height="245"/>
+    <SubTexture name="interface.game_type.ffa2.icon" x="1816" y="1577" width="110" height="107" frameX="0" frameY="-3" frameWidth="110" frameHeight="110"/>
+    <SubTexture name="interface.game_type.ffa3.icon" x="971" y="1916" width="110" height="110"/>
+    <SubTexture name="interface.game_type.ffa4.icon" x="984" y="1510" width="110" height="108" frameX="0" frameY="-2" frameWidth="110" frameHeight="110"/>
+    <SubTexture name="interface.game_type.teams.icon" x="1156" y="1908" width="110" height="108" frameX="0" frameY="-2" frameWidth="110" frameHeight="110"/>
+    <SubTexture name="items.deviation.icon" x="1951" y="272" width="90" height="109" frameX="-15" frameY="0" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="items.deviation.icon_medium" x="383" y="1907" width="52" height="60" frameX="-6" frameY="0" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="items.fog.icon" x="691" y="1238" width="103" height="100" frameX="0" frameY="-11" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="items.night.icon" x="1951" y="383" width="87" height="101" frameX="-15" frameY="-9" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="items.night.icon_medium" x="1996" y="1" width="50" height="58" frameX="-6" frameY="-3" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="items.replenishment.icon" x="1951" y="169" width="96" height="101" frameX="-6" frameY="-11" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="items.replenishment.icon_medium" x="1992" y="1433" width="55" height="57" frameX="-1" frameY="-4" frameWidth="64" frameHeight="64"/>
+    <SubTexture name="post.level.image" x="840" y="1484" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="spells.assistance.cursor" x="2006" y="1276" width="33" height="33"/>
+    <SubTexture name="spells.assistance.icon" x="1996" y="61" width="49" height="50"/>
+    <SubTexture name="spells.cataclysm.cursor2" x="1000" y="1231" width="133" height="133"/>
+    <SubTexture name="spells.cataclysm.icon" x="1997" y="1606" width="49" height="50"/>
+    <SubTexture name="spells.firestorm.cursor" x="453" y="841" width="255" height="250" frameX="-6" frameY="-16" frameWidth="261" frameHeight="266"/>
+    <SubTexture name="spells.firestorm.icon" x="1996" y="113" width="49" height="50"/>
+    <SubTexture name="spells.tornado.cursor" x="2006" y="1311" width="33" height="33"/>
+    <SubTexture name="supply.food.icon" x="898" y="1238" width="100" height="100" frameX="-10" frameY="-10" frameWidth="120" frameHeight="120"/>
+    <SubTexture name="supply.food.minicon" x="367" y="2017" width="32" height="30" frameX="0" frameY="-1" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="supply.reagents.minicon" x="401" y="2017" width="28" height="30" frameX="-2" frameY="-1" frameWidth="32" frameHeight="32"/>
+    <SubTexture name="technology.agility.lvl1.icon_post" x="950" y="1628" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.agility.lvl2.icon_post" x="999" y="1772" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.agility.lvl3.icon_post" x="998" y="859" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.agility.lvl4.icon_post" x="1142" y="852" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.agility.lvl5.icon_post" x="1286" y="855" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.agility.lvl6.icon_post" x="979" y="1087" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.agility.lvl7.icon_post" x="984" y="1366" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl1.icon_post" x="1430" y="855" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl2.icon_post" x="1574" y="849" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl3.icon_post" x="1718" y="843" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl4.icon_post" x="1862" y="857" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl5.icon_post" x="1718" y="987" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl6.icon_post" x="1574" y="993" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.assistance.lvl7.icon_post" x="1862" y="1001" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl1.icon_post" x="1718" y="1131" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl2.icon_post" x="1862" y="1145" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl3.icon_post" x="1142" y="996" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl4.icon_post" x="1286" y="999" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl5.icon_post" x="1430" y="999" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl6.icon_post" x="1574" y="1137" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.attack.lvl7.icon_post" x="1135" y="1140" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl1.icon_post" x="1279" y="1143" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl2.icon_post" x="1423" y="1143" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl3.icon_post" x="1135" y="1284" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl4.icon_post" x="1279" y="1287" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl5.icon_post" x="1423" y="1287" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl6.icon_post" x="1567" y="1281" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cataclysm.lvl7.icon_post" x="1128" y="1428" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl1.icon_post" x="1272" y="1431" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl2.icon_post" x="1416" y="1431" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl3.icon_post" x="1718" y="1275" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl4.icon_post" x="1862" y="1289" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl5.icon_post" x="1096" y="1572" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl6.icon_post" x="1240" y="1575" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.cooldown.lvl7.icon_post" x="1384" y="1575" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl1.icon_post" x="1528" y="1575" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl2.icon_post" x="1560" y="1431" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl3.icon_post" x="1672" y="1575" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl4.icon_post" x="1143" y="1764" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl5.icon_post" x="1287" y="1719" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl6.icon_post" x="1431" y="1719" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.defense.lvl7.icon_post" x="1575" y="1719" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl1.icon_post" x="1719" y="1719" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl2.icon_post" x="1287" y="1863" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl3.icon_post" x="1431" y="1863" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl4.icon_post" x="1575" y="1863" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl5.icon_post" x="1719" y="1863" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl6.icon_post" x="1704" y="1425" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.firestorm.lvl7.icon_post" x="1848" y="1433" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.mana.lvl1.icon_post" x="1863" y="1686" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="technology.mana.lvl2.icon_post" x="1863" y="1830" width="142" height="142" frameX="-12" frameY="-24" frameWidth="166" frameHeight="166"/>
+    <SubTexture name="tutorial_slide.gameplay.1.image" x="1" y="395" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.gameplay.2.image" x="496" y="1" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.gameplay.3.image" x="1" y="647" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.gameplay.4.image" x="948" y="1" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.gameplay.5.image" x="1" y="899" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.mainmenu.1.image" x="1400" y="1" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.mainmenu.2.image" x="1" y="1151" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.mainmenu.3.image" x="1" y="1403" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.shop.1.image" x="1" y="1655" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.techs.1.image" x="1047" y="253" width="450" height="250"/>
+    <SubTexture name="tutorial_slide.welcome.1.image" x="1499" y="253" width="450" height="250"/>
+</TextureAtlas>

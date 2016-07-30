@@ -1,10 +1,9 @@
 package game
 {
-	import common.context.IContext;
 	import common.context.links.Link;
 	import common.system.application.Application;
-	import flash.display.Stage;
-	import game.modules.alert.AlertExtension;
+	import game.extensions.GameExtensions;
+	import game.extensions.GameRecordsExtension;
 	import game.modules.applications.IApplicationDescription;
 	import game.modules.applications.IdleManager;
 	import game.mvc.ContextConfiguration;
@@ -30,6 +29,7 @@ package game
 			install(IdleManager);
 			install(new Link(GameDescription, IApplicationDescription));
 			install(new GameExtensions());
+			install(new GameRecordsExtension());
 		}
 		
 		private function getConfiguration():ContextConfiguration

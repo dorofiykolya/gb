@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:776dfe68a8ff89fec940093c9c2db879:6982f229654ac1d12daaba6fcf76f589:8c41a5d90afed69f0a3677bebc4c1176$ -->
+<TextureAtlas imagePath="location0.png" width="2048" height="2048">
+    <SubTexture name="battlefield.summer" x="1" y="1" width="300" height="300"/>
+    <SubTexture name="generated.buildings.altar1.e.1.t.default.highlight" x="1767" y="686" width="39" height="26" frameX="-5" frameY="-11" frameWidth="44" frameHeight="37"/>
+    <SubTexture name="generated.buildings.altar1.e.1.t.default.image" x="1462" y="364" width="54" height="57" frameX="-3" frameY="0" frameWidth="57" frameHeight="60"/>
+    <SubTexture name="generated.buildings.altar1.e.2.t.default.highlight" x="1880" y="481" width="49" height="53" frameX="-6" frameY="-1" frameWidth="55" frameHeight="54"/>
+    <SubTexture name="generated.buildings.altar1.e.2.t.default.image" x="1676" y="340" width="50" height="54" frameX="-5" frameY="0" frameWidth="55" frameHeight="61"/>
+    <SubTexture name="generated.buildings.altar1.e.3.t.default.highlight" x="1041" y="363" width="27" height="25" frameX="-11" frameY="-6" frameWidth="38" frameHeight="31"/>
+    <SubTexture name="generated.buildings.altar1.e.3.t.default.image" x="1674" y="438" width="52" height="58" frameX="-2" frameY="0" frameWidth="54" frameHeight="63"/>
+    <SubTexture name="generated.buildings.altar1.e.default.t.default.ground" x="409" y="464" width="93" height="41"/>
+    <SubTexture name="generated.buildings.altar1.e.default.t.default.image" x="824" y="460" width="67" height="47"/>
+    <SubTexture name="generated.buildings.altar1.e.europe.t.default.ground" x="303" y="493" width="93" height="38"/>
+    <SubTexture name="generated.buildings.altar1.e.russia.t.default.ground" x="603" y="440" width="93" height="38"/>
+    <SubTexture name="generated.buildings.altar1.e.tatar.t.default.ground" x="603" y="480" width="93" height="38"/>
+    <SubTexture name="generated.buildings.altar2.e.1.t.default.highlight" x="1576" y="424" width="55" height="44" frameX="-7" frameY="-3" frameWidth="62" frameHeight="47"/>
+    <SubTexture name="generated.buildings.altar2.e.1.t.default.image" x="1728" y="390" width="74" height="70" frameX="-3" frameY="0" frameWidth="77" frameHeight="71"/>
+    <SubTexture name="generated.buildings.altar2.e.2.t.default.highlight" x="1291" y="375" width="57" height="70" frameX="-6" frameY="-3" frameWidth="63" frameHeight="73"/>
+    <SubTexture name="generated.buildings.altar2.e.2.t.default.image" x="229" y="406" width="72" height="74" frameX="-6" frameY="0" frameWidth="78" frameHeight="80"/>
+    <SubTexture name="generated.buildings.altar2.e.3.t.default.highlight" x="1724" y="529" width="51" height="50" frameX="-11" frameY="-16" frameWidth="62" frameHeight="66"/>
+    <SubTexture name="generated.buildings.altar2.e.3.t.default.image" x="213" y="550" width="86" height="84" frameX="0" frameY="0" frameWidth="86" frameHeight="85"/>
+    <SubTexture name="generated.buildings.altar2.e.default.t.default.ground" x="1638" y="100" width="102" height="42"/>
+    <SubTexture name="generated.buildings.altar2.e.default.t.default.image" x="1403" y="304" width="77" height="57"/>
+    <SubTexture name="generated.buildings.altar2.e.europe.t.default.ground" x="303" y="182" width="117" height="48"/>
+    <SubTexture name="generated.buildings.altar2.e.russia.t.default.ground" x="303" y="232" width="117" height="48"/>
+    <SubTexture name="generated.buildings.altar2.e.tatar.t.default.ground" x="1079" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.altar3.e.1.t.default.highlight" x="1409" y="275" width="78" height="27" frameX="-10" frameY="-4" frameWidth="88" frameHeight="31"/>
+    <SubTexture name="generated.buildings.altar3.e.1.t.default.image" x="1743" y="51" width="102" height="82" frameX="-7" frameY="0" frameWidth="109" frameHeight="83"/>
+    <SubTexture name="generated.buildings.altar3.e.2.t.default.highlight" x="422" y="182" width="83" height="77" frameX="-2" frameY="-20" frameWidth="85" frameHeight="97"/>
+    <SubTexture name="generated.buildings.altar3.e.2.t.default.image" x="1533" y="101" width="101" height="103" frameX="-2" frameY="0" frameWidth="103" frameHeight="108"/>
+    <SubTexture name="generated.buildings.altar3.e.3.t.default.highlight" x="1230" y="340" width="59" height="52" frameX="-20" frameY="-9" frameWidth="79" frameHeight="61"/>
+    <SubTexture name="generated.buildings.altar3.e.3.t.default.image" x="755" y="285" width="106" height="92" frameX="-6" frameY="0" frameWidth="112" frameHeight="96"/>
+    <SubTexture name="generated.buildings.altar3.e.default.t.default.ground" x="1638" y="100" width="102" height="42"/>
+    <SubTexture name="generated.buildings.altar3.e.default.t.default.image" x="410" y="393" width="94" height="69"/>
+    <SubTexture name="generated.buildings.altar3.e.europe.t.default.ground" x="508" y="1" width="142" height="59"/>
+    <SubTexture name="generated.buildings.altar3.e.russia.t.default.ground" x="652" y="1" width="142" height="59"/>
+    <SubTexture name="generated.buildings.altar3.e.tatar.t.default.ground" x="796" y="1" width="142" height="59"/>
+    <SubTexture name="generated.buildings.home1.e.1.t.default.ground" x="504" y="495" width="93" height="38"/>
+    <SubTexture name="generated.buildings.home1.e.1.t.default.highlight" x="2007" y="797" width="36" height="41" frameX="-7" frameY="0" frameWidth="43" frameHeight="41"/>
+    <SubTexture name="generated.buildings.home1.e.1.t.default.image" x="1828" y="623" width="47" height="42" frameX="-6" frameY="0" frameWidth="53" frameHeight="48"/>
+    <SubTexture name="generated.buildings.home1.e.2.t.default.ground" x="398" y="507" width="93" height="38"/>
+    <SubTexture name="generated.buildings.home1.e.2.t.default.highlight" x="1968" y="763" width="37" height="42" frameX="-7" frameY="-2" frameWidth="44" frameHeight="44"/>
+    <SubTexture name="generated.buildings.home1.e.2.t.default.image" x="1830" y="533" width="48" height="45" frameX="-6" frameY="0" frameWidth="54" frameHeight="51"/>
+    <SubTexture name="generated.buildings.home1.e.3.t.default.ground" x="303" y="533" width="93" height="38"/>
+    <SubTexture name="generated.buildings.home1.e.3.t.default.highlight" x="904" y="62" width="34" height="34" frameX="-8" frameY="-8" frameWidth="42" frameHeight="42"/>
+    <SubTexture name="generated.buildings.home1.e.3.t.default.image" x="1970" y="673" width="44" height="43" frameX="-6" frameY="0" frameWidth="51" frameHeight="52"/>
+    <SubTexture name="generated.buildings.home1.e.default.t.default.ground" x="1518" y="355" width="77" height="36"/>
+    <SubTexture name="generated.buildings.home1.e.default.t.default.image" x="1518" y="462" width="55" height="44"/>
+    <SubTexture name="generated.buildings.home2.e.1.t.default.ground" x="1198" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.home2.e.1.t.default.highlight" x="1671" y="617" width="49" height="61" frameX="-10" frameY="0" frameWidth="59" frameHeight="61"/>
+    <SubTexture name="generated.buildings.home2.e.1.t.default.image" x="668" y="566" width="63" height="62" frameX="-10" frameY="0" frameWidth="73" frameHeight="66"/>
+    <SubTexture name="generated.buildings.home2.e.2.t.default.ground" x="1317" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.home2.e.2.t.default.highlight" x="1144" y="411" width="56" height="64" frameX="-7" frameY="-3" frameWidth="63" frameHeight="67"/>
+    <SubTexture name="generated.buildings.home2.e.2.t.default.image" x="1880" y="411" width="73" height="68" frameX="-7" frameY="0" frameWidth="80" frameHeight="70"/>
+    <SubTexture name="generated.buildings.home2.e.3.t.default.highlight" x="1880" y="585" width="47" height="45" frameX="-12" frameY="-11" frameWidth="59" frameHeight="56"/>
+    <SubTexture name="generated.buildings.home2.e.3.t.default.image" x="1" y="681" width="60" height="58" frameX="-11" frameY="0" frameWidth="72" frameHeight="65"/>
+    <SubTexture name="generated.buildings.home2.e.default.t.default.ground" x="755" y="239" width="114" height="44"/>
+    <SubTexture name="generated.buildings.home2.e.default.t.default.image" x="1072" y="343" width="70" height="63"/>
+    <SubTexture name="generated.buildings.home2.e.tatar.t.default.ground" x="1079" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.home3.e.1.t.default.highlight" x="1834" y="465" width="44" height="66" frameX="-5" frameY="-37" frameWidth="49" frameHeight="103"/>
+    <SubTexture name="generated.buildings.home3.e.1.t.default.image" x="863" y="321" width="74" height="107" frameX="-5" frameY="0" frameWidth="79" frameHeight="108"/>
+    <SubTexture name="generated.buildings.home3.e.2.t.default.highlight" x="524" y="599" width="61" height="57" frameX="-5" frameY="-48" frameWidth="66" frameHeight="105"/>
+    <SubTexture name="generated.buildings.home3.e.2.t.default.image" x="1899" y="256" width="80" height="107" frameX="-5" frameY="0" frameWidth="85" frameHeight="108"/>
+    <SubTexture name="generated.buildings.home3.e.3.t.default.highlight" x="883" y="164" width="55" height="82" frameX="-10" frameY="-10" frameWidth="65" frameHeight="92"/>
+    <SubTexture name="generated.buildings.home3.e.3.t.default.image" x="1812" y="263" width="79" height="98" frameX="0" frameY="0" frameWidth="79" frameHeight="101"/>
+    <SubTexture name="generated.buildings.home3.e.default.t.default.ground" x="642" y="62" width="130" height="54"/>
+    <SubTexture name="generated.buildings.home3.e.default.t.default.image" x="506" y="408" width="95" height="85"/>
+    <SubTexture name="generated.buildings.home3.e.europe.t.default.ground" x="1436" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.home3.e.russia.t.default.ground" x="1198" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.home3.e.tatar.t.default.ground" x="1555" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.tower1.e.1.t.default.highlight" x="1489" y="275" width="27" height="54" frameX="-10" frameY="-1" frameWidth="37" frameHeight="55"/>
+    <SubTexture name="generated.buildings.tower1.e.1.t.default.image" x="1978" y="607" width="46" height="64" frameX="-6" frameY="0" frameWidth="52" frameHeight="74"/>
+    <SubTexture name="generated.buildings.tower1.e.2.t.default.highlight" x="1042" y="275" width="30" height="46" frameX="-9" frameY="-12" frameWidth="39" frameHeight="58"/>
+    <SubTexture name="generated.buildings.tower1.e.2.t.default.image" x="2006" y="246" width="40" height="60" frameX="-9" frameY="0" frameWidth="51" frameHeight="68"/>
+    <SubTexture name="generated.buildings.tower1.e.3.t.default.highlight" x="1041" y="323" width="29" height="38" frameX="-9" frameY="-5" frameWidth="38" frameHeight="43"/>
+    <SubTexture name="generated.buildings.tower1.e.3.t.default.image" x="1722" y="633" width="43" height="69" frameX="-8" frameY="0" frameWidth="51" frameHeight="76"/>
+    <SubTexture name="generated.buildings.tower1.e.default.t.default.ground" x="824" y="509" width="66" height="35"/>
+    <SubTexture name="generated.buildings.tower1.e.default.t.default.image" x="1924" y="665" width="44" height="59"/>
+    <SubTexture name="generated.buildings.tower1.e.europe.t.default.ground" x="107" y="616" width="93" height="38"/>
+    <SubTexture name="generated.buildings.tower1.e.russia.t.default.ground" x="1" y="641" width="93" height="38"/>
+    <SubTexture name="generated.buildings.tower1.e.tatar.t.default.ground" x="1847" y="51" width="93" height="38"/>
+    <SubTexture name="generated.buildings.tower2.e.1.t.default.highlight" x="710" y="420" width="43" height="82" frameX="-14" frameY="0" frameWidth="57" frameHeight="82"/>
+    <SubTexture name="generated.buildings.tower2.e.1.t.default.image" x="1011" y="390" width="59" height="84" frameX="-12" frameY="0" frameWidth="71" frameHeight="90"/>
+    <SubTexture name="generated.buildings.tower2.e.2.t.default.highlight" x="1877" y="632" width="45" height="69" frameX="-12" frameY="-9" frameWidth="57" frameHeight="78"/>
+    <SubTexture name="generated.buildings.tower2.e.2.t.default.image" x="398" y="547" width="61" height="80" frameX="-12" frameY="0" frameWidth="73" frameHeight="88"/>
+    <SubTexture name="generated.buildings.tower2.e.3.t.default.highlight" x="1683" y="258" width="43" height="80" frameX="-14" frameY="-8" frameWidth="57" frameHeight="88"/>
+    <SubTexture name="generated.buildings.tower2.e.3.t.default.image" x="96" y="656" width="60" height="87" frameX="-13" frameY="0" frameWidth="73" frameHeight="92"/>
+    <SubTexture name="generated.buildings.tower2.e.default.t.default.ground" x="1638" y="100" width="102" height="42"/>
+    <SubTexture name="generated.buildings.tower2.e.default.t.default.image" x="1981" y="308" width="66" height="76"/>
+    <SubTexture name="generated.buildings.tower2.e.europe.t.default.ground" x="1317" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.tower2.e.russia.t.default.ground" x="303" y="232" width="117" height="48"/>
+    <SubTexture name="generated.buildings.tower2.e.tatar.t.default.ground" x="1079" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.tower3.e.1.t.default.highlight" x="1625" y="538" width="44" height="102" frameX="-14" frameY="-8" frameWidth="58" frameHeight="110"/>
+    <SubTexture name="generated.buildings.tower3.e.1.t.default.image" x="927" y="430" width="68" height="111" frameX="-9" frameY="0" frameWidth="77" frameHeight="118"/>
+    <SubTexture name="generated.buildings.tower3.e.2.t.default.highlight" x="1982" y="492" width="47" height="87" frameX="-12" frameY="-12" frameWidth="59" frameHeight="99"/>
+    <SubTexture name="generated.buildings.tower3.e.2.t.default.image" x="229" y="303" width="72" height="101" frameX="-3" frameY="0" frameWidth="75" frameHeight="110"/>
+    <SubTexture name="generated.buildings.tower3.e.3.t.default.highlight" x="1352" y="340" width="49" height="94" frameX="-10" frameY="-10" frameWidth="59" frameHeight="104"/>
+    <SubTexture name="generated.buildings.tower3.e.3.t.default.image" x="1962" y="386" width="73" height="104" frameX="-7" frameY="0" frameWidth="80" frameHeight="109"/>
+    <SubTexture name="generated.buildings.tower3.e.default.t.default.ground" x="1638" y="100" width="102" height="42"/>
+    <SubTexture name="generated.buildings.tower3.e.default.t.default.image" x="1158" y="310" width="70" height="99"/>
+    <SubTexture name="generated.buildings.tower3.e.europe.t.default.ground" x="1674" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.tower3.e.russia.t.default.ground" x="1793" y="1" width="117" height="48"/>
+    <SubTexture name="generated.buildings.tower3.e.tatar.t.default.ground" x="1912" y="1" width="117" height="48"/>
+    <SubTexture name="generated.decorations.0.image" x="1927" y="813" width="36" height="28"/>
+    <SubTexture name="generated.decorations.100.image" x="1461" y="482" width="53" height="50"/>
+    <SubTexture name="generated.decorations.101.image" x="622" y="290" width="106" height="46"/>
+    <SubTexture name="generated.decorations.102.image" x="417" y="325" width="87" height="66"/>
+    <SubTexture name="generated.decorations.103.image" x="1835" y="161" width="85" height="50"/>
+    <SubTexture name="generated.decorations.104.image" x="1597" y="360" width="77" height="30"/>
+    <SubTexture name="generated.decorations.105.image" x="940" y="317" width="99" height="60"/>
+    <SubTexture name="generated.decorations.106.image" x="1057" y="160" width="15" height="8"/>
+    <SubTexture name="generated.decorations.107.image" x="1310" y="51" width="110" height="48"/>
+    <SubTexture name="generated.decorations.108.image" x="1403" y="412" width="57" height="38"/>
+    <SubTexture name="generated.decorations.109.image" x="2007" y="763" width="37" height="32"/>
+    <SubTexture name="generated.decorations.110.image" x="2006" y="206" width="41" height="38"/>
+    <SubTexture name="generated.decorations.111.image" x="1676" y="396" width="50" height="40"/>
+    <SubTexture name="generated.decorations.112.image" x="1929" y="726" width="38" height="29"/>
+    <SubTexture name="generated.decorations.113.image" x="1630" y="488" width="39" height="48"/>
+    <SubTexture name="generated.decorations.114.image" x="1178" y="257" width="83" height="51"/>
+    <SubTexture name="generated.decorations.115.image" x="507" y="226" width="113" height="64"/>
+    <SubTexture name="generated.decorations.116.image" x="1374" y="279" width="27" height="28"/>
+    <SubTexture name="generated.decorations.117.image" x="1" y="741" width="60" height="33"/>
+    <SubTexture name="generated.decorations.118.image" x="1847" y="91" width="91" height="68"/>
+    <SubTexture name="generated.decorations.119.image" x="2031" y="22" width="15" height="20"/>
+    <SubTexture name="generated.decorations.120.image" x="2031" y="1" width="16" height="19"/>
+    <SubTexture name="generated.decorations.121.image" x="1291" y="340" width="59" height="33"/>
+    <SubTexture name="generated.decorations.122.image" x="303" y="282" width="112" height="84"/>
+    <SubTexture name="generated.decorations.123.image" x="904" y="98" width="34" height="31"/>
+    <SubTexture name="generated.decorations.124.image" x="1374" y="246" width="33" height="31"/>
+    <SubTexture name="generated.decorations.125.image" x="940" y="212" width="109" height="48"/>
+    <SubTexture name="generated.decorations.126.image" x="1728" y="205" width="85" height="50"/>
+    <SubTexture name="generated.decorations.127.image" x="303" y="368" width="105" height="55"/>
+    <SubTexture name="generated.decorations.128.image" x="1597" y="392" width="77" height="30"/>
+    <SubTexture name="generated.decorations.129.image" x="1524" y="206" width="85" height="50"/>
+    <SubTexture name="generated.decorations.130.image" x="115" y="425" width="105" height="55"/>
+    <SubTexture name="generated.decorations.131.image" x="1728" y="358" width="77" height="30"/>
+    <SubTexture name="generated.decorations.132.image" x="115" y="425" width="105" height="55"/>
+    <SubTexture name="generated.decorations.133.image" x="1728" y="358" width="77" height="30"/>
+    <SubTexture name="generated.decorations.134.image" x="1728" y="205" width="85" height="50"/>
+    <SubTexture name="generated.decorations.135.image" x="303" y="368" width="105" height="55"/>
+    <SubTexture name="generated.decorations.136.image" x="1597" y="392" width="77" height="30"/>
+    <SubTexture name="generated.decorations.137.image" x="1524" y="206" width="85" height="50"/>
+    <SubTexture name="generated.decorations.138.image" x="1374" y="309" width="27" height="28"/>
+    <SubTexture name="generated.decorations.139.image" x="755" y="521" width="65" height="78"/>
+    <SubTexture name="generated.decorations.140.image" x="461" y="585" width="61" height="73"/>
+    <SubTexture name="generated.decorations.141.image" x="1518" y="393" width="56" height="67"/>
+    <SubTexture name="generated.decorations.142.image" x="1671" y="565" width="51" height="50"/>
+    <SubTexture name="generated.decorations.143.image" x="1777" y="532" width="51" height="50"/>
+    <SubTexture name="generated.decorations.144.image" x="871" y="248" width="67" height="71"/>
+    <SubTexture name="generated.decorations.145.image" x="755" y="448" width="67" height="71"/>
+    <SubTexture name="generated.decorations.146.image" x="599" y="520" width="67" height="71"/>
+    <SubTexture name="generated.decorations.147.image" x="1724" y="581" width="51" height="50"/>
+    <SubTexture name="generated.decorations.148.image" x="108" y="482" width="104" height="65"/>
+    <SubTexture name="generated.decorations.149.image" x="1" y="507" width="104" height="65"/>
+    <SubTexture name="generated.decorations.150.image" x="506" y="340" width="104" height="66"/>
+    <SubTexture name="generated.decorations.151.image" x="158" y="656" width="42" height="16"/>
+    <SubTexture name="generated.decorations.152.image" x="1263" y="257" width="24" height="19"/>
+    <SubTexture name="generated.decorations.153.image" x="1496" y="223" width="25" height="20"/>
+    <SubTexture name="generated.decorations.154.image" x="1042" y="262" width="31" height="11"/>
+    <SubTexture name="generated.decorations.155.image" x="599" y="520" width="67" height="71"/>
+    <SubTexture name="generated.decorations.156.image" x="755" y="448" width="67" height="71"/>
+    <SubTexture name="generated.decorations.157.image" x="871" y="248" width="67" height="71"/>
+    <SubTexture name="generated.decorations.158.image" x="1777" y="532" width="51" height="50"/>
+    <SubTexture name="generated.decorations.159.image" x="1671" y="565" width="51" height="50"/>
+    <SubTexture name="generated.decorations.160.image" x="1724" y="581" width="51" height="50"/>
+    <SubTexture name="generated.decorations.161.image" x="1374" y="309" width="27" height="28"/>
+    <SubTexture name="generated.decorations.162.image" x="461" y="585" width="61" height="73"/>
+    <SubTexture name="generated.decorations.163.image" x="755" y="521" width="65" height="78"/>
+    <SubTexture name="generated.decorations.164.image" x="1518" y="393" width="56" height="67"/>
+    <SubTexture name="generated.decorations.165.image" x="158" y="656" width="42" height="16"/>
+    <SubTexture name="generated.decorations.166.image" x="1042" y="262" width="31" height="11"/>
+    <SubTexture name="generated.decorations.167.image" x="1496" y="245" width="25" height="20"/>
+    <SubTexture name="generated.decorations.168.image" x="1263" y="278" width="24" height="19"/>
+    <SubTexture name="generated.decorations.169.image" x="107" y="549" width="104" height="65"/>
+    <SubTexture name="generated.decorations.170.image" x="1" y="574" width="104" height="65"/>
+    <SubTexture name="generated.decorations.171.image" x="303" y="425" width="104" height="66"/>
+    <SubTexture name="generated.decorations.172.image" x="1980" y="581" width="47" height="24"/>
+    <SubTexture name="generated.decorations.173.image" x="1240" y="447" width="36" height="20"/>
+    <SubTexture name="generated.decorations.174.image" x="1057" y="132" width="17" height="15"/>
+    <SubTexture name="generated.decorations.175.image" x="1942" y="51" width="86" height="50"/>
+    <SubTexture name="generated.decorations.176.image" x="1929" y="757" width="37" height="54"/>
+    <SubTexture name="generated.decorations.177.image" x="1074" y="293" width="82" height="48"/>
+    <SubTexture name="generated.decorations.178.image" x="1604" y="258" width="77" height="49"/>
+    <SubTexture name="generated.decorations.179.image" x="1922" y="206" width="82" height="48"/>
+    <SubTexture name="generated.decorations.180.image" x="1421" y="141" width="101" height="39"/>
+    <SubTexture name="generated.decorations.181.image" x="1307" y="191" width="100" height="53"/>
+    <SubTexture name="generated.decorations.182.image" x="1079" y="51" width="115" height="95"/>
+    <SubTexture name="generated.decorations.183.image" x="1888" y="758" width="37" height="54"/>
+    <SubTexture name="generated.decorations.184.image" x="1815" y="213" width="82" height="48"/>
+    <SubTexture name="generated.decorations.185.image" x="1072" y="438" width="55" height="55"/>
+    <SubTexture name="generated.decorations.186.image" x="1422" y="51" width="109" height="88"/>
+    <SubTexture name="generated.decorations.187.image" x="1072" y="408" width="70" height="28"/>
+    <SubTexture name="generated.decorations.188.image" x="115" y="303" width="112" height="59"/>
+    <SubTexture name="generated.decorations.189.image" x="115" y="364" width="112" height="59"/>
+    <SubTexture name="generated.decorations.190.image" x="1187" y="202" width="100" height="53"/>
+    <SubTexture name="generated.decorations.191.image" x="1728" y="257" width="82" height="48"/>
+    <SubTexture name="generated.decorations.192.image" x="1076" y="238" width="100" height="53"/>
+    <SubTexture name="generated.decorations.193.image" x="1728" y="307" width="77" height="49"/>
+    <SubTexture name="generated.decorations.194.image" x="997" y="476" width="55" height="55"/>
+    <SubTexture name="generated.decorations.195.image" x="1230" y="310" width="70" height="28"/>
+    <SubTexture name="generated.decorations.196.image" x="940" y="115" width="115" height="95"/>
+    <SubTexture name="generated.decorations.197.image" x="1310" y="101" width="109" height="88"/>
+    <SubTexture name="generated.decorations.198.image" x="755" y="379" width="98" height="67"/>
+    <SubTexture name="generated.decorations.199.image" x="1302" y="310" width="70" height="28"/>
+    <SubTexture name="generated.decorations.2.image" x="1350" y="436" width="51" height="65"/>
+    <SubTexture name="generated.decorations.200.image" x="1421" y="182" width="101" height="39"/>
+    <SubTexture name="generated.decorations.201.image" x="422" y="261" width="83" height="62"/>
+    <SubTexture name="generated.decorations.202.image" x="855" y="430" width="70" height="28"/>
+    <SubTexture name="generated.decorations.203.image" x="940" y="262" width="100" height="53"/>
+    <SubTexture name="generated.decorations.204.image" x="1289" y="246" width="83" height="62"/>
+    <SubTexture name="generated.decorations.205.image" x="1940" y="154" width="86" height="50"/>
+    <SubTexture name="generated.decorations.206.image" x="1403" y="452" width="56" height="67"/>
+    <SubTexture name="generated.decorations.207.image" x="1571" y="522" width="52" height="51"/>
+    <SubTexture name="generated.decorations.208.image" x="698" y="504" width="55" height="60"/>
+    <SubTexture name="generated.decorations.209.image" x="1767" y="663" width="43" height="21"/>
+    <SubTexture name="generated.decorations.210.image" x="1240" y="469" width="35" height="13"/>
+    <SubTexture name="generated.decorations.211.image" x="1051" y="212" width="23" height="14"/>
+    <SubTexture name="generated.decorations.212.image" x="2031" y="44" width="15" height="9"/>
+    <SubTexture name="generated.decorations.213.image" x="622" y="226" width="12" height="9"/>
+    <SubTexture name="generated.decorations.214.image" x="755" y="193" width="9" height="7"/>
+    <SubTexture name="generated.decorations.215.image" x="722" y="338" width="31" height="33"/>
+    <SubTexture name="generated.decorations.216.image" x="939" y="379" width="70" height="49"/>
+    <SubTexture name="generated.decorations.217.image" x="638" y="118" width="126" height="73"/>
+    <SubTexture name="generated.decorations.218.image" x="1638" y="51" width="103" height="47"/>
+    <SubTexture name="generated.decorations.219.image" x="1462" y="423" width="54" height="57"/>
+    <SubTexture name="generated.decorations.220.image" x="904" y="131" width="34" height="31"/>
+    <SubTexture name="generated.decorations.221.image" x="1931" y="492" width="49" height="47"/>
+    <SubTexture name="generated.decorations.222.image" x="1767" y="633" width="43" height="28"/>
+    <SubTexture name="generated.decorations.223.image" x="755" y="379" width="98" height="67"/>
+    <SubTexture name="generated.decorations.224.image" x="1072" y="438" width="55" height="55"/>
+    <SubTexture name="generated.decorations.225.image" x="1421" y="182" width="101" height="39"/>
+    <SubTexture name="generated.decorations.226.image" x="422" y="261" width="83" height="62"/>
+    <SubTexture name="generated.decorations.227.image" x="1942" y="51" width="86" height="50"/>
+    <SubTexture name="generated.decorations.228.image" x="997" y="476" width="55" height="55"/>
+    <SubTexture name="generated.decorations.229.image" x="1421" y="141" width="101" height="39"/>
+    <SubTexture name="generated.decorations.23.image" x="1849" y="703" width="38" height="30"/>
+    <SubTexture name="generated.decorations.230.image" x="1289" y="246" width="83" height="62"/>
+    <SubTexture name="generated.decorations.231.image" x="1940" y="154" width="86" height="50"/>
+    <SubTexture name="generated.decorations.232.image" x="1604" y="258" width="77" height="49"/>
+    <SubTexture name="generated.decorations.233.image" x="115" y="364" width="112" height="59"/>
+    <SubTexture name="generated.decorations.234.image" x="940" y="115" width="115" height="95"/>
+    <SubTexture name="generated.decorations.235.image" x="1310" y="101" width="109" height="88"/>
+    <SubTexture name="generated.decorations.236.image" x="1728" y="307" width="77" height="49"/>
+    <SubTexture name="generated.decorations.237.image" x="115" y="303" width="112" height="59"/>
+    <SubTexture name="generated.decorations.238.image" x="1079" y="51" width="115" height="95"/>
+    <SubTexture name="generated.decorations.239.image" x="1422" y="51" width="109" height="88"/>
+    <SubTexture name="generated.decorations.240.image" x="1767" y="633" width="43" height="28"/>
+    <SubTexture name="generated.decorations.241.image" x="1462" y="423" width="54" height="57"/>
+    <SubTexture name="generated.decorations.242.image" x="698" y="504" width="55" height="60"/>
+    <SubTexture name="generated.decorations.243.image" x="1403" y="452" width="56" height="67"/>
+    <SubTexture name="generated.decorations.244.image" x="1571" y="522" width="52" height="51"/>
+    <SubTexture name="generated.decorations.245.image" x="904" y="131" width="34" height="31"/>
+    <SubTexture name="generated.decorations.246.image" x="1931" y="492" width="49" height="47"/>
+    <SubTexture name="generated.decorations.247.image" x="722" y="338" width="31" height="33"/>
+    <SubTexture name="generated.decorations.248.image" x="939" y="379" width="70" height="49"/>
+    <SubTexture name="generated.decorations.249.image" x="638" y="118" width="126" height="73"/>
+    <SubTexture name="generated.decorations.250.image" x="1638" y="51" width="103" height="47"/>
+    <SubTexture name="generated.decorations.251.image" x="622" y="226" width="12" height="9"/>
+    <SubTexture name="generated.decorations.252.image" x="1767" y="663" width="43" height="21"/>
+    <SubTexture name="generated.decorations.253.image" x="755" y="193" width="9" height="7"/>
+    <SubTexture name="generated.decorations.254.image" x="2031" y="44" width="15" height="9"/>
+    <SubTexture name="generated.decorations.255.image" x="1051" y="212" width="23" height="14"/>
+    <SubTexture name="generated.decorations.256.image" x="1240" y="469" width="35" height="13"/>
+    <SubTexture name="generated.decorations.257.image" x="1518" y="304" width="77" height="49"/>
+    <SubTexture name="generated.decorations.258.image" x="1" y="389" width="112" height="59"/>
+    <SubTexture name="generated.decorations.259.image" x="766" y="142" width="115" height="95"/>
+    <SubTexture name="generated.decorations.260.image" x="1196" y="112" width="109" height="88"/>
+    <SubTexture name="generated.decorations.261.image" x="1604" y="258" width="77" height="49"/>
+    <SubTexture name="generated.decorations.262.image" x="115" y="364" width="112" height="59"/>
+    <SubTexture name="generated.decorations.263.image" x="940" y="115" width="115" height="95"/>
+    <SubTexture name="generated.decorations.264.image" x="1310" y="101" width="109" height="88"/>
+    <SubTexture name="generated.decorations.265.image" x="1597" y="309" width="77" height="49"/>
+    <SubTexture name="generated.decorations.266.image" x="1196" y="51" width="112" height="59"/>
+    <SubTexture name="generated.decorations.267.image" x="638" y="193" width="115" height="95"/>
+    <SubTexture name="generated.decorations.268.image" x="1076" y="148" width="109" height="88"/>
+    <SubTexture name="generated.decorations.269.image" x="1728" y="307" width="77" height="49"/>
+    <SubTexture name="generated.decorations.270.image" x="1079" y="51" width="115" height="95"/>
+    <SubTexture name="generated.decorations.271.image" x="1422" y="51" width="109" height="88"/>
+    <SubTexture name="generated.decorations.272.image" x="115" y="303" width="112" height="59"/>
+    <SubTexture name="generated.decorations.273.image" x="698" y="504" width="55" height="60"/>
+    <SubTexture name="generated.decorations.274.image" x="1462" y="423" width="54" height="57"/>
+    <SubTexture name="generated.decorations.275.image" x="1767" y="633" width="43" height="28"/>
+    <SubTexture name="generated.decorations.276.image" x="904" y="131" width="34" height="31"/>
+    <SubTexture name="generated.decorations.277.image" x="1931" y="492" width="49" height="47"/>
+    <SubTexture name="generated.decorations.278.image" x="1403" y="452" width="56" height="67"/>
+    <SubTexture name="generated.decorations.279.image" x="1571" y="522" width="52" height="51"/>
+    <SubTexture name="generated.decorations.280.image" x="755" y="193" width="9" height="7"/>
+    <SubTexture name="generated.decorations.281.image" x="622" y="226" width="12" height="9"/>
+    <SubTexture name="generated.decorations.282.image" x="2031" y="44" width="15" height="9"/>
+    <SubTexture name="generated.decorations.283.image" x="1051" y="212" width="23" height="14"/>
+    <SubTexture name="generated.decorations.284.image" x="1240" y="469" width="35" height="13"/>
+    <SubTexture name="generated.decorations.285.image" x="1767" y="663" width="43" height="21"/>
+    <SubTexture name="generated.decorations.286.image" x="722" y="338" width="31" height="33"/>
+    <SubTexture name="generated.decorations.287.image" x="939" y="379" width="70" height="49"/>
+    <SubTexture name="generated.decorations.288.image" x="638" y="118" width="126" height="73"/>
+    <SubTexture name="generated.decorations.289.image" x="1638" y="51" width="103" height="47"/>
+    <SubTexture name="generated.decorations.290.image" x="493" y="535" width="63" height="48"/>
+    <SubTexture name="generated.decorations.291.image" x="599" y="593" width="63" height="48"/>
+    <SubTexture name="generated.decorations.292.image" x="158" y="674" width="40" height="41"/>
+    <SubTexture name="generated.decorations.293.image" x="1830" y="580" width="48" height="41"/>
+    <SubTexture name="generated.decorations.294.image" x="1403" y="363" width="57" height="47"/>
+    <SubTexture name="generated.decorations.295.image" x="1880" y="536" width="49" height="47"/>
+    <SubTexture name="generated.decorations.296.image" x="1970" y="718" width="44" height="43"/>
+    <SubTexture name="generated.decorations.43.image" x="1728" y="462" width="51" height="65"/>
+    <SubTexture name="generated.decorations.44.image" x="1671" y="498" width="51" height="65"/>
+    <SubTexture name="generated.decorations.45.image" x="1781" y="465" width="51" height="65"/>
+    <SubTexture name="generated.decorations.46.image" x="301" y="573" width="61" height="56"/>
+    <SubTexture name="generated.decorations.47.image" x="364" y="629" width="61" height="56"/>
+    <SubTexture name="generated.decorations.48.image" x="301" y="631" width="61" height="56"/>
+    <SubTexture name="generated.decorations.49.image" x="1230" y="394" width="57" height="51"/>
+    <SubTexture name="generated.decorations.5.image" x="202" y="636" width="61" height="56"/>
+    <SubTexture name="generated.decorations.50.image" x="1931" y="541" width="47" height="56"/>
+    <SubTexture name="generated.decorations.51.image" x="1057" y="115" width="18" height="15"/>
+    <SubTexture name="generated.decorations.52.image" x="722" y="373" width="31" height="17"/>
+    <SubTexture name="generated.decorations.53.image" x="1812" y="667" width="43" height="21"/>
+    <SubTexture name="generated.decorations.54.image" x="1277" y="469" width="35" height="13"/>
+    <SubTexture name="generated.decorations.55.image" x="1051" y="228" width="23" height="14"/>
+    <SubTexture name="generated.decorations.56.image" x="1057" y="149" width="15" height="9"/>
+    <SubTexture name="generated.decorations.57.image" x="622" y="237" width="12" height="9"/>
+    <SubTexture name="generated.decorations.58.image" x="755" y="202" width="9" height="7"/>
+    <SubTexture name="generated.decorations.59.image" x="1482" y="331" width="34" height="31"/>
+    <SubTexture name="generated.decorations.60.image" x="1777" y="584" width="49" height="47"/>
+    <SubTexture name="generated.decorations.61.image" x="722" y="392" width="30" height="26"/>
+    <SubTexture name="generated.decorations.62.image" x="1968" y="807" width="36" height="29"/>
+    <SubTexture name="generated.decorations.63.image" x="1929" y="625" width="46" height="38"/>
+    <SubTexture name="generated.decorations.64.image" x="1808" y="712" width="38" height="30"/>
+    <SubTexture name="generated.decorations.65.image" x="1889" y="726" width="38" height="30"/>
+    <SubTexture name="generated.decorations.66.image" x="1848" y="735" width="38" height="30"/>
+    <SubTexture name="generated.decorations.67.image" x="1965" y="838" width="36" height="28"/>
+    <SubTexture name="generated.decorations.68.image" x="2003" y="840" width="36" height="28"/>
+    <SubTexture name="generated.decorations.69.image" x="1202" y="447" width="36" height="28"/>
+    <SubTexture name="generated.decorations.70.image" x="1804" y="438" width="72" height="25"/>
+    <SubTexture name="generated.decorations.71.image" x="1533" y="51" width="103" height="48"/>
+    <SubTexture name="generated.decorations.72.image" x="508" y="62" width="132" height="48"/>
+    <SubTexture name="generated.decorations.73.image" x="1886" y="365" width="74" height="44"/>
+    <SubTexture name="generated.decorations.74.image" x="1523" y="258" width="79" height="44"/>
+    <SubTexture name="generated.decorations.75.image" x="940" y="1" width="137" height="112"/>
+    <SubTexture name="generated.decorations.76.image" x="612" y="395" width="96" height="43"/>
+    <SubTexture name="generated.decorations.77.image" x="774" y="62" width="128" height="78"/>
+    <SubTexture name="generated.decorations.78.image" x="508" y="112" width="128" height="112"/>
+    <SubTexture name="generated.decorations.79.image" x="303" y="1" width="203" height="179"/>
+    <SubTexture name="generated.decorations.80.image" x="1929" y="599" width="47" height="24"/>
+    <SubTexture name="generated.decorations.81.image" x="1278" y="447" width="36" height="20"/>
+    <SubTexture name="generated.decorations.82.image" x="883" y="142" width="17" height="15"/>
+    <SubTexture name="generated.decorations.83.image" x="1516" y="508" width="53" height="27"/>
+    <SubTexture name="generated.decorations.84.image" x="1804" y="395" width="74" height="41"/>
+    <SubTexture name="generated.decorations.85.image" x="1940" y="103" width="90" height="49"/>
+    <SubTexture name="generated.decorations.86.image" x="1808" y="690" width="39" height="20"/>
+    <SubTexture name="generated.decorations.87.image" x="558" y="535" width="39" height="62"/>
+    <SubTexture name="generated.decorations.88.image" x="1409" y="223" width="85" height="50"/>
+    <SubTexture name="generated.decorations.89.image" x="1742" y="135" width="91" height="68"/>
+    <SubTexture name="generated.decorations.90.image" x="1" y="303" width="112" height="84"/>
+    <SubTexture name="generated.decorations.91.image" x="1" y="450" width="105" height="55"/>
+    <SubTexture name="generated.decorations.92.image" x="1807" y="363" width="77" height="30"/>
+    <SubTexture name="generated.decorations.93.image" x="1575" y="470" width="53" height="50"/>
+    <SubTexture name="generated.decorations.94.image" x="507" y="292" width="106" height="46"/>
+    <SubTexture name="generated.decorations.95.image" x="1636" y="144" width="90" height="55"/>
+    <SubTexture name="generated.decorations.96.image" x="615" y="338" width="105" height="55"/>
+    <SubTexture name="generated.decorations.97.image" x="1633" y="424" width="39" height="62"/>
+    <SubTexture name="generated.decorations.98.image" x="214" y="482" width="87" height="66"/>
+    <SubTexture name="generated.decorations.99.image" x="1636" y="201" width="90" height="55"/>
+</TextureAtlas>
