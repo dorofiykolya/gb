@@ -11,6 +11,12 @@ package embeds
 		static public const WAITING_TIMER:Class = null;
 		static public const RESOURCE_BUBBLE:Class = null;
 		
+		[Embed(source = "layouts/main_background.json", mimeType = "application/octet-stream")]
+		public static const main_background:Class;
+		
+		[Embed(source = "layouts/window_base.json", mimeType = "application/octet-stream")]
+		public static const window_base:Class;
+		
 		public function LayoutEmbeds()
 		{
 		

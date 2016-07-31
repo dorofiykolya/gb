@@ -1,0 +1,36 @@
+{
+  "layout":{
+    "children":[
+      {
+        "cls":"feathers.display.TiledImage",
+        "constructorParams":[
+          {
+            "cls":"starling.textures.Texture",
+            "textureName":"battlefield.summer"
+          }
+        ],
+        "customParams":{},
+        "params":{
+          "height":800,
+          "name":"content",
+          "width":800
+        }
+      }
+    ],
+    "cls":"starling.display.SpriteBox",
+    "customParams":{},
+    "params":{
+      "contentHeight":null,
+      "contentWidth":null,
+      "name":"root"
+    }
+  },
+  "setting":{
+    "canvasColor":16777215,
+    "canvasSize":{
+      "x":800,
+      "y":800
+    }
+  },
+  "version":"1.0"
+}

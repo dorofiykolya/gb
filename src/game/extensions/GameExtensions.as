@@ -10,6 +10,7 @@ package game.extensions
 	import game.configurations.HotKeyConfiguration;
 	import game.managers.csv.CSVParserEmbeds;
 	import game.managers.localization.LocalizationProvider;
+	import game.managers.screens.ScreenManager;
 	import game.modules.alert.AlertExtension;
 	import game.modules.assets.AssetExtension;
 	import game.modules.csv.CSVExtension;
@@ -21,6 +22,7 @@ package game.extensions
 	import game.modules.sounds.SoundExtension;
 	import game.modules.states.StateExtension;
 	import game.modules.versions.VersionExtension;
+	import game.mvc.view.ViewContext;
 	import game.net.NetErrorListener;
 	import game.net.NetListener;
 	import game.net.ServerRequest;
@@ -58,9 +60,15 @@ package game.extensions
 			 * @LINKS
 			 */
 			
+			// view context
 			context.install(GameViewContext);
+			context.install(new Link(GameViewContext, ViewContext));
 			
+			// configurations
 			context.install(new Configuration());
+			
+			// screens
+			context.install(ScreenManager);
 			
 			// net
 			context.install(new Link(NetListener, INetHandler, "netListener"));
@@ -77,7 +85,6 @@ package game.extensions
 			context.install(ConsoleCommandsConfiguration);
 			context.install(HotKeyConfiguration);
 			context.install(ConnectionConfiguration);
-			
 		
 		}
 	
