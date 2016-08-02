@@ -4,13 +4,24 @@ package game.extensions
 	import common.context.extensions.IExtension;
 	import common.context.links.Link;
 	import embeds.csv.CSVEmbeds;
-	import game.Configuration;
+	import game.configurations.Configuration;
 	import game.configurations.ConnectionConfiguration;
 	import game.configurations.ConsoleCommandsConfiguration;
 	import game.configurations.HotKeyConfiguration;
+	import game.managers.auth.AuthExtension;
+	import game.managers.checksum.ChecksumExtension;
 	import game.managers.csv.CSVParserEmbeds;
+	import game.managers.dragonBones.DragonBonesExtension;
 	import game.managers.localization.LocalizationProvider;
+	import game.managers.navigations.NavigationExtension;
+	import game.managers.notifications.NotificationExtension;
+	import game.managers.purchase.PurchaseExtension;
+	import game.managers.ratings.RatingManager;
 	import game.managers.screens.ScreenManager;
+	import game.managers.supersonic.SupersonicExtension;
+	import game.managers.top.TopManager;
+	import game.managers.users.UserManager;
+	import game.managers.users.UserSettings;
 	import game.modules.alert.AlertExtension;
 	import game.modules.assets.AssetExtension;
 	import game.modules.csv.CSVExtension;
@@ -55,6 +66,13 @@ package game.extensions
 			context.install(new SoundExtension());
 			context.install(new VersionExtension());
 			context.install(new AlertExtension());
+			context.install(new AuthExtension());
+			context.install(new NavigationExtension());
+			context.install(new ChecksumExtension());
+			context.install(new DragonBonesExtension());
+			context.install(new NotificationExtension());
+			context.install(new PurchaseExtension());
+			context.install(new SupersonicExtension());
 			
 			/**
 			 * @LINKS
@@ -69,6 +87,13 @@ package game.extensions
 			
 			// screens
 			context.install(ScreenManager);
+			
+			// user
+			context.install(UserManager);
+			context.install(UserSettings);
+			
+			context.install(RatingManager);
+			context.install(TopManager);
 			
 			// net
 			context.install(new Link(NetListener, INetHandler, "netListener"));

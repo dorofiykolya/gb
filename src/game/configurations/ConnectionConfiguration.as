@@ -2,7 +2,7 @@ package game.configurations
 {
 	import common.context.IContext;
 	import common.events.IDispatcher;
-	import game.Configuration;
+	import game.configurations.Configuration;
 	import game.modules.logs.ILogger;
 	import game.modules.net.ISocketConnection;
 	import game.modules.net.events.NetEvent;

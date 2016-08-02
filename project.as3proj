@@ -32,6 +32,8 @@
     <class path="submodules\as3-signals\src" />
     <class path="resources\src" />
     <class path="submodules\starling-game-mvc\src" />
+    <class path="submodules\dragonbones\Starling\Starling_1.x" />
+    <class path="submodules\dragonbones\DragonBones\src" />
   </classpaths>
   <!-- Build options -->
   <build>

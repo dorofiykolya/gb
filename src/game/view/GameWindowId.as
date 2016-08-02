@@ -9,6 +9,7 @@ package game.view
 	public class GameWindowId extends game.modules.windows.WindowId
 	{
 		static public const CONNECTION_LOST:GameWindowId = new GameWindowId("connectionLost");
+		static public const EXIT:GameWindowId = new GameWindowId("exit");
 		
 		public function GameWindowId(value:Object)
 		{
