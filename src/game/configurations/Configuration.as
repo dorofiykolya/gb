@@ -1,11 +1,12 @@
-package game.configurations 
+package game.configurations
 {
 	import common.system.Environment;
+	
 	/**
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class Configuration 
+	public class Configuration
 	{
 		public var productionHost:String;
 		public var productionPort:String;
@@ -28,11 +29,15 @@ package game.configurations
 		public var openStartWindow:Boolean = true;
 		public var forseExitFromFight:Boolean = Environment.isDebugger && Environment.isStandAlone;
 		
-		public function Configuration() 
-		{
-			
-		}
+		// app links
+		public const ANDROID_APP_LINK:String = "androidAppLink";
+		public const IOS_APP_LINK:String = "iosAppLink";
 		
+		public function Configuration()
+		{
+		
+		}
+	
 	}
 
 }

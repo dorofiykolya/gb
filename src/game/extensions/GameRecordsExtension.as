@@ -2,6 +2,7 @@ package game.extensions
 {
 	import common.context.IContext;
 	import common.context.extensions.IExtension;
+	import game.records.buildings.BuildingsRecordMap;
 	import game.records.localizations.LocalizationRecordMap;
 	
 	/**
@@ -21,6 +22,7 @@ package game.extensions
 		public function extend(context:IContext):void
 		{
 			context.install(LocalizationRecordMap);
+			context.install(BuildingsRecordMap);
 		}
 	
 	}
