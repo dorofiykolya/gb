@@ -1,4 +1,4 @@
-package game.records.units
+package game.records.modes
 {
 	import flash.utils.Dictionary;
 	
@@ -6,27 +6,28 @@ package game.records.units
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class UnitRecordMap
+	public class ModeRecordMap
 	{
 		private var _map:Dictionary;
 		
-		public function UnitRecordMap()
+		public function ModeRecordMap()
 		{
 			_map = new Dictionary();
 		}
 		
-		public function getById(id:int):UnitRecord
+		public function getById(id:int):ModeRecord
 		{
 			return _map[id];
 		}
 		
-		public function parse(list:Vector.<UnitRecord>):void
+		public function parse(list:Vector.<ModeRecord>):void
 		{
-			for each (var item:UnitRecord in list)
+			for each (var item:ModeRecord in list)
 			{
 				_map[item.id] = item;
 			}
 		}
+	
 	}
 
 }

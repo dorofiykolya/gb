@@ -1,20 +1,20 @@
-package game.records.units
+package game.records.spells
 {
 	
 	/**
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class UnitLevelRecord
+	public class SpellLevelRecord
 	{
 		public var icon:String;
 		public var view:String;
-		public var hp:int;
 		public var damage:int;
+		public var speed:int;
+		public var hp:int;
 		public var defense:int;
-		public var magicDefense:int;
 		
-		public function UnitLevelRecord()
+		public function SpellLevelRecord()
 		{
 		
 		}

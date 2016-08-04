@@ -4,6 +4,10 @@ package game.extensions
 	import common.context.extensions.IExtension;
 	import game.records.buildings.BuildingsRecordMap;
 	import game.records.localizations.LocalizationRecordMap;
+	import game.records.locations.LocationRecordMap;
+	import game.records.modes.ModeRecordMap;
+	import game.records.spells.SpellRecordMap;
+	import game.records.units.UnitRecordMap;
 	
 	/**
 	 * ...
@@ -23,6 +27,10 @@ package game.extensions
 		{
 			context.install(LocalizationRecordMap);
 			context.install(BuildingsRecordMap);
+			context.install(UnitRecordMap);
+			context.install(SpellRecordMap);
+			context.install(ModeRecordMap);
+			context.install(LocationRecordMap);
 		}
 	
 	}
