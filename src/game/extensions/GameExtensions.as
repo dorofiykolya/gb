@@ -4,13 +4,17 @@ package game.extensions
 	import common.context.extensions.IExtension;
 	import common.context.links.Link;
 	import embeds.csv.CSVEmbeds;
+	import game.configurations.CommandConfiguration;
 	import game.configurations.Configuration;
 	import game.configurations.ConnectionConfiguration;
 	import game.configurations.ConsoleCommandsConfiguration;
 	import game.configurations.HotKeyConfiguration;
+	import game.managers.animations.AnimationExtension;
+	import game.managers.assets.AssetsExtension;
 	import game.managers.auth.AuthExtension;
 	import game.managers.checksum.ChecksumExtension;
 	import game.managers.csv.CSVParserEmbeds;
+	import game.managers.debug.DebugManager;
 	import game.managers.dragonBones.DragonBonesExtension;
 	import game.managers.localization.LocalizationProvider;
 	import game.managers.navigations.NavigationExtension;
@@ -73,6 +77,8 @@ package game.extensions
 			context.install(new NotificationExtension());
 			context.install(new PurchaseExtension());
 			context.install(new SupersonicExtension());
+			context.install(new AnimationExtension());
+			context.install(new AssetsExtension());
 			
 			/**
 			 * @LINKS
@@ -104,12 +110,16 @@ package game.extensions
 			context.install(new Link(new LocalizationProvider, ILocalizationProvider));
 			context.install(LocalizationManager);
 			
+			// debug
+			context.install(DebugManager);
+			
 			/**
 			 * @CONFIGURATIONS
 			 */
 			context.install(ConsoleCommandsConfiguration);
 			context.install(HotKeyConfiguration);
 			context.install(ConnectionConfiguration);
+			context.install(CommandConfiguration);
 		
 		}
 	

@@ -11,16 +11,16 @@ package game.configurations
 	import game.commands.ResourceLoadCommand;
 	import game.commands.ResourceStartLoadCommand;
 	import game.commands.ScreenChangeCommand;
-	import game.commands.ViewContextInitializedCommand;
-	import game.locations.events.LocationEvent;
-	import game.locations.events.LocationModelEvent;
+	import game.mvc.events.ViewContextEvent;
+	//import game.locations.events.LocationEvent;
+	//import game.locations.events.LocationModelEvent;
 	import game.managers.auth.AuthEvent;
 	import game.managers.screens.ScreenEvent;
 	import game.managers.users.UserEvent;
 	import game.modules.assets.AssetEvent;
 	import game.modules.net.events.NetEvent;
 	import game.modules.resources.ResourceEvent;
-	import game.view.events.ViewContextEvent;
+	//import game.view.events.ViewContextEvent;
 	import mvc.commands.IEventCommandMap;
 	import mvc.configurations.IConfigurable;
 	
@@ -54,15 +54,13 @@ package game.configurations
 			
 			command.map(UserEvent.INITIALIZE, UserEvent).add(InitializeCommand);
 			
-			command.map(LocationEvent.LOADED, LocationEvent).add(FightStartCommand);
+			//command.map(LocationEvent.LOADED, LocationEvent).add(FightStartCommand);
 			
 			command.map(ScreenEvent.CHANGE, ScreenEvent).add(ScreenChangeCommand);
 			
 			command.map(NetEvent.CLOSE, NetEvent).add(ConnectionCloseCommand);
 			
-			command.map(LocationModelEvent.COMPLETE, LocationModelEvent).add(LocationLoadedCommand);
-			
-			command.map(ViewContextEvent.INITIALIZED, ViewContextEvent).add(ViewContextInitializedCommand, true);
+			//command.map(LocationModelEvent.COMPLETE, LocationModelEvent).add(LocationLoadedCommand);
 		}
 	}
 }

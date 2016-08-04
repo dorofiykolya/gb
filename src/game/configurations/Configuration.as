@@ -8,6 +8,9 @@ package game.configurations
 	 */
 	public class Configuration
 	{
+		public var host:String;
+		public var port:int;
+		
 		public var productionHost:String;
 		public var productionPort:String;
 		public var developerId:String;
