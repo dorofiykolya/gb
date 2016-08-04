@@ -27,6 +27,7 @@ package game.extensions
 	import game.managers.users.UserManager;
 	import game.managers.users.UserSettings;
 	import game.modules.alert.AlertExtension;
+	import game.modules.applications.IdleManager;
 	import game.modules.assets.AssetExtension;
 	import game.modules.csv.CSVExtension;
 	import game.modules.localizations.ILocalizationProvider;
@@ -112,6 +113,9 @@ package game.extensions
 			
 			// debug
 			context.install(DebugManager);
+			
+			// tools
+			install(IdleManager);
 			
 			/**
 			 * @CONFIGURATIONS

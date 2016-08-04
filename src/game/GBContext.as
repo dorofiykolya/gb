@@ -5,7 +5,6 @@ package game
 	import game.extensions.GameExtensions;
 	import game.extensions.GameRecordsExtension;
 	import game.modules.applications.IApplicationDescription;
-	import game.modules.applications.IdleManager;
 	import game.mvc.ContextConfiguration;
 	import game.mvc.GameContext;
 	import game.mvc.events.GameContextEvent;
@@ -26,7 +25,6 @@ package game
 		
 		private function onStageReady():void
 		{
-			install(IdleManager);
 			install(new Link(GameDescription, IApplicationDescription));
 			install(new GameExtensions());
 			install(new GameRecordsExtension());
