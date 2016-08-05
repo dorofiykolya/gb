@@ -31,6 +31,7 @@ package game.extensions
 	import game.modules.assets.AssetExtension;
 	import game.modules.csv.CSVExtension;
 	import game.modules.localizations.ILocalizationProvider;
+	import game.modules.localizations.LocalizationExtension;
 	import game.modules.localizations.LocalizationManager;
 	import game.modules.net.ConnectionExtension;
 	import game.modules.net.INetErrorHandler;
@@ -80,6 +81,7 @@ package game.extensions
 			context.install(new SupersonicExtension());
 			context.install(new AnimationExtension());
 			context.install(new AssetsExtension());
+			context.install(new LocalizationExtension());
 			
 			/**
 			 * @LINKS
@@ -107,15 +109,11 @@ package game.extensions
 			context.install(new Link(NetErrorListener, INetErrorHandler, "netErrorListener"));
 			context.install(ServerRequest);
 			
-			// localization
-			context.install(new Link(new LocalizationProvider, ILocalizationProvider));
-			context.install(LocalizationManager);
-			
 			// debug
 			context.install(DebugManager);
 			
 			// tools
-			install(IdleManager);
+			context.install(IdleManager);
 			
 			/**
 			 * @CONFIGURATIONS

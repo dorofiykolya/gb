@@ -31,7 +31,7 @@ package game.view.modules.toolTips
 			
 			if (!Environment.isMobile)
 			{
-				manager.startListen();
+				//manager.startListen();
 			}
 		}
 		
