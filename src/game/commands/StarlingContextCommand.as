@@ -1,19 +1,12 @@
-/**
- * Jenek Lukashuk on 31.10.2014.
- */
 package game.commands
 {
 	import common.events.Event;
 	import common.events.IDispatcher;
-	import game.configurations.AssetsConfiguration;
 	import game.modules.assets.AssetEvent;
 	import game.modules.assets.IAssetsManager;
-	import game.modules.resources.LocalDataLoaderManager;
 	import game.modules.logs.ILogger;
 	import game.modules.preloaders.PreloaderManager;
-	import game.modules.sounds.Channel;
-	import game.modules.sounds.SoundManager;
-	import game.Sounds;
+	import game.modules.resources.LocalDataLoaderManager;
 	import mvc.commands.ICommand;
 	
 	public class StarlingContextCommand implements ICommand
@@ -23,11 +16,7 @@ package game.commands
 		[Inject]
 		public var assetManager:IAssetsManager;
 		[Inject]
-		public var assetsConfiguration:AssetsConfiguration;
-		[Inject]
 		public var preloaderManager:PreloaderManager;
-		[Inject]
-		public var soundManager:SoundManager;
 		[Inject]
 		public var logger:ILogger;
 		[Inject]
@@ -39,11 +28,8 @@ package game.commands
 		
 		public function execute():void
 		{
-			assetsConfiguration.loadAll();
 			preloaderManager.show();
 			preloaderManager.setProgress(0.25);
-			
-			soundManager.getChannel(Channel.FX).play(Sounds.SOUND_START_GAME);
 			
 			if (localLoader && !localLoader.completed)
 			{

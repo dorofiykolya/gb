@@ -2,16 +2,21 @@ package game.configurations
 {
 	import common.context.IContext;
 	import common.events.IDispatcher;
+	import game.commands.AssetLoadCommand;
 	import game.commands.AuthSuccessCommand;
 	import game.commands.ConnectToServerCommand;
 	import game.commands.ConnectionCloseCommand;
+	import game.commands.Context3DCommand;
 	import game.commands.FightStartCommand;
 	import game.commands.InitializeCommand;
 	import game.commands.LocationLoadedCommand;
 	import game.commands.ResourceLoadCommand;
 	import game.commands.ResourceStartLoadCommand;
 	import game.commands.ScreenChangeCommand;
+	import game.commands.StarlingContextCommand;
+	import game.commands.StarlingInitializeContext3DCommand;
 	import game.mvc.events.ViewContextEvent;
+	import starling.events.Event;
 	//import game.locations.events.LocationEvent;
 	//import game.locations.events.LocationModelEvent;
 	import game.managers.auth.AuthEvent;
@@ -44,10 +49,10 @@ package game.configurations
 		
 		public function config(context:IContext):void
 		{
-			//command.map(AssetEvent.LOADED, AssetEvent).add(AssetLoadCommand, true);
-			command.map(ResourceEvent.COMPLETE, ResourceEvent).add(ResourceLoadCommand, true);
+			command.map(AssetEvent.LOADED, AssetEvent).add(AssetLoadCommand, true);
+			//command.map(ResourceEvent.COMPLETE, ResourceEvent).add(ResourceLoadCommand, true);
 			
-			command.map(AssetEvent.LOADED, AssetEvent).add(ResourceStartLoadCommand, true);
+			//command.map(AssetEvent.LOADED, AssetEvent).add(ResourceStartLoadCommand, true);
 			command.map(AssetEvent.LOADED, AssetEvent).add(ConnectToServerCommand, true);
 			
 			command.map(AuthEvent.SUCCESS, AuthEvent).add(AuthSuccessCommand);
@@ -61,6 +66,11 @@ package game.configurations
 			command.map(NetEvent.CLOSE, NetEvent).add(ConnectionCloseCommand);
 			
 			//command.map(LocationModelEvent.COMPLETE, LocationModelEvent).add(LocationLoadedCommand);
+			
+			command.map(Event.CONTEXT3D_CREATE).add(StarlingContextCommand, true);
+            command.map(Event.CONTEXT3D_CREATE).add(StarlingInitializeContext3DCommand, true);
+            command.map(Event.CONTEXT3D_CREATE).add(Context3DCommand);
+			
 		}
 	}
 }

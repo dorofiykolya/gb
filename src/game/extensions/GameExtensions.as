@@ -36,6 +36,7 @@ package game.extensions
 	import game.modules.net.ConnectionExtension;
 	import game.modules.net.INetErrorHandler;
 	import game.modules.net.INetHandler;
+	import game.modules.preloaders.PreloaderManager;
 	import game.modules.sounds.SoundExtension;
 	import game.modules.states.StateExtension;
 	import game.modules.versions.VersionExtension;

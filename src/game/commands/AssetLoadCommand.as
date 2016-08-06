@@ -1,8 +1,8 @@
 package game.commands
 {
+	import game.mvc.view.ViewContext;
 	import game.modules.preloaders.PreloaderManager;
 	import game.modules.resources.ResourceManager;
-	import game.view.ViewContext;
 	import mvc.commands.ICommand;
 	
 	/**

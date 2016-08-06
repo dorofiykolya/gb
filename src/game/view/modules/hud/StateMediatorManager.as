@@ -31,6 +31,7 @@ package game.view.modules.hud
 		public function map(mediator:Class, view:Class, provider:IStateTransitionProvider, ... states):void
 		{
 			_mediatorContext.injector.inject(provider);
+			_mediatorContext.map(mediator).target(view, provider);
 			
 			if (states.length == 1)
 			{

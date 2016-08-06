@@ -30,7 +30,7 @@ package game.view
 			// configurations
 			install(HUDMediatorConfiguration);
 			
-			initialize();
+			//initialize();
 		}
 	
 	}

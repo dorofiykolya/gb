@@ -4,6 +4,8 @@ package game.managers.assets
 	import common.events.IDispatcher;
 	import common.system.ClassType;
 	import common.system.reflection.Constant;
+	import embeds.AtlasEmbeds;
+	import embeds.FontEmbeds;
 	import embeds.LayoutEmbeds;
 	import game.modules.assets.IAssetsManager;
 	import game.modules.layouts.ILayoutProvider;
@@ -38,43 +40,8 @@ package game.managers.assets
 		
 		public function config(context:IContext):void
 		{
-			//var uiScale:Number = Number(String(new ConfigurationEmbeds.uiScale));
-			//var unitScale:Number = Number(String(new ConfigurationEmbeds.unitScale));
-			//var effectScale:Number = Number(String(new ConfigurationEmbeds.effectScale));
-			//var shadowScale:Number = Number(String(new ConfigurationEmbeds.shadowScale));
-			//var backgroundsScale:Number = Number(String(new ConfigurationEmbeds.backgroundsScale));
-			//var buildingsScale:Number = Number(String(new ConfigurationEmbeds.buildingsScale));
-			//
-			//mapLayoutFromClassEmbeds(LayoutEmbeds);
-			//mapLayoutFromClassEmbeds(EffectLayoutEmbeds);
-			//
-			//loadFromClassEmbeds(UIEmbeds, uiScale);
-			//loadFromClassEmbeds(UIDBEmbeds, 1.0);
-			//
-			//CONFIG::EMBED
-			//{
-			//loadFromClassEmbeds(BackgroundsExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(BarrelsExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(BombsExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(BuildingsExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(Cards1ExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(Cards2ExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(EffectsExternalEmbeds, 0.46875);
-			//loadFromClassEmbeds(ShadowsExternalEmbeds, 0.2);
-			//loadFromClassEmbeds(SoundsExternalEmbeds, 1.0);
-			//}
-		
-			//loadFromClassEmbeds(AtlasesEmbeds, unitScale);
-			//loadFromClassEmbeds(EffectEmbeds, effectScale);
-			//loadFromClassEmbeds(ShadowEmbeds, shadowScale);
-			//loadFromClassEmbeds(BackgroundEmbeds, backgroundsScale);
-		
-			//loadFromClassEmbeds(UnitEmbeds, unitScale);
-			//loadFromClassEmbeds(BuildingsEmbeds, buildingsScale);
-		
-			//loadFromClassEmbeds(TempEmbeds);
-			//loadFromClassEmbeds(FontEmbeds);
-			//loadFromClassEmbeds(ParticleEmbeds);
+			loadFromClassEmbeds(AtlasEmbeds);
+			loadFromClassEmbeds(FontEmbeds);
 		}
 		
 		private function mapLayoutFromClassEmbeds(type:Class):void

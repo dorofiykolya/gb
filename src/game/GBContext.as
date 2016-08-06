@@ -4,7 +4,9 @@ package game
 	import common.system.application.Application;
 	import game.extensions.GameExtensions;
 	import game.extensions.GameRecordsExtension;
+	import game.flash.PreloaderView;
 	import game.modules.applications.IApplicationDescription;
+	import game.modules.preloaders.PreloaderManager;
 	import game.mvc.ContextConfiguration;
 	import game.mvc.GameContext;
 	import game.mvc.events.GameContextEvent;
@@ -26,6 +28,7 @@ package game
 		private function onStageReady():void
 		{
 			install(new Link(GameDescription, IApplicationDescription));
+			install(new PreloaderManager(nativeStage, new PreloaderView()));
 			install(new GameExtensions());
 			install(new GameRecordsExtension());
 		}
