@@ -12,10 +12,21 @@ package game.managers.battles.engine
 		private var _engine:BattleEngine;
 		private var _transform:BattleTransform;
 		private var _objectId:int;
+		private var _ownerId:int;
 		
 		public function BattleObject()
 		{
 			_transform = new BattleTransform(this);
+		}
+		
+		public function get ownerId():int
+		{
+			return _ownerId;
+		}
+		
+		protected function setOwnerId(value:int):void
+		{
+			_ownerId = value;
 		}
 		
 		public function get objectId():int
@@ -37,7 +48,5 @@ package game.managers.battles.engine
 		{
 			return root as BattleEngine;
 		}
-	
 	}
-
 }

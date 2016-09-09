@@ -37,6 +37,13 @@ package game.managers.battles.engine
 			return _queue.length == 0;
 		}
 		
+		public function enqueueByFactory(type:Class):OutputEvent
+		{
+			var result:OutputEvent = _factory.getInstance(type);
+			_queue.push(result);
+			return result;
+		}
+		
 		public function get factory():BattleOutputEventFactory
 		{
 			return _factory;

@@ -34,6 +34,22 @@ package game.managers.battles.engine
 			return result;
 		}
 		
+		public function getActorsInRange(x:Number, y:Number, range:Number, type:Class = null, result:Vector.<BattleObject> = null):Vector.<BattleObject>
+		{
+			if (result == null) result = new Vector.<BattleObject>();
+			for each (var item:BattleObject in getComponents(type, false, _temp))
+			{
+				if (type == null || item is type)
+				{
+					if (item.transform.positionDistanceTo(x, y) <= range)
+					{
+						result.push(item);
+					}
+				}
+			}
+			return result;
+		}
+		
 		public function get group():ActorsGroup
 		{
 			return _group;

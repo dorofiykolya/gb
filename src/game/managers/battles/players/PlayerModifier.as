@@ -15,7 +15,7 @@ package game.managers.battles.players
 		
 		}
 		
-		public function calculate(type:ModifierType, value:Number):Number
+		public function calculate(type:ModifierType, value:Number, id:int = 0):Number
 		{
 			return value;
 		}

@@ -12,12 +12,12 @@ package game.managers.battles.modules
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class BattleObjectModule extends BattleModule
+	public class BattleUpdateObjectModule extends BattleModule
 	{
 		private var _list:Vector.<BattleActorsGroup> = new Vector.<BattleActorsGroup>()
 		private var _temp:Vector.<Component> = new Vector.<Component>();
 		
-		public function BattleObjectModule()
+		public function BattleUpdateObjectModule()
 		{
 			super();
 		}

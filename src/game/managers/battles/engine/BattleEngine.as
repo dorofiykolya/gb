@@ -25,12 +25,17 @@ package game.managers.battles.engine
 		private var _actors:BattleActors;
 		private var _context:BattleContext;
 		private var _modules:BattleModulesProcessor;
+		private var _battleDamageProcessor:BattleDamages;
 		private var _players:BattlePlayers;
 		private var _output:BattleOutput;
 		
 		public function BattleEngine(config:BattleConfiguration, commandsProvider:BattleCommandsProvider, modulesProvider:BattleModulesProvider)
 		{
 			_configuration = config;
+			
+			_context = new BattleContext();
+			_context._configuration = _configuration;
+			_context._battleEngine = this;
 			
 			_state = new BattleState(_configuration);
 			_actionQueue = new BattleActionQueue(_configuration);
@@ -39,10 +44,26 @@ package game.managers.battles.engine
 			_actors = new BattleActors(this);
 			_players = new BattlePlayers(_configuration, this);
 			_output = new BattleOutput();
-			_context = new BattleContext(_configuration, this, _actors, _state, _players, _output);
+			_battleDamageProcessor = new BattleDamages(_context);
 			_modules = new BattleModulesProcessor(_context, modulesProvider);
 			
+			_context._actors = _actors;
+			_context._state = _state;
+			_context._players = _players;
+			_context._output = _output;
+			_context._damage = _battleDamageProcessor;
+			
 			_actionEngine.enqueue(new BattleStartAction());
+		}
+		
+		public function get context():BattleContext
+		{
+			return _context;
+		}
+		
+		public function get players():BattlePlayers
+		{
+			return _players;
 		}
 		
 		public function get output():BattleOutput
@@ -83,18 +104,19 @@ package game.managers.battles.engine
 				tick = _configuration.maxTicks;
 				finish = true;
 			}
-			while (true)
+			var currentTick:int = _state.tick;
+			while (++currentTick < tick)
 			{
+				_state.updateTick(currentTick);
+				_modules.preTick(_context, currentTick, _state.deltaTick);
 				var currentAction:BattleAction;
-				if (!_state.isFinished && _actionQueue.count > 0 && (currentAction = _actionQueue.peek()).tick < tick)
+				if (!_state.isFinished && _actionQueue.count > 0 && (currentAction = _actionQueue.peek()).tick < currentTick)
 				{
-					_state.updateTick(currentAction.tick);
 					_actionQueue.dequeue();
-					_modules.preTick(_context, tick, _state.deltaTick);
 					_processor.execute(currentAction, _context);
-					_modules.postTick(_context, tick, _state.deltaTick);
 				}
-				else
+				_modules.postTick(_context, currentTick, _state.deltaTick);
+				if (_state.isFinished)
 				{
 					break;
 				}

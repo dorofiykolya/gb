@@ -1,4 +1,4 @@
-package game.managers.battles.components 
+package game.managers.battles.components.buildings 
 {
 	import game.managers.battles.engine.BattleComponent;
 	

@@ -18,6 +18,11 @@ package game.managers.battles.engine
 		
 		}
 		
+		public function get engine():BattleEngine
+		{
+			return _target.engine;
+		}
+		
 		public function setLifeTicks(ticks:int):void
 		{
 			_lifeTick = ticks;

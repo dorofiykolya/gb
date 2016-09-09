@@ -31,7 +31,7 @@ package game.managers.battles.commands
 			{
 				var battleObject:BattleBuilding = BattleBuilding(context.actors.factory.instantiate(BattleBuilding));
 				context.actors.group(ActorsGroup.BUILDING).addComponent(battleObject);
-				battleObject.initialize(record);
+				battleObject.initialize(record, context.configuration);
 			}
 		}
 		

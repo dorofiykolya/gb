@@ -3,7 +3,7 @@ package game.managers.battles.commands
 	import game.managers.battles.actions.BattleUnitAttackAction;
 	import game.managers.battles.actors.BattleBuilding;
 	import game.managers.battles.actors.BattleUnit;
-	import game.managers.battles.components.UnitRegenComponent;
+	import game.managers.battles.components.buildings.UnitRegenComponent;
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleAction;
@@ -32,17 +32,19 @@ package game.managers.battles.commands
 			var regen:UnitRegenComponent = from.getComponent(UnitRegenComponent) as UnitRegenComponent;
 			var unitCount:int = regen.removeHalf();
 			
-			var unit:BattleUnit = context.actors.factory.instantiate(BattleUnit) as BattleUnit;
-			context.actors.group(ActorsGroup.UNIT).addComponent(unit);
-			
-			unit.initialize(from, unitCount, to);
-			
-			var evt:UnitAttackEvent = context.output.factory.getInstance(UnitAttackEvent) as UnitAttackEvent;
-			context.output.enqueue(evt);
-			evt.count = unitCount;
-			evt.from = attack.fromObjectId;
-			evt.to = attack.toObjectId;
-			evt.tick = action.tick;
+			if (unitCount > 0)
+			{
+				var unit:BattleUnit = context.actors.factory.instantiate(BattleUnit) as BattleUnit;
+				context.actors.group(ActorsGroup.UNIT).addComponent(unit);
+				
+				unit.initialize(from, unitCount, to);
+				
+				var evt:UnitAttackEvent = context.output.enqueueByFactory(UnitAttackEvent) as UnitAttackEvent;
+				evt.count = unitCount;
+				evt.from = attack.fromObjectId;
+				evt.to = attack.toObjectId;
+				evt.tick = action.tick;
+			}
 		}
 	}
 

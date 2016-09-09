@@ -15,7 +15,7 @@ package game.managers.battles.engine
 	 */
 	public class BattleConfiguration
 	{
-		public const ticksPerSecond:int = 1000;
+		public const ticksPerSecond:int = 30;
 		public const processingSmothing:int = 100;
 		public const maxTicks:int = ticksPerSecond * 60 * 3;
 		

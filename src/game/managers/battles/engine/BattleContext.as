@@ -10,26 +10,27 @@ package game.managers.battles.engine
 	 */
 	public class BattleContext
 	{
-		private var _configuration:BattleConfiguration;
-		private var _battleEngine:BattleEngine;
-		private var _actors:BattleActors;
-		private var _state:BattleState;
-		private var _players:BattlePlayers;
-		private var _output:BattleOutput;
+		internal var _damage:BattleDamages;
+		internal var _configuration:BattleConfiguration;
+		internal var _battleEngine:BattleEngine;
+		internal var _actors:BattleActors;
+		internal var _state:BattleState;
+		internal var _players:BattlePlayers;
+		internal var _output:BattleOutput;
 		
-		public function BattleContext(configuration:BattleConfiguration, battleEngine:BattleEngine, actors:BattleActors, state:BattleState, players:BattlePlayers, output:BattleOutput)
+		public function BattleContext()
 		{
-			_output = output;
-			_players = players;
-			_state = state;
-			_actors = actors;
-			_battleEngine = battleEngine;
-			_configuration = configuration;
+			
 		}
 		
 		public function get configuration():BattleConfiguration
 		{
 			return _configuration;
+		}
+		
+		public function get damage():BattleDamages
+		{
+			return _damage;
 		}
 		
 		public function get battleEngine():BattleEngine

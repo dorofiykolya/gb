@@ -10,6 +10,8 @@ package game.managers.battles.engine
 	{
 		public static const BUILDING:ActorsGroup = new ActorsGroup();
 		public static const UNIT:ActorsGroup = new ActorsGroup();
+		public static const SPELL:ActorsGroup = new ActorsGroup();
+		public static const BULLET:ActorsGroup = new ActorsGroup();
 	}
 
 }
