@@ -11,6 +11,8 @@ package game.managers.battles.output
 		public var from:int;
 		public var to:int;
 		public var count:int;
+		public var unitLevel:int;
+		public var unitId:int;
 		
 		public function UnitAttackEvent() 
 		{

@@ -1,6 +1,7 @@
 package game.managers.battles.engine
 {
 	import common.composite.Component;
+	import game.managers.battles.actors.BattleObject;
 	
 	/**
 	 * ...

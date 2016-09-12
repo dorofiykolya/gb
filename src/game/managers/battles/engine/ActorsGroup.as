@@ -12,6 +12,7 @@ package game.managers.battles.engine
 		public static const UNIT:ActorsGroup = new ActorsGroup();
 		public static const SPELL:ActorsGroup = new ActorsGroup();
 		public static const BULLET:ActorsGroup = new ActorsGroup();
+		public static const DAMAGE:ActorsGroup = new ActorsGroup();
 	}
 
 }

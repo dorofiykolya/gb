@@ -9,6 +9,7 @@ package game.records.buildings
 	{
 		public var icon:String;
 		public var view:String;
+		public var unitId:int;
 		public var units:int;
 		public var unitsProduction:int;
 		public var attackSpeed:int;

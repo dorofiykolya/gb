@@ -2,6 +2,7 @@ package game.managers.battles.engine
 {
 	import common.composite.Entity;
 	import game.managers.battles.actions.BattleStartAction;
+	import game.managers.battles.engine.BattleOutput;
 	import game.managers.battles.engine.BattleAction;
 	import game.managers.battles.engine.BattleActionEngine;
 	import game.managers.battles.engine.BattleActionQueue;
@@ -25,7 +26,6 @@ package game.managers.battles.engine
 		private var _actors:BattleActors;
 		private var _context:BattleContext;
 		private var _modules:BattleModulesProcessor;
-		private var _battleDamageProcessor:BattleDamages;
 		private var _players:BattlePlayers;
 		private var _output:BattleOutput;
 		
@@ -44,14 +44,12 @@ package game.managers.battles.engine
 			_actors = new BattleActors(this);
 			_players = new BattlePlayers(_configuration, this);
 			_output = new BattleOutput();
-			_battleDamageProcessor = new BattleDamages(_context);
 			_modules = new BattleModulesProcessor(_context, modulesProvider);
 			
 			_context._actors = _actors;
 			_context._state = _state;
 			_context._players = _players;
 			_context._output = _output;
-			_context._damage = _battleDamageProcessor;
 			
 			_actionEngine.enqueue(new BattleStartAction());
 		}

@@ -16,6 +16,8 @@ package game.managers.battles.records
 		public var unitsPerSecond:Number;
 		public var position:Point3;
 		public var ownerId:int;
+		public var unitId:int;
+		public var unitLevel:int;
 		
 		public function BattleBuildingRecord()
 		{

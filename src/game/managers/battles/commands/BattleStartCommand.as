@@ -1,7 +1,7 @@
 package game.managers.battles.commands 
 {
 	import game.managers.battles.actions.BattleStartAction;
-	import game.managers.battles.actors.BattleBuilding;
+	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleAction;
 	import game.managers.battles.engine.BattleContext;
@@ -29,7 +29,7 @@ package game.managers.battles.commands
 		{
 			for each (var record:BattleBuildingRecord in context.configuration.buildings) 
 			{
-				var battleObject:BattleBuilding = BattleBuilding(context.actors.factory.instantiate(BattleBuilding));
+				var battleObject:BattleBuilding = context.actors.factory.buildingFactory.instantiate(BattleBuilding);
 				context.actors.group(ActorsGroup.BUILDING).addComponent(battleObject);
 				battleObject.initialize(record, context.configuration);
 			}

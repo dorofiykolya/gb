@@ -1,6 +1,6 @@
-package game.managers.battles.actors 
+package game.managers.battles.actors.spells 
 {
-	import game.managers.battles.engine.BattleObject;
+	import game.managers.battles.actors.BattleObject;
 	
 	/**
 	 * ...

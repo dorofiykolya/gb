@@ -1,14 +1,14 @@
 package game.managers.battles.commands
 {
 	import game.managers.battles.actions.BattleUnitAttackAction;
-	import game.managers.battles.actors.BattleBuilding;
-	import game.managers.battles.actors.BattleUnit;
+	import game.managers.battles.actors.buildings.BattleBuilding;
+	import game.managers.battles.actors.units.BattleUnit;
 	import game.managers.battles.components.buildings.UnitRegenComponent;
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleAction;
 	import game.managers.battles.engine.BattleEngineCommand;
-	import game.managers.battles.engine.BattleObject;
+	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.output.UnitAttackEvent;
 	
 	/**
@@ -34,13 +34,15 @@ package game.managers.battles.commands
 			
 			if (unitCount > 0)
 			{
-				var unit:BattleUnit = context.actors.factory.instantiate(BattleUnit) as BattleUnit;
+				var unit:BattleUnit = context.actors.factory.unitFactory.instantiate(BattleUnit);
 				context.actors.group(ActorsGroup.UNIT).addComponent(unit);
 				
 				unit.initialize(from, unitCount, to);
 				
 				var evt:UnitAttackEvent = context.output.enqueueByFactory(UnitAttackEvent) as UnitAttackEvent;
 				evt.count = unitCount;
+				evt.unitId = unit.unitId;
+				evt.unitLevel = unit.level;
 				evt.from = attack.fromObjectId;
 				evt.to = attack.toObjectId;
 				evt.tick = action.tick;

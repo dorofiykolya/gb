@@ -1,6 +1,6 @@
 package game.managers.battles.components.buildings
 {
-	import game.managers.battles.actors.BattleBuilding;
+	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.engine.BattleComponent;
 	import game.managers.battles.engine.BattleUtils;
 	import game.utils.Math2;

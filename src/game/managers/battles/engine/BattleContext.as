@@ -1,5 +1,6 @@
 package game.managers.battles.engine
 {
+	import game.managers.battles.engine.BattleOutput;
 	import game.managers.battles.engine.BattleActors;
 	import game.managers.battles.engine.BattleConfiguration;
 	import game.managers.battles.players.BattlePlayers;
@@ -10,7 +11,6 @@ package game.managers.battles.engine
 	 */
 	public class BattleContext
 	{
-		internal var _damage:BattleDamages;
 		internal var _configuration:BattleConfiguration;
 		internal var _battleEngine:BattleEngine;
 		internal var _actors:BattleActors;
@@ -26,11 +26,6 @@ package game.managers.battles.engine
 		public function get configuration():BattleConfiguration
 		{
 			return _configuration;
-		}
-		
-		public function get damage():BattleDamages
-		{
-			return _damage;
 		}
 		
 		public function get battleEngine():BattleEngine

@@ -1,13 +1,13 @@
 package game.managers.battles.modules
 {
-	import game.managers.battles.actors.BattleBuilding;
+	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.components.buildings.MannaRegenComponent;
 	import game.managers.battles.components.buildings.MannaSlowComponent;
 	import game.managers.battles.components.buildings.MannaStopComponent;
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleModule;
-	import game.managers.battles.engine.BattleObject;
+	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.modifiers.BattleModifier;
 	import game.managers.battles.modifiers.ModifierType;
 	import game.managers.battles.output.MannaChangeEvent;

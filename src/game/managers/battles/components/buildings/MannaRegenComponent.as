@@ -1,7 +1,7 @@
 package game.managers.battles.components.buildings
 {
 	import common.composite.Component;
-	import game.managers.battles.actors.BattleBuilding;
+	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.engine.BattleComponent;
 	
 	/**

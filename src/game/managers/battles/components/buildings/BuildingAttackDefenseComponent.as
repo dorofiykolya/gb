@@ -1,7 +1,14 @@
 package game.managers.battles.components.buildings
 {
-	import game.managers.battles.actors.BattleUnit;
+	import game.managers.battles.actors.buildings.BattleBuilding;
+	import game.managers.battles.actors.bullets.BattleBullet;
+	import game.managers.battles.actors.bullets.BattleBulletBuilding;
+	import game.managers.battles.actors.units.BattleUnit;
+	import game.managers.battles.components.bullets.BulletMoveComponent;
+	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleComponent;
+	import game.managers.battles.modifiers.ModifierType;
+	import game.records.buildings.BuildingRecord;
 	
 	/**
 	 * ...
@@ -16,21 +23,27 @@ package game.managers.battles.components.buildings
 		
 		}
 		
-		public function get ticksBetweenAttack():int
+		public function get ticksBetweenAttack():Number
 		{
-			return 100;
+			var buildng:BattleBuilding = BattleBuilding(target);
+			var result:Number = engine.players.getPlayer(target.ownerId).modifier.calculate(ModifierType.BUILDING_ATTACK_RANGE, buildng.infoLevel.attackSpeed, buildng.info.id);
+			return result;
 		}
 		
-		public function attack(target:BattleUnit):void
+		public function attack(targetUnit:BattleUnit):void
 		{
 			_remainingTicksToNextAttack = ticksBetweenAttack;
 			
-			engine.actions
+			var bullet:BattleBulletBuilding = engine.context.actors.factory.bulletFactory.instantiate(BattleBulletBuilding) as BattleBulletBuilding;
+			bullet.target = targetUnit;
+			bullet.setInfoFrom(BattleBuilding(target));
+			bullet.setOwnerId(this.target.ownerId);
+			engine.context.actors.group(ActorsGroup.BULLET).addComponent(bullet);
 		}
 		
 		public function get range():Number
 		{
-			return 500;
+			return BattleBuilding(target).infoLevel.attackRange;
 		}
 		
 		public function get canAttack():Boolean

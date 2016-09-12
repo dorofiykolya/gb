@@ -21,6 +21,11 @@ package game.managers.battles.components.bullets
 		
 		}
 		
+		override public function get needRemove():Boolean 
+		{
+			return false;
+		}
+		
 		public function get distancePerTick():Number
 		{
 			var currentDistancePerTick:Number = 1;
@@ -40,7 +45,7 @@ package game.managers.battles.components.bullets
 		
 		public function updatePosition(deltaTick:int):Boolean
 		{
-			var distance = distancePerTick * deltaTick;
+			var distance:Number = distancePerTick * deltaTick;
 			
 			var fromX:Number = target.transform.x;
 			var fromY:Number = target.transform.y;

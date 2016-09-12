@@ -1,7 +1,7 @@
 package game.managers.battles.components.units
 {
 	import common.composite.Component;
-	import game.managers.battles.actors.BattleUnit;
+	import game.managers.battles.actors.units.BattleUnit;
 	import game.managers.battles.components.units.IMoveModifier;
 	import game.managers.battles.engine.BattleComponent;
 	import game.managers.battles.engine.BattleTransform;
@@ -22,6 +22,11 @@ package game.managers.battles.components.units
 		public function UnitMoveComponent()
 		{
 		
+		}
+		
+		override public function get needRemove():Boolean 
+		{
+			return false;
 		}
 		
 		public function get distancePerTick():Number

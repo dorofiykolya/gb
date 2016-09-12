@@ -1,10 +1,10 @@
-package game.managers.battles.actors
+package game.managers.battles.actors.buildings
 {
 	import game.managers.battles.components.buildings.BuildingAttackDefenseComponent;
 	import game.managers.battles.components.buildings.MannaRegenComponent;
 	import game.managers.battles.components.buildings.UnitRegenComponent;
 	import game.managers.battles.engine.BattleConfiguration;
-	import game.managers.battles.engine.BattleObject;
+	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.records.BattleBuildingRecord;
 	import game.records.buildings.BuildingLevelRecord;
 	import game.records.buildings.BuildingRecord;

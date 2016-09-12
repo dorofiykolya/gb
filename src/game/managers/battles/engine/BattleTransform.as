@@ -1,6 +1,6 @@
 package game.managers.battles.engine
 {
-	import game.managers.battles.engine.BattleObject;
+	import game.managers.battles.actors.BattleObject;
 	import game.utils.Math2;
 	import game.utils.Point3;
 	
@@ -26,6 +26,13 @@ package game.managers.battles.engine
 		}
 		
 		public function setFrom(transform:BattleTransform):void
+		{
+			_x = transform._x;
+			_y = transform._y;
+			_z = transform._z;
+		}
+		
+		public function copyFrom(transform:BattleTransform):void
 		{
 			_x = transform._x;
 			_y = transform._y;

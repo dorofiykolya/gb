@@ -2,6 +2,7 @@ package game.managers.battles.engine
 {
 	import common.composite.Component;
 	import common.composite.Entity;
+	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.engine.ActorsGroup;
 	
 	/**

@@ -1,6 +1,8 @@
 package game.managers.battles.engine
 {
-	import game.managers.battles.actors.BattleBullet;
+	import game.managers.battles.actors.bullets.BattleBullet;
+	import game.managers.battles.actors.damages.BattleDamage;
+	import game.managers.battles.components.bullets.BulletDamageComponent;
 	
 	/**
 	 * ...
@@ -15,14 +17,10 @@ package game.managers.battles.engine
 			_context = context;
 		}
 		
-		public function updateDamages(deltaTick:int):void
-		{
-		
-		}
-		
 		public function generateByBullet(bullet:BattleBullet, tick:int, deltaTick:int):void
 		{
-		
+			var damage:BattleDamage = bullet.generateDamage();
+			_context.actors.group(ActorsGroup.DAMAGE).addComponent(damage);
 		}
 	
 	}

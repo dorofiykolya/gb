@@ -2,6 +2,7 @@ package game.managers.battles.providers
 {
 	import game.managers.battles.engine.BattleModulesProvider;
 	import game.managers.battles.modules.BattleBuildingAttackModule;
+	import game.managers.battles.modules.BattleBulletModule;
 	import game.managers.battles.modules.BattleDamangeModule;
 	import game.managers.battles.modules.BattleMannaModule;
 	import game.managers.battles.modules.BattleUpdateObjectModule;
@@ -23,6 +24,7 @@ package game.managers.battles.providers
 			add(new BattleUnitsMoveModule());
 			add(new BattleDamangeModule());
 			add(new BattleBuildingAttackModule());
+			add(new BattleBulletModule());
 		}
 	
 	}

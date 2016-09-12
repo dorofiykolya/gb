@@ -3,6 +3,8 @@ package game.managers.battles.engine
 	import common.composite.Component;
 	import common.system.Enum;
 	import flash.utils.Dictionary;
+	import game.managers.battles.actors.BattleObject;
+	import game.managers.battles.actors.BattleObjectFactory;
 	
 	/**
 	 * ...
@@ -19,19 +21,26 @@ package game.managers.battles.engine
 		private var _factory:BattleObjectFactory;
 		private var _list:Vector.<BattleActorsGroup>;
 		private var _map:Vector.<BattleObject>;
+		private var _damages:BattleDamages;
 		
 		public function BattleActors(battleEngine:BattleEngine)
 		{
 			_battleEngine = battleEngine;
 			_groupMap = new Dictionary();
 			_map = new <BattleObject>[null];
-			_factory = new BattleObjectFactory(_map);
+			_factory = new BattleObjectFactory(_map, _battleEngine);
 			_list = new Vector.<BattleActorsGroup>();
+			_damages = new BattleDamages(_battleEngine.context);
 			
 			for each (var enum:ActorsGroup in Enum.getEnums(ActorsGroup))
 			{
 				group(enum);
 			}
+		}
+		
+		public function get damages():BattleDamages
+		{
+			return _damages;
 		}
 		
 		public function get factory():BattleObjectFactory

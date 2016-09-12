@@ -1,7 +1,8 @@
-package game.managers.battles.engine
+package game.managers.battles.actors
 {
 	import common.composite.Entity;
 	import game.managers.battles.engine.BattleEngine;
+	import game.managers.battles.engine.BattleTransform;
 	
 	/**
 	 * ...
@@ -24,7 +25,7 @@ package game.managers.battles.engine
 			return _ownerId;
 		}
 		
-		protected function setOwnerId(value:int):void
+		public function setOwnerId(value:int):void
 		{
 			_ownerId = value;
 		}
@@ -34,7 +35,7 @@ package game.managers.battles.engine
 			return _objectId;
 		}
 		
-		internal function setObjectId(value:int):void
+		public function setObjectId(value:int):void
 		{
 			_objectId = value;
 		}
