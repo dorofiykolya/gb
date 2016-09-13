@@ -1,6 +1,7 @@
 package game.managers.battles.engine
 {
 	import game.managers.battles.records.BattleBuildingRecord;
+	import game.managers.battles.records.BattleNPCRecord;
 	import game.managers.battles.records.BattleOwnerRecord;
 	import game.managers.battles.records.BattleUnitRecord;
 	import game.records.buildings.BuildingRecord;
@@ -23,6 +24,7 @@ package game.managers.battles.engine
 		public const owners:Vector.<BattleOwnerRecord> = new Vector.<BattleOwnerRecord>();
 		public const actions:Vector.<BattleAction> = new Vector.<BattleAction>();
 		
+		public var npcPlayer:BattleNPCRecord;
 		public var unitRecords:UnitRecordMap;
 		public var buildingRecords:BuildingsRecordMap;
 		public var modeRecords:ModeRecordMap;

@@ -1,5 +1,6 @@
 package game.managers.battles.records
 {
+	import flash.geom.Point;
 	import game.utils.Point3;
 	
 	/**
@@ -14,7 +15,7 @@ package game.managers.battles.records
 		public var mannaPerSecond:Number;
 		public var units:int;
 		public var unitsPerSecond:Number;
-		public var position:Point3;
+		public var position:Point;
 		public var ownerId:int;
 		public var unitId:int;
 		public var unitLevel:int;

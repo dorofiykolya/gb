@@ -16,11 +16,15 @@ package game.managers.battles.components.units
 			_defense = 1.0;
 		}
 		
-		public function setPercent(defense:int, mannaDefense:int, lifeTicks:int):void
+		public function setPercent(defense:int, mannaDefense:int):void
 		{
 			_mannaDefense = mannaDefense;
 			_defense = defense;
-			setLifeTicks(lifeTicks);
+		}
+		
+		override public function get needRemove():Boolean 
+		{
+			return false;
 		}
 		
 		public function calculateDefense(defense:Number):Number

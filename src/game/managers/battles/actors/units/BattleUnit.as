@@ -20,6 +20,7 @@ package game.managers.battles.actors.units
 		private var _level:int;
 		private var _hp:Number;
 		private var _unitHP:Number;
+		private var _attachedToBuilding:Boolean;
 		
 		public function BattleUnit()
 		{
@@ -38,6 +39,7 @@ package game.managers.battles.actors.units
 		
 		public function initialize(from:BattleBuilding, to:BattleBuilding, unitCount:int):void
 		{
+			_attachedToBuilding = false;
 			_level = from.battleInfo.unitLevel;
 			_info = engine.configuration.unitRecords.getById(from.battleInfo.unitId);
 			_infoLevel = _info.levels[_level];
@@ -56,6 +58,12 @@ package game.managers.battles.actors.units
 		public function decreaseHp(value:Number):void
 		{
 			_hp -= value;
+		}
+		
+		public function attachTo(building:BattleBuilding):void 
+		{
+			building.addUnits(units);
+			_attachedToBuilding = true;
 		}
 		
 		public function get level():int
@@ -96,6 +104,11 @@ package game.managers.battles.actors.units
 		public function get hpOneUnit():Number
 		{
 			return _unitHP;
+		}
+		
+		public function get attachedToBuilding():Boolean 
+		{
+			return _attachedToBuilding;
 		}
 	
 	}

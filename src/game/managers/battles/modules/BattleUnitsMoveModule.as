@@ -1,5 +1,7 @@
 package game.managers.battles.modules
 {
+	import game.managers.battles.actors.damages.BattleDamageUnitToBuilding;
+	import game.managers.battles.actors.units.BattleUnit;
 	import game.managers.battles.components.units.UnitMoveComponent;
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleContext;
@@ -24,20 +26,26 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.UNIT).getActors(null, _temp);
-			for each (var item:BattleObject in _temp)
+			context.actors.group(ActorsGroup.UNIT).getActors(BattleUnit, _temp);
+			for each (var unit:BattleUnit in _temp)
 			{
-				var move:UnitMoveComponent = item.getComponent(UnitMoveComponent) as UnitMoveComponent;
+				var move:UnitMoveComponent = unit.getComponent(UnitMoveComponent) as UnitMoveComponent;
 				if (move != null)
 				{
 					if (move.updatePosition(deltaTick))
 					{
 						var evt:UnitMoveEvent = context.output.enqueueByFactory(UnitMoveEvent) as UnitMoveEvent;
 						evt.tick = tick;
-						evt.objectId = item.objectId;
-						evt.x = item.transform.x;
-						evt.y = item.transform.y;
-						evt.z = item.transform.z;
+						evt.objectId = unit.objectId;
+						evt.x = unit.transform.x;
+						evt.y = unit.transform.y;
+						evt.z = unit.transform.z;
+					}
+					if (move.moveCompleted)
+					{
+						var damage:BattleDamageUnitToBuilding = context.actors.factory.damageFactory.instantiate(BattleDamageUnitToBuilding) as BattleDamageUnitToBuilding;
+						damage.setEnemies(unit, move.targetBuilding);
+						context.actors.group(ActorsGroup.DAMAGE).addComponent(damage);
 					}
 				}
 			}

@@ -50,13 +50,30 @@ package game.managers.battles.actors.buildings
 			return _battleRecord.level;
 		}
 		
+		public function addUnits(count:int):void
+		{
+			_units += count;
+		}
+		
+		public function removeUnits(count:int):void
+		{
+			_units -= count;
+		}
+		
+		public function setUnits(count:int):void
+		{
+			_units = count;
+		}
+		
 		public function initialize(info:BattleBuildingRecord, configuration:BattleConfiguration):void
 		{
 			_record = configuration.buildingRecords.getById(info.id);
 			_battleRecord = info;
 			
 			setOwnerId(info.ownerId);
-			transform.setFromPoint3(info.position);
+			transform.setFromPoint(info.position);
+			
+			_units = _battleRecord.units;
 			
 			addComponent(UnitRegenComponent);
 			

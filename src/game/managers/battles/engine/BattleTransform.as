@@ -1,5 +1,6 @@
 package game.managers.battles.engine
 {
+	import flash.geom.Point;
 	import game.managers.battles.actors.BattleObject;
 	import game.utils.Math2;
 	import game.utils.Point3;
@@ -102,6 +103,12 @@ package game.managers.battles.engine
 			_x = position.x;
 			_y = position.y;
 			_z = position.z;
+		}
+		
+		public function setFromPoint(position:Point):void
+		{
+			_x = position.x;
+			_y = position.y;
 		}
 		
 		public function get x():Number

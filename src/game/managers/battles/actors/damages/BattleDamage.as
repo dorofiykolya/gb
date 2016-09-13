@@ -9,18 +9,26 @@ package game.managers.battles.actors.damages
 	 */
 	public class BattleDamage extends BattleObject
 	{
+		private var _tick:int;
+		private var _deltaTick:int;
 		
 		public function BattleDamage()
 		{
 		
 		}
 		
-		public function update(tick:int, deltaTick:int):void
+		public function get tick():int
 		{
-		
+			return _tick;
 		}
 		
-		public function applyDamage(result:Vector.<ApplyDamageResult> = null):Vector.<ApplyDamageResult>
+		public function update(tick:int, deltaTick:int):void
+		{
+			_tick = tick;
+			_deltaTick = deltaTick;
+		}
+		
+		public function applyDamage(tick:int, result:Vector.<ApplyDamageResult> = null):Vector.<ApplyDamageResult>
 		{
 			return result;
 		}
@@ -33,6 +41,11 @@ package game.managers.battles.actors.damages
 		public function get needRemove():Boolean
 		{
 			return true;
+		}
+		
+		public function get deltaTick():int 
+		{
+			return _deltaTick;
 		}
 	
 	}

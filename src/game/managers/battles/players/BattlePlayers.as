@@ -16,6 +16,7 @@ package game.managers.battles.players
 		private var _configuration:BattleConfiguration;
 		
 		private var _map:Dictionary;
+		private var _npcPlayer:BattleNPCPlayer;
 		
 		public function BattlePlayers(configuration:BattleConfiguration, battleEngine:BattleEngine)
 		{
@@ -23,12 +24,23 @@ package game.managers.battles.players
 			_battleEngine = battleEngine;
 			
 			_map = new Dictionary();
+			_npcPlayer = new BattleNPCPlayer(configuration.npcPlayer);
 			initialize();
+		}
+		
+		public function isNPC(ownerId:int):Boolean
+		{
+			return getPlayer(ownerId) == null;
 		}
 		
 		public function getPlayer(ownerId:int):BattlePlayer
 		{
-			return _map[ownerId];
+			var result:BattlePlayer = _map[ownerId];
+			if (result == null)
+			{
+				result = _npcPlayer;
+			}
+			return result;
 		}
 		
 		private function initialize():void
@@ -40,6 +52,7 @@ package game.managers.battles.players
 				_battleEngine.addComponent(player);
 				player.initialize(item);
 			}
+			_battleEngine.addComponent(_npcPlayer);
 		}
 	
 	}

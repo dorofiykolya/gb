@@ -22,7 +22,7 @@ package game.managers.battles.actors.damages
 		
 		}
 		
-		public override function applyDamage(result:Vector.<ApplyDamageResult> = null):Vector.<ApplyDamageResult>
+		public override function applyDamage(tick:int, result:Vector.<ApplyDamageResult> = null):Vector.<ApplyDamageResult>
 		{
 			if (result == null) result = new Vector.<ApplyDamageResult>();
 			var target:BattleUnit = engine.context.actors.getActorByObjectId(_targetObjectId) as BattleUnit;

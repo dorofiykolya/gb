@@ -49,6 +49,11 @@ package game.managers.battles.components.units
 			return currentDistancePerTick;
 		}
 		
+		public function get targetBuilding():BattleTransform
+		{
+			return _moveTo;
+		}
+		
 		public function get moveCompleted():Boolean
 		{
 			return target.transform.positionDistance(_moveTo) <= 0;

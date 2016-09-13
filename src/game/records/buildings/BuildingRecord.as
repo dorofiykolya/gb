@@ -11,6 +11,7 @@ package game.records.buildings
 		public var name:String;
 		public var description:String;
 		public var type:int;
+		public var race:int;
 		public var levels:Vector.<BuildingLevelRecord>;
 		
 		public function BuildingRecord()

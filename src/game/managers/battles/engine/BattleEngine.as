@@ -11,6 +11,8 @@ package game.managers.battles.engine
 	import game.managers.battles.engine.BattleConfiguration;
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.players.BattlePlayers;
+	import game.managers.battles.providers.BattleCommands;
+	import game.managers.battles.providers.BattleModules;
 	
 	/**
 	 * ...
@@ -29,7 +31,7 @@ package game.managers.battles.engine
 		private var _players:BattlePlayers;
 		private var _output:BattleOutput;
 		
-		public function BattleEngine(config:BattleConfiguration, commandsProvider:BattleCommandsProvider, modulesProvider:BattleModulesProvider)
+		public function BattleEngine(config:BattleConfiguration)
 		{
 			_configuration = config;
 			
@@ -39,12 +41,12 @@ package game.managers.battles.engine
 			
 			_state = new BattleState(_configuration);
 			_actionQueue = new BattleActionQueue(_configuration);
-			_processor = new BattleEngineProcessor(_configuration, commandsProvider);
+			_processor = new BattleEngineProcessor(_configuration, new BattleCommands());
 			_actionEngine = new BattleActionEngine(_actionQueue);
 			_actors = new BattleActors(this);
 			_players = new BattlePlayers(_configuration, this);
 			_output = new BattleOutput();
-			_modules = new BattleModulesProcessor(_context, modulesProvider);
+			_modules = new BattleModulesProcessor(_context, new BattleModules());
 			
 			_context._actors = _actors;
 			_context._state = _state;

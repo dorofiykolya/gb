@@ -11,7 +11,6 @@ package game.managers.battles.components.buildings
 	 */
 	public class UnitRegenComponent extends BattleComponent
 	{
-		private var _units:Number;
 		private var _unitsPerTick:Number;
 		
 		public function UnitRegenComponent()
@@ -22,10 +21,14 @@ package game.managers.battles.components.buildings
 		override protected function attach():void 
 		{
 			super.attach();
-			_units = BattleBuilding(target).battleInfo.units;
 			
 			var unitsPerSecond:Number = BattleBuilding(target).battleInfo.unitsPerSecond;
 			_unitsPerTick = BattleUtils.floor(unitsPerSecond / engine.configuration.ticksPerSecond);
+		}
+		
+		public function get building():BattleBuilding
+		{
+			return BattleBuilding(target);
 		}
 		
 		override public function get needRemove():Boolean 
@@ -33,14 +36,9 @@ package game.managers.battles.components.buildings
 			return false;
 		}
 		
-		public function set units(value:int):void
-		{
-			_units = value;
-		}
-		
 		public function get units():int
 		{
-			return _units;
+			return building.units;
 		}
 		
 		public function get unitsPerTick():Number
@@ -51,14 +49,14 @@ package game.managers.battles.components.buildings
 		public function removeHalf():int
 		{
 			var result:int = units / 2;
-			_units -= result;
+			building.removeUnits(result);
 			return result;
 		}
 		
 		public function regen(increaseValue:Number):Boolean
 		{
 			var lastUnits:int = units;
-			_units += increaseValue;
+			building.addUnits(increaseValue);
 			return lastUnits != units;
 		}
 	

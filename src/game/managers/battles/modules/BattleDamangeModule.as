@@ -36,7 +36,7 @@ package game.managers.battles.modules
 				if (damage.needApplyDamage)
 				{
 					_damages.length = 0;
-					damage.applyDamage(_damages);
+					damage.applyDamage(tick, _damages);
 					for each (var damageResult:ApplyDamageResult in _damages) 
 					{
 						var evt:DamageApplyEvent = context.output.enqueueByFactory(DamageApplyEvent) as DamageApplyEvent;
