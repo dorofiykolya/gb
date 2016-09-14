@@ -60,10 +60,16 @@ package game.managers.battles.actors.units
 			_hp -= value;
 		}
 		
+		public function die():void
+		{
+			_hp = 0;
+		}
+		
 		public function attachTo(building:BattleBuilding):void 
 		{
 			building.addUnits(units);
 			_attachedToBuilding = true;
+			_hp = 0;
 		}
 		
 		public function get level():int
@@ -79,6 +85,17 @@ package game.managers.battles.actors.units
 		public function get unitId():int
 		{
 			return _info.id;
+		}
+		
+		public function get powerDamage():Number
+		{
+			return units * damageOneUnit;
+		}
+		
+		public function get damageOneUnit():Number
+		{
+			var damage:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DAMAGE, infoLevel.damage, info.id);
+			return damage;
 		}
 		
 		public function get unitDefense():Number

@@ -3,6 +3,7 @@ package game.managers.battles.components.buildings
 	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.engine.BattleComponent;
 	import game.managers.battles.engine.BattleUtils;
+	import game.managers.battles.modifiers.ModifierType;
 	import game.utils.Math2;
 	
 	/**
@@ -15,10 +16,10 @@ package game.managers.battles.components.buildings
 		
 		public function UnitRegenComponent()
 		{
-			
+		
 		}
 		
-		override protected function attach():void 
+		override protected function attach():void
 		{
 			super.attach();
 			
@@ -31,7 +32,7 @@ package game.managers.battles.components.buildings
 			return BattleBuilding(target);
 		}
 		
-		override public function get needRemove():Boolean 
+		override public function get needRemove():Boolean
 		{
 			return false;
 		}
@@ -53,9 +54,21 @@ package game.managers.battles.components.buildings
 			return result;
 		}
 		
-		public function regen(increaseValue:Number):Boolean
+		public function regen(deltaTick:Number):Boolean
 		{
+			if (building.units >= building.infoLevel.unitsMaxProduction)
+			{
+				return false;
+			}
+			
+			var increaseValue:Number = unitsPerTick * deltaTick;
+			increaseValue = engine.players.getPlayer(building.ownerId).modifier.calculate(ModifierType.UNITS_INCREASE, increaseValue);
+			
 			var lastUnits:int = units;
+			if (lastUnits + increaseValue > building.infoLevel.unitsMaxProduction)
+			{
+				increaseValue = building.infoLevel.unitsMaxProduction;
+			}
 			building.addUnits(increaseValue);
 			return lastUnits != units;
 		}

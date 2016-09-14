@@ -1,5 +1,6 @@
 package game.managers.battles.engine
 {
+	import common.system.utils.ObjectUtils;
 	
 	/**
 	 * ...
@@ -12,6 +13,11 @@ package game.managers.battles.engine
 		public function OutputEvent()
 		{
 		
+		}
+		
+		public function toString():String
+		{
+			return ObjectUtils.toString(this);
 		}
 	
 	}

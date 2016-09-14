@@ -12,6 +12,7 @@ package game.records.buildings
 		public var unitId:int;
 		public var units:int;
 		public var unitsProduction:int;
+		public var unitsMaxProduction:int;
 		public var attackSpeed:int;
 		public var attackRange:int;
 		public var damage:int

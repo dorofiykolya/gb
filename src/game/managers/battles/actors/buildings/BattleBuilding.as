@@ -5,10 +5,13 @@ package game.managers.battles.actors.buildings
 	import game.managers.battles.components.buildings.UnitRegenComponent;
 	import game.managers.battles.engine.BattleConfiguration;
 	import game.managers.battles.actors.BattleObject;
+	import game.managers.battles.modifiers.ModifierType;
 	import game.managers.battles.records.BattleBuildingRecord;
 	import game.records.buildings.BuildingLevelRecord;
 	import game.records.buildings.BuildingRecord;
 	import game.records.buildings.BuildingType;
+	import game.records.units.UnitLevelRecord;
+	import game.records.units.UnitRecord;
 	
 	/**
 	 * ...
@@ -58,11 +61,56 @@ package game.managers.battles.actors.buildings
 		public function removeUnits(count:int):void
 		{
 			_units -= count;
+			if (_units < 0)
+			{
+				_units = 0;
+			}
 		}
 		
 		public function setUnits(count:int):void
 		{
 			_units = count;
+		}
+		
+		public function get oneUnitDefense():Number
+		{
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
+			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DEFENSE, unitRecord.defense, battleInfo.unitId);
+			return unitDefense;
+		}
+		
+		public function get oneUnitMagicDefense():Number
+		{
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
+			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_MAGIC_DEFENSE, unitRecord.magicDefense, battleInfo.unitId);
+			return unitDefense;
+		}
+		
+		public function get oneUnitHp():Number
+		{
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
+			var unitHp:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_HP, unitRecord.hp, battleInfo.unitId);
+			return unitHp;
+		}
+		
+		public function get powerDefense():Number
+		{
+			return (oneUnitDefense + oneUnitHp) * units + buildingDefense;
+		}
+		
+		public function get powerMagicDefense():Number
+		{
+			return (oneUnitMagicDefense + oneUnitHp) * units + buildingMagicDefense;
+		}
+		
+		public function get buildingDefense():Number
+		{
+			return engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.BUILDING_DEFENSE, infoLevel.defense, info.id);
+		}
+		
+		public function get buildingMagicDefense():Number
+		{
+			return engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.BUILDING_MAGIC_DEFENSE, infoLevel.magicDefense, info.id);
 		}
 		
 		public function initialize(info:BattleBuildingRecord, configuration:BattleConfiguration):void

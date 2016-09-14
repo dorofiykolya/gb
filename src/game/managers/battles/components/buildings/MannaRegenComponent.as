@@ -12,17 +12,17 @@ package game.managers.battles.components.buildings
 	{
 		private var _temp:Vector.<Component> = new Vector.<Component>();
 		
-		private var _manna:Number;
+		private var _mannaPerTick:Number;
 		
 		public function MannaRegenComponent()
 		{
-			_manna = 1;
+			_mannaPerTick = 1;
 		}
 		
 		override protected function attach():void
 		{
 			super.attach();
-			_manna = BattleBuilding(target).battleInfo.manna;
+			_mannaPerTick = BattleBuilding(target).battleInfo.mannaPerSecond / engine.configuration.ticksPerSecond;
 		}
 		
 		override public function get needRemove():Boolean
@@ -32,7 +32,7 @@ package game.managers.battles.components.buildings
 		
 		public function get mannaPerTick():Number
 		{
-			var currentMannaPerTick:Number = _manna;
+			var currentMannaPerTick:Number = _mannaPerTick;
 			
 			_temp.length = 0;
 			for each (var item:IMannaModifier in _temp)

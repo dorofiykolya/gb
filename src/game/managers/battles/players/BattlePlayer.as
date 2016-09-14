@@ -15,6 +15,7 @@ package game.managers.battles.players
 		private var _id:int;
 		private var _manna:PlayerManna;
 		private var _modifier:PlayerModifier;
+		private var _race:int;
 		
 		public function BattlePlayer()
 		{
@@ -45,6 +46,11 @@ package game.managers.battles.players
 		public function get engine():BattleEngine
 		{
 			return BattleEngine(root);
+		}
+		
+		public function get race():int
+		{
+			return _race;
 		}
 		
 		public function get id():int 

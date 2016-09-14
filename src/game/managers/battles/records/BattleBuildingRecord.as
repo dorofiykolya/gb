@@ -11,7 +11,6 @@ package game.managers.battles.records
 	{
 		public var id:int;
 		public var level:int;
-		public var manna:int;
 		public var mannaPerSecond:Number;
 		public var units:int;
 		public var unitsPerSecond:Number;

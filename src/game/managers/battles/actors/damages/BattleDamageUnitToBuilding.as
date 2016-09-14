@@ -55,7 +55,16 @@ package game.managers.battles.actors.damages
 			}
 			
 			var damageResult:ApplyDamageResult = new ApplyDamageResult();
-			
+			if (building.powerDefense > unit.powerDamage)
+			{
+				unit.die();
+				building.removeUnits(unit.units);
+			}
+			else
+			{
+				building.setObjectId(unit.ownerId);
+				building.setUnits(unit.units);
+			}
 			
 			result.push(damageResult);
 			

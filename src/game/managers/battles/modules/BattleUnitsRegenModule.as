@@ -33,10 +33,7 @@ package game.managers.battles.modules
 				var regenComponent:UnitRegenComponent = item.getComponent(UnitRegenComponent) as UnitRegenComponent;
 				if (regenComponent != null)
 				{
-					var increaseValue:Number = regenComponent.unitsPerTick * deltaTick;
-					increaseValue = context.players.getPlayer(item.ownerId).modifier.calculate(ModifierType.UNITS_INCREASE, increaseValue);
-					
-					if (regenComponent.regen(increaseValue))
+					if (regenComponent.regen(deltaTick))
 					{
 						var evt:UnitsChangeEvent = context.output.enqueueByFactory(UnitsChangeEvent) as UnitsChangeEvent;
 						evt.ownerId = item.ownerId;
