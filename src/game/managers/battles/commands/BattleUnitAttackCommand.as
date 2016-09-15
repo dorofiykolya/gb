@@ -37,7 +37,7 @@ package game.managers.battles.commands
 				var unit:BattleUnit = context.actors.factory.unitFactory.instantiate(BattleUnit);
 				context.actors.group(ActorsGroup.UNIT).addComponent(unit);
 				
-				unit.initialize(from, unitCount, to);
+				unit.initialize(from, to, unitCount);
 				
 				var evt:UnitAttackEvent = context.output.enqueueByFactory(UnitAttackEvent) as UnitAttackEvent;
 				evt.count = unitCount;

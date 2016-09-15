@@ -93,6 +93,11 @@ package game.managers.battles.actors.buildings
 			return unitHp;
 		}
 		
+		public function get hp():Number
+		{
+			return oneUnitHp * units;
+		}
+		
 		public function get powerDefense():Number
 		{
 			return (oneUnitDefense + oneUnitHp) * units + buildingDefense;

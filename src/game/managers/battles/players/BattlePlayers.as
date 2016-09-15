@@ -16,6 +16,7 @@ package game.managers.battles.players
 		private var _configuration:BattleConfiguration;
 		
 		private var _map:Dictionary;
+		private var _players:Vector.<BattlePlayer>;
 		private var _npcPlayer:BattleNPCPlayer;
 		
 		public function BattlePlayers(configuration:BattleConfiguration, battleEngine:BattleEngine)
@@ -24,6 +25,7 @@ package game.managers.battles.players
 			_battleEngine = battleEngine;
 			
 			_map = new Dictionary();
+			_players = new Vector.<BattlePlayer>();
 			_npcPlayer = new BattleNPCPlayer(configuration.npcPlayer);
 			initialize();
 		}
@@ -43,6 +45,11 @@ package game.managers.battles.players
 			return result;
 		}
 		
+		public function get players():Vector.<BattlePlayer>
+		{
+			return _players;
+		}
+		
 		private function initialize():void
 		{
 			var player:BattlePlayer;
@@ -50,6 +57,7 @@ package game.managers.battles.players
 			{
 				_map[item.id] = player = new BattlePlayer();
 				_battleEngine.addComponent(player);
+				_players.push(player);
 				player.initialize(item);
 			}
 			_battleEngine.addComponent(_npcPlayer);

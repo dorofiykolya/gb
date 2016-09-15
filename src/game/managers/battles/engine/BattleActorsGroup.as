@@ -25,6 +25,7 @@ package game.managers.battles.engine
 		public function getActors(type:Class = null, result:Vector.<BattleObject> = null):Vector.<BattleObject>
 		{
 			if (result == null) result = new Vector.<BattleObject>();
+			_temp.length = 0;
 			for each (var item:BattleObject in getComponents(type, false, _temp))
 			{
 				if (type == null || item is type)
@@ -38,6 +39,7 @@ package game.managers.battles.engine
 		public function getActorsInRange(x:Number, y:Number, range:Number, type:Class = null, result:Vector.<BattleObject> = null):Vector.<BattleObject>
 		{
 			if (result == null) result = new Vector.<BattleObject>();
+			_temp.length = 0;
 			for each (var item:BattleObject in getComponents(type, false, _temp))
 			{
 				if (type == null || item is type)

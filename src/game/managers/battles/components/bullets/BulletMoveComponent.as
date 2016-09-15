@@ -58,7 +58,7 @@ package game.managers.battles.components.bullets
 			{
 				distance = totalDistance;
 			}
-			var ratio:Number = distance / totalDistance;
+			var ratio:Number = totalDistance == 0? 1 : distance / totalDistance;
 			
 			var newX:Number = Math2.interpolate(fromX, toX, ratio);
 			var newY:Number = Math2.interpolate(fromY, toY, ratio);

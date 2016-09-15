@@ -55,6 +55,11 @@ package game.managers.battles.actors.units
 			return _hp;
 		}
 		
+		public function get isDied():Boolean
+		{
+			return _hp <= 0;
+		}
+		
 		public function decreaseHp(value:Number):void
 		{
 			_hp -= value;

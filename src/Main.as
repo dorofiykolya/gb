@@ -1,6 +1,7 @@
 package
 {
 	//import game.GBContext;
+	import flash.events.Event;
 	import game.GameApplication;
 	import game.managers.battles.Battle;
 	
@@ -12,11 +13,21 @@ package
 	{
 		
 		//private var _context:GBContext;
+		private var _battle:Battle = new Battle();
 		
 		public function Main()
 		{
 			//_context = new GBContext(this);
-			new Battle
+			addEventListener(Event.ENTER_FRAME, onFrame);
+		}
+		
+		private function onFrame(e:Event):void 
+		{
+			_battle.nextTick();
+			while (!_battle.out.isEmpty)
+			{
+				trace(_battle.out.dequeue().toString());
+			}
 		}
 	
 	}

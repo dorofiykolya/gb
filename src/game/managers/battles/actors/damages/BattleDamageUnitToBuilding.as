@@ -65,6 +65,13 @@ package game.managers.battles.actors.damages
 				building.setObjectId(unit.ownerId);
 				building.setUnits(unit.units);
 			}
+			damageResult.x = building.transform.x;
+			damageResult.y = building.transform.y;
+			damageResult.z = building.transform.z;
+			damageResult.ownerId = building.ownerId;
+			damageResult.targetId = building.objectId;
+			damageResult.damageObjectId = objectId;
+			damageResult.hp = building.hp;
 			
 			result.push(damageResult);
 			

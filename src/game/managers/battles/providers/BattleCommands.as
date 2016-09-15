@@ -1,6 +1,7 @@
 package game.managers.battles.providers
 {
 	import game.managers.battles.commands.BattleStartCommand;
+	import game.managers.battles.commands.BattleUnitAttackCommand;
 	import game.managers.battles.engine.BattleCommandsProvider;
 	
 	/**
@@ -13,6 +14,7 @@ package game.managers.battles.providers
 		public function BattleCommands()
 		{
 			add(new BattleStartCommand());
+			add(new BattleUnitAttackCommand());
 		}
 	
 	}

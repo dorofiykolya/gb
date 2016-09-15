@@ -6,6 +6,7 @@ package game.managers.battles
 	import game.managers.battles.engine.BattleConfiguration;
 	import game.managers.battles.engine.BattleEngine;
 	import game.managers.battles.engine.BattleModulesProvider;
+	import game.managers.battles.engine.BattleOutput;
 	import game.managers.battles.players.BattleNPCPlayer;
 	import game.managers.battles.providers.BattleCommands;
 	import game.managers.battles.providers.BattleModules;
@@ -31,6 +32,8 @@ package game.managers.battles
 	 */
 	public class Battle
 	{
+		private var _engine:BattleEngine;
+		private var _tick:int;
 		
 		public function Battle()
 		{
@@ -46,17 +49,35 @@ package game.managers.battles
 			fillBattleOwners(config.owners);
 			fillActions(config.actions);
 			
-			var engine:BattleEngine = new BattleEngine(config);
+			_engine = new BattleEngine(config);
+		}
+		
+		public function nextTick():void
+		{
+			_tick++;
+			_engine.fastForward(_tick);
+		}
+		
+		public function get out():BattleOutput
+		{
+			return _engine.output;
 		}
 		
 		private function fillActions(list:Vector.<BattleAction>):void
 		{
 			var action1:BattleUnitAttackAction = new BattleUnitAttackAction();
-			list[0] = actio1;
+			list[0] = action1;
 			
+			action1.fromObjectId = 1;
+			action1.toObjectId = 2;
+			action1.tick = 5;
 			
 			var action2:BattleUnitAttackAction = new BattleUnitAttackAction();
 			list[1] = action2;
+			
+			action2.fromObjectId = 5;
+			action2.toObjectId = 2
+			action2.tick = 10;
 		}
 		
 		private function fillBattleBuilding(list:Vector.<BattleBuildingRecord>):void
@@ -139,7 +160,6 @@ package game.managers.battles
 			
 			list[5] = building2_3;
 			
-			
 			var building0_3:BattleBuildingRecord = new BattleBuildingRecord();
 			building0_3.id = 3;
 			building0_3.level = 1;
@@ -158,6 +178,7 @@ package game.managers.battles
 		{
 			var player1:BattleOwnerRecord = new BattleOwnerRecord();
 			player1.id = 1;
+			player1.race = 1;
 			player1.modifiers = new Vector.<BattleModifierRecord>();
 			player1.name = "player_1";
 			player1.skills = new Vector.<BattleSkillRecord>();
@@ -165,6 +186,7 @@ package game.managers.battles
 			
 			var player2:BattleOwnerRecord = new BattleOwnerRecord();
 			player2.id = 2;
+			player2.race = 1;
 			player2.modifiers = new Vector.<BattleModifierRecord>();
 			player2.name = "player_2";
 			player2.skills = new Vector.<BattleSkillRecord>();
@@ -230,7 +252,7 @@ package game.managers.battles
 			
 			var defenseBuilding:BuildingRecord = new BuildingRecord();
 			records.push(defenseBuilding);
-			defenseBuilding.id = 2;
+			defenseBuilding.id = 3;
 			defenseBuilding.race = 1;
 			defenseBuilding.name = "Defense";
 			defenseBuilding.description = "Defense Building";
@@ -267,11 +289,11 @@ package game.managers.battles
 			produceUnit.description = "Produce unit description";
 			produceUnit.name = "Produce unit";
 			produceUnit.race = 1;
-			produceUnit.speed = 2;
+			produceUnit.speed = 20;
 			produceUnit.levels = new Vector.<UnitLevelRecord>();
 			var produceUnitLevel:UnitLevelRecord = new UnitLevelRecord();
-			produceUnit[0] = produceUnitLevel;
-			produceUnit[1] = produceUnitLevel;
+			produceUnit.levels[0] = produceUnitLevel;
+			produceUnit.levels[1] = produceUnitLevel;
 			produceUnitLevel.hp = 2;
 			produceUnitLevel.damage = 1;
 			produceUnitLevel.defense = 0;
@@ -285,11 +307,11 @@ package game.managers.battles
 			mannaUnit.description = "Manna unit description";
 			mannaUnit.name = "Manna unit";
 			mannaUnit.race = 1;
-			mannaUnit.speed = 3;
+			mannaUnit.speed = 30;
 			mannaUnit.levels = new Vector.<UnitLevelRecord>();
 			var mannaUnitLevel:UnitLevelRecord = new UnitLevelRecord();
-			mannaUnit[0] = mannaUnitLevel;
-			mannaUnit[1] = mannaUnitLevel;
+			mannaUnit.levels[0] = mannaUnitLevel;
+			mannaUnit.levels[1] = mannaUnitLevel;
 			mannaUnitLevel.hp = 1;
 			mannaUnitLevel.damage = 1;
 			mannaUnitLevel.defense = 0;
@@ -303,11 +325,11 @@ package game.managers.battles
 			defenseUnit.description = "Defense unit description";
 			defenseUnit.name = "Defense unit";
 			defenseUnit.race = 1;
-			defenseUnit.speed = 1;
+			defenseUnit.speed = 10;
 			defenseUnit.levels = new Vector.<UnitLevelRecord>();
 			var defenseUnitLevel:UnitLevelRecord = new UnitLevelRecord();
-			defenseUnit[0] = defenseUnitLevel;
-			defenseUnit[1] = defenseUnitLevel;
+			defenseUnit.levels[0] = defenseUnitLevel;
+			defenseUnit.levels[1] = defenseUnitLevel;
 			defenseUnitLevel.hp = 2;
 			defenseUnitLevel.damage = 2;
 			defenseUnitLevel.defense = 1;

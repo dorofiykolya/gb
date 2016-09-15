@@ -9,6 +9,7 @@ package game.managers.battles.records
 	{
 		public var id:int;
 		public var name:String;
+		public var race:int;
 		public var units:Vector.<BattleUnitRecord>;
 		public var skills:Vector.<BattleSkillRecord>;
 		public var modifiers:Vector.<BattleModifierRecord>;

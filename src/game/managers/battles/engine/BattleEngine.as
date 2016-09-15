@@ -54,6 +54,11 @@ package game.managers.battles.engine
 			_context._output = _output;
 			
 			_actionEngine.enqueue(new BattleStartAction());
+			
+			for each (var action:BattleAction in config.actions) 
+			{
+				_actionEngine.enqueue(action);
+			}
 		}
 		
 		public function get context():BattleContext
@@ -105,7 +110,7 @@ package game.managers.battles.engine
 				finish = true;
 			}
 			var currentTick:int = _state.tick;
-			while (++currentTick < tick)
+			while (++currentTick <= tick)
 			{
 				_state.updateTick(currentTick);
 				_modules.preTick(_context, currentTick, _state.deltaTick);

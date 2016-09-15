@@ -25,7 +25,8 @@ package game.managers.battles.players
 		
 		public function initialize(item:BattleOwnerRecord):void
 		{
-		
+			_id = item.id;
+			_race = item.race;
 		}
 		
 		public function getModifier(type:ModifierType):BattleModifier

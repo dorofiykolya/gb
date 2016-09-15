@@ -20,7 +20,7 @@ package game.managers.battles.engine
 			return this;
 		}
 		
-		public function commands():Vector.<BattleEngineCommand>
+		public function get commands():Vector.<BattleEngineCommand>
 		{
 			return _collection;
 		}

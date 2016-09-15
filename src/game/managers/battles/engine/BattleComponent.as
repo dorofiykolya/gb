@@ -9,8 +9,6 @@ package game.managers.battles.engine
 	 */
 	public class BattleComponent extends Component
 	{
-		internal var _target:BattleObject;
-		
 		private var _lifeTick:int;
 		private var _tick:int;
 		
@@ -21,7 +19,7 @@ package game.managers.battles.engine
 		
 		public function get engine():BattleEngine
 		{
-			return _target.engine;
+			return target.engine;
 		}
 		
 		public function setLifeTicks(ticks:int):void
@@ -41,7 +39,7 @@ package game.managers.battles.engine
 		
 		public function get target():BattleObject
 		{
-			return _target;
+			return entity as BattleObject;
 		}
 		
 		public function update(tick:int, deltaTick:int):void
