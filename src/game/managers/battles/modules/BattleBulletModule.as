@@ -5,6 +5,7 @@ package game.managers.battles.modules
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleModule;
+	import game.managers.battles.output.BulletRemoveEvent;
 	
 	/**
 	 * ...
@@ -36,6 +37,10 @@ package game.managers.battles.modules
 				}
 				if (bullet.needRemove)
 				{
+					var evt:BulletRemoveEvent = context.output.enqueueByFactory(BulletRemoveEvent) as BulletRemoveEvent;
+					evt.objectId = bullet.objectId;
+					evt.tick = tick;
+					
 					bullet.dispose();
 				}
 			}

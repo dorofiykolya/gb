@@ -13,10 +13,11 @@ package game.managers.battles.components.buildings
 	public class UnitRegenComponent extends BattleComponent
 	{
 		private var _unitsPerTick:Number;
+		private var _increase:Number;
 		
 		public function UnitRegenComponent()
 		{
-		
+			_increase = 0;
 		}
 		
 		override protected function attach():void
@@ -47,6 +48,11 @@ package game.managers.battles.components.buildings
 			return _unitsPerTick;
 		}
 		
+		public function setUnitsPerTick(value:Number):void
+		{
+			_unitsPerTick = value;
+		}
+		
 		public function removeHalf():int
 		{
 			var result:int = units / 2;
@@ -63,13 +69,20 @@ package game.managers.battles.components.buildings
 			
 			var increaseValue:Number = unitsPerTick * deltaTick;
 			increaseValue = engine.players.getPlayer(building.ownerId).modifier.calculate(ModifierType.UNITS_INCREASE, increaseValue);
+			_increase += increaseValue;
+			
+			var newUnits:int = int(_increase);
+			if (newUnits > 0)
+			{
+				_increase -= newUnits;
+			}
 			
 			var lastUnits:int = units;
-			if (lastUnits + increaseValue > building.infoLevel.unitsMaxProduction)
+			if (lastUnits + newUnits > building.infoLevel.unitsMaxProduction)
 			{
-				increaseValue = building.infoLevel.unitsMaxProduction;
+				newUnits = building.infoLevel.unitsMaxProduction - building.units;
 			}
-			building.addUnits(increaseValue);
+			building.addUnits(newUnits);
 			return lastUnits != units;
 		}
 	

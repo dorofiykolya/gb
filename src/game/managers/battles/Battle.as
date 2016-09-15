@@ -164,7 +164,7 @@ package game.managers.battles
 			building0_3.id = 3;
 			building0_3.level = 1;
 			building0_3.mannaPerSecond = 0;
-			building0_3.ownerId = 2;
+			building0_3.ownerId = 0;
 			building0_3.position = new Point(100, 100);
 			building0_3.unitId = 3;
 			building0_3.unitLevel = 1;
@@ -262,7 +262,7 @@ package game.managers.battles
 			var defenseBuildingLevel:BuildingLevelRecord = new BuildingLevelRecord();
 			defenseBuilding.levels[0] = defenseBuildingLevel;
 			defenseBuilding.levels[1] = defenseBuildingLevel;
-			defenseBuildingLevel.attackRange = 50;
+			defenseBuildingLevel.attackRange = 70;
 			defenseBuildingLevel.attackSpeed = 1;
 			defenseBuildingLevel.damage = 1;
 			defenseBuildingLevel.defense = 1;
@@ -289,7 +289,7 @@ package game.managers.battles
 			produceUnit.description = "Produce unit description";
 			produceUnit.name = "Produce unit";
 			produceUnit.race = 1;
-			produceUnit.speed = 20;
+			produceUnit.speed = 2;
 			produceUnit.levels = new Vector.<UnitLevelRecord>();
 			var produceUnitLevel:UnitLevelRecord = new UnitLevelRecord();
 			produceUnit.levels[0] = produceUnitLevel;
@@ -307,7 +307,7 @@ package game.managers.battles
 			mannaUnit.description = "Manna unit description";
 			mannaUnit.name = "Manna unit";
 			mannaUnit.race = 1;
-			mannaUnit.speed = 30;
+			mannaUnit.speed = 3;
 			mannaUnit.levels = new Vector.<UnitLevelRecord>();
 			var mannaUnitLevel:UnitLevelRecord = new UnitLevelRecord();
 			mannaUnit.levels[0] = mannaUnitLevel;
@@ -325,7 +325,7 @@ package game.managers.battles
 			defenseUnit.description = "Defense unit description";
 			defenseUnit.name = "Defense unit";
 			defenseUnit.race = 1;
-			defenseUnit.speed = 10;
+			defenseUnit.speed = 1;
 			defenseUnit.levels = new Vector.<UnitLevelRecord>();
 			var defenseUnitLevel:UnitLevelRecord = new UnitLevelRecord();
 			defenseUnit.levels[0] = defenseUnitLevel;

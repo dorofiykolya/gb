@@ -28,7 +28,7 @@ package game.managers.battles.components.bullets
 		
 		public function get distancePerTick():Number
 		{
-			var currentDistancePerTick:Number = 1;
+			var currentDistancePerTick:Number = 5;
 			
 			return currentDistancePerTick;
 		}
@@ -65,7 +65,7 @@ package game.managers.battles.components.bullets
 			
 			target.transform.setPosition(newX, newY);
 			
-			return newX != fromX && newY != fromY;
+			return newX != fromX || newY != fromY;
 		}
 	
 	}

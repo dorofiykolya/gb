@@ -51,6 +51,7 @@ package game.managers.battles.actors.bullets
 		public function setInfoFrom(building:BattleBuilding):void 
 		{
 			var damage:int = building.infoLevel.damage;
+			transform.setFrom(building.transform);
 			_damage = building.engine.players.getPlayer(building.ownerId).modifier.calculate(ModifierType.BUILDING_DAMAGE, damage, building.info.id);
 		}
 		
@@ -72,7 +73,7 @@ package game.managers.battles.actors.bullets
 		public function set target(value:BattleUnit):void
 		{
 			_target = value;
-			transform.setFrom(value.transform);
+			
 			_move.moveTo(value.transform);
 		}
 	

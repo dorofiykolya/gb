@@ -10,6 +10,7 @@ package game.managers.battles.commands
 	import game.managers.battles.engine.BattleEngineCommand;
 	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.output.UnitAttackEvent;
+	import game.managers.battles.output.UnitCreateEvent;
 	
 	/**
 	 * ...
@@ -39,6 +40,15 @@ package game.managers.battles.commands
 				
 				unit.initialize(from, to, unitCount);
 				
+				var createUnit:UnitCreateEvent = context.output.enqueueByFactory(UnitCreateEvent) as UnitCreateEvent;
+				createUnit.objectId = unit.objectId;
+				createUnit.unitId = unit.unitId;
+				createUnit.level = unit.level;
+				createUnit.ownerId = unit.ownerId;
+				createUnit.units = unit.units;
+				createUnit.x = unit.transform.x;
+				createUnit.y = unit.transform.y;
+				
 				var evt:UnitAttackEvent = context.output.enqueueByFactory(UnitAttackEvent) as UnitAttackEvent;
 				evt.count = unitCount;
 				evt.unitId = unit.unitId;
@@ -46,6 +56,7 @@ package game.managers.battles.commands
 				evt.from = attack.fromObjectId;
 				evt.to = attack.toObjectId;
 				evt.tick = action.tick;
+				
 			}
 		}
 	}

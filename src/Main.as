@@ -4,6 +4,8 @@ package
 	import flash.events.Event;
 	import game.GameApplication;
 	import game.managers.battles.Battle;
+	import game.managers.battles.engine.OutputEvent;
+	import test.TestBattleView;
 	
 	/**
 	 * ...
@@ -14,19 +16,28 @@ package
 		
 		//private var _context:GBContext;
 		private var _battle:Battle = new Battle();
+		private var _testBattle:TestBattleView = new TestBattleView();
+		private var _tick:int;
 		
 		public function Main()
 		{
 			//_context = new GBContext(this);
+			addChild(_testBattle);
 			addEventListener(Event.ENTER_FRAME, onFrame);
 		}
 		
-		private function onFrame(e:Event):void 
+		private function onFrame(e:Event):void
 		{
-			_battle.nextTick();
-			while (!_battle.out.isEmpty)
+			_tick++;
+			if (_tick % 10 == 0)
 			{
-				trace(_battle.out.dequeue().toString());
+				_battle.nextTick();
+				while (!_battle.out.isEmpty)
+				{
+					var evt:OutputEvent = _battle.out.dequeue();
+					trace(evt.toString());
+					_testBattle.command.execute(_testBattle, evt);
+				}
 			}
 		}
 	

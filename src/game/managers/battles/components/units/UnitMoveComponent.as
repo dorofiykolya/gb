@@ -31,7 +31,7 @@ package game.managers.battles.components.units
 		
 		public function get distancePerTick():Number
 		{
-			var currentDistancePerTick:Number = 1;
+			var currentDistancePerTick:Number = BattleUnit(target).info.speed;
 			
 			_temp.length = 0;
 			getComponents(IMoveModifier, false, _temp);
@@ -39,8 +39,8 @@ package game.managers.battles.components.units
 			{
 				currentDistancePerTick *= item.moveModifierPercent;
 			}
-			
 			var player:BattlePlayer = engine.players.getPlayer(target.ownerId);
+			
 			if (player != null)
 			{
 				currentDistancePerTick = player.modifier.calculate(ModifierType.UNITS_SPEED, currentDistancePerTick, BattleUnit(target).unitId);
@@ -86,7 +86,7 @@ package game.managers.battles.components.units
 			
 			target.transform.setPosition(newX, newY);
 			
-			return newX != fromX && newY != fromY;
+			return newX != fromX || newY != fromY;
 		}
 	
 	}

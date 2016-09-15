@@ -40,6 +40,7 @@ package game.managers.battles.actors.units
 		public function initialize(from:BattleBuilding, to:BattleBuilding, unitCount:int):void
 		{
 			_attachedToBuilding = false;
+			setOwnerId(from.ownerId);
 			_level = from.battleInfo.unitLevel;
 			_info = engine.configuration.unitRecords.getById(from.battleInfo.unitId);
 			_infoLevel = _info.levels[_level];

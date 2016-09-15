@@ -8,6 +8,7 @@ package game.managers.battles.components.buildings
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleComponent;
 	import game.managers.battles.modifiers.ModifierType;
+	import game.managers.battles.output.BulletCreateEvent;
 	import game.records.buildings.BuildingRecord;
 	
 	/**
@@ -39,6 +40,12 @@ package game.managers.battles.components.buildings
 			bullet.setInfoFrom(BattleBuilding(target));
 			bullet.setOwnerId(this.target.ownerId);
 			engine.context.actors.group(ActorsGroup.BULLET).addComponent(bullet);
+			
+			var evt:BulletCreateEvent = engine.output.enqueueByFactory(BulletCreateEvent) as BulletCreateEvent;
+			evt.tick = engine.tick;
+			evt.fromObjectId = target.objectId;
+			evt.toObjectId = targetUnit.objectId;
+			evt.objectId = bullet.objectId;
 		}
 		
 		public function get range():Number

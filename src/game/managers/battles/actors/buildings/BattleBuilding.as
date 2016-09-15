@@ -5,7 +5,9 @@ package game.managers.battles.actors.buildings
 	import game.managers.battles.components.buildings.UnitRegenComponent;
 	import game.managers.battles.engine.BattleConfiguration;
 	import game.managers.battles.actors.BattleObject;
+	import game.managers.battles.engine.BattleUtils;
 	import game.managers.battles.modifiers.ModifierType;
+	import game.managers.battles.output.BuildingChangeUnitEvent;
 	import game.managers.battles.records.BattleBuildingRecord;
 	import game.records.buildings.BuildingLevelRecord;
 	import game.records.buildings.BuildingRecord;
@@ -55,21 +57,34 @@ package game.managers.battles.actors.buildings
 		
 		public function addUnits(count:int):void
 		{
-			_units += count;
+			if (count != 0)
+			{
+				_units += count;
+				
+				outputEvent();
+			}
 		}
 		
 		public function removeUnits(count:int):void
 		{
-			_units -= count;
-			if (_units < 0)
+			if (count != 0)
 			{
-				_units = 0;
+				_units -= count;
+				if (_units < 0)
+				{
+					_units = 0;
+				}
+				outputEvent();
 			}
 		}
 		
 		public function setUnits(count:int):void
 		{
-			_units = count;
+			if (_units != count)
+			{
+				_units = count;
+				outputEvent();
+			}
 		}
 		
 		public function get oneUnitDefense():Number
@@ -128,7 +143,8 @@ package game.managers.battles.actors.buildings
 			
 			_units = _battleRecord.units;
 			
-			addComponent(UnitRegenComponent);
+			var unitsPerSecond:Number = battleInfo.unitsPerSecond;
+			UnitRegenComponent(addComponent(UnitRegenComponent)).setUnitsPerTick((unitsPerSecond / engine.configuration.ticksPerSecond));
 			
 			switch (_record.type)
 			{
@@ -141,6 +157,14 @@ package game.managers.battles.actors.buildings
 				case BuildingType.PRODUCTION: 
 					break;
 			}
+		}
+		
+		private function outputEvent():void
+		{
+			var evt:BuildingChangeUnitEvent = engine.output.enqueueByFactory(BuildingChangeUnitEvent) as BuildingChangeUnitEvent;
+			evt.tick = engine.tick;
+			evt.objectId = objectId;
+			evt.units = _units;
 		}
 	
 	}

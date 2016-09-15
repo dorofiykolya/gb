@@ -6,6 +6,7 @@ package game.managers.battles.modules
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleModule;
 	import game.managers.battles.output.UnitDieEvent;
+	import game.managers.battles.output.UnitRemoveEvent;
 	
 	/**
 	 * ...
@@ -32,6 +33,11 @@ package game.managers.battles.modules
 					var evt:UnitDieEvent = context.output.enqueueByFactory(UnitDieEvent) as UnitDieEvent;
 					evt.tick = tick;
 					evt.objectId = unit.objectId;
+					
+					var removeEvt:UnitRemoveEvent = context.output.enqueueByFactory(UnitRemoveEvent) as UnitRemoveEvent;
+					removeEvt.tick = tick;
+					removeEvt.objectId = unit.objectId;
+					
 					unit.dispose();
 				}
 			}
