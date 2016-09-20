@@ -55,16 +55,23 @@ package game.managers.battles.actors.damages
 			}
 			
 			var damageResult:ApplyDamageResult = new ApplyDamageResult();
-			if (building.powerDefense > unit.powerDamage)
+			
+			var buildingDamage:Number = building.powerDamage;
+			var unitDamage:Number = unit.powerDamage;
+			
+			building.receiveDamage(unitDamage);
+			unit.receiveDamage(buildingDamage);
+			
+			if (unit.units > 0 && building.units > 0)
 			{
-				unit.die();
-				building.removeUnits(unit.units);
+				throw new Error();
 			}
-			else
+			if (building.units <= 0 && unit.units > 0)
 			{
-				building.setObjectId(unit.ownerId);
+				building.changeOwner(unit.ownerId);
 				building.setUnits(unit.units);
 			}
+			
 			damageResult.x = building.transform.x;
 			damageResult.y = building.transform.y;
 			damageResult.z = building.transform.z;
@@ -77,6 +84,7 @@ package game.managers.battles.actors.damages
 			
 			return result;
 		}
+		
 		
 		public override function get needApplyDamage():Boolean
 		{

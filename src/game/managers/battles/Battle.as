@@ -77,7 +77,21 @@ package game.managers.battles
 			
 			action2.fromObjectId = 5;
 			action2.toObjectId = 2
-			action2.tick = 10;
+			action2.tick = 20;
+			
+			var action3:BattleUnitAttackAction = new BattleUnitAttackAction();
+			list[2] = action3;
+			
+			action3.fromObjectId = 5;
+			action3.toObjectId = 2;
+			action3.tick = 25;
+			
+			var action4:BattleUnitAttackAction = new BattleUnitAttackAction();
+			list[3] = action4;
+			
+			action4.fromObjectId = 5;
+			action4.toObjectId = 2;
+			action4.tick = 30;
 		}
 		
 		private function fillBattleBuilding(list:Vector.<BattleBuildingRecord>):void
@@ -90,7 +104,7 @@ package game.managers.battles
 			building1_1.position = new Point(0, 0);
 			building1_1.unitId = 1;
 			building1_1.unitLevel = 1;
-			building1_1.units = 5;
+			building1_1.units = 50;
 			building1_1.unitsPerSecond = 3;
 			
 			list[0] = building1_1;
@@ -103,7 +117,7 @@ package game.managers.battles
 			building1_2.position = new Point(100, 0);
 			building1_2.unitId = 2;
 			building1_2.unitLevel = 1;
-			building1_2.units = 3;
+			building1_2.units = 30;
 			building1_2.unitsPerSecond = 2;
 			
 			list[1] = building1_2;
@@ -116,7 +130,7 @@ package game.managers.battles
 			building1_3.position = new Point(200, 0);
 			building1_3.unitId = 3;
 			building1_3.unitLevel = 1;
-			building1_3.units = 1;
+			building1_3.units = 10;
 			building1_3.unitsPerSecond = 1;
 			
 			list[2] = building1_3;
@@ -129,7 +143,7 @@ package game.managers.battles
 			building2_1.position = new Point(0, 200);
 			building2_1.unitId = 1;
 			building2_1.unitLevel = 1;
-			building2_1.units = 5;
+			building2_1.units = 50;
 			building2_1.unitsPerSecond = 3;
 			
 			list[3] = building2_1;
@@ -142,7 +156,7 @@ package game.managers.battles
 			building2_2.position = new Point(100, 200);
 			building2_2.unitId = 2;
 			building2_2.unitLevel = 1;
-			building2_2.units = 3;
+			building2_2.units = 30;
 			building2_2.unitsPerSecond = 2;
 			
 			list[4] = building2_2;
@@ -155,7 +169,7 @@ package game.managers.battles
 			building2_3.position = new Point(200, 200);
 			building2_3.unitId = 3;
 			building2_3.unitLevel = 1;
-			building2_3.units = 1;
+			building2_3.units = 10;
 			building2_3.unitsPerSecond = 1;
 			
 			list[5] = building2_3;
@@ -168,7 +182,7 @@ package game.managers.battles
 			building0_3.position = new Point(100, 100);
 			building0_3.unitId = 3;
 			building0_3.unitLevel = 1;
-			building0_3.units = 1;
+			building0_3.units = 10;
 			building0_3.unitsPerSecond = 1;
 			
 			list[6] = building0_3;
@@ -215,9 +229,9 @@ package game.managers.battles
 			produceBuildingLevel.attackRange = 0;
 			produceBuildingLevel.attackSpeed = 0;
 			produceBuildingLevel.damage = 0;
-			produceBuildingLevel.defense = 0;
+			//produceBuildingLevel.defense = 0;
 			produceBuildingLevel.icon = "produce_icon";
-			produceBuildingLevel.magicDefense = 0;
+			//produceBuildingLevel.magicDefense = 0;
 			produceBuildingLevel.mannaProduction = 0;
 			produceBuildingLevel.unitId = 1;
 			produceBuildingLevel.units = 1;
@@ -240,9 +254,9 @@ package game.managers.battles
 			mannaBuildingLevel.attackRange = 0;
 			mannaBuildingLevel.attackSpeed = 0;
 			mannaBuildingLevel.damage = 0;
-			mannaBuildingLevel.defense = 0;
+			//mannaBuildingLevel.defense = 0;
 			mannaBuildingLevel.icon = "manna_icon";
-			mannaBuildingLevel.magicDefense = 0;
+			//mannaBuildingLevel.magicDefense = 0;
 			mannaBuildingLevel.mannaProduction = 1;
 			mannaBuildingLevel.unitId = 2;
 			mannaBuildingLevel.units = 1;
@@ -265,9 +279,9 @@ package game.managers.battles
 			defenseBuildingLevel.attackRange = 70;
 			defenseBuildingLevel.attackSpeed = 1;
 			defenseBuildingLevel.damage = 1;
-			defenseBuildingLevel.defense = 1;
+			//defenseBuildingLevel.defense = 1;
 			defenseBuildingLevel.icon = "defense_icon";
-			defenseBuildingLevel.magicDefense = 1;
+			//defenseBuildingLevel.magicDefense = 1;
 			defenseBuildingLevel.mannaProduction = 0;
 			defenseBuildingLevel.unitId = 3;
 			defenseBuildingLevel.units = 1;

@@ -31,20 +31,7 @@ package game.managers.battles.actors.damages
 				return result;
 			}
 			
-			var damage:Number = _damage;
-			while (damage > 0 && target.units > 0)
-			{
-				damage -= target.unitDefense;
-				var unitDamage:Number = target.hpOneUnit - damage;
-				if (unitDamage <= 0)
-				{
-					target.decreaseHp(target.hpOneUnit);
-				}
-				else
-				{
-					target.decreaseHp(unitDamage);
-				}
-			}
+			target.receiveDamage(_damage);
 			
 			var damageResult:ApplyDamageResult = new ApplyDamageResult();
 			damageResult.hp = target.hp;

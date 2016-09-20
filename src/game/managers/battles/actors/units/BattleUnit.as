@@ -78,6 +78,28 @@ package game.managers.battles.actors.units
 			_hp = 0;
 		}
 		
+		public function receiveDamage(damage:Number):void
+		{
+			var unitDefense:Number = oneUnitDefense;
+			var unitHP:Number = oneUnitHp;
+			
+			while (damage > 0 && units > 0)
+			{
+				var currentHP:Number = unitHP;
+				damage -= unitDefense;
+				currentHP -= damage;
+				damage -= unitHP;
+				if (currentHP <= 0)
+				{
+					decreaseHp(unitHP);
+				}
+				else
+				{
+					decreaseHp(currentHP);
+				}
+			}
+		}
+		
 		public function get level():int
 		{
 			return _level;
@@ -104,7 +126,7 @@ package game.managers.battles.actors.units
 			return damage;
 		}
 		
-		public function get unitDefense():Number
+		public function get oneUnitDefense():Number
 		{
 			var defense:UnitDefenseComponent = getComponent(UnitDefenseComponent) as UnitDefenseComponent;
 			if (defense != null)
@@ -114,7 +136,7 @@ package game.managers.battles.actors.units
 			return _infoLevel.defense;
 		}
 		
-		public function get unitMagicDefense():Number
+		public function get oneUnitMagicDefense():Number
 		{
 			var defense:UnitDefenseComponent = getComponent(UnitDefenseComponent) as UnitDefenseComponent;
 			if (defense != null)
@@ -124,7 +146,7 @@ package game.managers.battles.actors.units
 			return _infoLevel.magicDefense;
 		}
 		
-		public function get hpOneUnit():Number
+		public function get oneUnitHp():Number
 		{
 			return _unitHP;
 		}
