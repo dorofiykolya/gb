@@ -7,8 +7,8 @@ package game.managers.battles.actors
 	 */
 	public class DefenseType
 	{
-		public static const DEFENSE:int = 0;
-		public static const MAGIC_DEFENSE:int = 0;
+		public static const DEFENSE:int = DamageType.DAMAGE;
+		public static const MAGIC_DEFENSE:int = DamageType.MAGIC_DAMAGE;
 		
 		public function DefenseType()
 		{

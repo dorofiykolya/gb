@@ -49,7 +49,7 @@ package game.managers.battles.actors.damages
 				evt.tick = tick;
 				evt.buildingObjectId = _buildingObjectId;
 				evt.unitObjectId = unit.objectId;
-				evt.buildingUnits = building.units;
+				evt.buildingUnits = building.units.count;
 				
 				return result;
 			}
@@ -62,14 +62,14 @@ package game.managers.battles.actors.damages
 			building.receiveDamage(unitDamage);
 			unit.receiveDamage(buildingDamage);
 			
-			if (unit.units > 0 && building.units > 0)
+			if (unit.units.count > 0 && building.units.count > 0)
 			{
 				throw new Error();
 			}
-			if (building.units <= 0 && unit.units > 0)
+			if (building.units.count <= 0 && unit.units.count > 0)
 			{
 				building.changeOwner(unit.ownerId);
-				building.setUnits(unit.units);
+				building.units.change(unit.units.count);
 			}
 			
 			damageResult.x = building.transform.x;

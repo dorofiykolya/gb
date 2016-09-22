@@ -29,7 +29,7 @@ package
 		private function onFrame(e:Event):void
 		{
 			_tick++;
-			if (_tick % 2 == 0)
+			//if (_tick % 2 == 0)
 			{
 				_battle.nextTick();
 				while (!_battle.out.isEmpty)
@@ -37,6 +37,7 @@ package
 					var evt:OutputEvent = _battle.out.dequeue();
 					trace(evt.toString());
 					_testBattle.command.execute(_testBattle, evt);
+					_battle.out.factory.release(evt);
 				}
 			}
 		}

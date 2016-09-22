@@ -42,7 +42,7 @@ package game.managers.battles.commands
 				evt.tick = action.tick;
 				evt.x = battleObject.transform.x;
 				evt.y = battleObject.transform.y;
-				evt.units = battleObject.units;
+				evt.units = battleObject.units.count;
 			}
 		}
 	

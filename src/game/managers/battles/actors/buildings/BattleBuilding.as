@@ -2,6 +2,7 @@ package game.managers.battles.actors.buildings
 {
 	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.actors.BattleUnitOwner;
+	import game.managers.battles.actors.DefenseType;
 	import game.managers.battles.components.buildings.BuildingAttackDefenseComponent;
 	import game.managers.battles.components.buildings.MannaRegenComponent;
 	import game.managers.battles.components.buildings.UnitRegenComponent;
@@ -20,7 +21,6 @@ package game.managers.battles.actors.buildings
 	 */
 	public class BattleBuilding extends BattleUnitOwner
 	{
-		private var _units:int;
 		private var _record:BuildingRecord;
 		private var _battleRecord:BattleBuildingRecord;
 		
@@ -44,46 +44,18 @@ package game.managers.battles.actors.buildings
 			return _record.levels[_battleRecord.level];
 		}
 		
-		public override function get units():int
-		{
-			return _units;
-		}
-		
 		public function get level():int
 		{
 			return _battleRecord.level;
 		}
 		
-		public function addUnits(count:int):void
+		public function getOneUnitDefense(defenseType:int):Number
 		{
-			if (count != 0)
+			if (defenseType == DefenseType.MAGIC_DEFENSE)
 			{
-				_units += count;
-				
-				outputEvent();
+				return oneUnitMagicDefense;
 			}
-		}
-		
-		public function removeUnits(count:int):void
-		{
-			if (count != 0)
-			{
-				_units -= count;
-				if (_units < 0)
-				{
-					_units = 0;
-				}
-				outputEvent();
-			}
-		}
-		
-		public function setUnits(count:int):void
-		{
-			if (_units != count)
-			{
-				_units = count;
-				outputEvent();
-			}
+			return oneUnitDefense;
 		}
 		
 		public function get oneUnitDefense():Number
@@ -116,17 +88,17 @@ package game.managers.battles.actors.buildings
 		
 		public function get hp():Number
 		{
-			return oneUnitHp * units;
+			return oneUnitHp * units.count;
 		}
 		
 		public function get powerDefense():Number
 		{
-			return (oneUnitDefense + oneUnitHp) * units;
+			return (oneUnitDefense + oneUnitHp) * units.count;
 		}
 		
 		public function get powerMagicDefense():Number
 		{
-			return (oneUnitMagicDefense + oneUnitHp) * units;
+			return (oneUnitMagicDefense + oneUnitHp) * units.count;
 		}
 		
 		public function initialize(info:BattleBuildingRecord, configuration:BattleConfiguration):void
@@ -137,7 +109,7 @@ package game.managers.battles.actors.buildings
 			setOwnerId(info.ownerId);
 			transform.setFromPoint(info.position);
 			
-			_units = _battleRecord.units;
+			units.setCount(_battleRecord.units);
 			
 			var unitsPerSecond:Number = battleInfo.unitsPerSecond;
 			UnitRegenComponent(addComponent(UnitRegenComponent)).setUnitsPerTick((unitsPerSecond / engine.configuration.ticksPerSecond));
@@ -165,7 +137,7 @@ package game.managers.battles.actors.buildings
 			var unitDefense:Number = oneUnitDefense;
 			var unitHP:Number = oneUnitHp;
 			
-			while (damage > 0 && units > 0)
+			while (damage > 0 && units.count > 0)
 			{
 				var currentHp:Number = unitHP;
 				damage -= unitDefense;
@@ -173,14 +145,14 @@ package game.managers.battles.actors.buildings
 				damage -= unitHP;
 				if (currentHp <= 0)
 				{
-					removeUnits(1);
+					units.remove(1);
 				}
 			}
 		}
 		
 		public function get powerDamage():Number
 		{
-			return units * oneUnitDamage;
+			return units.count * oneUnitDamage;
 		}
 		
 		private function outputEvent():void
@@ -188,7 +160,7 @@ package game.managers.battles.actors.buildings
 			var evt:BuildingChangeUnitEvent = engine.output.enqueueByFactory(BuildingChangeUnitEvent) as BuildingChangeUnitEvent;
 			evt.tick = engine.tick;
 			evt.objectId = objectId;
-			evt.units = _units;
+			evt.units = units.count;
 		}
 	
 	}

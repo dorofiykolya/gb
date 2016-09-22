@@ -1,6 +1,7 @@
 package game.managers.battles.actors.units
 {
 	import game.managers.battles.actors.BattleUnitOwner;
+	import game.managers.battles.actors.Units;
 	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.components.units.UnitDefenseComponent;
 	import game.managers.battles.components.units.UnitMoveComponent;
@@ -49,6 +50,7 @@ package game.managers.battles.actors.units
 			
 			_unitHP = engine.players.getPlayer(from.ownerId).modifier.calculate(ModifierType.UNITS_HP, _infoLevel.hp, _info.id);
 			_hp = _unitHP * unitCount;
+			units.setCount(getUnits());
 		}
 		
 		public function get hp():Number
@@ -73,9 +75,10 @@ package game.managers.battles.actors.units
 		
 		public function attachTo(building:BattleBuilding):void
 		{
-			building.addUnits(units);
+			building.units.add(units.count);
 			_attachedToBuilding = true;
 			_hp = 0;
+			units.change(getUnits());
 		}
 		
 		public function receiveDamage(damage:Number):void
@@ -83,7 +86,7 @@ package game.managers.battles.actors.units
 			var unitDefense:Number = oneUnitDefense;
 			var unitHP:Number = oneUnitHp;
 			
-			while (damage > 0 && units > 0)
+			while (damage > 0 && units.count > 0)
 			{
 				var currentHP:Number = unitHP;
 				damage -= unitDefense;
@@ -98,6 +101,7 @@ package game.managers.battles.actors.units
 					decreaseHp(currentHP);
 				}
 			}
+			units.change(getUnits());
 		}
 		
 		public function get level():int
@@ -105,7 +109,7 @@ package game.managers.battles.actors.units
 			return _level;
 		}
 		
-		public override function get units():int
+		public function getUnits():int
 		{
 			return Math.ceil(_hp / _unitHP);
 		}
@@ -117,7 +121,7 @@ package game.managers.battles.actors.units
 		
 		public function get powerDamage():Number
 		{
-			return units * damageOneUnit;
+			return units.count * damageOneUnit;
 		}
 		
 		public function get damageOneUnit():Number

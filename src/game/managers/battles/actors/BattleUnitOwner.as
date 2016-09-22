@@ -6,15 +6,16 @@ package game.managers.battles.actors
 	 */
 	public class BattleUnitOwner extends BattleObject 
 	{
+		private var _units:Units;
 		
 		public function BattleUnitOwner() 
 		{
-			
+			_units = new Units(this);
 		}
 		
-		public function get units():int
+		public function get units():Units
 		{
-			return 0;
+			return _units;
 		}
 		
 	}

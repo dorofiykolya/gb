@@ -40,7 +40,7 @@ package game.managers.battles.components.buildings
 		
 		public function get units():int
 		{
-			return building.units;
+			return building.units.count;
 		}
 		
 		public function get unitsPerTick():Number
@@ -56,13 +56,13 @@ package game.managers.battles.components.buildings
 		public function removeHalf():int
 		{
 			var result:int = units / 2;
-			building.removeUnits(result);
+			building.units.remove(result);
 			return result;
 		}
 		
 		public function regen(deltaTick:Number):Boolean
 		{
-			if (building.units >= building.infoLevel.unitsMaxProduction)
+			if (building.units.count >= building.infoLevel.unitsMaxProduction)
 			{
 				return false;
 			}
@@ -80,9 +80,9 @@ package game.managers.battles.components.buildings
 			var lastUnits:int = units;
 			if (lastUnits + newUnits > building.infoLevel.unitsMaxProduction)
 			{
-				newUnits = building.infoLevel.unitsMaxProduction - building.units;
+				newUnits = building.infoLevel.unitsMaxProduction - building.units.count;
 			}
-			building.addUnits(newUnits);
+			building.units.add(newUnits);
 			return lastUnits != units;
 		}
 	

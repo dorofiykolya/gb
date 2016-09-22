@@ -45,7 +45,7 @@ package game.managers.battles.commands
 				createUnit.unitId = unit.unitId;
 				createUnit.level = unit.level;
 				createUnit.ownerId = unit.ownerId;
-				createUnit.units = unit.units;
+				createUnit.units = unit.units.count;
 				createUnit.x = unit.transform.x;
 				createUnit.y = unit.transform.y;
 				
