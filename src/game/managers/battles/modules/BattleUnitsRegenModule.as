@@ -1,15 +1,12 @@
 package game.managers.battles.modules
 {
+	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.components.buildings.UnitRegenComponent;
-	import game.managers.battles.components.buildings.UnitSlowRegenComponent;
-	import game.managers.battles.components.buildings.UnitStopRegenComponent;
 	import game.managers.battles.engine.ActorsGroup;
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleModule;
-	import game.managers.battles.actors.BattleObject;
-	import game.managers.battles.modifiers.ModifierType;
-	import game.managers.battles.output.UnitsChangeEvent;
+	import game.managers.battles.output.BuildingChangeUnitEvent;
 	
 	/**
 	 * ...
@@ -35,8 +32,7 @@ package game.managers.battles.modules
 				{
 					if (regenComponent.regen(deltaTick))
 					{
-						var evt:UnitsChangeEvent = context.output.enqueueByFactory(UnitsChangeEvent) as UnitsChangeEvent;
-						evt.ownerId = item.ownerId;
+						var evt:BuildingChangeUnitEvent = context.output.enqueueByFactory(BuildingChangeUnitEvent) as BuildingChangeUnitEvent;
 						evt.objectId = item.objectId;
 						evt.units = regenComponent.units;
 						evt.tick = tick;

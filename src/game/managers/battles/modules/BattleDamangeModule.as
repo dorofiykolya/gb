@@ -9,6 +9,7 @@ package game.managers.battles.modules
 	import game.managers.battles.engine.BattleContext;
 	import game.managers.battles.engine.BattleModule;
 	import game.managers.battles.output.DamageApplyEvent;
+	import game.managers.battles.output.UnitsChangeEvent;
 	
 	/**
 	 * ...
@@ -48,11 +49,17 @@ package game.managers.battles.modules
 						evt.hp = damageResult.hp;
 						evt.damageId = damageResult.damageObjectId;
 						evt.ownerId = damageResult.ownerId;
+						
+						var unitsEvt:UnitsChangeEvent = context.output.enqueueByFactory(UnitsChangeEvent) as UnitsChangeEvent;
+						unitsEvt.tick = tick;
+						unitsEvt.objectId = damageResult.targetId;
+						unitsEvt.ownerId = damageResult.ownerId;
+						unitsEvt.units = damageResult.hp;
 					}
 				}
 				if (damage.needRemove)
 				{
-					actors.removeComponent(damage);
+					damage.dispose();
 				}
 			}
 		}

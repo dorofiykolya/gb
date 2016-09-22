@@ -8,7 +8,7 @@ package test.views
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class UnitView extends TestView 
+	public class UnitView extends UnitOwnerView 
 	{
 		public var unitId:int;
 		public var level:int;
@@ -35,12 +35,12 @@ package test.views
 			graphics.drawRect( -2, -2, 4, 4);
 		}
 		
-		public function get units():int 
+		public override function get units():int 
 		{
 			return _units;
 		}
 		
-		public function set units(value:int):void 
+		public override function set units(value:int):void 
 		{
 			_units = value;
 			_t.text = value.toString();

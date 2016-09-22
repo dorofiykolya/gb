@@ -10,7 +10,7 @@ package test.views
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class BuildingView extends TestView
+	public class BuildingView extends UnitOwnerView
 	{
 		public var buildingId:int;
 		public var level:int;
@@ -37,12 +37,12 @@ package test.views
 			graphics.drawRect(-5, -5, 10, 10);
 		}
 		
-		public function get units():int 
+		public override function get units():int 
 		{
 			return _units;
 		}
 		
-		public function set units(value:int):void 
+		public override function set units(value:int):void 
 		{
 			_units = value;
 			_t.text = value.toString();

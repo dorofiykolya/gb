@@ -1,6 +1,7 @@
 package game.managers.battles.actors.buildings
 {
 	import game.managers.battles.actors.BattleObject;
+	import game.managers.battles.actors.BattleUnitOwner;
 	import game.managers.battles.components.buildings.BuildingAttackDefenseComponent;
 	import game.managers.battles.components.buildings.MannaRegenComponent;
 	import game.managers.battles.components.buildings.UnitRegenComponent;
@@ -17,7 +18,7 @@ package game.managers.battles.actors.buildings
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class BattleBuilding extends BattleObject
+	public class BattleBuilding extends BattleUnitOwner
 	{
 		private var _units:int;
 		private var _record:BuildingRecord;
@@ -43,7 +44,7 @@ package game.managers.battles.actors.buildings
 			return _record.levels[_battleRecord.level];
 		}
 		
-		public function get units():int
+		public override function get units():int
 		{
 			return _units;
 		}

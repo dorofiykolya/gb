@@ -1,9 +1,9 @@
 package game.managers.battles.actors.units
 {
+	import game.managers.battles.actors.BattleUnitOwner;
 	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.components.units.UnitDefenseComponent;
 	import game.managers.battles.components.units.UnitMoveComponent;
-	import game.managers.battles.actors.BattleObject;
 	import game.managers.battles.modifiers.ModifierType;
 	import game.records.units.UnitLevelRecord;
 	import game.records.units.UnitRecord;
@@ -12,7 +12,7 @@ package game.managers.battles.actors.units
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class BattleUnit extends BattleObject
+	public class BattleUnit extends BattleUnitOwner
 	{
 		private var _move:UnitMoveComponent;
 		private var _info:UnitRecord;
@@ -71,7 +71,7 @@ package game.managers.battles.actors.units
 			_hp = 0;
 		}
 		
-		public function attachTo(building:BattleBuilding):void 
+		public function attachTo(building:BattleBuilding):void
 		{
 			building.addUnits(units);
 			_attachedToBuilding = true;
@@ -105,7 +105,7 @@ package game.managers.battles.actors.units
 			return _level;
 		}
 		
-		public function get units():int
+		public override function get units():int
 		{
 			return Math.ceil(_hp / _unitHP);
 		}
@@ -151,7 +151,7 @@ package game.managers.battles.actors.units
 			return _unitHP;
 		}
 		
-		public function get attachedToBuilding():Boolean 
+		public function get attachedToBuilding():Boolean
 		{
 			return _attachedToBuilding;
 		}

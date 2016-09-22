@@ -29,7 +29,7 @@ package
 		private function onFrame(e:Event):void
 		{
 			_tick++;
-			if (_tick % 10 == 0)
+			if (_tick % 2 == 0)
 			{
 				_battle.nextTick();
 				while (!_battle.out.isEmpty)
