@@ -17,6 +17,7 @@ package game.extensions
 	import game.managers.debug.DebugManager;
 	import game.managers.dragonBones.DragonBonesExtension;
 	import game.managers.localization.LocalizationProvider;
+	import game.managers.locations.LocationExtension;
 	import game.managers.navigations.NavigationExtension;
 	import game.managers.notifications.NotificationExtension;
 	import game.managers.purchase.PurchaseExtension;
@@ -83,6 +84,7 @@ package game.extensions
 			context.install(new AnimationExtension());
 			context.install(new AssetsExtension());
 			context.install(new LocalizationExtension());
+			context.install(new LocationExtension());
 			
 			/**
 			 * @LINKS

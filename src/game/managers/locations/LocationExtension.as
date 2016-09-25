@@ -19,7 +19,7 @@ package game.managers.locations
 		
 		public function extend(context:IContext):void
 		{
-		
+			context.install(LocationManager);
 		}
 	
 	}
