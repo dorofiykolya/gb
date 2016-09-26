@@ -1,9 +1,12 @@
 package game.managers.locations.logics
 {
+	import common.events.Event;
 	import game.managers.locations.IJuggler;
+	import game.managers.locations.events.TickEvent;
 	import starling.animation.IAnimatable;
 	import starling.animation.Juggler;
 	
+	[Event(name = "tick", type = "game.managers.locations.events.TickEvent")]
 	/**
 	 * ...
 	 * @author dorofiy.com
@@ -65,6 +68,7 @@ package game.managers.locations.logics
 			{
 				_juggler.advanceTime(time * scale);
 				_elapsedTime += time * scale;
+				dispatchEventAs(TickEvent, TickEvent.TICK);
 			}
 		}
 		

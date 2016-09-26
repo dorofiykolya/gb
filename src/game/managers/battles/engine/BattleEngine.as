@@ -10,6 +10,7 @@ package game.managers.battles.engine
 	import game.managers.battles.engine.BattleCommandsProvider;
 	import game.managers.battles.engine.BattleConfiguration;
 	import game.managers.battles.engine.BattleContext;
+	import game.managers.battles.output.FinishEvent;
 	import game.managers.battles.players.BattlePlayers;
 	import game.managers.battles.providers.BattleCommands;
 	import game.managers.battles.providers.BattleModules;
@@ -55,7 +56,7 @@ package game.managers.battles.engine
 			
 			_actionEngine.enqueue(new BattleStartAction());
 			
-			for each (var action:BattleAction in config.actions) 
+			for each (var action:BattleAction in config.actions)
 			{
 				_actionEngine.enqueue(action);
 			}
@@ -131,7 +132,8 @@ package game.managers.battles.engine
 				_state.updateTick(tick);
 				if (finish)
 				{
-					_state.finishBattle()
+					output.enqueueByFactory(FinishEvent, tick);
+					_state.finishBattle();
 				}
 			}
 			return _state.tick;

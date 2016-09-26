@@ -1,6 +1,7 @@
 package game.managers.locations 
 {
 	import game.managers.locations.logics.LocationBattleLogic;
+	import game.managers.locations.logics.LocationCommandLogics;
 	import game.managers.locations.logics.LocationTimeLogic;
 	/**
 	 * ...
@@ -13,6 +14,7 @@ package game.managers.locations
 		{
 			add(LocationTimeLogic, IJuggler);
 			add(LocationBattleLogic);
+			add(LocationCommandLogics);
 		}
 		
 	}
