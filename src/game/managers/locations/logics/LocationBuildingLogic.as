@@ -17,7 +17,7 @@ package game.managers.locations.logics
 		
 		public function add(objectId:int, buildingId:int, level:int, position:Point):LocationBuilding
 		{
-			
+			return null;
 		}
 		
 	}

@@ -31,14 +31,14 @@ package game.managers.locations.logics
 		
 		public function toLogic3(game:Point3, result:Point3 = null):Point3
 		{
-			if (result == null) result = new Point();
+			if (result == null) result = new Point3();
 			result.copyFrom(game);
 			return result;
 		}
 		
 		public function toGame3(logic:Point3, result:Point3 = null):Point3
 		{
-			if (result == null) result = new Point();
+			if (result == null) result = new Point3();
 			result.copyFrom(logic);
 			return result;
 		}

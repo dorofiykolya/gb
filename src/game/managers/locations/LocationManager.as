@@ -44,7 +44,7 @@ package game.managers.locations
 			_eventDispatcher.dispatchEventAs(LocationEvent, LocationEvent.LOADED, false, _location);
 		}
 		
-		public function dispose():void
+		public override function dispose():void
 		{
 			if (_location != null)
 			{

@@ -77,7 +77,7 @@ package game.extensions
 			context.install(new AuthExtension());
 			context.install(new NavigationExtension());
 			context.install(new ChecksumExtension());
-			context.install(new DragonBonesExtension());
+			//context.install(new DragonBonesExtension());
 			context.install(new NotificationExtension());
 			context.install(new PurchaseExtension());
 			context.install(new SupersonicExtension());

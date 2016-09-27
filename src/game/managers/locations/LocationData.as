@@ -7,7 +7,7 @@ package game.managers.locations
 	 */
 	public class LocationData 
 	{
-		public var id;
+		public var id:int;
 		public var configuration:BattleConfiguration;
 		
 		public function LocationData() 

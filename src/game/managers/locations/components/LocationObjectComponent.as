@@ -15,6 +15,11 @@ package game.managers.locations.components
 		
 		}
 		
+		public function initialize():void 
+		{
+			
+		}
+		
 		public function get locationObject():LocationObject
 		{
 			return entity as LocationObject;

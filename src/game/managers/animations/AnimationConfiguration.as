@@ -3,6 +3,7 @@ package game.managers.animations
 	import common.context.IContext;
 	import common.system.ClassType;
 	import common.system.reflection.Constant;
+	import game.managers.locations.animations.DefaultAnimationComponent;
 	import game.modules.animations.AnimationProvider;
 	import game.modules.animations.IAnimationParser;
 	import game.modules.animations.LayerFactory;
@@ -40,6 +41,8 @@ package game.managers.animations
 			//loadFromEmbedClass(BuildingAnimationEmbeds);
 			//loadFromEmbedClass(SpellAnimationEmbeds);
 			//loadFromEmbedClass(EffectAnimationEmbeds);
+			
+			animationProvider.defaultAnimation = DefaultAnimationComponent;
 		}
 		
 		private function loadAnimationFromEmbedClass(embed:Class):void

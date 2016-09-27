@@ -3,6 +3,7 @@ package game.managers.animations
 	import common.context.IContext;
 	import common.context.extensions.IExtension;
 	import common.context.links.Link;
+	import game.modules.animations.AnimationFactory;
 	import game.modules.animations.AnimationProvider;
 	import game.modules.animations.AnimationXMLParser;
 	import game.modules.animations.IAnimationParser;
@@ -26,6 +27,7 @@ package game.managers.animations
 		{
 			context.install(AnimationConfiguration);
 			context.install(LayerFactory);
+			context.install(AnimationFactory);
 			context.install(AnimationProvider);
 			context.install(new Link(AnimationXMLParser, IAnimationParser));
 		}

@@ -22,24 +22,25 @@ package game.managers.locations.components
 		
 		}
 		
-		public function setup(source:String):void
+		public final function setup(source:String):void
 		{
 			unsetup();
 			
 			_animationComponent = animationFactory.instantiate(source);
-			addComponent(_animationComponent);
 			inject.inject(_animationComponent);
+			addComponent(_animationComponent);
 			
-			postSetup();
+			onSetup();
 		}
 		
-		public function unsetup():void
+		public final function unsetup():void
 		{
 			if (_animationComponent != null)
 			{
 				_animationComponent.dispose();
 				_animationComponent = null;
 			}
+			onUnsetup();
 		}
 		
 		override protected function onDispose():void 
@@ -48,9 +49,14 @@ package game.managers.locations.components
 			super.onDispose();
 		}
 		
-		protected function postSetup():void
+		protected function onSetup():void
 		{
 		
+		}
+		
+		protected function onUnsetup():void
+		{
+			
 		}
 	
 	}

@@ -10,6 +10,10 @@ package game.managers.locations
 	import game.managers.locations.logics.LocationBattleLogic;
 	import game.managers.locations.logics.LocationLogic;
 	import game.managers.locations.logics.LocationTimeLogic;
+	import game.modules.animations.AnimationFactory;
+	import game.modules.animations.AnimationProvider;
+	import game.mvc.view.ILayers;
+	import game.view.LayerIndex;
 	import starling.animation.Juggler;
 	
 	/**
@@ -22,16 +26,20 @@ package game.managers.locations
 		public var context:Context;
 		[Inject]
 		public var juggler:Juggler;
+		[Inject]
+		public var  layer:ILayers;
 		
 		private var _injector:Injector;
 		private var _data:LocationData;
 		private var _provider:LogicsProvider;
 		private var _logics:Vector.<LocationLogic>;
+		private var _layerProvider:LocationLayerProvider;
 		
 		public function Location()
 		{
 			_provider = new LogicsProvider();
 			_logics = new Vector.<LocationLogic>();
+			_layerProvider = new LocationLayerProvider();
 		}
 		
 		public function get id():int
@@ -51,6 +59,8 @@ package game.managers.locations
 			initializeLogic();
 			
 			loadedLogics();
+			
+			layer.getLayer(LayerIndex.SCREEN).add(_layerProvider.root);
 		}
 		
 		public function get data():LocationData
@@ -58,14 +68,17 @@ package game.managers.locations
 			return _data;
 		}
 		
-		override public function dispose():void
+		override protected function onDispose():void 
 		{
-			if (!disposed)
-			{
-				_logics.length = 0;
-				_injector.dispose();
-				super.dispose();
-			}
+			_logics.length = 0;
+			_injector.dispose();
+			
+			layer.getLayer(LayerIndex.SCREEN).remove(_layerProvider.root);
+		}
+		
+		private function initializeDatas():void
+		{
+			_injector.map(LocationLayerProvider).toValue(_layerProvider);
 		}
 		
 		private function addLogics():void
@@ -93,7 +106,7 @@ package game.managers.locations
 		
 		private function initializeLogic():void
 		{
-			for each (var item:LocationLogic in _tempListLogics)
+			for each (var item:LocationLogic in _logics)
 			{
 				item.initialize();
 			}
@@ -101,7 +114,7 @@ package game.managers.locations
 		
 		private function loadedLogics():void
 		{
-			for each (var item:LocationLogic in _tempListLogics)
+			for each (var item:LocationLogic in _logics)
 			{
 				item.loaded();
 			}

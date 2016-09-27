@@ -3,7 +3,10 @@ package game.managers.locations.mediators
 	import common.composite.Component;
 	import common.composite.Entity;
 	import common.injection.IInjector;
+	import common.system.Assert;
+	import common.system.ClassType;
 	import game.managers.locations.Location;
+	import game.managers.locations.components.LocationObjectComponent;
 	import game.managers.locations.events.LocationObjectEvent;
 	import game.utils.Point3;
 	
@@ -19,6 +22,7 @@ package game.managers.locations.mediators
 		private var _ownerId:int;
 		private var _position:Point3;
 		private var _injector:IInjector;
+		private var _location:Location;
 		
 		public function LocationObject()
 		{
@@ -40,11 +44,6 @@ package game.managers.locations.mediators
 			return _position.z;
 		}
 		
-		public function get location():Location
-		{
-			return root as Location;
-		}
-		
 		public function get objectId():int
 		{
 			return _objectId;
@@ -53,6 +52,11 @@ package game.managers.locations.mediators
 		public function get ownerId():int
 		{
 			return _ownerId;
+		}
+		
+		public function get location():Location
+		{
+			return _location;
 		}
 		
 		public function initialize():void
@@ -81,14 +85,20 @@ package game.managers.locations.mediators
 		
 		override public function addComponent(component:Object):Component 
 		{
-			//var result
-			return super.addComponent(component);
+			Assert.subclassOf(ClassType.getAsClass(component), LocationObjectComponent);
+			
+			var result:LocationObjectComponent = super.addComponent(component) as LocationObjectComponent;
+			_injector.inject(result);
+			result.initialize();
+			
+			return result;
 		}
 		
-		internal function initializeObject(injector:IInjector):void
+		internal function initializeObject(injector:IInjector, location:Location):void
 		{
 			_injector = injector;
-			
+			_location = location;
+			initialize();
 		}
 		
 		protected function dispatchOnMove():void

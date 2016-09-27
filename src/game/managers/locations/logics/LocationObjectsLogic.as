@@ -49,7 +49,7 @@ package game.managers.locations.logics
 			_map[objectId] = result;
 			
 			injector.inject(result);
-			_factory.initializeObject(result, injector);
+			_factory.initializeObject(result, injector, location);
 			
 			return result;
 		}

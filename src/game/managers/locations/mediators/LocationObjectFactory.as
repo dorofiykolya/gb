@@ -3,6 +3,7 @@ package game.managers.locations.mediators
 	import common.composite.Component;
 	import common.injection.IInjector;
 	import common.system.Assert;
+	import game.managers.locations.Location;
 	/**
 	 * ...
 	 * @author dorofiy.com
@@ -18,12 +19,12 @@ package game.managers.locations.mediators
 		public function instantiate(type:Class):LocationObject
 		{
 			Assert.subclassOf(type, LocationObject);
-			return Component.instantiate(type);
+			return Component.instantiate(type) as LocationObject;
 		}
 		
-		public function initializeObject(obj:LocationObject, injector:IInjector):void
+		public function initializeObject(obj:LocationObject, injector:IInjector, location:Location):void
 		{
-			obj.initializeObject(injector);
+			obj.initializeObject(injector, location);
 		}
 		
 	}
