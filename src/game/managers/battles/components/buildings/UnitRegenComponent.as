@@ -20,9 +20,9 @@ package game.managers.battles.components.buildings
 			_increase = 0;
 		}
 		
-		override protected function attach():void
+		override protected function onAttach():void
 		{
-			super.attach();
+			super.onAttach();
 			
 			var unitsPerSecond:Number = BattleBuilding(target).battleInfo.unitsPerSecond;
 			_unitsPerTick = BattleUtils.floor(unitsPerSecond / engine.configuration.ticksPerSecond);

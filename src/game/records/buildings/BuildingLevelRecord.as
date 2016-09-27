@@ -16,9 +16,7 @@ package game.records.buildings
 		public var attackSpeed:int;
 		public var attackRange:int;
 		public var damage:int
-		//public var defense:int;
 		public var mannaProduction:int;
-		//public var magicDefense:int;
 		
 		public function BuildingLevelRecord()
 		{

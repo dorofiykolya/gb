@@ -19,9 +19,9 @@ package game.managers.battles.components.buildings
 			_mannaPerTick = 1;
 		}
 		
-		override protected function attach():void
+		override protected function onAttach():void
 		{
-			super.attach();
+			super.onAttach();
 			_mannaPerTick = BattleBuilding(target).battleInfo.mannaPerSecond / engine.configuration.ticksPerSecond;
 		}
 		

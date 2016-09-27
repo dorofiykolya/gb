@@ -27,8 +27,9 @@ package game.managers.battles.actors
 			{
 				_count = count;
 				outputEvent();
+				return true;
 			}
-			return _count;
+			return false;
 		}
 		
 		public function add(count:int):int

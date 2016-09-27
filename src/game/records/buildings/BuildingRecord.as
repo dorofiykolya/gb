@@ -8,6 +8,7 @@ package game.records.buildings
 	public class BuildingRecord
 	{
 		public var id:int;
+		public var buildingId:int;
 		public var name:String;
 		public var description:String;
 		public var type:int;

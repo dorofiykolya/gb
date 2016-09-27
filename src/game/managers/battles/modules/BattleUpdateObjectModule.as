@@ -29,7 +29,7 @@ package game.managers.battles.modules
 			_temp.length = 0;
 			for each (var enum:ActorsGroup in Enum.getEnums(ActorsGroup))
 			{
-				context.actors.group(enum).getComponentsInChildren(BattleComponent, true, _temp);
+				context.actors.group(enum).getComponentsInChildren(BattleComponent, true, true, _temp);
 				
 				for each (var item:BattleComponent in _temp)
 				{

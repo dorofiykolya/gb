@@ -8,6 +8,7 @@ package game.records.units
 	public class UnitRecord
 	{
 		public var id:int;
+		public var unitId:int;
 		public var name:String;
 		public var description:String;
 		public var race:int;
