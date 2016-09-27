@@ -19,7 +19,7 @@ package game.managers.locations.mediators
 			addComponent(LocationBuildingAnimationComponent);
 		}
 		
-		public function setContent():void
+		public function setContent(buildingId:int, level:int, ownerId:int):void
 		{
 			
 		}

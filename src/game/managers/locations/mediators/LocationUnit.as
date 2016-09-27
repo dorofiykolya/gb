@@ -1,5 +1,6 @@
 package game.managers.locations.mediators
 {
+	import game.managers.battles.output.UnitCreateEvent;
 	import game.managers.locations.components.LocationUnitAnimationComponent;
 	
 	/**
@@ -21,7 +22,7 @@ package game.managers.locations.mediators
 			addComponent(LocationUnitAnimationComponent);
 		}
 		
-		public function setContent():void
+		public function setContent(data:UnitCreateEvent):void
 		{
 		
 		}
