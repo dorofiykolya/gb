@@ -1,6 +1,7 @@
 package game.managers.locations.components
 {
 	import common.injection.IInjector;
+	import game.managers.locations.animations.LocationAnimationComponent;
 	import game.modules.animations.AnimationComponent;
 	import game.modules.animations.AnimationFactory;
 	
@@ -15,7 +16,7 @@ package game.managers.locations.components
 		[Inject]
 		public var inject:IInjector;
 		
-		private var _animationComponent:AnimationComponent;
+		private var _animationComponent:LocationAnimationComponent;
 		
 		public function LocationObjectAnimationComponent()
 		{
@@ -26,8 +27,11 @@ package game.managers.locations.components
 		{
 			unsetup();
 			
-			_animationComponent = animationFactory.instantiate(source);
+			_animationComponent = animationFactory.instantiate(source) as LocationAnimationComponent;
 			inject.inject(_animationComponent);
+			
+			_animationComponent.source = source;
+			
 			addComponent(_animationComponent);
 			
 			onSetup();

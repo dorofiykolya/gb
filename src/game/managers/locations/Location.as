@@ -33,6 +33,7 @@ package game.managers.locations
 		private var _data:LocationData;
 		private var _provider:LogicsProvider;
 		private var _logics:Vector.<LocationLogic>;
+		private var _injectObjects:Vector.<Object>;
 		private var _layerProvider:LocationLayerProvider;
 		
 		public function Location()
@@ -40,6 +41,7 @@ package game.managers.locations
 			_provider = new LogicsProvider();
 			_logics = new Vector.<LocationLogic>();
 			_layerProvider = new LocationLayerProvider();
+			_injectObjects = new Vector.<Object>();
 		}
 		
 		public function get id():int
@@ -53,6 +55,7 @@ package game.managers.locations
 			
 			_data = data;
 			
+			initializeDatas();
 			addLogics();
 			
 			injectLogics();
@@ -71,6 +74,7 @@ package game.managers.locations
 		override protected function onDispose():void 
 		{
 			_logics.length = 0;
+			_injectObjects.length = 0;
 			_injector.dispose();
 			
 			layer.getLayer(LayerIndex.SCREEN).remove(_layerProvider.root);
@@ -78,7 +82,7 @@ package game.managers.locations
 		
 		private function initializeDatas():void
 		{
-			_injector.map(LocationLayerProvider).toValue(_layerProvider);
+			_injectObjects.push(_layerProvider);
 		}
 		
 		private function addLogics():void
@@ -94,6 +98,11 @@ package game.managers.locations
 				_injector.map(item.componentType).toValue(component);
 				_logics.push(component);
 			}
+			
+			for each (var obj:Object in _injectObjects) 
+			{
+				_injector.map(ClassType.getAsClass(obj)).toValue(obj);
+			}
 		}
 		
 		private function injectLogics():void
@@ -101,6 +110,11 @@ package game.managers.locations
 			for each (var item:LocationLogic in _logics)
 			{
 				_injector.inject(item);
+			}
+			
+			for each (var obj:Object in _injectObjects) 
+			{
+				_injector.inject(obj);
 			}
 		}
 		

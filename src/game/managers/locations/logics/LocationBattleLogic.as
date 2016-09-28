@@ -37,7 +37,7 @@ package game.managers.locations.logics
 			var ticks:int = (timer.elapsedTime * _ticksPerSecond);
 			if (_engine.tick != ticks)
 			{
-				if (_engine.tick < ticks)
+				if (_engine.tick > ticks)
 				{
 					
 				}

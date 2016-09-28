@@ -6,6 +6,7 @@ package game.managers.locations.mediators
 	import common.system.Assert;
 	import common.system.ClassType;
 	import game.managers.locations.Location;
+	import game.managers.locations.animations.LocationAnimationComponent;
 	import game.managers.locations.components.LocationObjectComponent;
 	import game.managers.locations.events.LocationObjectEvent;
 	import game.utils.Point3;
@@ -85,11 +86,15 @@ package game.managers.locations.mediators
 		
 		override public function addComponent(component:Object):Component 
 		{
-			Assert.subclassOf(ClassType.getAsClass(component), LocationObjectComponent);
+			var isValidType:Boolean = (ClassType.isSubclassOf(component, LocationAnimationComponent) || ClassType.isSubclassOf(component, LocationObjectComponent));
+			Assert.isTrue(isValidType);
 			
+			if (component is Class)
+			{
+				component = Component.instantiate(Class(component));
+			}
+			_injector.inject(component);
 			var result:LocationObjectComponent = super.addComponent(component) as LocationObjectComponent;
-			_injector.inject(result);
-			result.initialize();
 			
 			return result;
 		}

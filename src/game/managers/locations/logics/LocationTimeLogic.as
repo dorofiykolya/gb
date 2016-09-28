@@ -20,13 +20,14 @@ package game.managers.locations.logics
 		
 		public function LocationTimeLogic()
 		{
-			super();
+			_juggler = new Juggler();
 		}
 		
 		override public function initialize():void
 		{
 			_elapsedTime = 0.0;
 			_scale = 1;
+			_isPlay = true;
 			location.juggler.add(this);
 		}
 		

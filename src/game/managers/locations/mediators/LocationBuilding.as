@@ -1,6 +1,8 @@
 package game.managers.locations.mediators 
 {
+	import game.managers.battles.output.BuildingCreateEvent;
 	import game.managers.locations.components.LocationBuildingAnimationComponent;
+	import game.utils.Point3;
 	/**
 	 * ...
 	 * @author dorofiy.com
@@ -19,9 +21,11 @@ package game.managers.locations.mediators
 			addComponent(LocationBuildingAnimationComponent);
 		}
 		
-		public function setContent(buildingId:int, level:int, ownerId:int):void
+		public function setContent(data:BuildingCreateEvent):void
 		{
+			setPosition(Point3.week(data.x, data.y));
 			
+			animation.setup("asd");
 		}
 		
 		public function get animation():LocationBuildingAnimationComponent

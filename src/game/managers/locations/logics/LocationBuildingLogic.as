@@ -22,7 +22,7 @@ package game.managers.locations.logics
 		public function add(data:BuildingCreateEvent):LocationBuilding
 		{
 			var result:LocationBuilding = factory.instantiate(LocationBuilding, data.objectId) as LocationBuilding;
-			result.setContent(data.buildingId, data.level, data.ownerId);
+			result.setContent(data);
 			return result;
 		}
 		

@@ -23,7 +23,7 @@ package game.managers.locations
 			_context = context;
 		}
 		
-		public function loaded():Boolean
+		public function get loaded():Boolean
 		{
 			return _location != null;
 		}

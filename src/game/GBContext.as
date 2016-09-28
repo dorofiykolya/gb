@@ -5,6 +5,8 @@ package game
 	import game.extensions.GameExtensions;
 	import game.extensions.GameRecordsExtension;
 	import game.flash.PreloaderView;
+	import game.managers.locations.LocationData;
+	import game.managers.locations.LocationManager;
 	import game.modules.applications.IApplicationDescription;
 	import game.modules.preloaders.PreloaderManager;
 	import game.mvc.ContextConfiguration;
@@ -23,6 +25,12 @@ package game
 			super(application, Root, getConfiguration());
 			
 			addEventListener(GameContextEvent.STAGE_READY, onStageReady);
+			addEventListener(GameContextEvent.POST_INITIALIZE, onPostInitialize);
+		}
+		
+		private function onPostInitialize(e:GameContextEvent):void 
+		{
+			LocationManager(getObject(LocationManager)).load(new LocationData());
 		}
 		
 		private function onStageReady():void

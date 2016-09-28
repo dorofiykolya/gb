@@ -15,7 +15,7 @@ package game.managers.screens
 	import starling.events.Event;
 	
 	
-	[Event(name="screenEvent.change" type="game.managers.screens.ScreenEvent")]
+	[Event(name="screenEvent.change", type="game.managers.screens.ScreenEvent")]
 	/**
 	 * ...
 	 * @author dorofiy.com
