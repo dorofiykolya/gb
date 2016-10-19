@@ -40,8 +40,6 @@ package game.view.hud
 		
 		public function provide(mediator:Object, expected:Class):void
 		{
-			_view.insert(new Quad(100, 100, 0xff0000));
-			
 			_mediator = IMediator(mediator);
 			_mediator.mediate(_view);
 		}
