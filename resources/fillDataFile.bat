@@ -1,0 +1,1 @@
+node.exe fillDataFile.js assets/data.xml "" "assets" assets/assets

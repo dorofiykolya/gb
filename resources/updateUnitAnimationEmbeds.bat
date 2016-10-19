@@ -1,0 +1,1 @@
+node embeds.js C:\workspace\PiratesRoyal\src\embeds\animations\units UnitAnimationEmbeds embeds C:\workspace\PiratesRoyal\src\embeds\UnitAnimationEmbeds.as animations/units

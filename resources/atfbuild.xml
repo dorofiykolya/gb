@@ -1,0 +1,70 @@
+<!--ANT-->
+<project name="atfbuild" basedir="." default="process">
+	
+	<target name="atf">
+		<antcall target="clear-export-atf" inheritAll="true" inheritRefs="true" />
+		<antcall target="clear-atf" inheritAll="true" inheritRefs="true" />
+		<antcall target="atf-bmp" inheritAll="true" inheritRefs="true" />
+		<antcall target="atf-browser" inheritAll="true" inheritRefs="true" />
+		<antcall target="atf-android" inheritAll="true" inheritRefs="true" />
+		<antcall target="atf-ios" inheritAll="true" inheritRefs="true" />
+	</target>
+	
+	<target name="atf-bmp">
+		<antcall target="atfbuild" inheritAll="true" inheritRefs="true" >
+			<param name="compression" value="bmp"/>
+		</antcall>
+		<copy todir="atf/bmp" overwrite="true" verbose="true">
+			<fileset dir="src" includes="**/*.atf" />
+		</copy>
+	</target>
+	
+	<target name="atf-browser">
+		<antcall target="atfbuild" inheritAll="true" inheritRefs="true" >
+			<param name="compression" value="browser"/>
+		</antcall>
+		<copy todir="atf/browser" overwrite="true" verbose="true">
+			<fileset dir="src" includes="**/*.atf" />
+		</copy>
+	</target>
+	
+	<target name="atf-android">
+		<antcall target="atfbuild" inheritAll="true" inheritRefs="true" >
+			<param name="compression" value="android"/>
+		</antcall>
+		<copy todir="atf/android" overwrite="true" verbose="true">
+			<fileset dir="src" includes="**/*.atf" />
+		</copy>
+	</target>
+	
+	<target name="atf-ios">
+		<antcall target="atfbuild" inheritAll="true" inheritRefs="true" >
+			<param name="compression" value="ios"/>
+		</antcall>
+		<copy todir="atf/ios" overwrite="true" verbose="true">
+			<fileset dir="src" includes="**/*.atf" />
+		</copy>
+	</target>
+	
+	<target name="clear-atf">
+		<delete>
+			<fileset dir="src" includes="**/*.atf" />
+		</delete>
+	</target>
+	
+	<target name="clear-export-atf">
+		<delete>
+			<fileset dir="atf" includes="**/*.atf" />
+		</delete>
+	</target>
+
+	<target name="atfbuild">
+		<exec executable="node.exe">
+			<arg value="atfbuild.js" />
+			<arg value="png2atf.exe" />
+			<arg value="${compression}" />
+			<arg value="src" />
+		</exec>
+	</target>
+
+</project>

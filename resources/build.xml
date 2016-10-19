@@ -1,10 +1,12 @@
 <!--ANT-->
-<project name="batch process" basedir="." default="">
+<project name="resources batch process" basedir="." default="">
 
-	<property name="SDK_HOME" value="C:/AIR" />
+	<property name="FLEX_SDK_HOME" value="C:/Users/admin/AppData/Local/FlashDevelop/Apps/flexairsdk/4.6.0+21.0.0" />
+	<property name="ASC_SDK_HOME" value="C:/AIR" />
 	<property name="build.dir" value="bin" />
 	<property name="src.dir" value="src" />
-	<property name="MXMLC.EXE" value="${SDK_HOME}/bin/mxmlc.bat" />
+	<property name="ASC_MXMLC" value="${ASC_SDK_HOME}/bin/mxmlc.bat" />
+	<property name="FLEX_MXMLC" value="${FLEX_SDK_HOME}/bin/mxmlc.exe" />
 	
 	<target name="sounds">
 		<exec dir="${basedir}" executable="sounds.bat">
@@ -58,7 +60,7 @@
 	</target>
 	
 	<target name="shadows">
-		<antcall target="swf">
+		<antcall target="flex-swf">
 			<param name="fileName" value="shadows" />
 			<param name="source" value="ShadowsExternalEmbeds.as" />
 		</antcall>
@@ -70,14 +72,79 @@
 			<param name="source" value="BarrelsExternalEmbeds.as" />
 		</antcall>
 	</target>
+	
+	<target name="bombs">
+		<antcall target="swf">
+			<param name="fileName" value="bombs" />
+			<param name="source" value="BombsExternalEmbeds.as" />
+		</antcall>
+	</target>
 
-	<target name="swf" depends="" description="Compile Debug SWF">
-		<exec dir="${basedir}" executable="${MXMLC.EXE}">
+	<target name="swf" depends="" description="Compile Debug SWF (ASC2)">
+		<antcall target="asc-swf" />
+	</target>
+	
+	<target name="flex-swf" depends="" description="Compile Debug SWF (FLEX)">
+		<exec dir="${basedir}" executable="${FLEX_MXMLC}">
 			<arg value="-debug=true" />
-			<arg value="+flexlib=${SDK_HOME}/frameworks" />
+			<arg value="+flexlib=${FLEX_SDK_HOME}/frameworks" />
 			<arg value="${src.dir}/${source}" />
 			<arg value="-output=${build.dir}/${fileName}.swf" />
 		</exec>
+	</target>
+	
+	<target name="asc-swf" depends="" description="Compile Debug SWF (ASC2)">
+		<exec dir="${basedir}" executable="${ASC_MXMLC}">
+			<arg value="-debug=true" />
+			<arg value="+flexlib=${ASC_SDK_HOME}/frameworks" />
+			<arg value="-load-config+=${basedir}/flex-config.xml" />
+			<arg value="${src.dir}/${source}" />
+			<arg value="-output=${build.dir}/${fileName}.swf" />
+		</exec>
+	</target>
+	
+	
+	<target name="src-bmp">
+		<ant antfile="assets.xml" target="src-bmp" inheritAll="true" />
+	</target>
+	
+	<target name="src-android">
+		<ant antfile="assets.xml" target="src-android" inheritAll="true" />
+	</target>
+	
+	<target name="src-ios">
+		<ant antfile="assets.xml" target="src-ios" inheritAll="true" />
+	</target>
+	<target name="src-browser">
+		<ant antfile="assets.xml" target="src-browser" inheritAll="true" />
+	</target>
+	
+	<target name="bmp">
+		<ant antfile="assets.xml" target="bmp" inheritAll="true" />
+	</target>
+	
+	<target name="android">
+		<ant antfile="assets.xml" target="android" inheritAll="true" />
+	</target>
+	
+	<target name="ios">
+		<ant antfile="assets.xml" target="ios" inheritAll="true" />
+	</target>
+	
+	<target name="atf">
+		<ant antfile="atfbuild.xml" target="atf" inheritAll="true" />
+	</target>
+	
+	<target name="atf-browser">
+		<ant antfile="atfbuild.xml" target="atf-browser" inheritAll="true" />
+	</target>
+	
+	<target name="atf-android">
+		<ant antfile="atfbuild.xml" target="atf-android" inheritAll="true" />
+	</target>
+	
+	<target name="atf-ios">
+		<ant antfile="atfbuild.xml" target="atf-ios" inheritAll="true" />
 	</target>
 
 </project>

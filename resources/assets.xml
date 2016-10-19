@@ -1,0 +1,111 @@
+<!--ANT-->
+<project name="assets" basedir="." default="">
+	
+	<property name="FILL_DATA" value="fillDataFile.bat" />
+	<property name="XML_TO_BIN" value="xmlbin.exe" />
+	
+	<target name="clear">
+		<delete dir="assets" />
+	</target>
+	
+	<target name="src-bmp" depends="clear" description="BMP TO SRC">
+		<copy todir="src" overwrite="true" verbose="true">
+			<fileset dir="atf/bmp" />
+		</copy>
+	</target>
+	
+	<target name="src-android" depends="clear" description="ANDROID TO SRC">
+		<copy todir="src" overwrite="true" verbose="true">
+			<fileset dir="atf/android" />
+		</copy>
+	</target>
+	
+	<target name="src-ios" depends="clear" description="IOS TO SRC">
+		<copy todir="src" overwrite="true" verbose="true">
+			<fileset dir="atf/ios" />
+		</copy>
+	</target>
+	
+	<target name="src-browser" depends="clear" description="BROWSR TO SRC">
+		<copy todir="src" overwrite="true" verbose="true">
+			<fileset dir="atf/browser" />
+		</copy>
+	</target>
+	
+	<target name="bmp" depends="clear" description="BMP ASSETS">
+		<exec command="cmd /c ${XML_TO_BIN} src" />
+		
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="atf/bmp" />
+		</copy>
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="src" includes="**/*.bin" />
+			<fileset dir="src" includes="**/*.scale" />
+		</copy>
+		<antcall target="custom" />
+		<antcall target="sounds" />
+		<exec command="cmd /c ${FILL_DATA}" />
+	</target>
+	
+	<target name="browser" depends="clear" description="BROWSER ASSETS">
+		<exec command="cmd /c ${XML_TO_BIN} src" />
+		
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="atf/browser" />
+		</copy>
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="src" includes="**/*.bin" />
+			<fileset dir="src" includes="**/*.scale" />
+		</copy>
+		
+		<antcall target="custom" />
+		<antcall target="sounds" />
+		<exec command="cmd /c ${FILL_DATA}" />
+	</target>
+	
+	<target name="android" depends="clear" description="ANDROID ASSETS">
+		<exec command="cmd /c ${XML_TO_BIN} src" />
+		
+		<mkdir dir="assets/assets"/>
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="atf/android" />
+		</copy>
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="src" includes="**/*.bin" />
+			<fileset dir="src" includes="**/*.scale" />
+		</copy>
+		<antcall target="custom" />
+		
+		<antcall target="sounds" />
+		<exec command="cmd /c ${FILL_DATA}" />
+	</target>
+	
+	<target name="ios" depends="clear" description="IOS ASSETS">
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="atf/ios" />
+		</copy>
+		<copy todir="assets/assets" overwrite="true" verbose="false">
+			<fileset dir="src" includes="**/*.xml" />
+			<fileset dir="src" includes="**/*.scale" />
+		</copy>
+		<antcall target="custom" />
+		<antcall target="sounds" />
+		<exec command="cmd /c ${FILL_DATA}" />
+	</target>
+	
+	<target name="custom">
+		<copy todir="assets/assets/shadows" overwrite="true" verbose="false">
+			<fileset dir="src/shadows" includes="**/*.png" />
+		</copy>
+		<delete>
+			<fileset dir="assets/assets/shadows" includes="**/*.atf" />
+		</delete>
+	</target>
+	
+	<target name="sounds">
+		<copy todir="assets/sounds" overwrite="true" verbose="false">
+			<fileset dir="src/sounds" />
+		</copy>
+	</target>
+	
+</project>
