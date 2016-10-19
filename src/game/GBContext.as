@@ -30,7 +30,7 @@ package game
 		
 		private function onPostInitialize(e:GameContextEvent):void 
 		{
-			LocationManager(getObject(LocationManager)).load(new LocationData());
+			
 		}
 		
 		private function onStageReady():void

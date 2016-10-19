@@ -1,5 +1,7 @@
 package game.commands
 {
+	import game.managers.locations.LocationData;
+	import game.managers.locations.LocationManager;
 	import game.mvc.view.ViewContext;
 	import game.modules.preloaders.PreloaderManager;
 	import game.modules.resources.ResourceManager;
@@ -17,6 +19,8 @@ package game.commands
 		public var preloader:PreloaderManager;
 		[Inject]
 		public var resourceManager:ResourceManager;
+		[Inject]
+		public var locationManager:LocationManager;
 		
 		public function AssetLoadCommand()
 		{
@@ -33,6 +37,8 @@ package game.commands
 			
 			context.initialize();
 			preloader.close();
+			
+			locationManager.load(new LocationData());
 		}
 	}
 }

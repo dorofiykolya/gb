@@ -12,6 +12,7 @@ package game.managers.locations.logics
 	import game.managers.locations.commands.LocationCommand;
 	import game.managers.locations.commands.LocationMannaChangeCommand;
 	import game.managers.locations.commands.LocationUnitCreateCommand;
+	import game.managers.locations.commands.LocationUnitMoveCommand;
 	import game.managers.locations.commands.LocationUnitRemoveCommand;
 	import game.managers.locations.commands.LocationUnitsChangeCommand;
 	
@@ -38,6 +39,7 @@ package game.managers.locations.logics
 			add(new LocationUnitCreateCommand());
 			add(new LocationUnitRemoveCommand());
 			add(new LocationUnitsChangeCommand());
+			add(new LocationUnitMoveCommand());
 		}
 		
 		public function add(command:LocationCommand):void

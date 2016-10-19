@@ -45,11 +45,6 @@ package game.managers.locations.animations
 		{
 			super.onAttach();
 			
-			var quad:Quad = new Quad(10, 10, Math.random() * 0xffffff);
-			quad.x = locationObject.x;
-			quad.y = locationObject.y;
-			layerProvider.getLayer(LocationLayerName.OBJECTS).insert(quad);
-			
 			_layers = layerFactory.getLayers(source);
 			if (_layers == null)
 			{
@@ -73,6 +68,10 @@ package game.managers.locations.animations
 					layerProvider.getLayer(item.layerName).insert(item);
 					item.addEventListener(starling.events.Event.COMPLETE, onStateComplete);
 					juggler.add(item);
+					
+					item.x = locationObject.x;
+					item.y = locationObject.y;
+					item.z = locationObject.z;
 				}
 			}
 		}

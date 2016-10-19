@@ -80,6 +80,9 @@ package game.managers.locations.mediators
 			if (!_position.equals(point))
 			{
 				_position.copyFrom(point);
+				if (isNaN(_position.x)) _position.x = 0;
+				if (isNaN(_position.y)) _position.y = 0;
+				if (isNaN(_position.z)) _position.z = 0;
 				dispatchOnMove();
 			}
 		}

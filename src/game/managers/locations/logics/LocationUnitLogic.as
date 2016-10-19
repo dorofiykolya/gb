@@ -1,20 +1,21 @@
-package game.managers.locations.logics 
+package game.managers.locations.logics
 {
 	import game.managers.battles.output.UnitCreateEvent;
+	import game.managers.locations.mediators.LocationObject;
 	import game.managers.locations.mediators.LocationUnit;
+	
 	/**
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class LocationUnitLogic extends LocationLogic 
+	public class LocationUnitLogic extends LocationLogic
 	{
 		[Inject]
 		public var factory:LocationObjectsLogic;
 		
-		public function LocationUnitLogic() 
+		public function LocationUnitLogic()
 		{
-			super();
-			
+		
 		}
 		
 		public function add(data:UnitCreateEvent):LocationUnit
@@ -29,6 +30,12 @@ package game.managers.locations.logics
 			return factory.getByObjectId(objectId) as LocationUnit;
 		}
 		
+		public function remove(objectId:int):void
+		{
+			var object:LocationObject = factory.getByObjectId(objectId);
+			object.dispose();
+		}
+	
 	}
 
 }

@@ -24,7 +24,12 @@ package game.managers.locations.mediators
 		
 		public function setContent(data:UnitCreateEvent):void
 		{
+			animation.setup("warrior");
+		}
 		
+		public function setUnits(units:int):void 
+		{
+			
 		}
 		
 		public function get animation():LocationUnitAnimationComponent

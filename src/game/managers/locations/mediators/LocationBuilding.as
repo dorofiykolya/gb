@@ -28,6 +28,11 @@ package game.managers.locations.mediators
 			animation.setup("asd");
 		}
 		
+		public function setUnits(units:int):void 
+		{
+			
+		}
+		
 		public function get animation():LocationBuildingAnimationComponent
 		{
 			return getComponent(LocationBuildingAnimationComponent) as LocationBuildingAnimationComponent;
