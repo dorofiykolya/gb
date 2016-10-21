@@ -3,31 +3,31 @@
 
 	<layer name="shadow">
 		<states>
-			<state name="w0" fps="15" alignPivot="">
+			<state name="0" fps="15" alignPivot="">
 				<frames>horse_warrior_s0_</frames>
 			</state>
-			<state name="w1" fps="15" alignPivot="">
+			<state name="1" fps="15" alignPivot="">
 				<frames>horse_warrior_s1_</frames>
 			</state>
-			<state name="w2" fps="15" alignPivot="">
+			<state name="2" fps="15" alignPivot="">
 				<frames>horse_warrior_s2_</frames>
 			</state>
-			<state name="w3" fps="15" alignPivot="">
+			<state name="3" fps="15" alignPivot="">
 				<frames>horse_warrior_s3_</frames>
 			</state>
-			<state name="w4" fps="15" alignPivot="">
+			<state name="4" fps="15" alignPivot="">
 				<frames>horse_warrior_s4_</frames>
 			</state>
-			<state name="w5" fps="15" alignPivot="" scaleX="-1">
+			<state name="5" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_s3_</frames>
 			</state>
-			<state name="w6" fps="15" alignPivot="" scaleX="-1">
+			<state name="6" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_s2_</frames>
 			</state>
-			<state name="w7" fps="15" alignPivot="" scaleX="-1">
+			<state name="7" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_s1_</frames>
 			</state>
-			<state name="w8" fps="15" alignPivot="" scaleX="-1">
+			<state name="8" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_s0_</frames>
 			</state>
 		</states>	
@@ -35,31 +35,31 @@
 	
 	<layer name="objects">
 		<states>
-			<state name="w0" fps="15" alignPivot="">
+			<state name="0" fps="15" alignPivot="">
 				<frames>horse_warrior_w0_</frames>
 			</state>
-			<state name="w1" fps="15" alignPivot="">
+			<state name="1" fps="15" alignPivot="">
 				<frames>horse_warrior_w1_</frames>
 			</state>
-			<state name="w2" fps="15" alignPivot="">
+			<state name="2" fps="15" alignPivot="">
 				<frames>horse_warrior_w2_</frames>
 			</state>
-			<state name="w3" fps="15" alignPivot="">
+			<state name="3" fps="15" alignPivot="">
 				<frames>horse_warrior_w3_</frames>
 			</state>
-			<state name="w4" fps="15" alignPivot="">
+			<state name="4" fps="15" alignPivot="">
 				<frames>horse_warrior_w4_</frames>
 			</state>
-			<state name="w5" fps="15" alignPivot="" scaleX="-1">
+			<state name="5" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_w3_</frames>
 			</state>
-			<state name="w6" fps="15" alignPivot="" scaleX="-1">
+			<state name="6" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_w2_</frames>
 			</state>
-			<state name="w7" fps="15" alignPivot="" scaleX="-1">
+			<state name="7" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_w1_</frames>
 			</state>
-			<state name="w8" fps="15" alignPivot="" scaleX="-1">
+			<state name="8" fps="15" alignPivot="" scaleX="-1">
 				<frames>horse_warrior_w0_</frames>
 			</state>
 		</states>

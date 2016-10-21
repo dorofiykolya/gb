@@ -47,6 +47,11 @@ package game.managers.locations.components
 			onUnsetup();
 		}
 		
+		public function get component():LocationAnimationComponent
+		{
+			return _animationComponent;
+		}
+		
 		override protected function onDispose():void 
 		{
 			unsetup();

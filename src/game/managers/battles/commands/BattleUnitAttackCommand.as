@@ -48,6 +48,7 @@ package game.managers.battles.commands
 				createUnit.units = unit.units.count;
 				createUnit.x = unit.transform.x;
 				createUnit.y = unit.transform.y;
+				createUnit.toObjectId = to.objectId;
 				
 				var evt:UnitAttackEvent = context.output.enqueueByFactory(UnitAttackEvent) as UnitAttackEvent;
 				evt.count = unitCount;

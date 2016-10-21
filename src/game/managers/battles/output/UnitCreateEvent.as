@@ -15,6 +15,7 @@ package game.managers.battles.output
 		public var x:Number;
 		public var y:Number;
 		public var units:int;
+		public var toObjectId:int;
 		
 		public function UnitCreateEvent()
 		{

@@ -30,10 +30,18 @@ package game.managers.locations.animations
 		public var juggler:IJuggler;
 		
 		private var _layers:Vector.<LayerViewer>;
+		private var _state:String;
+		private var _timeScale:Number;
 		
 		public function DefaultAnimationComponent()
 		{
 		
+		}
+		
+		override public function setState(newState:String, startOver:Boolean = false, timeScale:Number = 1):void
+		{
+			state = newState;
+			updateState(startOver);
 		}
 		
 		override public function get layers():Vector.<LayerViewer>
@@ -41,9 +49,40 @@ package game.managers.locations.animations
 			return _layers;
 		}
 		
+		public override function get state():String
+		{
+			return _state;
+		}
+		
+		public function set state(value:String):void
+		{
+			_state = value;
+		}
+		
+		public override function get timeScale():Number 
+		{
+			return _timeScale;
+		}
+		
+		public override function set timeScale(value:Number):void 
+		{
+			_timeScale = value;
+		}
+		
+		protected function updateState(startOver:Boolean):void
+		{
+			for each (var item:LayerViewer in _layers)
+			{
+				item.setState(state, startOver);
+				item.timeScale = timeScale;
+			}
+		}
+		
 		override protected function onAttach():void
 		{
 			super.onAttach();
+			
+			_timeScale = 1;
 			
 			_layers = layerFactory.getLayers(source);
 			if (_layers == null)
@@ -63,7 +102,7 @@ package game.managers.locations.animations
 		{
 			if (_layers != null)
 			{
-				for each (var item:LayerViewer in _layers) 
+				for each (var item:LayerViewer in _layers)
 				{
 					layerProvider.getLayer(item.layerName).insert(item);
 					item.addEventListener(starling.events.Event.COMPLETE, onStateComplete);
@@ -76,7 +115,7 @@ package game.managers.locations.animations
 			}
 		}
 		
-		private function onStateComplete(e:Object = null):void 
+		private function onStateComplete(e:Object = null):void
 		{
 			dispatchEventWith(common.events.Event.COMPLETE);
 		}
