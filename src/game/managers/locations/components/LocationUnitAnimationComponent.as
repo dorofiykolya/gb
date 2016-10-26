@@ -34,6 +34,11 @@ package game.managers.locations.components
 			
 			component.setState(STATES[direction], false);
 		}
+		
+		override protected function onDispose():void 
+		{
+			super.onDispose();
+		}
 	
 	}
 

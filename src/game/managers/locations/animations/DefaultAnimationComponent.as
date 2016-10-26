@@ -115,6 +115,21 @@ package game.managers.locations.animations
 			}
 		}
 		
+		private function detachFromView():void
+		{
+			if (_layers != null)
+			{
+				for each (var item:LayerViewer in _layers) 
+				{
+					layerProvider.getLayer(item.layerName).cut(item);
+					item.removeEventListener(starling.events.Event.COMPLETE, onStateComplete);
+					juggler.remove(item);
+				}
+				layerFactory.toPool(source, _layers);
+				_layers = null;
+			}
+		}
+		
 		private function onStateComplete(e:Object = null):void
 		{
 			dispatchEventWith(common.events.Event.COMPLETE);
@@ -133,7 +148,7 @@ package game.managers.locations.animations
 		override protected function onDetach():void
 		{
 			locationObject.removeEventListener(LocationObjectEvent.MOVE, onMove);
-			
+			detachFromView();
 			super.onDetach();
 		}
 	

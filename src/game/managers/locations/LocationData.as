@@ -91,7 +91,7 @@ package game.managers.locations
 			building1_1.level = 1;
 			building1_1.mannaPerSecond = 0;
 			building1_1.ownerId = 1;
-			building1_1.position = new Point(0, 0);
+			building1_1.position = new Point(100, 100);
 			building1_1.unitId = 1;
 			building1_1.unitLevel = 1;
 			building1_1.units = 50;
@@ -104,7 +104,7 @@ package game.managers.locations
 			building1_2.level = 1;
 			building1_2.mannaPerSecond = 1;
 			building1_2.ownerId = 1;
-			building1_2.position = new Point(100, 0);
+			building1_2.position = new Point(400, 100);
 			building1_2.unitId = 2;
 			building1_2.unitLevel = 1;
 			building1_2.units = 30;
@@ -117,7 +117,7 @@ package game.managers.locations
 			building1_3.level = 1;
 			building1_3.mannaPerSecond = 0;
 			building1_3.ownerId = 1;
-			building1_3.position = new Point(200, 0);
+			building1_3.position = new Point(700, 100);
 			building1_3.unitId = 3;
 			building1_3.unitLevel = 1;
 			building1_3.units = 10;
@@ -130,7 +130,7 @@ package game.managers.locations
 			building2_1.level = 1;
 			building2_1.mannaPerSecond = 0;
 			building2_1.ownerId = 2;
-			building2_1.position = new Point(0, 200);
+			building2_1.position = new Point(100, 700);
 			building2_1.unitId = 1;
 			building2_1.unitLevel = 1;
 			building2_1.units = 50;
@@ -143,7 +143,7 @@ package game.managers.locations
 			building2_2.level = 1;
 			building2_2.mannaPerSecond = 1;
 			building2_2.ownerId = 2;
-			building2_2.position = new Point(100, 200);
+			building2_2.position = new Point(400, 700);
 			building2_2.unitId = 2;
 			building2_2.unitLevel = 1;
 			building2_2.units = 30;
@@ -156,7 +156,7 @@ package game.managers.locations
 			building2_3.level = 1;
 			building2_3.mannaPerSecond = 0;
 			building2_3.ownerId = 2;
-			building2_3.position = new Point(200, 200);
+			building2_3.position = new Point(700, 700);
 			building2_3.unitId = 3;
 			building2_3.unitLevel = 1;
 			building2_3.units = 10;
@@ -169,7 +169,7 @@ package game.managers.locations
 			building0_3.level = 1;
 			building0_3.mannaPerSecond = 0;
 			building0_3.ownerId = 0;
-			building0_3.position = new Point(100, 100);
+			building0_3.position = new Point(400, 400);
 			building0_3.unitId = 3;
 			building0_3.unitLevel = 1;
 			building0_3.units = 10;
