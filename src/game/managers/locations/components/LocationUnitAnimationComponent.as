@@ -13,7 +13,7 @@ package game.managers.locations.components
 	{
 		private static const FROM:Point = new Point();
 		private static const TO:Point = new Point();
-		private static const STATES:Array = ["0", "1", "2", "3", "4", "5", "6", "7", "8"];
+		private static const STATES:Vector.<String> = new <String>["0", "1", "2", "3", "4", "5", "6", "7", "8"];
 		
 		[Inject]
 		public var actorManager:LocationObjectsLogic;
@@ -30,7 +30,7 @@ package game.managers.locations.components
 			FROM.setTo(locationObject.x, locationObject.y);
 			TO.setTo(target.x, target.y);
 			
-			var direction = DirectionSupport.getDirectionPointToPoint(FROM, TO, 8, 0, 0);
+			var direction:int = DirectionSupport.getDirectionPointToPoint(FROM, TO, 8, 0, 0);
 			
 			component.setState(STATES[direction], false);
 		}
