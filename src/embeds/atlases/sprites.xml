@@ -1,325 +1,399 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:00440c9e6cff604063aa71b3e6898549:6361192aa3a8872b9ea138f45bde47c0:a3c246832ea35f0bdda766159aff8361$ -->
-<TextureAtlas imagePath="sprites.png" width="2048" height="2048">
-    <SubTexture name="npc_altair_lvl_1" x="724" y="1076" rotated="true" width="151" height="238" frameX="-74" frameY="-278" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="npc_altair_lvl_2" x="683" y="796" rotated="true" width="182" height="255" frameX="-57" frameY="-246" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="npc_altair_lvl_3" x="262" y="807" rotated="true" width="188" height="271" frameX="-41" frameY="-242" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="npc_house_lvl_1" x="845" y="1825" rotated="true" width="143" height="163" frameX="-59" frameY="-232" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="npc_house_lvl_2" x="648" y="1610" rotated="true" width="192" height="218" frameX="-45" frameY="-186" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="npc_tower_lvl_1" x="262" y="1618" width="186" height="222" frameX="-71" frameY="-149" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="npc_village_npc" x="262" y="515" width="251" height="290" frameX="-32" frameY="-117" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_altair_lvl_1" x="724" y="1076" rotated="true" width="151" height="238" frameX="-74" frameY="-278" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_altair_lvl_2" x="683" y="796" rotated="true" width="182" height="255" frameX="-57" frameY="-246" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_altair_lvl_3" x="262" y="807" rotated="true" width="188" height="271" frameX="-41" frameY="-242" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_house_lvl_1" x="1133" y="1825" rotated="true" width="132" height="151" frameX="-80" frameY="-237" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_house_lvl_2" x="1" y="1843" width="220" height="196" frameX="-49" frameY="-186" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_house_lvl_3" x="493" y="1345" rotated="true" width="245" height="263" frameX="-33" frameY="-151" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_tower_lvl_1" x="667" y="1830" width="176" height="213" frameX="-78" frameY="-153" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_tower_lvl_2" x="262" y="1080" width="229" height="267" frameX="-62" frameY="-110" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_1_tower_lvl_3" x="1" y="515" width="259" height="330" frameX="-53" frameY="-44" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_altair_lvl_1" x="724" y="1076" rotated="true" width="151" height="238" frameX="-74" frameY="-278" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_altair_lvl_2" x="683" y="796" rotated="true" width="182" height="255" frameX="-57" frameY="-246" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_altair_lvl_3" x="262" y="807" rotated="true" width="188" height="271" frameX="-41" frameY="-242" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_house_lvl_1" x="1117" y="1610" rotated="true" width="132" height="151" frameX="-80" frameY="-237" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_house_lvl_2" x="223" y="1843" width="220" height="196" frameX="-49" frameY="-186" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_house_lvl_3" x="515" y="1" rotated="true" width="245" height="263" frameX="-33" frameY="-151" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_tower_lvl_1" x="740" y="1345" width="176" height="213" frameX="-78" frameY="-153" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_tower_lvl_2" x="452" y="807" width="229" height="267" frameX="-62" frameY="-110" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_2_tower_lvl_3" x="1" y="847" width="259" height="330" frameX="-53" frameY="-44" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_altair_lvl_1" x="724" y="1076" rotated="true" width="151" height="238" frameX="-74" frameY="-278" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_altair_lvl_2" x="683" y="796" rotated="true" width="182" height="255" frameX="-57" frameY="-246" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_altair_lvl_3" x="262" y="807" rotated="true" width="188" height="271" frameX="-41" frameY="-242" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_house_lvl_1" x="1267" y="1825" rotated="true" width="132" height="151" frameX="-80" frameY="-237" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_house_lvl_2" x="445" y="1842" width="220" height="196" frameX="-49" frameY="-186" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_house_lvl_3" x="515" y="266" rotated="true" width="245" height="263" frameX="-33" frameY="-151" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_tower_lvl_1" x="918" y="1344" width="175" height="213" frameX="-78" frameY="-153" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_tower_lvl_2" x="262" y="1349" width="229" height="267" frameX="-62" frameY="-110" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_3_tower_lvl_3" x="1" y="1179" width="259" height="330" frameX="-53" frameY="-44" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_altair_lvl_1" x="724" y="1076" rotated="true" width="151" height="238" frameX="-74" frameY="-278" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_altair_lvl_2" x="683" y="796" rotated="true" width="182" height="255" frameX="-57" frameY="-246" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_altair_lvl_3" x="262" y="807" rotated="true" width="188" height="271" frameX="-41" frameY="-242" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_house_lvl_1" x="1412" y="1" width="151" height="132" frameX="-80" frameY="-237" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_house_lvl_2" x="450" y="1618" rotated="true" width="196" height="220" frameX="-49" frameY="-186" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_house_lvl_3" x="515" y="531" rotated="true" width="245" height="263" frameX="-33" frameY="-151" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_tower_lvl_1" x="842" y="1610" width="176" height="213" frameX="-78" frameY="-153" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_tower_lvl_2" x="493" y="1076" width="229" height="267" frameX="-62" frameY="-110" frameWidth="312" frameHeight="430"/>
-    <SubTexture name="player_4_tower_lvl_3" x="1" y="1511" width="259" height="330" frameX="-53" frameY="-44" frameWidth="312" frameHeight="430"/>
+<!-- $TexturePacker:SmartUpdate:bc6b5ac6a4c8c2c9e0acb079f09868b2:c11cabef6049261eea2d54b506a16c3e:667f8b5691fffec4d2aeae5ec68419a0$ -->
+<TextureAtlas imagePath="sprites.png" width="4096" height="4096">
+    <SubTexture name="buildings/decor/elka_01" x="515" y="534" width="196" height="308" frameX="-258" frameY="-69" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_01s" x="213" y="515" width="210" height="94" frameX="-270" frameY="-304" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_02" x="701" y="1158" width="130" height="174" frameX="-294" frameY="-206" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_02s" x="1029" y="1332" width="130" height="59" frameX="-298" frameY="-328" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_03" x="825" y="1635" width="158" height="326" frameX="-279" frameY="-38" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_03s" x="664" y="1504" width="160" height="73" frameX="-333" frameY="-299" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_04" x="849" y="361" width="236" height="377" frameX="-240" frameY="-31" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_04s" x="1174" y="1" width="262" height="159" frameX="-251" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_05" x="849" y="1" width="323" height="358" frameX="-202" frameY="-39" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_05s" x="515" y="1" width="332" height="149" frameX="-217" frameY="-266" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_06" x="1912" y="458" width="133" height="331" frameX="-291" frameY="-33" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/elka_06s" x="1614" y="1328" width="143" height="64" frameX="-346" frameY="-302" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/koloda_01" x="1827" y="1497" width="123" height="101" frameX="-288" frameY="-301" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/koloda_01s" x="1042" y="911" width="127" height="70" frameX="-294" frameY="-332" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/penek_01" x="413" y="761" width="98" height="61" frameX="-307" frameY="-327" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/penek_02" x="1906" y="1855" width="94" height="65" frameX="-313" frameY="-320" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_01" x="1541" y="1341" width="70" height="56" frameX="-325" frameY="-330" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_02" x="1769" y="2307" width="90" height="50" frameX="-313" frameY="-327" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_03" x="152" y="1746" width="88" height="66" frameX="-313" frameY="-325" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_04" x="1152" y="1912" width="104" height="71" frameX="-306" frameY="-317" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_05" x="692" y="1334" width="145" height="99" frameX="-285" frameY="-289" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_06" x="502" y="1771" width="150" height="73" frameX="-275" frameY="-315" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_07" x="1163" y="1592" width="112" height="64" frameX="-301" frameY="-325" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_08" x="1444" y="1523" width="95" height="74" frameX="-310" frameY="-314" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/rocks_09" x="1173" y="527" width="229" height="137" frameX="-235" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/sosna_01" x="1173" y="666" width="224" height="357" frameX="-232" frameY="-15" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/sosna_01s" x="1658" y="657" width="238" height="100" frameX="-304" frameY="-273" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/sosna_02" x="1" y="515" width="210" height="349" frameX="-232" frameY="-14" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/decor/sosna_02s" x="1698" y="1" width="257" height="116" frameX="-280" frameY="-265" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_altar_1" x="185" y="1652" width="149" height="92" frameX="-284" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_altar_2" x="509" y="1040" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_altar_3" x="1399" y="795" width="213" height="141" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_barrack_1" x="664" y="1656" width="150" height="145" frameX="-273" frameY="-252" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_barrack_1s" x="1167" y="1249" width="161" height="73" frameX="-275" frameY="-325" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_barrack_2" x="213" y="865" width="194" height="191" frameX="-259" frameY="-207" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_barrack_2s" x="1625" y="759" width="215" height="93" frameX="-262" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_city" x="1693" y="119" width="251" height="290" frameX="-252" frameY="-117" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/npc/npc_tower" x="1169" y="1025" width="186" height="222" frameX="-291" frameY="-149" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_altar_1b" x="1" y="1657" width="149" height="92" frameX="-284" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_altar_1s" x="654" y="1803" width="150" height="69" frameX="-288" frameY="-323" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_altar_2b" x="195" y="1058" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_altar_2s" x="1842" y="853" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_altar_3b" x="1614" y="854" width="213" height="141" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_altar_3s" x="1399" y="696" width="224" height="97" frameX="-257" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_barrack_1b" x="713" y="575" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_barrack_1s" x="692" y="1435" width="144" height="67" frameX="-301" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_barrack_2b" x="848" y="740" width="192" height="194" frameX="-262" frameY="-207" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_barrack_2s" x="1829" y="1088" width="213" height="98" frameX="-270" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_barrack_3b" x="1428" y="204" width="240" height="244" frameX="-247" frameY="-172" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_barrack_3s" x="1174" y="162" width="252" height="117" frameX="-257" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_tower_1b" x="1042" y="1117" width="123" height="213" frameX="-292" frameY="-173" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_tower_1s" x="664" y="1579" width="159" height="75" frameX="-308" frameY="-311" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_tower_2b" x="1167" y="1324" width="160" height="266" frameX="-276" frameY="-131" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_tower_2s" x="515" y="436" width="222" height="96" frameX="-283" frameY="-301" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_tower_3b" x="508" y="1171" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player0/viking_tower_3s" x="1438" y="93" width="253" height="109" frameX="-274" frameY="-286" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_altar_1r" x="1614" y="1140" width="149" height="92" frameX="-284" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_altar_1s" x="654" y="1803" width="150" height="69" frameX="-288" frameY="-323" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_altar_2r" x="1" y="1063" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_altar_2s" x="1842" y="853" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_altar_3r" x="1399" y="938" width="213" height="141" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_altar_3s" x="1399" y="696" width="224" height="97" frameX="-257" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_barrack_1r" x="713" y="709" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_barrack_1s" x="692" y="1435" width="144" height="67" frameX="-301" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_barrack_2r" x="1" y="866" width="192" height="195" frameX="-262" frameY="-207" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_barrack_2s" x="1829" y="1088" width="213" height="98" frameX="-270" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_barrack_3r" x="1174" y="281" width="240" height="244" frameX="-247" frameY="-172" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_barrack_3s" x="1174" y="162" width="252" height="117" frameX="-257" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_tower_1r" x="377" y="1387" width="123" height="213" frameX="-292" frameY="-173" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_tower_1s" x="664" y="1579" width="159" height="75" frameX="-308" frameY="-311" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_tower_2r" x="839" y="1367" width="160" height="266" frameX="-276" frameY="-131" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_tower_2s" x="515" y="436" width="222" height="96" frameX="-283" frameY="-301" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_tower_3r" x="193" y="1320" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player1/viking_tower_3s" x="1438" y="93" width="253" height="109" frameX="-274" frameY="-286" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_altar_1g" x="1614" y="1234" width="149" height="92" frameX="-284" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_altar_1s" x="654" y="1803" width="150" height="69" frameX="-288" frameY="-323" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_altar_2g" x="193" y="1189" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_altar_2s" x="1842" y="853" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_altar_3g" x="1829" y="945" width="213" height="141" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_altar_3s" x="1399" y="696" width="224" height="97" frameX="-257" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_barrack_1g" x="713" y="843" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_barrack_1s" x="692" y="1435" width="144" height="67" frameX="-301" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_barrack_2g" x="848" y="936" width="192" height="194" frameX="-262" frameY="-207" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_barrack_2s" x="1829" y="1088" width="213" height="98" frameX="-270" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_barrack_3g" x="1670" y="411" width="240" height="244" frameX="-247" frameY="-172" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_barrack_3s" x="1174" y="162" width="252" height="117" frameX="-257" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_tower_1g" x="377" y="1602" width="123" height="213" frameX="-292" frameY="-173" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_tower_1s" x="664" y="1579" width="159" height="75" frameX="-308" frameY="-311" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_tower_2g" x="1001" y="1393" width="160" height="266" frameX="-276" frameY="-131" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_tower_2s" x="515" y="436" width="222" height="96" frameX="-283" frameY="-301" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_tower_3g" x="1" y="1325" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player2/viking_tower_3s" x="1438" y="93" width="253" height="109" frameX="-274" frameY="-286" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_altar_1s" x="654" y="1803" width="150" height="69" frameX="-288" frameY="-323" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_altar_1v" x="1828" y="1188" width="149" height="92" frameX="-284" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_altar_2s" x="1842" y="853" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_altar_2v" x="1" y="1194" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_altar_3s" x="1399" y="696" width="224" height="97" frameX="-257" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_altar_3v" x="1614" y="997" width="213" height="141" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_barrack_1s" x="692" y="1435" width="144" height="67" frameX="-301" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_barrack_1v" x="707" y="1000" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_barrack_2s" x="1829" y="1088" width="213" height="98" frameX="-270" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_barrack_2v" x="513" y="844" width="192" height="194" frameX="-262" frameY="-207" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_barrack_3s" x="1174" y="162" width="252" height="117" frameX="-257" frameY="-300" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_barrack_3v" x="1416" y="450" width="240" height="244" frameX="-247" frameY="-172" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_tower_1s" x="664" y="1579" width="159" height="75" frameX="-308" frameY="-311" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_tower_1v" x="1827" y="1282" width="123" height="213" frameX="-292" frameY="-173" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_tower_2s" x="515" y="436" width="222" height="96" frameX="-283" frameY="-301" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_tower_2v" x="502" y="1503" width="160" height="266" frameX="-276" frameY="-131" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_tower_3s" x="1438" y="93" width="253" height="109" frameX="-274" frameY="-286" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/player3/viking_tower_3v" x="1357" y="1081" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_01" x="515" y="276" width="273" height="158" frameX="-235" frameY="-224" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_01s" x="515" y="152" width="308" height="60" frameX="-241" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_02" x="1842" y="791" width="205" height="60" frameX="-272" frameY="-299" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_03" x="1438" y="1" width="258" height="90" frameX="-242" frameY="-287" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_03s" x="515" y="214" width="308" height="60" frameX="-241" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_04" x="842" y="1132" width="185" height="233" frameX="-276" frameY="-99" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="buildings/ship/shipstep_05" x="213" y="611" width="198" height="252" frameX="-261" frameY="-99" frameWidth="716" frameHeight="716"/>
     <SubTexture name="nord_bg" x="1" y="1" width="512" height="512"/>
-    <SubTexture name="hard_warrior_s0_01" x="1473" y="764" rotated="true" width="43" height="87" frameX="-45" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_02" x="1541" y="1193" rotated="true" width="45" height="78" frameX="-45" frameY="-86" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_03" x="1039" y="1559" width="81" height="49" frameX="-35" frameY="-83" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_04" x="1691" y="99" rotated="true" width="46" height="75" frameX="-36" frameY="-84" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_05" x="1520" y="719" width="85" height="43" frameX="-39" frameY="-87" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_06" x="1358" y="1146" width="99" height="45" frameX="-39" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_07" x="1558" y="176" rotated="true" width="47" height="94" frameX="-44" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_08" x="1378" y="527" rotated="true" width="47" height="95" frameX="-43" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s0_09" x="1360" y="1014" rotated="true" width="45" height="91" frameX="-45" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_01" x="1459" y="1007" rotated="true" width="45" height="88" frameX="-34" frameY="-86" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_02" x="1518" y="523" rotated="true" width="52" height="93" frameX="-27" frameY="-80" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_03" x="1547" y="275" width="94" height="52" frameX="-23" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_04" x="1551" y="425" rotated="true" width="52" height="93" frameX="-21" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_05" x="1580" y="329" rotated="true" width="51" height="93" frameX="-23" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_06" x="1572" y="520" rotated="true" width="47" height="93" frameX="-27" frameY="-85" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_07" x="1413" y="917" rotated="true" width="43" height="89" frameX="-35" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_08" x="1571" y="917" rotated="true" width="42" height="85" frameX="-38" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s1_09" x="1728" y="328" rotated="true" width="41" height="81" frameX="-41" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s2_01" x="1620" y="1" rotated="true" width="45" height="96" frameX="-23" frameY="-84" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s2_02" x="1236" y="790" rotated="true" width="40" height="98" frameX="-24" frameY="-82" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s2_03" x="1386" y="1609" rotated="true" width="41" height="108" frameX="-21" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s2_04" x="1306" y="1454" rotated="true" width="39" height="102" frameX="-24" frameY="-83" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s2_05" x="1605" y="424" rotated="true" width="43" height="93" frameX="-26" frameY="-82" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_01" x="1638" y="1927" width="98" height="47" frameX="-24" frameY="-75" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_02" x="1220" y="1038" rotated="true" width="52" height="113" frameX="-22" frameY="-72" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_03" x="1110" y="1200" rotated="true" width="50" height="114" frameX="-24" frameY="-76" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_04" x="1330" y="1193" rotated="true" width="47" height="113" frameX="-24" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_05" x="1232" y="917" rotated="true" width="46" height="113" frameX="-21" frameY="-78" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_06" x="1590" y="1821" rotated="true" width="47" height="104" frameX="-21" frameY="-73" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_07" x="1353" y="280" width="96" height="47" frameX="-22" frameY="-75" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_08" x="1428" y="720" width="90" height="42" frameX="-24" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s3_09" x="1445" y="1102" width="90" height="42" frameX="-25" frameY="-80" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_01" x="1206" y="565" rotated="true" width="50" height="99" frameX="-28" frameY="-70" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_02" x="1546" y="1006" rotated="true" width="46" height="87" frameX="-44" frameY="-76" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_03" x="1459" y="1146" width="90" height="45" frameX="-43" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_04" x="1578" y="764" rotated="true" width="46" height="85" frameX="-43" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_05" x="1503" y="1932" width="94" height="43" frameX="-37" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_06" x="1331" y="1609" rotated="true" width="53" height="111" frameX="-24" frameY="-69" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_07" x="867" y="239" rotated="true" width="58" height="111" frameX="-19" frameY="-66" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_08" x="1429" y="1609" rotated="true" width="55" height="107" frameX="-18" frameY="-69" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_s4_09" x="762" y="101" width="103" height="51" frameX="-22" frameY="-70" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_01" x="1697" y="176" width="90" height="91" frameX="-30" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_02" x="1500" y="329" width="78" height="94" frameX="-28" frameY="-25" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_03" x="1301" y="536" width="75" height="97" frameX="-23" frameY="-26" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_04" x="1660" y="1976" rotated="true" width="97" height="71" frameX="-27" frameY="-31" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_05" x="1607" y="176" width="88" height="93" frameX="-23" frameY="-29" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_06" x="1057" y="703" width="105" height="89" frameX="-22" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_07" x="1431" y="1718" rotated="true" width="89" height="105" frameX="-26" frameY="-31" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_08" x="1314" y="330" rotated="true" width="89" height="97" frameX="-31" frameY="-33" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w0_09" x="1427" y="527" rotated="true" width="89" height="94" frameX="-31" frameY="-32" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_01" x="1280" y="917" width="91" height="95" frameX="-14" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_02" x="1278" y="1723" width="96" height="100" frameX="-7" frameY="-21" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_03" x="1373" y="429" width="94" height="96" frameX="-8" frameY="-24" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_04" x="1278" y="437" width="93" height="97" frameX="-12" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_05" x="1464" y="177" width="92" height="96" frameX="-11" frameY="-26" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_06" x="1405" y="329" width="93" height="96" frameX="-8" frameY="-25" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_07" x="1278" y="765" width="92" height="95" frameX="-15" frameY="-29" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_08" x="1498" y="623" width="81" height="94" frameX="-24" frameY="-33" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w1_09" x="1469" y="427" width="80" height="94" frameX="-24" frameY="-32" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_01" x="1412" y="1335" width="95" height="108" frameX="-3" frameY="-17" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_02" x="1274" y="1032" width="84" height="112" frameX="-17" frameY="-12" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_03" x="1277" y="177" width="95" height="101" frameX="-15" frameY="-23" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_04" x="1404" y="624" width="92" height="94" frameX="-20" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_05" x="1315" y="635" width="87" height="95" frameX="-14" frameY="-26" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_06" x="762" y="1" rotated="true" width="103" height="98" frameX="0" frameY="-18" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_07" x="1486" y="1609" width="99" height="104" frameX="0" frameY="-19" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_08" x="762" y="340" width="102" height="95" frameX="0" frameY="-31" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w2_09" x="1209" y="1459" rotated="true" width="95" height="98" frameX="0" frameY="-30" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_01" x="1095" y="1342" width="88" height="118" frameX="-15" frameY="-7" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_02" x="1076" y="331" rotated="true" width="118" height="104" frameX="-11" frameY="-8" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_03" x="1002" y="1207" width="106" height="107" frameX="-14" frameY="-20" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_04" x="1522" y="1715" rotated="true" width="97" height="104" frameX="-17" frameY="-27" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_05" x="1401" y="1825" rotated="true" width="99" height="105" frameX="-12" frameY="-23" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_06" x="1095" y="1462" rotated="true" width="112" height="95" frameX="-11" frameY="-8" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_07" x="1185" y="1341" width="88" height="116" frameX="-14" frameY="-6" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_08" x="762" y="242" rotated="true" width="102" height="96" frameX="-8" frameY="-20" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w3_09" x="1502" y="1825" width="86" height="105" frameX="-13" frameY="-18" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_01" x="1275" y="1337" width="90" height="115" frameX="-18" frameY="-7" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_02" x="1251" y="1609" width="78" height="112" frameX="-32" frameY="-12" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_03" x="954" y="716" rotated="true" width="101" height="75" frameX="-40" frameY="-25" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_04" x="1711" y="1" width="71" height="93" frameX="-40" frameY="-30" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_05" x="1374" y="177" width="88" height="97" frameX="-27" frameY="-25" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_06" x="1196" y="330" rotated="true" width="116" height="105" frameX="-11" frameY="-8" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_07" x="877" y="1209" rotated="true" width="123" height="105" frameX="-7" frameY="-2" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_08" x="1371" y="1446" width="97" height="108" frameX="-10" frameY="-12" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="hard_warrior_w4_09" x="1470" y="1445" width="94" height="108" frameX="-13" frameY="-12" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="horse_warrior_s0_01" x="1535" y="1274" width="74" height="54" frameX="-77" frameY="-106" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_02" x="931" y="1990" width="74" height="57" frameX="-77" frameY="-104" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_03" x="1105" y="1767" width="74" height="56" frameX="-77" frameY="-105" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_04" x="1726" y="838" rotated="true" width="53" height="72" frameX="-78" frameY="-107" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_05" x="1686" y="592" rotated="true" width="51" height="72" frameX="-78" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_06" x="1691" y="763" rotated="true" width="50" height="73" frameX="-78" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_07" x="1723" y="914" rotated="true" width="50" height="73" frameX="-78" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_08" x="1722" y="993" rotated="true" width="50" height="74" frameX="-77" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s0_09" x="1670" y="917" rotated="true" width="51" height="74" frameX="-77" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_01" x="1509" y="1331" rotated="true" width="41" height="107" frameX="-53" frameY="-113" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_02" x="1367" y="1335" rotated="true" width="43" height="109" frameX="-52" frameY="-112" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_03" x="1667" y="1" rotated="true" width="42" height="96" frameX="-65" frameY="-112" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_04" x="1412" y="135" width="80" height="40" frameX="-77" frameY="-113" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_05" x="847" y="724" rotated="true" width="39" height="70" frameX="-81" frameY="-114" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_06" x="1728" y="495" rotated="true" width="37" height="71" frameX="-78" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_07" x="1463" y="1193" rotated="true" width="37" height="79" frameX="-72" frameY="-117" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_08" x="1373" y="917" rotated="true" width="38" height="91" frameX="-63" frameY="-117" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s1_09" x="1274" y="665" rotated="true" width="39" height="98" frameX="-60" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_01" x="877" y="1074" rotated="true" width="22" height="133" frameX="-44" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_02" x="683" y="1053" width="138" height="21" frameX="-44" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_03" x="1147" y="1047" rotated="true" width="22" height="121" frameX="-62" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_04" x="1209" y="1313" width="112" height="22" frameX="-65" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_05" x="1347" y="1454" rotated="true" width="22" height="102" frameX="-68" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_06" x="1432" y="1307" width="101" height="22" frameX="-62" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_07" x="1323" y="1311" width="107" height="22" frameX="-55" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_08" x="1208" y="917" rotated="true" width="22" height="119" frameX="-46" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s2_09" x="1139" y="437" rotated="true" width="22" height="128" frameX="-42" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_01" x="1258" y="565" rotated="true" width="41" height="98" frameX="-62" frameY="-114" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_02" x="762" y="199" width="103" height="41" frameX="-61" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_03" x="1633" y="329" rotated="true" width="41" height="93" frameX="-74" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_04" x="1552" y="135" width="82" height="39" frameX="-80" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_05" x="1502" y="1193" rotated="true" width="37" height="79" frameX="-75" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_06" x="1360" y="1107" width="83" height="37" frameX="-68" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_07" x="1506" y="1007" rotated="true" width="38" height="88" frameX="-62" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_08" x="1258" y="1153" width="98" height="38" frameX="-54" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s3_09" x="1164" y="565" rotated="true" width="40" height="104" frameX="-51" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_01" x="1452" y="861" width="83" height="54" frameX="-80" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_02" x="845" y="1990" width="84" height="57" frameX="-80" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_03" x="1020" y="1767" width="83" height="56" frameX="-82" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_04" x="1368" y="862" width="82" height="53" frameX="-83" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_05" x="1702" y="412" rotated="true" width="51" height="81" frameX="-84" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_06" x="1676" y="328" rotated="true" width="50" height="82" frameX="-83" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_07" x="1634" y="604" rotated="true" width="50" height="82" frameX="-82" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_08" x="1650" y="424" rotated="true" width="50" height="83" frameX="-80" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_s4_09" x="1621" y="519" rotated="true" width="51" height="83" frameX="-80" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_01" x="1091" y="437" width="46" height="128" frameX="-70" frameY="-27" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_02" x="1021" y="572" width="47" height="129" frameX="-69" frameY="-28" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_03" x="1171" y="1047" width="47" height="119" frameX="-69" frameY="-30" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_04" x="1239" y="280" rotated="true" width="112" height="48" frameX="-69" frameY="-31" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_05" x="1234" y="1559" rotated="true" width="105" height="48" frameX="-69" frameY="-31" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_06" x="1122" y="1559" rotated="true" width="110" height="48" frameX="-69" frameY="-29" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_07" x="1121" y="280" rotated="true" width="116" height="48" frameX="-69" frameY="-27" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_08" x="1122" y="112" rotated="true" width="127" height="47" frameX="-70" frameY="-26" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w0_09" x="1278" y="128" rotated="true" width="132" height="47" frameX="-70" frameY="-26" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_01" x="1059" y="794" width="91" height="128" frameX="-49" frameY="-21" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_02" x="1070" y="572" width="92" height="128" frameX="-50" frameY="-22" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_03" x="1116" y="924" width="90" height="121" frameX="-51" frameY="-23" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_04" x="1162" y="1195" width="83" height="116" frameX="-52" frameY="-24" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_05" x="1379" y="1193" width="82" height="112" frameX="-53" frameY="-23" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_06" x="1247" y="1193" width="81" height="116" frameX="-54" frameY="-22" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_07" x="1152" y="794" width="82" height="121" frameX="-54" frameY="-20" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_08" x="1031" y="926" width="83" height="130" frameX="-54" frameY="-20" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w1_09" x="931" y="579" width="88" height="135" frameX="-51" frameY="-20" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_01" x="901" y="1074" width="119" height="131" frameX="-38" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_02" x="1278" y="1" rotated="true" width="132" height="125" frameX="-36" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_03" x="1022" y="1068" width="123" height="130" frameX="-37" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_04" x="1122" y="161" rotated="true" width="126" height="117" frameX="-39" frameY="-12" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_05" x="1163" y="437" width="113" height="126" frameX="-40" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_06" x="1122" y="1" rotated="true" width="127" height="109" frameX="-41" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_07" x="949" y="794" width="108" height="130" frameX="-41" frameY="-10" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_08" x="980" y="437" width="109" height="133" frameX="-41" frameY="-10" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w2_09" x="917" y="935" width="112" height="131" frameX="-41" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_01" x="928" y="145" rotated="true" width="147" height="91" frameX="-51" frameY="-4" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_02" x="1038" y="1825" width="93" height="153" frameX="-50" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_03" x="928" y="1" rotated="true" width="151" height="93" frameX="-51" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_04" x="928" y="238" rotated="true" width="147" height="88" frameX="-53" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_05" x="762" y="582" width="83" height="143" frameX="-54" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_06" x="848" y="437" width="80" height="140" frameX="-54" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_07" x="867" y="796" width="80" height="137" frameX="-52" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_08" x="847" y="582" width="82" height="140" frameX="-49" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w3_09" x="762" y="437" width="84" height="143" frameX="-51" frameY="-4" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_01" x="1069" y="1610" width="46" height="155" frameX="-72" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_02" x="990" y="1825" width="46" height="157" frameX="-72" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_03" x="1020" y="1610" width="47" height="155" frameX="-72" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_04" x="740" y="1560" rotated="true" width="150" height="48" frameX="-71" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_05" x="892" y="1560" rotated="true" width="145" height="48" frameX="-71" frameY="-1" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_06" x="930" y="437" width="48" height="140" frameX="-71" frameY="-1" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_07" x="867" y="935" width="48" height="137" frameX="-71" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_08" x="928" y="328" rotated="true" width="146" height="47" frameX="-71" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="horse_warrior_w4_09" x="928" y="96" rotated="true" width="151" height="47" frameX="-71" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="light_warrior_s0_01" x="1631" y="99" width="58" height="34" frameX="-43" frameY="-83" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_02" x="1368" y="732" width="58" height="30" frameX="-41" frameY="-87" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_03" x="791" y="1316" width="58" height="27" frameX="-43" frameY="-88" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_04" x="1095" y="149" rotated="true" width="25" height="55" frameX="-48" frameY="-85" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_05" x="928" y="1316" width="51" height="26" frameX="-51" frameY="-82" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_06" x="981" y="1316" width="50" height="26" frameX="-50" frameY="-81" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_07" x="1206" y="1168" width="50" height="23" frameX="-49" frameY="-87" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_08" x="1219" y="766" width="53" height="22" frameX="-48" frameY="-88" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_09" x="1251" y="76" rotated="true" width="25" height="57" frameX="-46" frameY="-85" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s0_10" x="1719" y="269" rotated="true" width="35" height="57" frameX="-45" frameY="-80" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_01" x="1251" y="1" rotated="true" width="25" height="73" frameX="-21" frameY="-82" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_02" x="1095" y="76" rotated="true" width="25" height="71" frameX="-19" frameY="-83" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_03" x="1095" y="206" rotated="true" width="24" height="64" frameX="-26" frameY="-85" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_04" x="1147" y="1170" width="57" height="23" frameX="-36" frameY="-85" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_05" x="1095" y="272" rotated="true" width="24" height="57" frameX="-40" frameY="-83" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_06" x="1033" y="1316" width="57" height="24" frameX="-41" frameY="-81" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_07" x="1250" y="211" rotated="true" width="23" height="58" frameX="-37" frameY="-84" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_08" x="1151" y="1316" width="56" height="23" frameX="-36" frameY="-86" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_09" x="1092" y="1316" width="57" height="24" frameX="-36" frameY="-84" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s1_10" x="1095" y="1" rotated="true" width="25" height="73" frameX="-26" frameY="-82" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_01" x="1251" y="135" rotated="true" width="24" height="74" frameX="-22" frameY="-81" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_02" x="724" y="1316" width="65" height="27" frameX="-22" frameY="-79" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_03" x="867" y="208" width="59" height="29" frameX="-26" frameY="-77" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_04" x="1706" y="729" width="52" height="30" frameX="-39" frameY="-76" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_05" x="1756" y="269" rotated="true" width="29" height="55" frameX="-44" frameY="-77" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_06" x="1463" y="1274" width="58" height="30" frameX="-44" frameY="-77" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_07" x="1573" y="1095" rotated="true" width="29" height="47" frameX="-40" frameY="-78" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_08" x="1551" y="1146" rotated="true" width="30" height="45" frameX="-39" frameY="-77" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_09" x="1760" y="729" width="52" height="29" frameX="-39" frameY="-76" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s2_10" x="851" y="1316" width="75" height="26" frameX="-28" frameY="-78" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_01" x="1787" y="269" rotated="true" width="41" height="54" frameX="-45" frameY="-68" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_02" x="1739" y="568" rotated="true" width="41" height="52" frameX="-44" frameY="-67" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_03" x="1636" y="135" width="50" height="39" frameX="-42" frameY="-64" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_04" x="1341" y="1558" rotated="true" width="39" height="48" frameX="-44" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_05" x="1743" y="761" rotated="true" width="35" height="53" frameX="-44" frameY="-71" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_06" x="1315" y="732" width="51" height="31" frameX="-49" frameY="-75" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_07" x="1537" y="1097" rotated="true" width="34" height="47" frameX="-47" frameY="-72" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_08" x="1599" y="1927" rotated="true" width="37" height="48" frameX="-42" frameY="-69" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_09" x="1583" y="1144" width="52" height="43" frameX="-42" frameY="-65" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s3_10" x="1637" y="1143" width="51" height="43" frameX="-47" frameY="-65" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_01" x="1780" y="760" rotated="true" width="42" height="52" frameX="-50" frameY="-69" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_02" x="1494" y="135" width="56" height="40" frameX="-49" frameY="-68" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_03" x="1607" y="700" rotated="true" width="42" height="62" frameX="-48" frameY="-64" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_04" x="1814" y="94" rotated="true" width="42" height="63" frameX="-48" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_05" x="1771" y="326" rotated="true" width="37" height="64" frameX="-47" frameY="-72" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_06" x="1565" y="99" width="64" height="34" frameX="-45" frameY="-76" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_07" x="1623" y="1977" rotated="true" width="35" height="65" frameX="-44" frameY="-73" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_08" x="1583" y="1977" rotated="true" width="38" height="65" frameX="-45" frameY="-68" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_09" x="1850" y="1" rotated="true" width="42" height="63" frameX="-49" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_s4_10" x="1020" y="377" rotated="true" width="44" height="58" frameX="-51" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_01" x="1618" y="851" width="52" height="64" frameX="-36" frameY="-38" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_02" x="867" y="97" rotated="true" width="59" height="54" frameX="-34" frameY="-43" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_03" x="867" y="153" rotated="true" width="59" height="53" frameX="-36" frameY="-41" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_04" x="1789" y="176" width="53" height="63" frameX="-37" frameY="-33" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_05" x="1674" y="509" width="52" height="81" frameX="-38" frameY="-17" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_06" x="1581" y="615" width="51" height="83" frameX="-39" frameY="-18" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_07" x="1588" y="1189" width="51" height="77" frameX="-39" frameY="-25" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_08" x="1357" y="1978" width="53" height="69" frameX="-37" frameY="-31" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_09" x="1706" y="666" width="53" height="61" frameX="-36" frameY="-35" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w0_10" x="1755" y="411" width="52" height="64" frameX="-36" frameY="-34" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_01" x="1412" y="1978" width="81" height="66" frameX="-8" frameY="-33" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_02" x="1537" y="852" width="79" height="63" frameX="-6" frameY="-38" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_03" x="888" y="724" rotated="true" width="64" height="68" frameX="-8" frameY="-37" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_04" x="1604" y="1080" rotated="true" width="74" height="61" frameX="-19" frameY="-23" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_05" x="1458" y="917" width="58" height="88" frameX="-27" frameY="-10" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_06" x="928" y="377" rotated="true" width="90" height="58" frameX="-30" frameY="-13" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_07" x="1518" y="764" width="58" height="86" frameX="-27" frameY="-18" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_08" x="866" y="352" width="60" height="80" frameX="-22" frameY="-22" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_09" x="1626" y="764" rotated="true" width="63" height="73" frameX="-14" frameY="-30" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w1_10" x="762" y="727" width="83" height="66" frameX="-8" frameY="-29" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_01" x="1271" y="1978" width="84" height="69" frameX="-9" frameY="-29" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_02" x="1105" y="1980" width="77" height="67" frameX="-9" frameY="-33" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_03" x="1594" y="1004" rotated="true" width="72" height="74" frameX="-8" frameY="-29" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_04" x="1184" y="1978" rotated="true" width="85" height="69" frameX="-18" frameY="-9" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_05" x="1784" y="1" width="64" height="91" frameX="-28" frameY="-3" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_06" x="1007" y="1984" rotated="true" width="96" height="63" frameX="-31" frameY="-7" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_07" x="1181" y="1763" rotated="true" width="95" height="60" frameX="-26" frameY="-10" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_08" x="867" y="1" width="59" height="94" frameX="-23" frameY="-11" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_09" x="1739" y="96" width="73" height="78" frameX="-15" frameY="-16" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w2_10" x="1495" y="1978" width="86" height="65" frameX="-10" frameY="-26" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_01" x="1643" y="271" rotated="true" width="74" height="55" frameX="-33" frameY="-28" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_02" x="1615" y="917" width="53" height="74" frameX="-33" frameY="-31" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_03" x="1518" y="917" width="51" height="87" frameX="-31" frameY="-16" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_04" x="1219" y="666" width="53" height="98" frameX="-33" frameY="0" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_05" x="1451" y="276" rotated="true" width="94" height="51" frameX="-38" frameY="0" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_06" x="1424" y="764" width="47" height="95" frameX="-43" frameY="-6" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_07" x="1401" y="1932" rotated="true" width="100" height="44" frameX="-40" frameY="-6" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_08" x="762" y="154" rotated="true" width="103" height="43" frameX="-33" frameY="-2" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_09" x="1372" y="764" width="50" height="95" frameX="-31" frameY="-5" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w3_10" x="1680" y="1069" width="54" height="72" frameX="-32" frameY="-21" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_01" x="1668" y="993" width="52" height="74" frameX="-38" frameY="-30" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_02" x="1651" y="688" width="53" height="73" frameX="-39" frameY="-33" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_03" x="1278" y="862" rotated="true" width="88" height="53" frameX="-37" frameY="-16" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_04" x="1376" y="1722" width="53" height="101" frameX="-36" frameY="0" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_05" x="1481" y="1555" rotated="true" width="98" height="52" frameX="-36" frameY="0" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_06" x="1407" y="1010" width="50" height="90" frameX="-37" frameY="-9" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_07" x="1382" y="1556" rotated="true" width="97" height="51" frameX="-37" frameY="-8" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_08" x="1164" y="671" width="53" height="101" frameX="-36" frameY="-3" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_09" x="1565" y="1" width="53" height="96" frameX="-37" frameY="-5" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="light_warrior_w4_10" x="1672" y="839" width="52" height="73" frameX="-38" frameY="-22" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_01" x="1" y="1751" width="87" height="43" frameX="-45" frameY="-88" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_02" x="139" y="2190" width="78" height="45" frameX="-45" frameY="-86" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_03" x="1" y="2194" width="81" height="49" frameX="-35" frameY="-83" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_04" x="1" y="2387" width="75" height="46" frameX="-36" frameY="-84" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_05" x="1087" y="409" width="85" height="43" frameX="-39" frameY="-87" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_06" x="1946" y="306" width="99" height="45" frameX="-39" frameY="-88" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_07" x="1691" y="1931" width="94" height="47" frameX="-44" frameY="-88" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_08" x="1809" y="1831" width="95" height="47" frameX="-43" frameY="-89" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s0_09" x="1585" y="2200" width="91" height="45" frameX="-45" frameY="-89" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_01" x="242" y="1746" width="88" height="45" frameX="-34" frameY="-86" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_02" x="1689" y="1980" width="93" height="52" frameX="-27" frameY="-80" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_03" x="1789" y="1880" width="94" height="52" frameX="-23" frameY="-79" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_04" x="1590" y="2005" width="93" height="52" frameX="-21" frameY="-79" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_05" x="1882" y="2021" width="93" height="51" frameX="-23" frameY="-81" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_06" x="1784" y="2032" width="93" height="47" frameX="-27" frameY="-85" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_07" x="1953" y="2354" width="89" height="43" frameX="-35" frameY="-88" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_08" x="1087" y="454" width="85" height="42" frameX="-38" frameY="-89" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s1_09" x="1" y="2245" width="81" height="41" frameX="-41" frameY="-89" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s2_01" x="1711" y="1786" width="96" height="45" frameX="-23" frameY="-84" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s2_02" x="1727" y="1539" width="98" height="40" frameX="-24" frameY="-82" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s2_03" x="1329" y="1708" width="108" height="41" frameX="-21" frameY="-81" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s2_04" x="409" y="970" width="102" height="39" frameX="-24" frameY="-83" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s2_05" x="1685" y="2034" width="93" height="43" frameX="-26" frameY="-82" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_01" x="413" y="824" width="98" height="47" frameX="-24" frameY="-75" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_02" x="1612" y="1526" width="113" height="52" frameX="-22" frameY="-72" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_03" x="1329" y="1413" width="114" height="50" frameX="-24" frameY="-76" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_04" x="1607" y="1580" width="113" height="47" frameX="-24" frameY="-79" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_05" x="1607" y="1629" width="113" height="46" frameX="-21" frameY="-78" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_06" x="1825" y="1733" width="104" height="47" frameX="-21" frameY="-73" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_07" x="1817" y="1782" width="96" height="47" frameX="-22" frameY="-75" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_08" x="1861" y="2320" width="90" height="42" frameX="-24" frameY="-81" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s3_09" x="1769" y="2359" width="90" height="42" frameX="-25" frameY="-80" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_01" x="1946" y="254" width="99" height="50" frameX="-28" frameY="-70" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_02" x="1738" y="1491" width="87" height="46" frameX="-44" frameY="-76" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_03" x="1677" y="2342" width="90" height="45" frameX="-43" frameY="-79" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_04" x="1087" y="361" width="85" height="46" frameX="-43" frameY="-81" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_05" x="1593" y="1960" width="94" height="43" frameX="-37" frameY="-79" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_06" x="1329" y="1653" width="111" height="53" frameX="-24" frameY="-69" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_07" x="1329" y="1593" width="111" height="58" frameX="-19" frameY="-66" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_08" x="1607" y="1677" width="107" height="55" frameX="-18" frameY="-69" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_s4_09" x="1722" y="1581" width="103" height="51" frameX="-22" frameY="-70" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_01" x="1677" y="2249" width="90" height="91" frameX="-30" frameY="-28" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_02" x="223" y="2158" width="78" height="94" frameX="-28" frameY="-25" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_03" x="1" y="2288" width="75" height="97" frameX="-23" frameY="-26" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_04" x="1541" y="1081" width="71" height="97" frameX="-27" frameY="-31" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_05" x="1487" y="2249" width="88" height="93" frameX="-23" frameY="-29" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_06" x="985" y="1841" width="105" height="89" frameX="-22" frameY="-28" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_07" x="1604" y="1734" width="105" height="89" frameX="-26" frameY="-31" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_08" x="1436" y="1790" width="97" height="89" frameX="-31" frameY="-33" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w0_09" x="1595" y="1869" width="94" height="89" frameX="-31" frameY="-32" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_01" x="1413" y="2140" width="91" height="95" frameX="-14" frameY="-28" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_02" x="1152" y="1985" width="96" height="100" frameX="-7" frameY="-21" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_03" x="1693" y="1833" width="94" height="96" frameX="-8" frameY="-24" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_04" x="1885" y="1922" width="93" height="97" frameX="-12" frameY="-28" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_05" x="1585" y="2102" width="92" height="96" frameX="-11" frameY="-26" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_06" x="1787" y="1934" width="93" height="96" frameX="-8" frameY="-25" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_07" x="1879" y="2074" width="92" height="95" frameX="-15" frameY="-29" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_08" x="141" y="2041" width="81" height="94" frameX="-24" frameY="-33" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w1_09" x="723" y="1874" width="80" height="94" frameX="-24" frameY="-32" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_01" x="1952" y="1408" width="95" height="108" frameX="-3" frameY="-17" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_02" x="1087" y="643" width="84" height="112" frameX="-17" frameY="-12" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_03" x="1952" y="1518" width="95" height="101" frameX="-15" frameY="-23" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_04" x="1776" y="2081" width="92" height="94" frameX="-20" frameY="-28" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_05" x="1738" y="1394" width="87" height="95" frameX="-14" frameY="-26" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_06" x="1946" y="353" width="98" height="103" frameX="0" frameY="-18" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_07" x="1946" y="148" width="99" height="104" frameX="0" frameY="-19" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_08" x="409" y="873" width="102" height="95" frameX="0" frameY="-31" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w2_09" x="413" y="664" width="98" height="95" frameX="0" frameY="-30" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_01" x="1951" y="2399" width="88" height="118" frameX="-15" frameY="-7" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_02" x="1329" y="1869" width="104" height="118" frameX="-11" frameY="-8" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_03" x="1941" y="1621" width="106" height="107" frameX="-14" frameY="-20" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_04" x="985" y="1932" width="104" height="97" frameX="-17" frameY="-27" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_05" x="1161" y="1811" width="105" height="99" frameX="-12" frameY="-23" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_06" x="1952" y="1294" width="95" height="112" frameX="-11" frameY="-8" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_07" x="1307" y="2142" width="88" height="116" frameX="-14" frameY="-6" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_08" x="1435" y="1881" width="96" height="102" frameX="-8" frameY="-20" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w3_09" x="1" y="1796" width="86" height="105" frameX="-13" frameY="-18" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_01" x="1585" y="2247" width="90" height="115" frameX="-18" frameY="-7" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_02" x="308" y="2114" width="78" height="112" frameX="-32" frameY="-12" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_03" x="139" y="2237" width="75" height="101" frameX="-40" frameY="-25" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_04" x="1541" y="1180" width="71" height="93" frameX="-40" frameY="-30" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_05" x="1397" y="2237" width="88" height="97" frameX="-27" frameY="-25" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_06" x="1329" y="1751" width="105" height="116" frameX="-11" frameY="-8" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_07" x="1941" y="1730" width="105" height="123" frameX="-7" frameY="-2" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_08" x="1442" y="1599" width="97" height="108" frameX="-10" frameY="-12" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/hard_warrior/hard_warrior_w4_09" x="1445" y="1413" width="94" height="108" frameX="-13" frameY="-12" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_01" x="882" y="1963" width="74" height="54" frameX="-77" frameY="-106" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_02" x="723" y="1970" width="74" height="57" frameX="-77" frameY="-104" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_03" x="641" y="2016" width="74" height="56" frameX="-77" frameY="-105" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_04" x="545" y="2129" width="72" height="53" frameX="-78" frameY="-107" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_05" x="463" y="2154" width="72" height="51" frameX="-78" frameY="-108" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_06" x="713" y="2081" width="73" height="50" frameX="-78" frameY="-109" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_07" x="637" y="2100" width="73" height="50" frameX="-78" frameY="-109" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_08" x="717" y="2029" width="74" height="50" frameX="-77" frameY="-109" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s0_09" x="799" y="1991" width="74" height="51" frameX="-77" frameY="-108" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_01" x="1716" y="1677" width="107" height="41" frameX="-53" frameY="-113" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_02" x="985" y="1796" width="109" height="43" frameX="-52" frameY="-112" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_03" x="1595" y="1825" width="96" height="42" frameX="-65" frameY="-112" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_04" x="398" y="2008" width="80" height="40" frameX="-77" frameY="-113" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_05" x="1541" y="1399" width="70" height="39" frameX="-81" frameY="-114" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_06" x="1541" y="1275" width="71" height="37" frameX="-78" frameY="-116" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_07" x="389" y="2050" width="79" height="37" frameX="-72" frameY="-117" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_08" x="1678" y="2209" width="91" height="38" frameX="-63" frameY="-117" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s1_09" x="1439" y="1709" width="98" height="39" frameX="-60" frameY="-115" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_01" x="701" y="1134" width="133" height="22" frameX="-44" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_02" x="707" y="977" width="138" height="21" frameX="-44" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_03" x="385" y="1211" width="121" height="22" frameX="-62" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_04" x="1163" y="1658" width="112" height="22" frameX="-65" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_05" x="409" y="1011" width="102" height="22" frameX="-68" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_06" x="1946" y="124" width="101" height="22" frameX="-62" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_07" x="1716" y="1720" width="107" height="22" frameX="-55" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_08" x="385" y="1235" width="119" height="22" frameX="-46" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s2_09" x="1042" y="887" width="128" height="22" frameX="-42" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_01" x="409" y="1035" width="98" height="41" frameX="-62" frameY="-114" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_02" x="1722" y="1634" width="103" height="41" frameX="-61" frameY="-115" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_03" x="1587" y="2059" width="93" height="41" frameX="-74" frameY="-115" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_04" x="225" y="1999" width="82" height="39" frameX="-80" frameY="-115" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_05" x="389" y="2089" width="79" height="37" frameX="-75" frameY="-116" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_06" x="1" y="2035" width="83" height="37" frameX="-68" frameY="-116" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_07" x="242" y="1793" width="88" height="38" frameX="-62" frameY="-116" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_08" x="1439" y="1750" width="98" height="38" frameX="-54" frameY="-116" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s3_09" x="1711" y="1744" width="104" height="40" frameX="-51" frameY="-115" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_01" x="144" y="1881" width="83" height="54" frameX="-80" frameY="-109" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_02" x="1087" y="828" width="84" height="57" frameX="-80" frameY="-108" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_03" x="233" y="1833" width="83" height="56" frameX="-82" frameY="-108" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_04" x="229" y="1944" width="82" height="53" frameX="-83" frameY="-109" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_05" x="140" y="2137" width="81" height="51" frameX="-84" frameY="-110" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_06" x="141" y="1989" width="82" height="50" frameX="-83" frameY="-110" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_07" x="1" y="2074" width="82" height="50" frameX="-82" frameY="-110" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_08" x="144" y="1937" width="83" height="50" frameX="-80" frameY="-110" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_s4_09" x="229" y="1891" width="83" height="51" frameX="-80" frameY="-110" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_01" x="589" y="2387" width="46" height="128" frameX="-70" frameY="-27" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_02" x="822" y="2250" width="47" height="129" frameX="-69" frameY="-28" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_03" x="590" y="2266" width="47" height="119" frameX="-69" frameY="-30" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_04" x="78" y="2411" width="48" height="112" frameX="-69" frameY="-31" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_05" x="128" y="2458" width="48" height="105" frameX="-69" frameY="-31" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_06" x="1" y="2435" width="48" height="110" frameX="-69" frameY="-29" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_07" x="132" y="2340" width="48" height="116" frameX="-69" frameY="-27" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_08" x="642" y="2257" width="47" height="127" frameX="-70" frameY="-26" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w0_09" x="773" y="2249" width="47" height="132" frameX="-70" frameY="-26" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_01" x="1776" y="2177" width="91" height="128" frameX="-49" frameY="-21" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_02" x="1682" y="2079" width="92" height="128" frameX="-50" frameY="-22" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_03" x="1957" y="1" width="90" height="121" frameX="-51" frameY="-23" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_04" x="332" y="1817" width="83" height="116" frameX="-52" frameY="-24" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_05" x="314" y="1935" width="82" height="112" frameX="-53" frameY="-23" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_06" x="225" y="2040" width="81" height="116" frameX="-54" frameY="-22" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_07" x="417" y="1885" width="82" height="121" frameX="-54" frameY="-20" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_08" x="1" y="1903" width="83" height="130" frameX="-54" frameY="-20" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w1_09" x="1861" y="2364" width="88" height="135" frameX="-51" frameY="-20" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_01" x="387" y="1078" width="119" height="131" frameX="-38" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_02" x="1042" y="983" width="125" height="132" frameX="-36" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_03" x="1613" y="1394" width="123" height="130" frameX="-37" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_04" x="385" y="1259" width="117" height="126" frameX="-39" frameY="-12" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_05" x="1329" y="1465" width="113" height="126" frameX="-40" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_06" x="1162" y="1682" width="109" height="127" frameX="-41" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_07" x="739" y="443" width="108" height="130" frameX="-41" frameY="-10" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_08" x="985" y="1661" width="109" height="133" frameX="-41" frameY="-10" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w2_09" x="1827" y="1600" width="112" height="131" frameX="-41" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_01" x="1870" y="2171" width="91" height="147" frameX="-51" frameY="-4" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_02" x="1435" y="1985" width="93" height="153" frameX="-50" frameY="-3" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_03" x="1318" y="1989" width="93" height="151" frameX="-51" frameY="-3" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_04" x="425" y="515" width="88" height="147" frameX="-53" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_05" x="1963" y="2209" width="83" height="143" frameX="-54" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_06" x="641" y="1874" width="80" height="140" frameX="-54" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_07" x="501" y="1988" width="80" height="137" frameX="-52" frameY="-3" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_08" x="502" y="1846" width="82" height="140" frameX="-49" frameY="-3" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w3_09" x="1087" y="498" width="84" height="143" frameX="-51" frameY="-4" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_01" x="492" y="2305" width="46" height="155" frameX="-72" frameY="-3" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_02" x="541" y="2300" width="46" height="157" frameX="-72" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_03" x="893" y="2162" width="47" height="155" frameX="-72" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_04" x="442" y="2207" width="48" height="150" frameX="-71" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_05" x="357" y="2231" width="48" height="145" frameX="-71" frameY="-1" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_06" x="270" y="2303" width="48" height="140" frameX="-71" frameY="-1" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_07" x="216" y="2320" width="48" height="137" frameX="-71" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_08" x="724" y="2249" width="47" height="146" frameX="-71" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/horse_warrior/horse_warrior_w4_09" x="942" y="2162" width="47" height="151" frameX="-71" frameY="-3" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_01" x="1533" y="1897" width="58" height="34" frameX="-43" frameY="-83" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_02" x="1842" y="759" width="58" height="30" frameX="-41" frameY="-87" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_03" x="1533" y="1965" width="58" height="27" frameX="-43" frameY="-88" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_04" x="1530" y="2050" width="55" height="25" frameX="-48" frameY="-85" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_05" x="841" y="2130" width="51" height="26" frameX="-51" frameY="-82" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_06" x="672" y="2229" width="50" height="26" frameX="-50" frameY="-81" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_07" x="590" y="2241" width="50" height="23" frameX="-49" frameY="-87" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_08" x="84" y="2287" width="53" height="22" frameX="-48" frameY="-88" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_09" x="790" y="313" width="57" height="25" frameX="-46" frameY="-85" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s0_10" x="790" y="276" width="57" height="35" frameX="-45" frameY="-80" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_01" x="470" y="2127" width="73" height="25" frameX="-21" frameY="-82" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_02" x="1541" y="1314" width="71" height="25" frameX="-19" frameY="-83" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_03" x="1096" y="1697" width="64" height="24" frameX="-26" frameY="-85" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_04" x="790" y="418" width="57" height="23" frameX="-36" frameY="-85" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_05" x="790" y="340" width="57" height="24" frameX="-40" frameY="-83" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_06" x="790" y="366" width="57" height="24" frameX="-41" frameY="-81" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_07" x="1530" y="1994" width="58" height="23" frameX="-37" frameY="-84" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_08" x="1250" y="2050" width="56" height="23" frameX="-36" frameY="-86" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_09" x="790" y="392" width="57" height="24" frameX="-36" frameY="-84" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s1_10" x="388" y="2128" width="73" height="25" frameX="-26" frameY="-82" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_01" x="637" y="2074" width="74" height="24" frameX="-22" frameY="-81" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_02" x="1541" y="1527" width="65" height="27" frameX="-22" frameY="-79" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_03" x="1539" y="1776" width="59" height="29" frameX="-26" frameY="-77" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_04" x="950" y="2097" width="52" height="30" frameX="-39" frameY="-76" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_05" x="1530" y="2019" width="55" height="29" frameX="-44" frameY="-77" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_06" x="1533" y="1933" width="58" height="30" frameX="-44" frameY="-77" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_07" x="541" y="2269" width="47" height="29" frameX="-40" frameY="-78" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_08" x="2002" y="1855" width="45" height="30" frameX="-39" frameY="-77" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_09" x="868" y="2099" width="52" height="29" frameX="-39" frameY="-76" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s2_10" x="805" y="1963" width="75" height="26" frameX="-28" frameY="-78" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_01" x="1980" y="1989" width="54" height="41" frameX="-45" frameY="-68" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_02" x="1004" y="2076" width="52" height="41" frameX="-44" frameY="-67" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_03" x="765" y="2208" width="50" height="39" frameX="-42" frameY="-64" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_04" x="51" y="2525" width="48" height="39" frameX="-44" frameY="-66" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_05" x="84" y="2250" width="53" height="35" frameX="-44" frameY="-71" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_06" x="922" y="2129" width="51" height="31" frameX="-49" frameY="-75" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_07" x="492" y="2269" width="47" height="34" frameX="-47" frameY="-72" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_08" x="1" y="2547" width="48" height="37" frameX="-42" frameY="-69" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_09" x="1004" y="2031" width="52" height="43" frameX="-42" frameY="-65" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s3_10" x="1004" y="2119" width="51" height="43" frameX="-47" frameY="-65" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_01" x="1058" y="2041" width="52" height="42" frameX="-50" frameY="-69" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_02" x="1250" y="2008" width="56" height="40" frameX="-49" frameY="-68" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_03" x="1765" y="1140" width="62" height="42" frameX="-48" frameY="-64" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_04" x="1541" y="1688" width="63" height="42" frameX="-48" frameY="-66" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_05" x="1541" y="1649" width="64" height="37" frameX="-47" frameY="-72" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_06" x="1096" y="1661" width="64" height="34" frameX="-45" frameY="-76" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_07" x="1759" y="1357" width="65" height="35" frameX="-44" frameY="-73" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_08" x="1979" y="1254" width="65" height="38" frameX="-45" frameY="-68" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_09" x="1539" y="1732" width="63" height="42" frameX="-49" frameY="-66" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_s4_10" x="1091" y="1995" width="58" height="44" frameX="-51" frameY="-66" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_01" x="216" y="2254" width="52" height="64" frameX="-36" frameY="-38" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_02" x="1273" y="1763" width="54" height="59" frameX="-34" frameY="-43" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_03" x="586" y="1985" width="53" height="59" frameX="-36" frameY="-41" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_04" x="84" y="2185" width="53" height="63" frameX="-37" frameY="-33" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_05" x="583" y="2046" width="52" height="81" frameX="-38" frameY="-17" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_06" x="537" y="2184" width="51" height="83" frameX="-39" frameY="-18" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_07" x="1058" y="2085" width="51" height="77" frameX="-39" frameY="-25" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_08" x="85" y="2114" width="53" height="69" frameX="-37" frameY="-31" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_09" x="586" y="1922" width="53" height="61" frameX="-36" frameY="-35" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w0_10" x="950" y="2031" width="52" height="64" frameX="-36" frameY="-34" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_01" x="1" y="2126" width="81" height="66" frameX="-8" frameY="-33" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_02" x="308" y="2049" width="79" height="63" frameX="-6" frameY="-38" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_03" x="1979" y="1188" width="68" height="64" frameX="-8" frameY="-37" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_04" x="1765" y="1184" width="61" height="74" frameX="-19" frameY="-23" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_05" x="1535" y="1807" width="58" height="88" frameX="-27" frameY="-10" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_06" x="1092" y="1903" width="58" height="90" frameX="-30" frameY="-13" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_07" x="1258" y="1920" width="58" height="86" frameX="-27" frameY="-18" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_08" x="1096" y="1821" width="60" height="80" frameX="-22" frameY="-22" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_09" x="793" y="2044" width="73" height="63" frameX="-14" frameY="-30" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w1_10" x="417" y="1817" width="83" height="66" frameX="-8" frameY="-29" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_01" x="1087" y="757" width="84" height="69" frameX="-9" frameY="-29" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_02" x="1506" y="2180" width="77" height="67" frameX="-9" frameY="-33" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_03" x="1973" y="2135" width="74" height="72" frameX="-8" frameY="-29" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_04" x="1541" y="1440" width="69" height="85" frameX="-18" frameY="-9" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_05" x="1541" y="1556" width="64" height="91" frameX="-28" frameY="-3" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_06" x="1096" y="1723" width="63" height="96" frameX="-31" frameY="-7" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_07" x="1765" y="1260" width="60" height="95" frameX="-26" frameY="-10" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_08" x="1268" y="1824" width="59" height="94" frameX="-23" frameY="-11" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_09" x="875" y="2019" width="73" height="78" frameX="-15" frameY="-16" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w2_10" x="145" y="1814" width="86" height="65" frameX="-10" frameY="-26" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_01" x="1250" y="2075" width="55" height="74" frameX="-33" frameY="-28" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_02" x="586" y="1846" width="53" height="74" frameX="-33" frameY="-31" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_03" x="619" y="2152" width="51" height="87" frameX="-31" frameY="-16" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_04" x="90" y="1751" width="53" height="98" frameX="-33" frameY="0" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_05" x="712" y="2133" width="51" height="94" frameX="-38" frameY="0" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_06" x="639" y="2386" width="47" height="95" frameX="-43" frameY="-6" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_07" x="2002" y="1887" width="44" height="100" frameX="-40" frameY="-6" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_08" x="1042" y="740" width="43" height="103" frameX="-33" frameY="-2" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_09" x="1277" y="1592" width="50" height="95" frameX="-31" frameY="-5" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w3_10" x="1273" y="1689" width="54" height="72" frameX="-32" frameY="-21" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_01" x="388" y="2155" width="52" height="74" frameX="-38" frameY="-30" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_02" x="86" y="2039" width="53" height="73" frameX="-39" frameY="-33" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_03" x="86" y="1949" width="53" height="88" frameX="-37" frameY="-16" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_04" x="1530" y="2077" width="53" height="101" frameX="-36" frameY="0" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_05" x="78" y="2311" width="52" height="98" frameX="-36" frameY="0" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_06" x="841" y="2158" width="50" height="90" frameX="-37" frameY="-9" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_07" x="788" y="2109" width="51" height="97" frameX="-37" frameY="-8" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_08" x="1977" y="2032" width="53" height="101" frameX="-36" frameY="-3" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_09" x="89" y="1851" width="53" height="96" frameX="-37" frameY="-5" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="units/light_warrior/light_warrior_w4_10" x="303" y="2228" width="52" height="73" frameX="-38" frameY="-22" frameWidth="124" frameHeight="206"/>
 </TextureAtlas>
