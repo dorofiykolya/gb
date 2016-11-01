@@ -6,6 +6,7 @@ package game.extensions
 	import game.records.localizations.LocalizationRecordMap;
 	import game.records.locations.LocationRecordMap;
 	import game.records.modes.ModeRecordMap;
+	import game.records.skills.SkillRecordMap;
 	import game.records.spells.SpellRecordMap;
 	import game.records.units.UnitRecordMap;
 	
@@ -31,6 +32,7 @@ package game.extensions
 			context.install(SpellRecordMap);
 			context.install(ModeRecordMap);
 			context.install(LocationRecordMap);
+			context.install(SkillRecordMap);
 		}
 	
 	}

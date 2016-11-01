@@ -3,6 +3,7 @@ package game.net.commands.localization
 	import common.system.Environment;
 	import game.managers.integration.SocialManager;
 	import game.managers.integration.SocialType;
+	import game.managers.records.RecordManager;
 	import game.modules.localizations.LocalizationManager;
 	import game.modules.net.NetCommand;
 	import game.records.localizations.LocalizationRecordMap;
@@ -19,6 +20,8 @@ package game.net.commands.localization
 		public var localizationManager:LocalizationManager;
 		[Inject]
 		public var socialManager:SocialManager;
+		[Inject]
+		public var recordManager:RecordManager;
 		
 		private static const DEFAULT:String = "en";
 		private static const DEFAULT_RU_SOCIAL:String = "ru";
@@ -48,6 +51,8 @@ package game.net.commands.localization
 			}
 			
 			localizationManager.language = defaultLanguage;
+			
+			recordManager.saveLocalization(localization);
 		}
 	
 	}

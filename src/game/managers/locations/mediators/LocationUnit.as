@@ -2,6 +2,7 @@ package game.managers.locations.mediators
 {
 	import game.managers.battles.output.UnitCreateEvent;
 	import game.managers.locations.components.LocationUnitAnimationComponent;
+	import game.records.units.UnitRecordMap;
 	import game.utils.Point3;
 	
 	/**
@@ -10,6 +11,8 @@ package game.managers.locations.mediators
 	 */
 	public class LocationUnit extends LocationObject
 	{
+		[Inject]
+		public var unitRecordMap:UnitRecordMap;
 		
 		public function LocationUnit()
 		{

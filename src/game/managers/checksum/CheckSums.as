@@ -8,7 +8,6 @@ package game.managers.checksum
 	public class CheckSums
 	{
 		public var applicationVersion:String;
-		public var sources:String;
 		public var localization:String;
 		public var baseInfo:String;
 		

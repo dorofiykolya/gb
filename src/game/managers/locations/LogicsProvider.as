@@ -6,6 +6,7 @@ package game.managers.locations
 	import game.managers.locations.logics.LocationCommandLogics;
 	import game.managers.locations.logics.LocationConverterLogic;
 	import game.managers.locations.logics.LocationObjectsLogic;
+	import game.managers.locations.logics.LocationSortLayerLogic;
 	import game.managers.locations.logics.LocationTextureLayerFactoryLogic;
 	import game.managers.locations.logics.LocationTimeLogic;
 	import game.managers.locations.logics.LocationUnitLogic;
@@ -28,6 +29,7 @@ package game.managers.locations
 			add(LocationConverterLogic);
 			add(LocationTextureLayerFactoryLogic);
 			add(LocationBulletLogic);
+			add(LocationSortLayerLogic);
 		}
 	
 	}

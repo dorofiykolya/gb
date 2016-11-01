@@ -237,7 +237,7 @@ package game.managers.battles
 			produceBuildingLevel.units = 1;
 			produceBuildingLevel.unitsMaxProduction = 15;
 			produceBuildingLevel.unitsProduction = 3;
-			produceBuildingLevel.view = "production_view";
+			produceBuildingLevel.view = "buildings/player0/viking_barrack_1b";
 			
 			var mannaBuilding:BuildingRecord = new BuildingRecord();
 			records.push(mannaBuilding);
@@ -262,7 +262,7 @@ package game.managers.battles
 			mannaBuildingLevel.units = 1;
 			mannaBuildingLevel.unitsMaxProduction = 10;
 			mannaBuildingLevel.unitsProduction = 2;
-			mannaBuildingLevel.view = "manna_view";
+			mannaBuildingLevel.view = "buildings/player0/viking_altar_1b";
 			
 			var defenseBuilding:BuildingRecord = new BuildingRecord();
 			records.push(defenseBuilding);
@@ -287,7 +287,7 @@ package game.managers.battles
 			defenseBuildingLevel.units = 1;
 			defenseBuildingLevel.unitsMaxProduction = 5;
 			defenseBuildingLevel.unitsProduction = 1;
-			defenseBuildingLevel.view = "defense_view";
+			defenseBuildingLevel.view = "buildings/player0/viking_tower_1b";
 			
 			map.parse(records);
 			return map;

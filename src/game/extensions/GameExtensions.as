@@ -3,7 +3,7 @@ package game.extensions
 	import common.context.IContext;
 	import common.context.extensions.IExtension;
 	import common.context.links.Link;
-	import embeds.csv.CSVEmbeds;
+	import embeds.CSVEmbeds;
 	import game.configurations.CommandConfiguration;
 	import game.configurations.Configuration;
 	import game.configurations.ConnectionConfiguration;
@@ -22,6 +22,8 @@ package game.extensions
 	import game.managers.notifications.NotificationExtension;
 	import game.managers.purchase.PurchaseExtension;
 	import game.managers.ratings.RatingManager;
+	import game.managers.records.RecordExtension;
+	import game.managers.records.RecordManager;
 	import game.managers.screens.ScreenManager;
 	import game.managers.supersonic.SupersonicExtension;
 	import game.managers.top.TopManager;
@@ -117,6 +119,8 @@ package game.extensions
 			
 			// tools
 			context.install(IdleManager);
+			
+			context.install(RecordExtension);
 			
 			/**
 			 * @CONFIGURATIONS

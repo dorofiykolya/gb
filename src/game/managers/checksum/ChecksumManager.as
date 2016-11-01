@@ -32,6 +32,7 @@ package game.managers.checksum
 		
 		public function update(sum:CheckSums):void
 		{
+			check(sum);
 			_checksum = sum;
 			save();
 			request.localizationInfo();
@@ -47,6 +48,11 @@ package game.managers.checksum
 			{
 				_checksum = CheckSums(ObjectUtils.toType(data, CheckSums));
 			}
+		}
+		
+		private function check(sum:CheckSums):void
+		{
+			
 		}
 		
 		private function save():void

@@ -18,6 +18,7 @@ package game.managers.locations.logics
 		
 		private var _ticksPerSecond:Number;
 		private var _engine:BattleEngine;
+		private var _isRewind:Boolean;
 		
 		public function LocationBattleLogic()
 		{
@@ -30,6 +31,11 @@ package game.managers.locations.logics
 			
 			_ticksPerSecond = location.data.configuration.ticksPerSecond;
 			_engine = new BattleEngine(location.data.configuration);
+		}
+		
+		public function get isRewind():Boolean
+		{
+			return _isRewind;
 		}
 		
 		private function onTickHandler(e:TickEvent):void

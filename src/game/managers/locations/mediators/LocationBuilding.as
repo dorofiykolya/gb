@@ -25,7 +25,7 @@ package game.managers.locations.mediators
 		{
 			setPosition(Point3.week(data.x, data.y));
 			
-			animation.setup("asd");
+			animation.setup("buildings/player0/viking_barrack_1b");
 		}
 		
 		public function setUnits(units:int):void 
