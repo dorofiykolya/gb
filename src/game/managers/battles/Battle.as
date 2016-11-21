@@ -35,11 +35,11 @@ package game.managers.battles
 		private var _engine:BattleEngine;
 		private var _tick:int;
 		
-		public function Battle()
+		public function Battle(records:BuildingsRecordMap)
 		{
 			var config:BattleConfiguration = new BattleConfiguration();
 			
-			config.buildingRecords = fillBuildings(new BuildingsRecordMap());
+			config.buildingRecords = records;//fillBuildings(new BuildingsRecordMap());
 			config.unitRecords = fillUnits(new UnitRecordMap());
 			config.spellRecords = fillSpells(new SpellRecordMap());
 			config.npcPlayer = fillNpcPlayer(new BattleNPCRecord());
@@ -313,7 +313,7 @@ package game.managers.battles
 			produceUnitLevel.defense = 0;
 			produceUnitLevel.magicDefense = 0;
 			produceUnitLevel.icon = "produce_unit_icon";
-			produceUnitLevel.view = "warrior";//"produce_unit_view";
+			produceUnitLevel.view = "light_warrior";//"produce_unit_view";
 			
 			var mannaUnit:UnitRecord = new UnitRecord();
 			units.push(mannaUnit);
@@ -331,7 +331,7 @@ package game.managers.battles
 			mannaUnitLevel.defense = 0;
 			mannaUnitLevel.magicDefense = 0;
 			mannaUnitLevel.icon = "manna_unit_icon";
-			mannaUnitLevel.view = "warrior";//"manna_unit_view";
+			mannaUnitLevel.view = "horse_warrior";//"manna_unit_view";
 			
 			var defenseUnit:UnitRecord = new UnitRecord();
 			units.push(defenseUnit);
@@ -349,7 +349,7 @@ package game.managers.battles
 			defenseUnitLevel.defense = 1;
 			defenseUnitLevel.magicDefense = 0;
 			defenseUnitLevel.icon = "defense_unit_icon";
-			defenseUnitLevel.view = "warrior";//"defense_unit_view";
+			defenseUnitLevel.view = "hard_warrior";//"defense_unit_view";
 			
 			map.parse(units);
 			return map;

@@ -20,6 +20,11 @@ package game.managers.locations.animations
 		{
 			return entity as LocationObject;
 		}
+		
+		public function setHover(value:Boolean):void
+		{
+			
+		}
 	
 	}
 

@@ -15,6 +15,7 @@ package game.configurations
 	import game.commands.ScreenChangeCommand;
 	import game.commands.StarlingContextCommand;
 	import game.commands.StarlingInitializeContext3DCommand;
+	import game.commands.StartBattleCommand;
 	import game.mvc.events.ViewContextEvent;
 	import starling.events.Event;
 	//import game.locations.events.LocationEvent;
@@ -71,6 +72,7 @@ package game.configurations
             command.map(Event.CONTEXT3D_CREATE).add(StarlingInitializeContext3DCommand, true);
             command.map(Event.CONTEXT3D_CREATE).add(Context3DCommand);
 			
+			command.map("START_BATTLE").add(StartBattleCommand);
 		}
 	}
 }

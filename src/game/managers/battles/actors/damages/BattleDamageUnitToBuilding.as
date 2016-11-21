@@ -62,11 +62,7 @@ package game.managers.battles.actors.damages
 			building.receiveDamage(unitDamage);
 			unit.receiveDamage(buildingDamage);
 			
-			if (unit.units.count > 0 && building.units.count > 0)
-			{
-				throw new Error();
-			}
-			if (building.units.count <= 0 && unit.units.count > 0)
+			if (unit.units.count > building.units.count)
 			{
 				building.changeOwner(unit.ownerId);
 				building.units.change(unit.units.count);

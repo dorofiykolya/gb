@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data name="viking_tower_1" type="building">
+
+	<layer name="objects">
+		<image alignPivot="">vikings/buildings/blue/viking_tower_1</image>
+	</layer>
+	
+	<layer name="shadow">
+		<image alignPivot="">vikings/buildings/blue/viking_tower_1s</image>
+	</layer>
+
+</data>
+
+
+
+

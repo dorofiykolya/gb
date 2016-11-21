@@ -28,10 +28,15 @@ package embeds
 		[Embed(source = "../../workspace/textures/cgui_low0.png")]
 		public static const cgui_low0:Class;
 		
-		[Embed(source = "atlases/sprites.png")]
-		public static const sprites:Class;
-		[Embed(source = "atlases/sprites.xml", mimeType = "application/octet-stream")]
-		public static const spritesXml:Class;
+		[Embed(source = "atlases/pack0.png")]
+		public static const pack0:Class;
+		[Embed(source = "atlases/pack0.xml", mimeType = "application/octet-stream")]
+		public static const pack0Xml:Class;
+		
+		[Embed(source = "atlases/pack1.png")]
+		public static const pack1:Class;
+		[Embed(source = "atlases/pack1.xml", mimeType = "application/octet-stream")]
+		public static const pack1Xml:Class;
 		
 		public function AtlasEmbeds()
 		{

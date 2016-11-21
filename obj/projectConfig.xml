@@ -3,6 +3,8 @@
 <!--Any modifications you make may be lost.-->
 <flex-config>
   <target-player>21.0</target-player>
+  <benchmark>false</benchmark>
+  <static-link-runtime-shared-libraries>true</static-link-runtime-shared-libraries>
   <compiler>
     <define append="true">
       <name>CONFIG::debug</name>
@@ -14,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'30.07.2016'</value>
+      <value>'18.11.2016'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -45,6 +47,9 @@
       <path-element>C:\workspace\gb\submodules\as3-signals\src</path-element>
       <path-element>C:\workspace\gb\resources\src</path-element>
       <path-element>C:\workspace\gb\submodules\starling-game-mvc\src</path-element>
+      <path-element>C:\workspace\gb\submodules\dragonbones\Starling\Starling_1.x</path-element>
+      <path-element>C:\workspace\gb\submodules\dragonbones\DragonBones\src</path-element>
+      <path-element>C:\workspace\gb\test</path-element>
       <path-element>C:\Program Files (x86)\FlashDevelop\Library\AS3\classes</path-element>
     </source-path>
     <library-path append="true">
@@ -63,7 +68,7 @@
     </library-path>
   </compiler>
   <file-specs>
-    <path-element>C:\workspace\gb\src\Main.as</path-element>
+    <path-element>C:\workspace\gb\test\TestLocalization.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
   <default-frame-rate>60</default-frame-rate>

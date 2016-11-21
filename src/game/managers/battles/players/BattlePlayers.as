@@ -52,13 +52,15 @@ package game.managers.battles.players
 		
 		private function initialize():void
 		{
+			var index:int = 1;
 			var player:BattlePlayer;
 			for each (var item:BattleOwnerRecord in _configuration.owners)
 			{
 				_map[item.id] = player = new BattlePlayer();
 				_battleEngine.addComponent(player);
 				_players.push(player);
-				player.initialize(item);
+				player.initialize(item, index);
+				index++;
 			}
 			_battleEngine.addComponent(_npcPlayer);
 		}

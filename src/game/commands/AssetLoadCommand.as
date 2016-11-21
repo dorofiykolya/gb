@@ -1,5 +1,6 @@
 package game.commands
 {
+	import common.events.IDispatcher;
 	import game.managers.locations.LocationData;
 	import game.managers.locations.LocationManager;
 	import game.mvc.view.ViewContext;
@@ -20,7 +21,7 @@ package game.commands
 		[Inject]
 		public var resourceManager:ResourceManager;
 		[Inject]
-		public var locationManager:LocationManager;
+		public var eventDispatcher:IDispatcher;
 		
 		public function AssetLoadCommand()
 		{
@@ -38,7 +39,7 @@ package game.commands
 			context.initialize();
 			preloader.close();
 			
-			locationManager.load(new LocationData());
+			eventDispatcher.dispatchEventWith("START_BATTLE");
 		}
 	}
 }

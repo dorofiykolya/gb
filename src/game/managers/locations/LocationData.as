@@ -39,8 +39,6 @@ package game.managers.locations
 		{
 			var config:BattleConfiguration = new BattleConfiguration();
 			
-			config.buildingRecords = fillBuildings(new BuildingsRecordMap());
-			config.unitRecords = fillUnits(new UnitRecordMap());
 			config.spellRecords = fillSpells(new SpellRecordMap());
 			config.npcPlayer = fillNpcPlayer(new BattleNPCRecord());
 			config.modeRecords = fillModes(new ModeRecordMap());
@@ -59,7 +57,7 @@ package game.managers.locations
 			list[0] = action1;
 			
 			action1.fromObjectId = 1;
-			action1.toObjectId = 2;
+			action1.toObjectId = 7;
 			action1.tick = 5;
 			
 			var action2:BattleUnitAttackAction = new BattleUnitAttackAction();
@@ -82,6 +80,20 @@ package game.managers.locations
 			action4.fromObjectId = 5;
 			action4.toObjectId = 2;
 			action4.tick = 30;
+			
+			var action5:BattleUnitAttackAction = new BattleUnitAttackAction();
+			list[4] = action5;
+			
+			action5.fromObjectId = 5;
+			action5.toObjectId = 2;
+			action5.tick = 40;
+			
+			var action6:BattleUnitAttackAction = new BattleUnitAttackAction();
+			list[5] = action6;
+			
+			action6.fromObjectId = 5;
+			action6.toObjectId = 2;
+			action6.tick = 45;
 		}
 		
 		private function fillBattleBuilding(list:Vector.<BattleBuildingRecord>):void
@@ -107,7 +119,7 @@ package game.managers.locations
 			building1_2.position = new Point(400, 100);
 			building1_2.unitId = 2;
 			building1_2.unitLevel = 1;
-			building1_2.units = 30;
+			building1_2.units = 5;
 			building1_2.unitsPerSecond = 2;
 			
 			list[1] = building1_2;
@@ -198,151 +210,6 @@ package game.managers.locations
 			
 			list[0] = player1;
 			list[1] = player2;
-		}
-		
-		private function fillBuildings(map:BuildingsRecordMap):BuildingsRecordMap
-		{
-			var records:Vector.<BuildingRecord> = new Vector.<BuildingRecord>();
-			
-			var produceBuilding:BuildingRecord = new BuildingRecord();
-			records.push(produceBuilding);
-			produceBuilding.id = 1;
-			produceBuilding.race = 1;
-			produceBuilding.name = "Produce";
-			produceBuilding.description = "Produce Building";
-			produceBuilding.race = 1;
-			produceBuilding.type = BuildingType.PRODUCTION;
-			produceBuilding.levels = new Vector.<BuildingLevelRecord>();
-			var produceBuildingLevel:BuildingLevelRecord = new BuildingLevelRecord();
-			produceBuilding.levels[0] = produceBuildingLevel;
-			produceBuilding.levels[1] = produceBuildingLevel;
-			produceBuildingLevel.attackRange = 0;
-			produceBuildingLevel.attackSpeed = 0;
-			produceBuildingLevel.damage = 0;
-			//produceBuildingLevel.defense = 0;
-			produceBuildingLevel.icon = "produce_icon";
-			//produceBuildingLevel.magicDefense = 0;
-			produceBuildingLevel.mannaProduction = 0;
-			produceBuildingLevel.unitId = 1;
-			produceBuildingLevel.units = 1;
-			produceBuildingLevel.unitsMaxProduction = 15;
-			produceBuildingLevel.unitsProduction = 3;
-			produceBuildingLevel.view = "production_view";
-			
-			var mannaBuilding:BuildingRecord = new BuildingRecord();
-			records.push(mannaBuilding);
-			mannaBuilding.id = 2;
-			mannaBuilding.race = 1;
-			mannaBuilding.name = "Manna";
-			mannaBuilding.description = "Manna Building";
-			mannaBuilding.race = 1;
-			mannaBuilding.type = BuildingType.MANNA;
-			mannaBuilding.levels = new Vector.<BuildingLevelRecord>();
-			var mannaBuildingLevel:BuildingLevelRecord = new BuildingLevelRecord();
-			mannaBuilding.levels[0] = mannaBuildingLevel;
-			mannaBuilding.levels[1] = mannaBuildingLevel;
-			mannaBuildingLevel.attackRange = 0;
-			mannaBuildingLevel.attackSpeed = 0;
-			mannaBuildingLevel.damage = 0;
-			//mannaBuildingLevel.defense = 0;
-			mannaBuildingLevel.icon = "manna_icon";
-			//mannaBuildingLevel.magicDefense = 0;
-			mannaBuildingLevel.mannaProduction = 1;
-			mannaBuildingLevel.unitId = 2;
-			mannaBuildingLevel.units = 1;
-			mannaBuildingLevel.unitsMaxProduction = 10;
-			mannaBuildingLevel.unitsProduction = 2;
-			mannaBuildingLevel.view = "manna_view";
-			
-			var defenseBuilding:BuildingRecord = new BuildingRecord();
-			records.push(defenseBuilding);
-			defenseBuilding.id = 3;
-			defenseBuilding.race = 1;
-			defenseBuilding.name = "Defense";
-			defenseBuilding.description = "Defense Building";
-			defenseBuilding.race = 1;
-			defenseBuilding.type = BuildingType.DEFENSE;
-			defenseBuilding.levels = new Vector.<BuildingLevelRecord>();
-			var defenseBuildingLevel:BuildingLevelRecord = new BuildingLevelRecord();
-			defenseBuilding.levels[0] = defenseBuildingLevel;
-			defenseBuilding.levels[1] = defenseBuildingLevel;
-			defenseBuildingLevel.attackRange = 70;
-			defenseBuildingLevel.attackSpeed = 1;
-			defenseBuildingLevel.damage = 1;
-			//defenseBuildingLevel.defense = 1;
-			defenseBuildingLevel.icon = "defense_icon";
-			//defenseBuildingLevel.magicDefense = 1;
-			defenseBuildingLevel.mannaProduction = 0;
-			defenseBuildingLevel.unitId = 3;
-			defenseBuildingLevel.units = 1;
-			defenseBuildingLevel.unitsMaxProduction = 5;
-			defenseBuildingLevel.unitsProduction = 1;
-			defenseBuildingLevel.view = "defense_view";
-			
-			map.parse(records);
-			return map;
-		}
-		
-		private function fillUnits(map:UnitRecordMap):UnitRecordMap
-		{
-			var units:Vector.<UnitRecord> = new Vector.<UnitRecord>();
-			
-			var produceUnit:UnitRecord = new UnitRecord();
-			units.push(produceUnit);
-			produceUnit.id = 1;
-			produceUnit.description = "Produce unit description";
-			produceUnit.name = "Produce unit";
-			produceUnit.race = 1;
-			produceUnit.speed = 2;
-			produceUnit.levels = new Vector.<UnitLevelRecord>();
-			var produceUnitLevel:UnitLevelRecord = new UnitLevelRecord();
-			produceUnit.levels[0] = produceUnitLevel;
-			produceUnit.levels[1] = produceUnitLevel;
-			produceUnitLevel.hp = 2;
-			produceUnitLevel.damage = 1;
-			produceUnitLevel.defense = 0;
-			produceUnitLevel.magicDefense = 0;
-			produceUnitLevel.icon = "produce_unit_icon";
-			produceUnitLevel.view = "produce_unit_view";
-			
-			var mannaUnit:UnitRecord = new UnitRecord();
-			units.push(mannaUnit);
-			mannaUnit.id = 2;
-			mannaUnit.description = "Manna unit description";
-			mannaUnit.name = "Manna unit";
-			mannaUnit.race = 1;
-			mannaUnit.speed = 3;
-			mannaUnit.levels = new Vector.<UnitLevelRecord>();
-			var mannaUnitLevel:UnitLevelRecord = new UnitLevelRecord();
-			mannaUnit.levels[0] = mannaUnitLevel;
-			mannaUnit.levels[1] = mannaUnitLevel;
-			mannaUnitLevel.hp = 1;
-			mannaUnitLevel.damage = 1;
-			mannaUnitLevel.defense = 0;
-			mannaUnitLevel.magicDefense = 0;
-			mannaUnitLevel.icon = "manna_unit_icon";
-			mannaUnitLevel.view = "manna_unit_view";
-			
-			var defenseUnit:UnitRecord = new UnitRecord();
-			units.push(defenseUnit);
-			defenseUnit.id = 3;
-			defenseUnit.description = "Defense unit description";
-			defenseUnit.name = "Defense unit";
-			defenseUnit.race = 1;
-			defenseUnit.speed = 1;
-			defenseUnit.levels = new Vector.<UnitLevelRecord>();
-			var defenseUnitLevel:UnitLevelRecord = new UnitLevelRecord();
-			defenseUnit.levels[0] = defenseUnitLevel;
-			defenseUnit.levels[1] = defenseUnitLevel;
-			defenseUnitLevel.hp = 2;
-			defenseUnitLevel.damage = 2;
-			defenseUnitLevel.defense = 1;
-			defenseUnitLevel.magicDefense = 0;
-			defenseUnitLevel.icon = "defense_unit_icon";
-			defenseUnitLevel.view = "defense_unit_view";
-			
-			map.parse(units);
-			return map;
 		}
 		
 		private function fillSpells(map:SpellRecordMap):SpellRecordMap

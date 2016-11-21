@@ -1,0 +1,1 @@
+node embeds.js ..\src\embeds\buildings BuildingAnimationEmbeds embeds ..\src\embeds\BuildingAnimationEmbeds.as buildings

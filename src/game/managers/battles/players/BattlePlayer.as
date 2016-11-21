@@ -16,6 +16,7 @@ package game.managers.battles.players
 		private var _manna:PlayerManna;
 		private var _modifier:PlayerModifier;
 		private var _race:int;
+		private var _index:int;
 		
 		public function BattlePlayer()
 		{
@@ -23,8 +24,9 @@ package game.managers.battles.players
 			_modifier = addComponent(PlayerModifier) as PlayerModifier;
 		}
 		
-		public function initialize(item:BattleOwnerRecord):void
+		public function initialize(item:BattleOwnerRecord, index:int):void
 		{
+			_index = index;
 			_id = item.id;
 			_race = item.race;
 		}
@@ -32,6 +34,11 @@ package game.managers.battles.players
 		public function getModifier(type:ModifierType):BattleModifier
 		{
 			return null;
+		}
+		
+		public function get index():int
+		{
+			return _index;
 		}
 		
 		public function get modifier():PlayerModifier

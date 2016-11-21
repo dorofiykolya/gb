@@ -23,6 +23,9 @@ package game.managers.locations.logics
 		{
 			var result:LocationBuilding = factory.instantiate(LocationBuilding, data.objectId) as LocationBuilding;
 			result.setContent(data);
+			
+			addComponent(result);
+			
 			return result;
 		}
 		

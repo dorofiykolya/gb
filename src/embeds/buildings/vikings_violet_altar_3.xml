@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data name="viking_altar_3g" type="building">
+
+	<layer name="objects">
+		<image alignPivot="">vikings/buildings/violet/viking_altar_3</image>
+	</layer>
+	
+	<layer name="shadow">
+		<image alignPivot="">vikings/buildings/violet/viking_altar_3s</image>
+	</layer>
+
+</data>
+
+
+
+

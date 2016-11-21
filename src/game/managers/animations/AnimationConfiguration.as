@@ -3,6 +3,7 @@ package game.managers.animations
 	import common.context.IContext;
 	import common.system.ClassType;
 	import common.system.reflection.Constant;
+	import embeds.BuildingAnimationEmbeds;
 	import embeds.UnitAnimationEmbeds;
 	import game.managers.locations.animations.DefaultAnimationComponent;
 	import game.modules.animations.AnimationProvider;
@@ -39,6 +40,7 @@ package game.managers.animations
 			//
 			//loadFromEmbedClass(AnimationEmbeds);
 			loadFromEmbedClass(UnitAnimationEmbeds);
+			loadFromEmbedClass(BuildingAnimationEmbeds);
 			//loadFromEmbedClass(BuildingAnimationEmbeds);
 			//loadFromEmbedClass(SpellAnimationEmbeds);
 			//loadFromEmbedClass(EffectAnimationEmbeds);

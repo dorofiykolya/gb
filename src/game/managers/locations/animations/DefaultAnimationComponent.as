@@ -13,6 +13,7 @@ package game.managers.locations.animations
 	import starling.display.Quad;
 	import starling.events.Event;
 	import common.events.Event;
+	import starling.filters.ColorMatrixFilter;
 	
 	/**
 	 * ...
@@ -20,6 +21,8 @@ package game.managers.locations.animations
 	 */
 	public class DefaultAnimationComponent extends LocationAnimationComponent
 	{
+		private static var filter:ColorMatrixFilter;
+		
 		[Inject]
 		public var layerProvider:LocationLayerProvider;
 		[Inject]
@@ -36,6 +39,27 @@ package game.managers.locations.animations
 		public function DefaultAnimationComponent()
 		{
 		
+		}
+		
+		override public function setHover(value:Boolean):void
+		{
+			if (_layers)
+			{
+				for each (var layer:LayerViewer in _layers)
+				{
+					if (layer.layerName == LocationLayerName.OBJECTS)
+					{
+						if (value)
+						{
+							layer.filter = filter || (filter = new ColorMatrixFilter().adjustContrast(2));
+						}
+						else
+						{
+							layer.filter = null;
+						}
+					}
+				}
+			}
 		}
 		
 		override public function setState(newState:String, startOver:Boolean = false, timeScale:Number = 1):void
@@ -59,12 +83,12 @@ package game.managers.locations.animations
 			_state = value;
 		}
 		
-		public override function get timeScale():Number 
+		public override function get timeScale():Number
 		{
 			return _timeScale;
 		}
 		
-		public override function set timeScale(value:Number):void 
+		public override function set timeScale(value:Number):void
 		{
 			_timeScale = value;
 		}
@@ -119,7 +143,7 @@ package game.managers.locations.animations
 		{
 			if (_layers != null)
 			{
-				for each (var item:LayerViewer in _layers) 
+				for each (var item:LayerViewer in _layers)
 				{
 					layerProvider.getLayer(item.layerName).cut(item);
 					item.removeEventListener(starling.events.Event.COMPLETE, onStateComplete);

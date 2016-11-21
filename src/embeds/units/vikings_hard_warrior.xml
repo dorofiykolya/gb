@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data name="warrior" type="unit">
+
+	<layer name="shadow">
+		<states>
+			<state name="0" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_s0_</frames>
+			</state>
+			<state name="1" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_s1_</frames>
+			</state>
+			<state name="2" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_s2_</frames>
+			</state>
+			<state name="3" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_s3_</frames>
+			</state>
+			<state name="4" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_s4_</frames>
+			</state>
+			<state name="5" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_s3_</frames>
+			</state>
+			<state name="6" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_s2_</frames>
+			</state>
+			<state name="7" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_s1_</frames>
+			</state>
+			<state name="8" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_s0_</frames>
+			</state>
+		</states>	
+	</layer>
+	
+	<layer name="objects">
+		<states>
+			<state name="0" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_w0_</frames>
+			</state>
+			<state name="1" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_w1_</frames>
+			</state>
+			<state name="2" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_w2_</frames>
+			</state>
+			<state name="3" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_w3_</frames>
+			</state>
+			<state name="4" fps="15" alignPivot="">
+				<frames>vikings/units/hard_warrior/hard_warrior_w4_</frames>
+			</state>
+			<state name="5" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_w3_</frames>
+			</state>
+			<state name="6" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_w2_</frames>
+			</state>
+			<state name="7" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_w1_</frames>
+			</state>
+			<state name="8" fps="15" alignPivot="" scaleX="-1">
+				<frames>vikings/units/hard_warrior/hard_warrior_w0_</frames>
+			</state>
+		</states>
+	</layer>
+
+</data>
+
+
+
+

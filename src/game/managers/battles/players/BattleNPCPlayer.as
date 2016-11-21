@@ -1,6 +1,7 @@
 package game.managers.battles.players
 {
 	import game.managers.battles.records.BattleNPCRecord;
+	import game.records.Race;
 	
 	/**
 	 * ...
@@ -13,6 +14,11 @@ package game.managers.battles.players
 		public function BattleNPCPlayer(npcPlayer:BattleNPCRecord)
 		{
 			_npcPlayer = npcPlayer;
+		}
+		
+		override public function get race():int 
+		{
+			return Race.RACE_1;
 		}
 	
 	}
