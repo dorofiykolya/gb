@@ -34,7 +34,7 @@ package game.managers.battles.actors.damages
 			target.receiveDamage(_damage);
 			
 			var damageResult:ApplyDamageResult = new ApplyDamageResult();
-			damageResult.hp = target.hp;
+			damageResult.units = target.hp;
 			damageResult.ownerId = target.ownerId;
 			damageResult.targetId = _targetObjectId;
 			damageResult.damageObjectId = objectId;

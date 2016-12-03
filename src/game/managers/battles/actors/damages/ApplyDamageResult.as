@@ -10,7 +10,7 @@ package game.managers.battles.actors.damages
 		public var damageObjectId:int;
 		public var ownerId:int;
 		public var targetId:int;
-		public var hp:int;
+		public var units:int;
 		public var x:Number;
 		public var y:Number;
 		public var z:Number;

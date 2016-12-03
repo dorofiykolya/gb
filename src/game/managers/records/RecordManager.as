@@ -37,8 +37,6 @@ package game.managers.records
 		public function saveInitialization(packet:Initialization):void
 		{
 			_storage.map(String(Initialization)).value = ObjectUtils.toObject(packet);
-			
-			_checksum.update
 		}
 		
 		public function saveLocalization(packet:Localization):void

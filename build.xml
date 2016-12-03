@@ -4,9 +4,10 @@
     <property file="build.config"/>
 
     <!-- SDK properties -->
+    <property name="SDK_EXEC_EXTENSION" value="${sdk.exec.extension}"/>
     <property name="SDK_HOME" value="${sdk.flex}"/>
     <property name="MXMLC.JAR" value="${SDK_HOME}/lib/mxmlc-cli.jar"/>
-    <property name="MXMLC.EXE" value="${SDK_HOME}/bin/mxmlc.bat"/>
+    <property name="MXMLC.EXE" value="${SDK_HOME}/bin/mxmlc${SDK_EXEC_EXTENSION}"/>
     <property name="ADT.JAR" value="${SDK_HOME}/lib/adt.jar"/>
     <property name="ADT.EXE" value="${SDK_HOME}/bin/adt.bat"/>
 

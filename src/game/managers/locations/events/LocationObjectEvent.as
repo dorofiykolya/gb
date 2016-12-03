@@ -11,6 +11,7 @@ package game.managers.locations.events
 	{
 		public static const CHANGE:String = "change";
 		public static const MOVE:String = "move";
+		static public const OWNER:String = "owner";
 		
 		public function LocationObjectEvent(type:Object)
 		{

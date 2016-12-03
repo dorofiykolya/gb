@@ -74,7 +74,7 @@ package game.managers.battles.actors.damages
 			damageResult.ownerId = building.ownerId;
 			damageResult.targetId = building.objectId;
 			damageResult.damageObjectId = objectId;
-			damageResult.hp = building.hp;
+			damageResult.units = building.units.count;
 			
 			result.push(damageResult);
 			

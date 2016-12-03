@@ -6,10 +6,13 @@
     <SubTexture name="target_cicles/circle_out" x="1894" y="422" width="153" height="153"/>
     <SubTexture name="vikings/buildings/blue/viking_altar_1" x="1896" y="234" width="149" height="92" frameX="-284" frameY="-300" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_altar_1s" x="1631" y="1118" rotated="true" width="69" height="150" frameX="-288" frameY="-323" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/npc/viking_altar_1s" x="1631" y="1118" rotated="true" width="69" height="150" frameX="-288" frameY="-323" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_altar_2" x="1702" y="393" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_altar_2s" x="577" y="305" rotated="true" width="90" height="201" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/npc/viking_altar_2s" x="577" y="305" rotated="true" width="90" height="201" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_altar_3" x="1222" y="1630" rotated="true" width="141" height="213" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_altar_3s" x="930" y="1634" rotated="true" width="97" height="224" frameX="-257" frameY="-305" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/npc/viking_altar_3s" x="930" y="1634" rotated="true" width="97" height="224" frameX="-257" frameY="-305" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_arrack_1s" x="620" y="811" width="144" height="67" frameX="-301" frameY="-322" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_arrack_2" x="1531" y="1270" width="192" height="194" frameX="-262" frameY="-207" frameWidth="716" frameHeight="716"/>
     <SubTexture name="vikings/buildings/blue/viking_arrack_2s" x="941" y="779" width="213" height="98" frameX="-270" frameY="-305" frameWidth="716" frameHeight="716"/>

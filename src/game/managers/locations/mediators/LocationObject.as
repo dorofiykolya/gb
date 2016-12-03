@@ -13,6 +13,7 @@ package game.managers.locations.mediators
 	
 	[Event(name = "change", type = "game.managers.locations.events.LocationObjectEvent")]
 	[Event(name = "move", type = "game.managers.locations.events.LocationObjectEvent")]
+	[Event(name = "owner", type = "game.managers.locations.events.LocationObjectEvent")]
 	/**
 	 * ...
 	 * @author dorofiy.com
@@ -62,12 +63,16 @@ package game.managers.locations.mediators
 		
 		public function initialize():void
 		{
-			
+		
 		}
 		
 		public function setOwnerId(value:int):void
 		{
-			_ownerId = value;
+			if (_ownerId != value)
+			{
+				_ownerId = value;
+				dispatchOnOwnerChange();
+			}
 		}
 		
 		public function setObjectId(value:int):void
@@ -87,7 +92,7 @@ package game.managers.locations.mediators
 			}
 		}
 		
-		override public function addComponent(component:Object):Component 
+		override public function addComponent(component:Object):Component
 		{
 			var isValidType:Boolean = (ClassType.isSubclassOf(component, LocationAnimationComponent) || ClassType.isSubclassOf(component, LocationObjectComponent));
 			Assert.isTrue(isValidType);
@@ -109,6 +114,11 @@ package game.managers.locations.mediators
 			initialize();
 		}
 		
+		protected function dispatchOnOwnerChange():void
+		{
+			dispatchEventAs(LocationObjectEvent, LocationObjectEvent.OWNER, false, this);
+		}
+		
 		protected function dispatchOnMove():void
 		{
 			dispatchEventAs(LocationObjectEvent, LocationObjectEvent.MOVE, false, this);
@@ -117,6 +127,12 @@ package game.managers.locations.mediators
 		protected function dispatchOnChange():void
 		{
 			dispatchEventAs(LocationObjectEvent, LocationObjectEvent.CHANGE, false, this);
+		}
+		
+		override protected function onDispose():void 
+		{
+			_ownerId = -1;
+			super.onDispose();
 		}
 	
 	}

@@ -46,7 +46,7 @@ package game.managers.battles.modules
 						evt.y = damageResult.y;
 						evt.z = damageResult.z;
 						evt.targetId = damageResult.targetId;
-						evt.hp = damageResult.hp;
+						evt.units = damageResult.units;
 						evt.damageId = damageResult.damageObjectId;
 						evt.ownerId = damageResult.ownerId;
 						
@@ -54,7 +54,7 @@ package game.managers.battles.modules
 						unitsEvt.tick = tick;
 						unitsEvt.objectId = damageResult.targetId;
 						unitsEvt.ownerId = damageResult.ownerId;
-						unitsEvt.units = damageResult.hp;
+						unitsEvt.units = damageResult.units;
 					}
 				}
 				if (damage.needRemove)

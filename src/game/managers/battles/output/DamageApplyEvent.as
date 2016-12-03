@@ -12,7 +12,7 @@ package game.managers.battles.output
 		public var y:Number;
 		public var z:Number;
 		public var targetId:int;
-		public var hp:int;
+		public var units:int;
 		public var damageId:int;
 		public var ownerId:int;
 		
