@@ -6,13 +6,15 @@ package game.managers.battles.output
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class UnitsChangeEvent extends OutputEvent
+	public class BuildingChangeOwnerEvent extends OutputEvent
 	{
 		public var objectId:int;
+		public var ownerId:int;
 		public var units:int;
 		
-		public function UnitsChangeEvent()
+		public function BuildingChangeOwnerEvent()
 		{
+			super();
 		
 		}
 	

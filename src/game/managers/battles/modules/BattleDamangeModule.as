@@ -28,7 +28,7 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_temp.length = 0;
-			var actors:BattleActorsGroup = context.actors.group(ActorsGroup.DAMAGE);
+			var actors:BattleActorsGroup = context.actors.damages;
 			actors.getComponents(BattleDamage, false, _temp);
 			
 			for each (var damage:BattleDamage in _temp)
@@ -48,12 +48,10 @@ package game.managers.battles.modules
 						evt.targetId = damageResult.targetId;
 						evt.units = damageResult.units;
 						evt.damageId = damageResult.damageObjectId;
-						evt.ownerId = damageResult.ownerId;
 						
 						var unitsEvt:UnitsChangeEvent = context.output.enqueueByFactory(UnitsChangeEvent) as UnitsChangeEvent;
 						unitsEvt.tick = tick;
 						unitsEvt.objectId = damageResult.targetId;
-						unitsEvt.ownerId = damageResult.ownerId;
 						unitsEvt.units = damageResult.units;
 					}
 				}

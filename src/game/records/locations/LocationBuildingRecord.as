@@ -6,14 +6,14 @@ package game.records.locations
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class LocationBuilding
+	public class LocationBuildingRecord
 	{
 		public var position:int;
 		public var id:int;
 		public var level:int;
 		public var coords:Point;
 		
-		public function LocationBuilding()
+		public function LocationBuildingRecord()
 		{
 		
 		}

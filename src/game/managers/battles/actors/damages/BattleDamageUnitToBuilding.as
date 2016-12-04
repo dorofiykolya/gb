@@ -3,7 +3,10 @@ package game.managers.battles.actors.damages
 	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.engine.BattleTransform;
 	import game.managers.battles.actors.units.BattleUnit;
+	import game.managers.battles.output.BuildingChangeOwnerEvent;
+	import game.managers.battles.output.BuildingRemoveEvent;
 	import game.managers.battles.output.UnitAttachedEvent;
+	import game.managers.battles.records.BattleBuildingRecord;
 	
 	/**
 	 * ...
@@ -19,7 +22,7 @@ package game.managers.battles.actors.damages
 		
 		}
 		
-		public function setEnemies(unit:BattleUnit, targetBuilding:BattleTransform):void
+		public function setEnemy(unit:BattleUnit, targetBuilding:BattleTransform):void
 		{
 			_unitObjectId = unit.objectId;
 			_buildingObjectId = targetBuilding.target.objectId;
@@ -35,7 +38,7 @@ package game.managers.battles.actors.damages
 			if (result == null) result = new Vector.<ApplyDamageResult>();
 			
 			var unit:BattleUnit = engine.context.actors.getActorByObjectId(_unitObjectId) as BattleUnit;
-			if (unit == null) 
+			if (unit == null)
 			{
 				return result;
 			}
@@ -43,14 +46,7 @@ package game.managers.battles.actors.damages
 			var building:BattleBuilding = engine.context.actors.getActorByObjectId(_buildingObjectId) as BattleBuilding;
 			if (building.ownerId == unit.ownerId)
 			{
-				unit.attachTo(building);
-				
-				var evt:UnitAttachedEvent = engine.output.enqueueByFactory(UnitAttachedEvent) as UnitAttachedEvent;
-				evt.tick = tick;
-				evt.buildingObjectId = _buildingObjectId;
-				evt.unitObjectId = unit.objectId;
-				evt.buildingUnits = building.units.count;
-				
+				attachUnits(building, unit);
 				return result;
 			}
 			
@@ -66,6 +62,11 @@ package game.managers.battles.actors.damages
 			{
 				building.changeOwner(unit.ownerId);
 				building.units.change(unit.units.count);
+				
+				var evt:BuildingChangeOwnerEvent = BuildingChangeOwnerEvent(engine.output.enqueueByFactory(BuildingChangeOwnerEvent, tick));
+				evt.objectId = building.objectId;
+				evt.ownerId = unit.ownerId;
+				evt.units = unit.units.count;
 			}
 			
 			damageResult.x = building.transform.x;
@@ -81,6 +82,17 @@ package game.managers.battles.actors.damages
 			return result;
 		}
 		
+		private function attachUnits(building:BattleBuilding, unit:BattleUnit):void
+		{
+			unit.attachTo(building);
+			
+			var evt:UnitAttachedEvent = engine.output.enqueueByFactory(UnitAttachedEvent) as UnitAttachedEvent;
+			evt.tick = tick;
+			evt.buildingObjectId = _buildingObjectId;
+			evt.unitObjectId = unit.objectId;
+			evt.buildingUnits = building.units.count;
+		
+		}
 		
 		public override function get needApplyDamage():Boolean
 		{

@@ -22,7 +22,7 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void 
 		{
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.UNIT).getActors(BattleUnit, _temp);
+			context.actors.units.getActors(BattleUnit, _temp);
 			for each (var unit:BattleUnit in _temp) 
 			{
 				if (unit.units <= 0)

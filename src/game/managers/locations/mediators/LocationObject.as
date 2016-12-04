@@ -29,6 +29,7 @@ package game.managers.locations.mediators
 		public function LocationObject()
 		{
 			_position = new Point3();
+			_ownerId = -1;
 		}
 		
 		public function get x():Number
@@ -82,9 +83,9 @@ package game.managers.locations.mediators
 		
 		public function setPosition(point:Point3):void
 		{
-			if (!_position.equals(point))
+  			if (!_position.equals(point))
 			{
-				_position.copyFrom(point);
+ 				_position.copyFrom(point);
 				if (isNaN(_position.x)) _position.x = 0;
 				if (isNaN(_position.y)) _position.y = 0;
 				if (isNaN(_position.z)) _position.z = 0;

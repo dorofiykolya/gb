@@ -39,7 +39,7 @@ package game.managers.battles.components.buildings
 			bullet.target = targetUnit;
 			bullet.setInfoFrom(BattleBuilding(target));
 			bullet.setOwnerId(this.target.ownerId);
-			engine.context.actors.group(ActorsGroup.BULLET).addComponent(bullet);
+			engine.context.actors.bullets.addComponent(bullet);
 			
 			var evt:BulletCreateEvent = engine.output.enqueueByFactory(BulletCreateEvent) as BulletCreateEvent;
 			evt.tick = engine.tick;

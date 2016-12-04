@@ -58,31 +58,36 @@ package game.managers.battles.actors.buildings
 			return oneUnitDefense;
 		}
 		
+		public function get unitId():int
+		{
+			return infoLevel.unitId;
+		}
+		
 		public function get oneUnitDefense():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
-			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DEFENSE, unitRecord.defense, battleInfo.unitId);
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DEFENSE, unitRecord.defense, unitId);
 			return unitDefense;
 		}
 		
 		public function get oneUnitMagicDefense():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
-			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_MAGIC_DEFENSE, unitRecord.magicDefense, battleInfo.unitId);
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_MAGIC_DEFENSE, unitRecord.magicDefense, unitId);
 			return unitDefense;
 		}
 		
 		public function get oneUnitHp():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
-			var unitHp:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_HP, unitRecord.hp, battleInfo.unitId);
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitHp:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_HP, unitRecord.hp, unitId);
 			return unitHp;
 		}
 		
 		public function get oneUnitDamage():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(battleInfo.unitId).levels[battleInfo.unitLevel];
-			var damage:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DAMAGE, unitRecord.damage, battleInfo.unitId);
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var damage:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DAMAGE, unitRecord.damage, unitId);
 			return damage;
 		}
 		
@@ -111,7 +116,7 @@ package game.managers.battles.actors.buildings
 			
 			units.setCount(_battleRecord.units);
 			
-			var unitsPerSecond:Number = battleInfo.unitsPerSecond;
+			var unitsPerSecond:Number = infoLevel.unitsProduction;
 			UnitRegenComponent(addComponent(UnitRegenComponent)).setUnitsPerTick((unitsPerSecond / engine.configuration.ticksPerSecond));
 			
 			switch (_record.type)
@@ -148,6 +153,16 @@ package game.managers.battles.actors.buildings
 					units.remove(1);
 				}
 			}
+		}
+		
+		public function get unitsPerSecond():Number
+		{
+			return infoLevel.unitsProduction;
+		}
+		
+		public function get mannaPerSecond():Number
+		{
+			return infoLevel.mannaProduction;
 		}
 		
 		public function get powerDamage():Number

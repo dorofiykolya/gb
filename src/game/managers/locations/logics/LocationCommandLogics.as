@@ -5,6 +5,7 @@ package game.managers.locations.logics
 	import common.system.ClassType;
 	import flash.utils.Dictionary;
 	import game.managers.battles.engine.OutputEvent;
+	import game.managers.locations.commands.LocationBuildingChangeOwnerCommand;
 	import game.managers.locations.commands.LocationBuildingCreateCommand;
 	import game.managers.locations.commands.LocationBulletCreateCommand;
 	import game.managers.locations.commands.LocationBulletMoveCommand;
@@ -40,6 +41,7 @@ package game.managers.locations.logics
 			add(new LocationUnitRemoveCommand());
 			add(new LocationUnitsChangeCommand());
 			add(new LocationUnitMoveCommand());
+			add(new LocationBuildingChangeOwnerCommand());
 		}
 		
 		public function add(command:LocationCommand):void

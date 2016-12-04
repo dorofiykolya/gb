@@ -33,6 +33,9 @@ package game.managers.locations.components
 			layer.getLayer(LocationLayerName.UI).insert(_textField);
 			locationObject.addEventListener(LocationObjectEvent.MOVE, onMove);
 			locationObject.addEventListener(LocationObjectEvent.OWNER, onOwner);
+			
+			_textField.x = locationObject.x;
+			_textField.y = locationObject.y - locationObject.z;
 		}
 		
 		private function onOwner(e:LocationObjectEvent):void 

@@ -38,7 +38,7 @@ package game.managers.battles.engine
 			}
 		}
 		
-		public function get damages():BattleDamages
+		public function get damagesFactory():BattleDamages
 		{
 			return _damages;
 		}
@@ -83,6 +83,27 @@ package game.managers.battles.engine
 			}
 			return result;
 		}
+		
+		public function get buildings():BattleActorsGroup
+		{
+			return group(ActorsGroup.BUILDING);
+		}
+		
+		public function get units():BattleActorsGroup
+		{
+			return group(ActorsGroup.UNIT);
+		}
+		
+		public function get bullets():BattleActorsGroup
+		{
+			return group(ActorsGroup.BULLET);
+		}
+		
+		public function get damages():BattleActorsGroup
+		{
+			return group(ActorsGroup.DAMAGE);
+		}
+	
 	
 	}
 

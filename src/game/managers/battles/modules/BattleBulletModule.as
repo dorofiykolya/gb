@@ -25,7 +25,7 @@ package game.managers.battles.modules
 			super.preTick(context, tick, deltaTick);
 			
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.BULLET).getActors(BattleBullet, _temp);
+			context.actors.bullets.getActors(BattleBullet, _temp);
 			
 			for each (var bullet:BattleBullet in _temp)
 			{
@@ -48,7 +48,7 @@ package game.managers.battles.modules
 		
 		private function generateDamage(bullet:BattleBullet, context:BattleContext, tick:int, deltaTick:int):void
 		{
-			context.actors.damages.generateByBullet(bullet, tick, deltaTick);
+			context.actors.damagesFactory.generateByBullet(bullet, tick, deltaTick);
 		}
 	
 	}

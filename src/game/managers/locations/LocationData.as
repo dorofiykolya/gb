@@ -101,91 +101,63 @@ package game.managers.locations
 			var building1_1:BattleBuildingRecord = new BattleBuildingRecord();
 			building1_1.id = 1;
 			building1_1.level = 1;
-			building1_1.mannaPerSecond = 0;
 			building1_1.ownerId = 1;
 			building1_1.position = new Point(100, 100);
-			building1_1.unitId = 1;
-			building1_1.unitLevel = 1;
 			building1_1.units = 50;
-			building1_1.unitsPerSecond = 3;
 			
 			list[0] = building1_1;
 			
 			var building1_2:BattleBuildingRecord = new BattleBuildingRecord();
 			building1_2.id = 2;
 			building1_2.level = 1;
-			building1_2.mannaPerSecond = 1;
 			building1_2.ownerId = 1;
 			building1_2.position = new Point(400, 100);
-			building1_2.unitId = 2;
-			building1_2.unitLevel = 1;
 			building1_2.units = 5;
-			building1_2.unitsPerSecond = 2;
 			
 			list[1] = building1_2;
 			
 			var building1_3:BattleBuildingRecord = new BattleBuildingRecord();
 			building1_3.id = 3;
 			building1_3.level = 1;
-			building1_3.mannaPerSecond = 0;
 			building1_3.ownerId = 1;
 			building1_3.position = new Point(700, 100);
-			building1_3.unitId = 3;
-			building1_3.unitLevel = 1;
 			building1_3.units = 10;
-			building1_3.unitsPerSecond = 1;
 			
 			list[2] = building1_3;
 			
 			var building2_1:BattleBuildingRecord = new BattleBuildingRecord();
 			building2_1.id = 1;
 			building2_1.level = 1;
-			building2_1.mannaPerSecond = 0;
 			building2_1.ownerId = 2;
 			building2_1.position = new Point(100, 700);
-			building2_1.unitId = 1;
-			building2_1.unitLevel = 1;
 			building2_1.units = 50;
-			building2_1.unitsPerSecond = 3;
 			
 			list[3] = building2_1;
 			
 			var building2_2:BattleBuildingRecord = new BattleBuildingRecord();
 			building2_2.id = 2;
 			building2_2.level = 1;
-			building2_2.mannaPerSecond = 1;
 			building2_2.ownerId = 2;
 			building2_2.position = new Point(400, 700);
-			building2_2.unitId = 2;
-			building2_2.unitLevel = 1;
 			building2_2.units = 30;
-			building2_2.unitsPerSecond = 2;
 			
 			list[4] = building2_2;
 			
 			var building2_3:BattleBuildingRecord = new BattleBuildingRecord();
 			building2_3.id = 3;
 			building2_3.level = 1;
-			building2_3.mannaPerSecond = 0;
 			building2_3.ownerId = 2;
 			building2_3.position = new Point(700, 700);
-			building2_3.unitId = 3;
-			building2_3.unitLevel = 1;
 			building2_3.units = 10;
-			building2_3.unitsPerSecond = 1;
 			
 			list[5] = building2_3;
 			
 			var building0_3:BattleBuildingRecord = new BattleBuildingRecord();
 			building0_3.id = 3;
 			building0_3.level = 1;
-			building0_3.mannaPerSecond = 0;
 			building0_3.ownerId = 0;
 			building0_3.position = new Point(400, 400);
-			building0_3.unitId = 3;
-			building0_3.unitLevel = 1;
 			building0_3.units = 10;
-			building0_3.unitsPerSecond = 1;
 			
 			list[6] = building0_3;
 		}

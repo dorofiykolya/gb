@@ -14,7 +14,6 @@ package game.managers.battles.output
 		public var targetId:int;
 		public var units:int;
 		public var damageId:int;
-		public var ownerId:int;
 		
 		public function DamageApplyEvent()
 		{

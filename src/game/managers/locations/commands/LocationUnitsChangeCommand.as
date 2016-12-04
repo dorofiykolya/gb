@@ -38,21 +38,19 @@ package game.managers.locations.commands
 			{
 				if (locationObject is Class(clazz))
 				{
-					_map[clazz](locationObject, data.units, data.ownerId);
+					_map[clazz](locationObject, data.units);
 				}
 			}
 		}
 		
-		private function changeInBuilding(building:LocationBuilding, units:int, ownerId:int):void
+		private function changeInBuilding(building:LocationBuilding, units:int):void
 		{
 			building.setUnits(units);
-			building.setOwnerId(ownerId);
 		}
 		
-		private function changeInUnit(unit:LocationUnit, units:int, ownerId:int):void
+		private function changeInUnit(unit:LocationUnit, units:int):void
 		{
 			unit.setUnits(units);
-			unit.setOwnerId(ownerId);
 		}
 	
 	}

@@ -75,6 +75,10 @@ package game.managers.battles.components.units
 			var toY:Number = _moveTo.y;
 			
 			var totalDistance:Number = Math2.distance(fromX, fromY, toX, toY);
+			if (totalDistance == 0)
+			{
+				return false;
+			}
 			if (distance > totalDistance)
 			{
 				distance = totalDistance;

@@ -20,7 +20,7 @@ package game.managers.battles.engine
 		public function generateByBullet(bullet:BattleBullet, tick:int, deltaTick:int):void
 		{
 			var damage:BattleDamage = bullet.generateDamage();
-			_context.actors.group(ActorsGroup.DAMAGE).addComponent(damage);
+			_context.actors.damages.addComponent(damage);
 		}
 	
 	}

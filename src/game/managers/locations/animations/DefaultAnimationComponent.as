@@ -145,7 +145,8 @@ package game.managers.locations.animations
 			{
 				for each (var item:LayerViewer in _layers)
 				{
-					layerProvider.getLayer(item.layerName).cut(item);
+					item.cutFromParent();
+					//layerProvider.getLayer(item.layerName).cut(item);
 					item.removeEventListener(starling.events.Event.COMPLETE, onStateComplete);
 					juggler.remove(item);
 				}
@@ -167,6 +168,13 @@ package game.managers.locations.animations
 				item.y = e.object.y;
 				item.z = e.object.z;
 			}
+		}
+		
+		override protected function onDispose():void 
+		{
+			super.onDispose();
+			locationObject.removeEventListener(LocationObjectEvent.MOVE, onMove);
+			detachFromView();
 		}
 		
 		override protected function onDetach():void

@@ -31,7 +31,7 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.BUILDING).getActors(BattleBuilding, _temp);
+			context.actors.buildings.getActors(BattleBuilding, _temp);
 			
 			saveLastManna(context, tick);
 			

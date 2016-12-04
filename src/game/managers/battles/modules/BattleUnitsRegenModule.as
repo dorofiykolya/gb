@@ -24,7 +24,7 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.BUILDING).getActors(BattleBuilding, _temp);
+			context.actors.buildings.getActors(BattleBuilding, _temp);
 			for each (var item:BattleBuilding in _temp)
 			{
 				var regenComponent:UnitRegenComponent = item.getComponent(UnitRegenComponent) as UnitRegenComponent;

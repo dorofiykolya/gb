@@ -1,6 +1,9 @@
 package game.managers.locations.mediators
 {
+	import common.composite.Component;
+	import common.composite.VectorComponentPool;
 	import game.managers.battles.output.BuildingCreateEvent;
+	import game.managers.locations.components.ILocationChangeOwner;
 	import game.managers.locations.components.LocationBuildingAnimationComponent;
 	import game.managers.locations.components.LocationBuildingSelectionComponent;
 	import game.managers.locations.components.LocationUnitCountComponent;
@@ -40,10 +43,10 @@ package game.managers.locations.mediators
 		{
 			super.initialize();
 			
-			initializeBuilding();
+			initializeComponents();
 		}
 		
-		private function initializeBuilding():void
+		private function initializeComponents():void
 		{
 			addEventListener(LocationObjectEvent.OWNER, onOwnerChange);
 			addComponent(LocationBuildingAnimationComponent);
@@ -62,8 +65,6 @@ package game.managers.locations.mediators
 		
 		private function onOwnerChange(e:LocationObjectEvent):void
 		{
-			components.removeAll();
-			initializeBuilding();
 			initializeData();
 		}
 		

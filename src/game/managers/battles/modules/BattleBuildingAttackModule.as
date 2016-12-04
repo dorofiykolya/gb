@@ -26,10 +26,10 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_buildings.length = 0;
-			context.actors.group(ActorsGroup.BUILDING).getActors(BattleBuilding, _buildings);
+			context.actors.buildings.getActors(BattleBuilding, _buildings);
 			
 			_units.length = 0;
-			context.actors.group(ActorsGroup.UNIT).getActors(BattleUnit, _units);
+			context.actors.units.getActors(BattleUnit, _units);
 			
 			for each (var building:BattleBuilding in _buildings)
 			{

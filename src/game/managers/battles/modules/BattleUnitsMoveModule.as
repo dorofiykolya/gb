@@ -26,7 +26,7 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.UNIT).getActors(BattleUnit, _temp);
+			context.actors.units.getActors(BattleUnit, _temp);
 			for each (var unit:BattleUnit in _temp)
 			{
 				var move:UnitMoveComponent = unit.getComponent(UnitMoveComponent) as UnitMoveComponent;
@@ -44,8 +44,8 @@ package game.managers.battles.modules
 					if (move.moveCompleted)
 					{
 						var damage:BattleDamageUnitToBuilding = context.actors.factory.damageFactory.instantiate(BattleDamageUnitToBuilding) as BattleDamageUnitToBuilding;
-						damage.setEnemies(unit, move.targetBuilding);
-						context.actors.group(ActorsGroup.DAMAGE).addComponent(damage);
+						damage.setEnemy(unit, move.targetBuilding);
+						context.actors.damages.addComponent(damage);
 					}
 				}
 			}

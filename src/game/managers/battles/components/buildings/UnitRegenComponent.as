@@ -24,7 +24,7 @@ package game.managers.battles.components.buildings
 		{
 			super.onAttach();
 			
-			var unitsPerSecond:Number = BattleBuilding(target).battleInfo.unitsPerSecond;
+			var unitsPerSecond:Number = BattleBuilding(target).unitsPerSecond;
 			_unitsPerTick = BattleUtils.floor(unitsPerSecond / engine.configuration.ticksPerSecond);
 		}
 		

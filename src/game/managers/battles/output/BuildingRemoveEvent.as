@@ -6,13 +6,13 @@ package game.managers.battles.output
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class UnitsChangeEvent extends OutputEvent
+	public class BuildingRemoveEvent extends OutputEvent
 	{
 		public var objectId:int;
-		public var units:int;
 		
-		public function UnitsChangeEvent()
+		public function BuildingRemoveEvent()
 		{
+			super();
 		
 		}
 	

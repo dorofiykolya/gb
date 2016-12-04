@@ -31,7 +31,7 @@ package game.managers.battles.commands
 			for each (var record:BattleBuildingRecord in context.configuration.buildings)
 			{
 				var battleObject:BattleBuilding = context.actors.factory.buildingFactory.instantiate(BattleBuilding);
-				context.actors.group(ActorsGroup.BUILDING).addComponent(battleObject);
+				context.actors.buildings.addComponent(battleObject);
 				battleObject.initialize(record, context.configuration);
 				
 				var evt:BuildingCreateEvent = context.output.enqueueByFactory(BuildingCreateEvent) as BuildingCreateEvent;

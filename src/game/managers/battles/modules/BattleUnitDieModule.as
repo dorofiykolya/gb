@@ -12,11 +12,11 @@ package game.managers.battles.modules
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class BattleUnitDieModuel extends BattleModule
+	public class BattleUnitDieModule extends BattleModule
 	{
 		private var _temp:Vector.<BattleObject> = new Vector.<BattleObject>();
 		
-		public function BattleUnitDieModuel()
+		public function BattleUnitDieModule()
 		{
 		
 		}
@@ -24,7 +24,7 @@ package game.managers.battles.modules
 		override public function preTick(context:BattleContext, tick:int, deltaTick:int):void
 		{
 			_temp.length = 0;
-			context.actors.group(ActorsGroup.UNIT).getActors(BattleUnit, _temp);
+			context.actors.units.getActors(BattleUnit, _temp);
 			
 			for each (var unit:BattleUnit in _temp)
 			{

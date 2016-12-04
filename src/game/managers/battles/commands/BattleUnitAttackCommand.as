@@ -36,7 +36,7 @@ package game.managers.battles.commands
 			if (unitCount > 0)
 			{
 				var unit:BattleUnit = context.actors.factory.unitFactory.instantiate(BattleUnit);
-				context.actors.group(ActorsGroup.UNIT).addComponent(unit);
+				context.actors.units.addComponent(unit);
 				
 				unit.initialize(from, to, unitCount);
 				

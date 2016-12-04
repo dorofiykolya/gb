@@ -3,7 +3,6 @@ package
 	import game.GBContext;
 	import flash.events.Event;
 	import game.GameApplication;
-	import game.managers.battles.Battle;
 	import game.managers.battles.engine.OutputEvent;
 	import test.TestBattleView;
 	

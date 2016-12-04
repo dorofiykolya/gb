@@ -20,11 +20,11 @@ package game.managers.locations
 			_root.touchable = false;
 			
 			createLayer(LocationLayerName.BACKGROUND);
-			createLayer(LocationLayerName.BOTTOM);
-			createLayer(LocationLayerName.SHADOW).filter = new ShadowFilter();
-			createLayer(LocationLayerName.OBJECTS);
-			createLayer(LocationLayerName.AIR);
-			createLayer(LocationLayerName.UI);
+			createLayer(LocationLayerName.BOTTOM, 	70, 70);
+			createLayer(LocationLayerName.SHADOW, 	70, 70).filter = new ShadowFilter();
+			createLayer(LocationLayerName.OBJECTS, 	70, 70);
+			createLayer(LocationLayerName.AIR, 		70, 70);
+			createLayer(LocationLayerName.UI, 		70, 70);
 		}
 		
 		public function get root():Sprite
@@ -37,11 +37,13 @@ package game.managers.locations
 			return _map[name];
 		}
 		
-		private function createLayer(name:String):Sprite
+		private function createLayer(name:String, x:Number = 0, y:Number = 0):Sprite
 		{
 			var layer:Sprite = new Sprite();
 			_map[name] = layer;
 			layer.name = name;
+			layer.x = x;
+			layer.y = y;
 			root.insert(layer);
 			return layer;
 		}

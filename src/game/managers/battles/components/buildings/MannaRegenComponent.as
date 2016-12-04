@@ -22,7 +22,7 @@ package game.managers.battles.components.buildings
 		override protected function onAttach():void
 		{
 			super.onAttach();
-			_mannaPerTick = BattleBuilding(target).battleInfo.mannaPerSecond / engine.configuration.ticksPerSecond;
+			_mannaPerTick = BattleBuilding(target).mannaPerSecond / engine.configuration.ticksPerSecond;
 		}
 		
 		override public function get needRemove():Boolean

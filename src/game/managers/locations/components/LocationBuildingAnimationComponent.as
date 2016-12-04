@@ -15,7 +15,10 @@ package game.managers.locations.components
 		
 		public function setHover(value:Boolean):void
 		{
-			component.setHover(value);
+			if (component)
+			{
+				component.setHover(value);
+			}
 		}
 	
 	}

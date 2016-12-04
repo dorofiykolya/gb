@@ -12,7 +12,7 @@ package game.records.locations
 		public var decsription:String;
 		public var icon:String;
 		public var view:String;
-		public var buildings:Vector.<LocationBuilding>;
+		public var buildings:Vector.<LocationBuildingRecord>;
 		
 		public function LocationRecord()
 		{
