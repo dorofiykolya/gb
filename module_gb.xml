@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_gb" default="compile.module.gb">
+  <dirname property="module.gb.basedir" file="${ant.file.module_gb}"/>
+  
+  <property name="module.jdk.home.gb" value="${jdk.home.air23}"/>
+  <property name="module.jdk.bin.gb" value="${jdk.bin.air23}"/>
+  <property name="module.jdk.classpath.gb" value="jdk.classpath.air23"/>
+  
+  <property name="compiler.args.gb" value="-encoding UTF-8 -source 1.6 ${compiler.args}"/>
+  
+  <property name="gb.output.dir" value="${module.gb.basedir}/out/production/gb"/>
+  <property name="gb.testoutput.dir" value="${module.gb.basedir}/out/test/gb"/>
+  
+  <path id="gb.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="gb.module.production.classpath">
+    <path refid="${module.jdk.classpath.gb}"/>
+  </path>
+  
+  <path id="gb.runtime.production.module.classpath">
+    <pathelement location="${gb.output.dir}"/>
+  </path>
+  
+  <path id="gb.module.classpath">
+    <path refid="${module.jdk.classpath.gb}"/>
+    <pathelement location="${gb.output.dir}"/>
+  </path>
+  
+  <path id="gb.runtime.module.classpath">
+    <pathelement location="${gb.testoutput.dir}"/>
+    <pathelement location="${gb.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.gb">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.gb">
+    <patternset refid="excluded.from.module.gb"/>
+  </patternset>
+  
+  <path id="gb.module.sourcepath">
+    <dirset dir="${module.gb.basedir}">
+      <include name="src"/>
+      <include name="submodules/as3-signals/src"/>
+      <include name="submodules/console/src"/>
+      <include name="submodules/dragonbones/Starling/Starling_1.x/src"/>
+      <include name="submodules/dragonbones/DragonBones/src"/>
+      <include name="submodules/feathers/source"/>
+      <include name="submodules/firetype/src"/>
+      <include name="submodules/graphics/extension/src"/>
+      <include name="submodules/library/src"/>
+      <include name="submodules/particles/src"/>
+      <include name="submodules/soundAS/lib/src"/>
+      <include name="submodules/stardust-library-plumbee/src"/>
+      <include name="submodules/stardust-sim-loader/src"/>
+      <include name="submodules/starling/starling/src"/>
+      <include name="submodules/starling-builder-engine/src"/>
+      <include name="submodules/starling-game-mvc/src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.gb" depends="compile.module.gb.production,compile.module.gb.tests" description="Compile module gb"/>
+  
+  <target name="compile.module.gb.production" depends="register.custom.compilers" description="Compile module gb; production classes">
+    <mkdir dir="${gb.output.dir}"/>
+    <javac2 destdir="${gb.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.gb}/javac">
+      <compilerarg line="${compiler.args.gb}"/>
+      <bootclasspath refid="gb.module.bootclasspath"/>
+      <classpath refid="gb.module.production.classpath"/>
+      <src refid="gb.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.gb"/>
+    </javac2>
+    
+    <copy todir="${gb.output.dir}">
+      <fileset dir="${module.gb.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/as3-signals/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/console/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/dragonbones/Starling/Starling_1.x/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/dragonbones/DragonBones/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/feathers/source">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/firetype/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/graphics/extension/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/library/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/particles/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/soundAS/lib/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/stardust-library-plumbee/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/stardust-sim-loader/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/starling/starling/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/starling-builder-engine/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+      <fileset dir="${module.gb.basedir}/submodules/starling-game-mvc/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.gb.tests" depends="register.custom.compilers,compile.module.gb.production" description="compile module gb; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.gb" description="cleanup module">
+    <delete dir="${gb.output.dir}"/>
+    <delete dir="${gb.testoutput.dir}"/>
+  </target>
+</project>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="gb">
+    <configurations>
+      <configuration name="gb" target-platform="Mobile" pure-as="true" main-class="Main" output-file="gb.swf" output-folder="$MODULE_DIR$/out/production/gb">
+        <dependencies target-player="23.0">
+          <sdk name="air23" />
+        </dependencies>
+        <compiler-options>
+          <option name="additionalOptions" value="-load-config+=general.config -load-config+=defines.config -load-config+=libs.config" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android enabled="true" package-file-name="gb" />
+        <packaging-ios enabled="true" package-file-name="gb" />
+      </configuration>
+      <configuration name="gb-desktop" target-platform="Desktop" pure-as="true" main-class="Main" output-file="gb-desktop.swf" output-folder="$MODULE_DIR$/out/production/gb">
+        <dependencies>
+          <sdk name="air23" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+            <entry key="compiler.keep-as3-metadata" value="Inject" />
+            <entry key="compiler.keep-generated-actionscript" value="true" />
+          </map>
+          <option name="additionalOptions" value="-load-config+=general.config -load-config+=defines.config -load-config+=libs.config" />
+        </compiler-options>
+        <packaging-air-desktop package-file-name="gb-desktop" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+      <configuration name="gb-web" pure-as="true" main-class="Main" output-file="gb-web.swf" output-folder="$MODULE_DIR$/out/production/gb">
+        <dependencies target-player="23.0">
+          <sdk name="air23" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.debug.swf" value="true" />
+            <entry key="compiler.keep-as3-metadata" value="Inject" />
+            <entry key="compiler.keep-generated-actionscript" value="true" />
+          </map>
+          <option name="additionalOptions" value="-load-config+=general.config -load-config+=defines.config -load-config+=libs.config" />
+        </compiler-options>
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/as3-signals/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/console/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/dragonbones/Starling/Starling_1.x/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/dragonbones/DragonBones/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/feathers/source" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/firetype/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/graphics/extension/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/library/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/particles/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/soundAS/lib/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/stardust-library-plumbee/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/stardust-sim-loader/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/starling/starling/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/starling-builder-engine/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/submodules/starling-game-mvc/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="air23" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
