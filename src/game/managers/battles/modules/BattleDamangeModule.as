@@ -49,10 +49,10 @@ package game.managers.battles.modules
 						evt.units = damageResult.units;
 						evt.damageId = damageResult.damageObjectId;
 						
-						var unitsEvt:UnitsChangeEvent = context.output.enqueueByFactory(UnitsChangeEvent) as UnitsChangeEvent;
+						/*var unitsEvt:UnitsChangeEvent = context.output.enqueueByFactory(UnitsChangeEvent) as UnitsChangeEvent;
 						unitsEvt.tick = tick;
 						unitsEvt.objectId = damageResult.targetId;
-						unitsEvt.units = damageResult.units;
+						unitsEvt.units = damageResult.units;*/
 					}
 				}
 				if (damage.needRemove)

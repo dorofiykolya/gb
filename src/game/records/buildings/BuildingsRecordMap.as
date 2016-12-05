@@ -84,8 +84,8 @@ package game.records.buildings
 			var defenseBuildingLevel:BuildingLevelRecord = new BuildingLevelRecord();
 			defenseBuilding.levels[0] = defenseBuildingLevel;
 			defenseBuilding.levels[1] = defenseBuildingLevel;
-			defenseBuildingLevel.attackRange = 70;
-			defenseBuildingLevel.attackSpeed = 1;
+			defenseBuildingLevel.attackRange = 200;
+			defenseBuildingLevel.attackSpeed = 100;
 			defenseBuildingLevel.damage = 1;
 			//defenseBuildingLevel.defense = 1;
 			defenseBuildingLevel.icon = "defense_icon";

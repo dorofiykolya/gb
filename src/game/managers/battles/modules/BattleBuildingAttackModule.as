@@ -37,17 +37,20 @@ package game.managers.battles.modules
 				if (component && component.canAttack)
 				{
 					var range:Number = component.range;
-					var target:BattleUnit;
+					var target:BattleUnit = null;
 					var minDistance:Number = int.MAX_VALUE;
 					for each (var unit:BattleUnit in _units)
 					{
-						var distance:Number = unit.transform.positionDistance(building.transform);
-						if (distance <= range)
+						if(unit.ownerId != building.ownerId)
 						{
-							if (distance < minDistance)
+							var distance:Number = unit.transform.positionDistance(building.transform);
+							if (distance <= range)
 							{
-								minDistance = distance;
-								target = unit;
+								if (distance < minDistance)
+								{
+									minDistance = distance;
+									target = unit;
+								}
 							}
 						}
 					}
