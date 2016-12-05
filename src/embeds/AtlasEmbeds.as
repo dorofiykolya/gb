@@ -37,6 +37,21 @@ package embeds
 		public static const pack1:Class;
 		[Embed(source = "atlases/pack1.xml", mimeType = "application/octet-stream")]
 		public static const pack1Xml:Class;
+
+		[Embed(source = "atlases/pack2.png")]
+		public static const pack2:Class;
+		[Embed(source = "atlases/pack2.xml", mimeType = "application/octet-stream")]
+		public static const pack2Xml:Class;
+
+		[Embed(source = "atlases/pack3.png")]
+		public static const pack3:Class;
+		[Embed(source = "atlases/pack3.xml", mimeType = "application/octet-stream")]
+		public static const pack3Xml:Class;
+
+		[Embed(source = "atlases/pack4.png")]
+		public static const pack4:Class;
+		[Embed(source = "atlases/pack4.xml", mimeType = "application/octet-stream")]
+		public static const pack4Xml:Class;
 		
 		public function AtlasEmbeds()
 		{

@@ -1,166 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:585d720b6347bfdc76c94d0ecd4d093a:383f8d9cfafd17b025bd3e846f536ba1:59bb0806d1681f9c91beee6ff9fe80c3$ -->
+<!-- $TexturePacker:SmartUpdate:97837c2b7f083d64a364f3f34b06582d:f40e098dfc49c9ba2fe3558395e837b4:04b31be75ce041732e5266107fa76e21$ -->
 <TextureAtlas imagePath="pack1.png" width="1024" height="1024">
-    <SubTexture name="target_cicles/circle_in" x="789" y="1" width="129" height="129"/>
-    <SubTexture name="target_cicles/circle_normal" x="328" y="165" width="131" height="131"/>
-    <SubTexture name="vikings/buildings/blue/viking_arrack_1" x="193" y="97" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/elka_06s" x="350" y="50" width="143" height="64" frameX="-346" frameY="-302" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/koloda_01s" x="784" y="274" width="127" height="70" frameX="-294" frameY="-332" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/penek_02" x="654" y="546" width="94" height="65" frameX="-313" frameY="-320" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/rocks_01" x="432" y="947" rotated="true" width="56" height="70" frameX="-325" frameY="-330" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/rocks_02" x="99" y="753" width="90" height="50" frameX="-313" frameY="-327" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/rocks_04" x="302" y="441" width="104" height="71" frameX="-306" frameY="-317" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/decor/rocks_07" x="911" y="349" width="112" height="64" frameX="-301" frameY="-325" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/green/viking_barrack_1" x="1" y="132" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/red/viking_barrack_1" x="1" y="266" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/violet/viking_altar_2" x="1" y="1" width="190" height="129" frameX="-267" frameY="-270" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/buildings/violet/viking_barrack_1" x="654" y="1" width="133" height="132" frameX="-293" frameY="-257" frameWidth="716" frameHeight="716"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_01" x="461" y="698" width="87" height="43" frameX="-45" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_02" x="111" y="517" width="78" height="45" frameX="-45" frameY="-86" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_03" x="796" y="822" rotated="true" width="49" height="81" frameX="-35" frameY="-83" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_04" x="1" y="947" rotated="true" width="46" height="75" frameX="-36" frameY="-84" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_05" x="550" y="698" width="85" height="43" frameX="-39" frameY="-87" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_07" x="288" y="738" width="94" height="47" frameX="-44" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_08" x="191" y="725" width="95" height="47" frameX="-43" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_01" x="752" y="740" width="88" height="45" frameX="-34" frameY="-86" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_02" x="1" y="840" width="93" height="52" frameX="-27" frameY="-80" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_03" x="461" y="644" width="94" height="52" frameX="-23" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_04" x="96" y="845" width="93" height="52" frameX="-21" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_05" x="1" y="894" width="93" height="51" frameX="-23" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_06" x="750" y="606" width="93" height="47" frameX="-27" frameY="-85" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_07" x="609" y="309" rotated="true" width="43" height="89" frameX="-35" frameY="-88" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_08" x="466" y="860" rotated="true" width="42" height="85" frameX="-38" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s1_09" x="982" y="641" rotated="true" width="41" height="81" frameX="-41" frameY="-89" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s2_02" x="920" y="97" width="98" height="40" frameX="-24" frameY="-82" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s2_03" x="302" y="398" width="108" height="41" frameX="-21" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s3_04" x="192" y="341" width="113" height="47" frameX="-24" frameY="-79" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s3_05" x="1" y="400" width="113" height="46" frameX="-21" frameY="-78" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s3_06" x="192" y="489" width="104" height="47" frameX="-21" frameY="-73" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s3_07" x="191" y="676" width="96" height="47" frameX="-22" frameY="-75" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s3_08" x="384" y="743" width="90" height="42" frameX="-24" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s3_09" x="476" y="743" width="90" height="42" frameX="-25" frameY="-80" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s4_02" x="96" y="899" width="87" height="46" frameX="-44" frameY="-76" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s4_04" x="185" y="899" width="85" height="46" frameX="-43" frameY="-81" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s4_09" x="920" y="1" width="103" height="51" frameX="-22" frameY="-70" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w0_01" x="99" y="660" width="90" height="91" frameX="-30" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w0_03" x="298" y="514" rotated="true" width="97" height="75" frameX="-23" frameY="-26" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w0_04" x="191" y="538" rotated="true" width="97" height="71" frameX="-27" frameY="-31" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w0_05" x="191" y="774" rotated="true" width="93" height="88" frameX="-23" frameY="-29" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w0_08" x="461" y="374" width="97" height="89" frameX="-31" frameY="-33" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w0_09" x="100" y="564" rotated="true" width="89" height="94" frameX="-31" frameY="-32" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_01" x="654" y="453" rotated="true" width="95" height="91" frameX="-14" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_03" x="1" y="640" rotated="true" width="96" height="94" frameX="-8" frameY="-24" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_04" x="1" y="545" rotated="true" width="97" height="93" frameX="-12" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_05" x="560" y="400" width="92" height="96" frameX="-11" frameY="-26" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_06" x="290" y="591" rotated="true" width="96" height="93" frameX="-8" frameY="-25" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_07" x="752" y="430" rotated="true" width="95" height="92" frameX="-15" frameY="-29" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_08" x="849" y="465" rotated="true" width="94" height="81" frameX="-24" frameY="-33" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w1_09" x="751" y="524" rotated="true" width="94" height="80" frameX="-24" frameY="-32" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w2_01" x="1" y="448" rotated="true" width="108" height="95" frameX="-3" frameY="-17" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w2_04" x="560" y="498" width="92" height="94" frameX="-20" frameY="-28" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w2_05" x="461" y="555" rotated="true" width="95" height="87" frameX="-14" frameY="-26" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w4_04" x="388" y="594" width="71" height="93" frameX="-40" frameY="-30" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w4_05" x="461" y="465" rotated="true" width="97" height="88" frameX="-27" frameY="-25" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/hard_warrior/hard_warrior_w4_08" x="192" y="390" rotated="true" width="108" height="97" frameX="-10" frameY="-12" frameWidth="138" frameHeight="220"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_01" x="136" y="293" rotated="true" width="54" height="74" frameX="-77" frameY="-106" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_02" x="49" y="947" rotated="true" width="57" height="74" frameX="-77" frameY="-104" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_03" x="108" y="947" rotated="true" width="56" height="74" frameX="-77" frameY="-105" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_04" x="391" y="787" rotated="true" width="53" height="72" frameX="-78" frameY="-107" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_05" x="379" y="947" rotated="true" width="51" height="72" frameX="-78" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_06" x="275" y="947" rotated="true" width="50" height="73" frameX="-78" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_07" x="327" y="947" rotated="true" width="50" height="73" frameX="-78" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_08" x="339" y="787" rotated="true" width="50" height="74" frameX="-77" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_09" x="286" y="787" rotated="true" width="51" height="74" frameX="-77" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s1_03" x="654" y="409" width="96" height="42" frameX="-65" frameY="-112" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s1_04" x="654" y="613" width="80" height="40" frameX="-77" frameY="-113" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s1_05" x="485" y="787" rotated="true" width="39" height="70" frameX="-81" frameY="-114" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s1_06" x="446" y="787" rotated="true" width="37" height="71" frameX="-78" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s1_08" x="98" y="805" width="91" height="38" frameX="-63" frameY="-117" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s1_09" x="920" y="139" width="98" height="39" frameX="-60" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s2_04" x="630" y="86" rotated="true" width="22" height="112" frameX="-65" frameY="-123" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s3_02" x="920" y="54" width="103" height="41" frameX="-61" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s3_03" x="557" y="655" width="93" height="41" frameX="-74" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s3_04" x="876" y="693" width="82" height="39" frameX="-80" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s3_07" x="932" y="548" width="88" height="38" frameX="-62" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s3_08" x="920" y="180" width="98" height="38" frameX="-54" frameY="-116" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s3_09" x="419" y="348" rotated="true" width="40" height="104" frameX="-51" frameY="-115" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_01" x="136" y="208" rotated="true" width="54" height="83" frameX="-80" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_03" x="712" y="655" rotated="true" width="56" height="83" frameX="-82" frameY="-108" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_04" x="340" y="863" rotated="true" width="53" height="82" frameX="-83" frameY="-109" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_05" x="876" y="734" width="81" height="51" frameX="-84" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_06" x="748" y="933" rotated="true" width="50" height="82" frameX="-83" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_07" x="898" y="641" width="82" height="50" frameX="-82" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_08" x="744" y="848" rotated="true" width="50" height="83" frameX="-80" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_09" x="823" y="655" rotated="true" width="51" height="83" frameX="-80" frameY="-110" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_01" x="654" y="229" rotated="true" width="128" height="46" frameX="-70" frameY="-27" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_02" x="789" y="132" rotated="true" width="129" height="47" frameX="-69" frameY="-28" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_04" x="886" y="415" rotated="true" width="112" height="48" frameX="-69" frameY="-31" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_06" x="307" y="348" rotated="true" width="110" height="48" frameX="-69" frameY="-29" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_07" x="324" y="298" rotated="true" width="116" height="48" frameX="-69" frameY="-27" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_08" x="654" y="277" rotated="true" width="127" height="47" frameX="-70" frameY="-26" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w0_09" x="328" y="116" rotated="true" width="132" height="47" frameX="-70" frameY="-26" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w1_01" x="784" y="181" rotated="true" width="128" height="91" frameX="-49" frameY="-21" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w1_02" x="654" y="135" rotated="true" width="128" height="92" frameX="-50" frameY="-22" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w1_03" x="486" y="282" rotated="true" width="121" height="90" frameX="-51" frameY="-23" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w1_05" x="772" y="346" rotated="true" width="112" height="82" frameX="-53" frameY="-23" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w1_06" x="654" y="326" rotated="true" width="116" height="81" frameX="-54" frameY="-22" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w1_08" x="486" y="197" rotated="true" width="130" height="83" frameX="-54" frameY="-20" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w2_06" x="914" y="220" width="109" height="127" frameX="-41" frameY="-11" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w2_07" x="192" y="231" rotated="true" width="130" height="108" frameX="-41" frameY="-10" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w2_08" x="495" y="86" rotated="true" width="133" height="109" frameX="-41" frameY="-10" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w3_05" x="509" y="1" rotated="true" width="143" height="83" frameX="-54" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w4_01" x="193" y="49" rotated="true" width="155" height="46" frameX="-72" frameY="-3" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w4_02" x="193" y="1" rotated="true" width="157" height="46" frameX="-72" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w4_03" x="352" y="1" rotated="true" width="155" height="47" frameX="-72" frameY="-2" frameWidth="188" frameHeight="270"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s0_01" x="618" y="200" rotated="true" width="34" height="58" frameX="-43" frameY="-83" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s0_07" x="886" y="346" rotated="true" width="23" height="50" frameX="-49" frameY="-87" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_04" x="461" y="235" rotated="true" width="23" height="57" frameX="-36" frameY="-85" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_07" x="461" y="175" rotated="true" width="23" height="58" frameX="-37" frameY="-84" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_08" x="461" y="294" rotated="true" width="23" height="56" frameX="-36" frameY="-86" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_09" x="462" y="116" rotated="true" width="24" height="57" frameX="-36" frameY="-84" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s3_01" x="889" y="548" rotated="true" width="41" height="54" frameX="-45" frameY="-68" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s3_02" x="959" y="779" width="52" height="41" frameX="-44" frameY="-67" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s3_03" x="847" y="787" width="50" height="39" frameX="-42" frameY="-64" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s3_04" x="899" y="787" width="48" height="39" frameX="-44" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s3_07" x="618" y="260" rotated="true" width="34" height="47" frameX="-47" frameY="-72" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s3_10" x="845" y="606" width="51" height="43" frameX="-47" frameY="-65" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_01" x="698" y="743" width="52" height="42" frameX="-50" frameY="-69" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_02" x="847" y="548" rotated="true" width="40" height="56" frameX="-49" frameY="-68" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_03" x="397" y="550" width="62" height="42" frameX="-48" frameY="-64" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_04" x="568" y="743" width="63" height="42" frameX="-48" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_05" x="646" y="787" rotated="true" width="37" height="64" frameX="-47" frameY="-72" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_08" x="545" y="947" rotated="true" width="38" height="65" frameX="-45" frameY="-68" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_09" x="633" y="743" width="63" height="42" frameX="-49" frameY="-66" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_01" x="592" y="787" width="52" height="64" frameX="-36" frameY="-38" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_02" x="740" y="787" width="54" height="59" frameX="-34" frameY="-43" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_03" x="960" y="724" rotated="true" width="59" height="53" frameX="-36" frameY="-41" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_04" x="685" y="787" width="53" height="63" frameX="-37" frameY="-33" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_05" x="694" y="942" width="52" height="81" frameX="-38" frameY="-17" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_06" x="770" y="655" width="51" height="83" frameX="-39" frameY="-18" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_07" x="945" y="465" rotated="true" width="77" height="51" frameX="-39" frameY="-25" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_08" x="490" y="947" width="53" height="69" frameX="-37" frameY="-31" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_09" x="639" y="945" width="53" height="61" frameX="-36" frameY="-35" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w0_10" x="585" y="947" width="52" height="64" frameX="-36" frameY="-34" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w1_01" x="272" y="864" rotated="true" width="66" height="81" frameX="-8" frameY="-33" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w1_03" x="526" y="787" rotated="true" width="64" height="68" frameX="-8" frameY="-37" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w1_05" x="577" y="857" width="58" height="88" frameX="-27" frameY="-10" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w1_07" x="652" y="655" width="58" height="86" frameX="-27" frameY="-18" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w2_01" x="395" y="861" rotated="true" width="69" height="84" frameX="-9" frameY="-29" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w2_03" x="116" y="443" width="74" height="72" frameX="-8" frameY="-29" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w2_06" x="191" y="611" rotated="true" width="96" height="63" frameX="-31" frameY="-7" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w2_08" x="558" y="594" rotated="true" width="94" height="59" frameX="-23" frameY="-11" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w2_10" x="510" y="859" rotated="true" width="65" height="86" frameX="-10" frameY="-26" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_01" x="136" y="132" width="55" height="74" frameX="-33" frameY="-28" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_02" x="166" y="947" width="53" height="74" frameX="-33" frameY="-31" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_03" x="932" y="588" rotated="true" width="87" height="51" frameX="-31" frameY="-16" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_05" x="408" y="454" width="51" height="94" frameX="-38" frameY="0" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_06" x="1" y="791" rotated="true" width="95" height="47" frameX="-43" frameY="-6" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_09" x="289" y="686" rotated="true" width="95" height="50" frameX="-31" frameY="-5" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_10" x="136" y="369" width="54" height="72" frameX="-32" frameY="-21" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w4_01" x="221" y="947" width="52" height="74" frameX="-38" frameY="-30" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w4_03" x="689" y="852" width="53" height="88" frameX="-37" frameY="-16" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w4_06" x="637" y="853" width="50" height="90" frameX="-37" frameY="-9" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w4_09" x="1" y="736" rotated="true" width="96" height="53" frameX="-37" frameY="-5" frameWidth="124" frameHeight="206"/>
-    <SubTexture name="vikings/units/light_warrior/light_warrior_w4_10" x="386" y="689" rotated="true" width="73" height="52" frameX="-38" frameY="-22" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/buildings/blue/viking_altar_2s" x="799" y="933" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/blue/viking_tower_3" x="364" y="361" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/elka_01" x="1" y="712" width="196" height="308" frameX="-258" frameY="-69" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/elka_02s" x="658" y="300" width="130" height="59" frameX="-298" frameY="-328" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/elka_03" x="261" y="695" width="158" height="326" frameX="-279" frameY="-38" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/elka_05" x="1" y="1" width="323" height="358" frameX="-202" frameY="-39" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/elka_05s" x="213" y="361" rotated="true" width="149" height="332" frameX="-217" frameY="-266" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/elka_06" x="326" y="1" width="133" height="331" frameX="-291" frameY="-33" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/penek_01" x="669" y="165" rotated="true" width="61" height="98" frameX="-307" frameY="-327" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/rocks_01" x="732" y="522" rotated="true" width="56" height="70" frameX="-325" frameY="-330" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/rocks_04" x="799" y="827" rotated="true" width="71" height="104" frameX="-306" frameY="-317" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/decor/sosna_02" x="1" y="361" width="210" height="349" frameX="-232" frameY="-14" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/green/viking_altar_2s" x="799" y="933" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/green/viking_tower_3" x="421" y="693" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/npc/viking_altar_2s" x="799" y="933" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/npc/viking_tower_1" x="790" y="487" rotated="true" width="232" height="229" frameX="-239" frameY="-174" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/npc/viking_tower_2" x="732" y="1" rotated="true" width="291" height="297" frameX="-206" frameY="-131" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/red/viking_altar_2s" x="799" y="933" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/red/viking_altar_3" x="881" y="718" rotated="true" width="141" height="213" frameX="-249" frameY="-262" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/red/viking_barrack_2" x="605" y="827" width="192" height="195" frameX="-262" frameY="-207" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/red/viking_tower_3" x="461" y="1" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/ship/shipstep_01s" x="199" y="712" rotated="true" width="60" height="308" frameX="-241" frameY="-322" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/ship/shipstep_04" x="790" y="300" rotated="true" width="233" height="185" frameX="-276" frameY="-99" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/violet/viking_altar_2s" x="799" y="933" width="201" height="90" frameX="-272" frameY="-309" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/buildings/violet/viking_tower_3" x="548" y="361" width="182" height="330" frameX="-266" frameY="-65" frameWidth="716" frameHeight="716"/>
+    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s0_05" x="645" y="120" width="85" height="43" frameX="-39" frameY="-87" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="vikings/units/hard_warrior/hard_warrior_s4_04" x="645" y="72" width="85" height="46" frameX="-43" frameY="-81" frameWidth="138" frameHeight="220"/>
+    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s0_03" x="732" y="446" rotated="true" width="56" height="74" frameX="-77" frameY="-105" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s2_01" x="645" y="165" rotated="true" width="22" height="133" frameX="-44" frameY="-123" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="vikings/units/horse_warrior/horse_warrior_s4_03" x="732" y="361" rotated="true" width="56" height="83" frameX="-82" frameY="-108" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w2_02" x="605" y="693" width="125" height="132" frameX="-36" frameY="-11" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="vikings/units/horse_warrior/horse_warrior_w3_04" x="732" y="737" rotated="true" width="147" height="88" frameX="-53" frameY="-2" frameWidth="188" frameHeight="270"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s0_05" x="553" y="333" width="51" height="26" frameX="-51" frameY="-82" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s0_06" x="606" y="333" width="50" height="26" frameX="-50" frameY="-81" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_01" x="326" y="334" width="73" height="25" frameX="-21" frameY="-82" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_08" x="732" y="636" width="56" height="23" frameX="-36" frameY="-86" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s1_10" x="401" y="334" width="73" height="25" frameX="-26" frameY="-82" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s2_03" x="669" y="265" width="59" height="29" frameX="-26" frameY="-77" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s2_10" x="476" y="333" width="75" height="26" frameX="-28" frameY="-78" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_s4_02" x="732" y="594" width="56" height="40" frameX="-49" frameY="-68" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_w2_04" x="645" y="1" rotated="true" width="85" height="69" frameX="-18" frameY="-9" frameWidth="124" frameHeight="206"/>
+    <SubTexture name="vikings/units/light_warrior/light_warrior_w3_01" x="732" y="661" width="55" height="74" frameX="-33" frameY="-28" frameWidth="124" frameHeight="206"/>
 </TextureAtlas>
