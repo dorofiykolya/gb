@@ -18,6 +18,7 @@ package game.managers.locations
 			_map = {};
 			_root = new SpriteBox();
 			_root.touchable = false;
+			_root.visible = false;
 			
 			createLayer(LocationLayerName.BACKGROUND);
 			createLayer(LocationLayerName.BOTTOM, 	70, 70);

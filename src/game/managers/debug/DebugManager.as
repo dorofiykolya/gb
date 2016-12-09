@@ -7,7 +7,7 @@ package game.managers.debug
 	 */
 	public class DebugManager
 	{
-		public var needOpenDebugWindow:Boolean = true;
+		public var needOpenDebugWindow:Boolean = false;
 		
 		public function DebugManager()
 		{

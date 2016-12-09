@@ -29,7 +29,7 @@ package game.commands
 			{
 				locationModel.dispose();
 			}
-			screenManager.showScreen(ScreenId.MAIN);
+			//screenManager.showScreen(ScreenId.MAIN);
 		}
 	
 	}

@@ -4,6 +4,7 @@ package game.extensions
 	import common.context.extensions.IExtension;
 	import common.context.links.Link;
 	import embeds.CSVEmbeds;
+	import game.EmptyWindowManager;
 	import game.configurations.CommandConfiguration;
 	import game.configurations.Configuration;
 	import game.configurations.ConnectionConfiguration;
@@ -40,9 +41,11 @@ package game.extensions
 	import game.modules.net.INetErrorHandler;
 	import game.modules.net.INetHandler;
 	import game.modules.preloaders.PreloaderManager;
+	import game.modules.resources.ResourceExtension;
 	import game.modules.sounds.SoundExtension;
 	import game.modules.states.StateExtension;
 	import game.modules.versions.VersionExtension;
+	import game.modules.windows.WindowsManager;
 	import game.mvc.view.ViewContext;
 	import game.net.NetErrorListener;
 	import game.net.NetListener;
@@ -69,6 +72,7 @@ package game.extensions
 			 * @EXTENSIONS
 			 */
 			
+			context.install(new ResourceExtension());
 			context.install(new ConnectionExtension());
 			context.install(new StateExtension());
 			context.install(new AssetExtension());
@@ -121,6 +125,8 @@ package game.extensions
 			context.install(IdleManager);
 			
 			context.install(RecordExtension);
+			
+			context.install(new Link(EmptyWindowManager, WindowsManager));
 			
 			/**
 			 * @CONFIGURATIONS

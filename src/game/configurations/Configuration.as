@@ -8,8 +8,8 @@ package game.configurations
 	 */
 	public class Configuration
 	{
-		public var host:String;
-		public var port:int;
+		public var host:String = "127.0.0.1";
+		public var port:int = 8899;
 		
 		public var productionHost:String;
 		public var productionPort:String;
@@ -17,7 +17,7 @@ package game.configurations
 		
 		//status
 		public var isBrowser:Boolean;
-		public var isDeveloper:Boolean;
+		public var isDeveloper:Boolean = true;
 		
 		//settings
 		public var correctAspectRatio:Boolean = false;
