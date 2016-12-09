@@ -49,13 +49,14 @@ package game.managers.locations.logics
 		
 		private function onTouch(e:TouchEvent):void
 		{
+			var building:LocationBuilding;
 			var touchBegan:Touch = e.getTouch(stage, TouchPhase.BEGAN);
 			if (touchBegan)
 			{
 				touchBegan.getLocation(layerProvider.getLayer(LocationLayerName.OBJECTS), TEMP_POINT);
 				_temp.length = 0;
 				buildingsLocagic.getComponents(LocationBuilding, true, _temp);
-				for each (var building:LocationBuilding in _temp)
+				for each (building in _temp)
 				{
 					if (building.hitTest(TEMP_POINT.x, TEMP_POINT.y))
 					{
@@ -70,7 +71,7 @@ package game.managers.locations.logics
 				touchMove.getLocation(layerProvider.getLayer(LocationLayerName.OBJECTS), TEMP_POINT);
 				_temp.length = 0;
 				buildingsLocagic.getComponents(LocationBuilding, true, _temp);
-				for each (var building:LocationBuilding in _temp)
+				for each (building in _temp)
 				{
 					if (building.hitTest(TEMP_POINT.x, TEMP_POINT.y))
 					{
@@ -89,7 +90,7 @@ package game.managers.locations.logics
 				_temp.length = 0;
 				buildingsLocagic.getComponents(LocationBuilding, true, _temp);
 				var target:LocationBuilding;
-				for each (var building:LocationBuilding in _temp)
+				for each (building in _temp)
 				{
 					if (building.hitTest(TEMP_POINT.x, TEMP_POINT.y))
 					{
