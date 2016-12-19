@@ -43,7 +43,7 @@ package game.managers.battles.actors.units
 			_attachedToBuilding = false;
 			setOwnerId(from.ownerId);
 			_level = from.level;
-			_info = engine.configuration.unitRecords.getById(from.info.levels[from.level].unitId);
+			_info = engine.configuration.unitRecords.getBy(from.info.levels[from.level].unitId, from.info.race);
 			_infoLevel = _info.levels[_level];
 			_move.moveTo(to.transform);
 			transform.setFrom(from.transform);

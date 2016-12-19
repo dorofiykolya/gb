@@ -28,14 +28,9 @@ package game.net
 			_sender.send(value);
 		}
 		
-		public function sessionVerification(sessionId:String):void
+		public function authByDeveloper(developerId:String):void
 		{
-			send({sessionVerification: {sessionId: sessionId}});
-		}
-		
-		public function authByDevelopers(developerId:String):void
-		{
-			send({authByDevelopers: {userKey: developerId}});
+			send({authByDeveloper: {developerId: developerId}});
 		}
 		
 		public function authByAndroid(deviceId:String):void

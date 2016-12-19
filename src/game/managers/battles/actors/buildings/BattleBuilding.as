@@ -65,28 +65,28 @@ package game.managers.battles.actors.buildings
 		
 		public function get oneUnitDefense():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getBy(unitId, info.race).levels[level];
 			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DEFENSE, unitRecord.defense, unitId);
 			return unitDefense;
 		}
 		
 		public function get oneUnitMagicDefense():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getBy(unitId, info.race).levels[level];
 			var unitDefense:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_MAGIC_DEFENSE, unitRecord.magicDefense, unitId);
 			return unitDefense;
 		}
 		
 		public function get oneUnitHp():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getBy(unitId, info.race).levels[level];
 			var unitHp:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_HP, unitRecord.hp, unitId);
 			return unitHp;
 		}
 		
 		public function get oneUnitDamage():Number
 		{
-			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getById(unitId).levels[level];
+			var unitRecord:UnitLevelRecord = engine.configuration.unitRecords.getBy(unitId, info.race).levels[level];
 			var damage:Number = engine.players.getPlayer(ownerId).modifier.calculate(ModifierType.UNITS_DAMAGE, unitRecord.damage, unitId);
 			return damage;
 		}
@@ -108,7 +108,7 @@ package game.managers.battles.actors.buildings
 		
 		public function initialize(info:BattleBuildingRecord, configuration:BattleConfiguration):void
 		{
-			_record = configuration.buildingRecords.getById(info.id);
+			_record = configuration.buildingRecords.getByBuildingId(info.id, info.race);
 			_battleRecord = info;
 			
 			setOwnerId(info.ownerId);

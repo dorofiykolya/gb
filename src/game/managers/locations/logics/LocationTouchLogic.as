@@ -100,7 +100,7 @@ package game.managers.locations.logics
 				}
 				if (target)
 				{
-					for each (var building:LocationBuilding in _fromBuildings)
+					for each (building in _fromBuildings)
 					{
 						if (target != building)
 						{

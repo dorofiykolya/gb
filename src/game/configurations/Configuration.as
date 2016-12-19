@@ -13,7 +13,7 @@ package game.configurations
 		
 		public var productionHost:String;
 		public var productionPort:String;
-		public var developerId:String;
+		public var developerId:String = "1";
 		
 		//status
 		public var isBrowser:Boolean;

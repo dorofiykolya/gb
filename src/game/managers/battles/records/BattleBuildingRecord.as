@@ -10,6 +10,7 @@ package game.managers.battles.records
 	public class BattleBuildingRecord
 	{
 		public var id:int;
+		public var race:int;
 		public var level:int;
 		public var units:int;
 		public var position:Point;

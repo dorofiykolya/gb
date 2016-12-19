@@ -95,7 +95,7 @@ package game.managers.auth
 		public function authByDeveloper():void
 		{
 			_authorized = false;
-			request.authByDevelopers(configuration.developerId);
+			request.authByDeveloper(configuration.developerId);
 		}
 		
 		public function authByIOS():void

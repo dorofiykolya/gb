@@ -44,7 +44,7 @@ package game.managers.locations.mediators
 			
 			_race = playerLogic.getRace(data.ownerId);
 			_playerIndex = playerLogic.getIndex(data.ownerId);
-			var unit:UnitRecord = unitRecordMap.getByUnitId(data.unitId, _race);
+			var unit:UnitRecord = unitRecordMap.getBy(data.unitId, _race);
 			var unitLevel:UnitLevelRecord = unit.levels[data.level];
 			animation.setup(Race.getRaceName(_race) + "_" + unitLevel.view);
 			animation.directionTo(data.toObjectId);

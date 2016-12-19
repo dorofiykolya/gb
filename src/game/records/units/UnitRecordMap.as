@@ -9,12 +9,10 @@ package game.records.units
 	 */
 	public class UnitRecordMap
 	{
-		private var _map:Dictionary;
 		private var _unitMap:DictionaryMap;
 		
 		public function UnitRecordMap()
 		{
-			_map = new Dictionary();
 			_unitMap = new DictionaryMap();
 			
 			var units:Vector.<UnitRecord> = new Vector.<UnitRecord>();
@@ -22,7 +20,6 @@ package game.records.units
 			var produceUnit:UnitRecord = new UnitRecord();
 			units.push(produceUnit);
 			produceUnit.id = 1;
-			produceUnit.unitId = 1;
 			produceUnit.description = "Produce unit description";
 			produceUnit.name = "Produce unit";
 			produceUnit.race = 1;
@@ -41,7 +38,6 @@ package game.records.units
 			var mannaUnit:UnitRecord = new UnitRecord();
 			units.push(mannaUnit);
 			mannaUnit.id = 2;
-			mannaUnit.unitId = 2;
 			mannaUnit.description = "Manna unit description";
 			mannaUnit.name = "Manna unit";
 			mannaUnit.race = 1;
@@ -60,7 +56,6 @@ package game.records.units
 			var defenseUnit:UnitRecord = new UnitRecord();
 			units.push(defenseUnit);
 			defenseUnit.id = 3;
-			defenseUnit.unitId = 3;
 			defenseUnit.description = "Defense unit description";
 			defenseUnit.name = "Defense unit";
 			defenseUnit.race = 1;
@@ -79,12 +74,7 @@ package game.records.units
 			parse(units);
 		}
 		
-		public function getById(id:int):UnitRecord
-		{
-			return _map[id];
-		}
-		
-		public function getByUnitId(unitId:int, race:int):UnitRecord
+		public function getBy(unitId:int, race:int):UnitRecord
 		{
 			return _unitMap.map(race, unitId).value;
 		}
@@ -93,8 +83,7 @@ package game.records.units
 		{
 			for each (var item:UnitRecord in list)
 			{
-				_map[item.id] = item;
-				_unitMap.map(item.race, item.unitId).value = item;
+				_unitMap.map(item.race, item.id).value = item;
 			}
 		}
 	}

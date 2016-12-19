@@ -22,7 +22,6 @@ package game.records.buildings
 			var produceBuilding:BuildingRecord = new BuildingRecord();
 			records.push(produceBuilding);
 			produceBuilding.id = 1;
-			produceBuilding.buildingId = 1;
 			produceBuilding.race = 1;
 			produceBuilding.name = "Produce";
 			produceBuilding.description = "Produce Building";
@@ -48,7 +47,6 @@ package game.records.buildings
 			var mannaBuilding:BuildingRecord = new BuildingRecord();
 			records.push(mannaBuilding);
 			mannaBuilding.id = 2;
-			mannaBuilding.buildingId = 2;
 			mannaBuilding.race = 1;
 			mannaBuilding.name = "Manna";
 			mannaBuilding.description = "Manna Building";
@@ -74,7 +72,6 @@ package game.records.buildings
 			var defenseBuilding:BuildingRecord = new BuildingRecord();
 			records.push(defenseBuilding);
 			defenseBuilding.id = 3;
-			defenseBuilding.buildingId = 3;
 			defenseBuilding.race = 1;
 			defenseBuilding.name = "Defense";
 			defenseBuilding.description = "Defense Building";
@@ -100,11 +97,6 @@ package game.records.buildings
 			parse(records);
 		}
 		
-		public function getById(id:int):BuildingRecord
-		{
-			return _map[id];
-		}
-		
 		public function getByBuildingId(buildingId:int, race:int):BuildingRecord
 		{
 			return _buildingMap.map(race, buildingId).value;
@@ -114,8 +106,7 @@ package game.records.buildings
 		{
 			for each (var item:BuildingRecord in list)
 			{
-				_map[item.id] = item;
-				_buildingMap.map(item.race, item.buildingId).value = item;
+				_buildingMap.map(item.race, item.id).value = item;
 			}
 		}
 	
