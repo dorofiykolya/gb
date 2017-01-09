@@ -64,9 +64,9 @@ package game.net
 			send(value);
 		}
 		
-		public function userAuth(userKey:int, authTS:int, authKey:String, isBrowser:Boolean):void
+		public function userAuth(userId:int, authTS:int, authKey:String, isBrowser:Boolean):void
 		{
-			send({userAuth: {userKey: userKey, authTS: authTS, authKey: authKey, isBrowser: isBrowser}});
+			send({userAuth: {userId: userId, authTS: authTS, authKey: authKey, isBrowser: isBrowser}});
 		}
 		
 		public function baseInfo():void

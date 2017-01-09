@@ -147,7 +147,7 @@ package game.managers.auth
 			
 			if (userAuth != null && validSocialType(userAuth))
 			{
-				request.userAuth(userAuth.userKey, userAuth.authTS, userAuth.authKey, userAuth.isBrowser);
+				request.userAuth(userAuth.userId, userAuth.authTime, userAuth.authKey, userAuth.isBrowser);
 			}
 			else
 			{
@@ -185,7 +185,7 @@ package game.managers.auth
 				userAuth.socialType = browserSocialType;
 			}
 			_userAuthInfo = userAuth;
-			request.userAuth(_userAuthInfo.userKey, _userAuthInfo.authTS, _userAuthInfo.authKey, _userAuthInfo.isBrowser);
+			request.userAuth(_userAuthInfo.userId, _userAuthInfo.authTime, _userAuthInfo.authKey, _userAuthInfo.isBrowser);
 			storage.map(STORAGE_KEY, AUTH_KEY).value = ObjectUtils.toObject(userAuth);
 		}
 		

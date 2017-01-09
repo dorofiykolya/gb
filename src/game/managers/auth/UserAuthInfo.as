@@ -6,8 +6,8 @@ package game.managers.auth
 	 */
 	public class UserAuthInfo 
 	{
-		public var userKey:int;
-		public var authTS:int;
+		public var userId:int;
+		public var authTime:int;
 		public var authKey:String;
 		public var isNewAppUser:Boolean;
 		public var isBrowser:Boolean;
