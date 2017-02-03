@@ -6,12 +6,12 @@ package game.managers.battles.actors
 	 * ...
 	 * @author dorofiy.com
 	 */
-	public class Units
+	public class UnitsContainer
 	{
 		private var _count:int;
 		private var _battleObject:BattleObject;
 		
-		public function Units(battleObject:BattleObject)
+		public function UnitsContainer(battleObject:BattleObject)
 		{
 			_battleObject = battleObject;
 		}

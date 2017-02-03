@@ -1,7 +1,7 @@
 package game.managers.battles.actors.units
 {
 	import game.managers.battles.actors.BattleUnitOwner;
-	import game.managers.battles.actors.Units;
+	import game.managers.battles.actors.UnitsContainer;
 	import game.managers.battles.actors.buildings.BattleBuilding;
 	import game.managers.battles.components.units.UnitDefenseComponent;
 	import game.managers.battles.components.units.UnitMoveComponent;
