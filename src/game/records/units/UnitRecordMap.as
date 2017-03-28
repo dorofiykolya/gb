@@ -1,6 +1,7 @@
 package game.records.units
 {
 	import common.system.DictionaryMap;
+	import common.system.utils.ObjectUtils;
 	import flash.utils.Dictionary;
 	
 	/**
@@ -70,6 +71,13 @@ package game.records.units
 			defenseUnitLevel.magicDefense = 0;
 			defenseUnitLevel.icon = "defense_unit_icon";
 			defenseUnitLevel.view = "hard_warrior";//"defense_unit_view";
+			
+			var clone:Vector.<UnitRecord> = ObjectUtils.clone(units, Class(Vector.<UnitRecord>)) as Vector.<UnitRecord>;
+			for each(var cur:UnitRecord in clone)
+			{
+				cur.race = 0;
+				units.push(cur);
+			}
 			
 			parse(units);
 		}

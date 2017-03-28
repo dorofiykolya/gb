@@ -35,6 +35,7 @@ package game.managers.battles.components.buildings
 			var currentMannaPerTick:Number = _mannaPerTick;
 			
 			_temp.length = 0;
+			getComponents(IMannaModifier, false, _temp);
 			for each (var item:IMannaModifier in _temp)
 			{
 				currentMannaPerTick *= item.mannaModifierPercent;

@@ -26,10 +26,10 @@ package game.managers.locations.logics
 		
 		override public function initialize():void
 		{
-			//timer.addEventListener(TickEvent.TICK, onTickHandler);
+			timer.addEventListener(TickEvent.TICK, onTickHandler);
 			
 			_ticksPerSecond = location.data.configuration.ticksPerSecond;
-			//_engine = new BattleEngine(location.data.configuration);
+			_engine = new BattleEngine(location.data.configuration);
 		}
 		
 		internal function get engine():BattleEngine

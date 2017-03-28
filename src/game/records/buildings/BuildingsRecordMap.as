@@ -1,6 +1,7 @@
 package game.records.buildings
 {
 	import common.system.DictionaryMap;
+	import common.system.utils.ObjectUtils;
 	import flash.utils.Dictionary;
 	
 	/**
@@ -93,6 +94,13 @@ package game.records.buildings
 			defenseBuildingLevel.unitsMaxProduction = 5;
 			defenseBuildingLevel.unitsProduction = 1;
 			defenseBuildingLevel.view = "tower_1";
+			
+			var clone:Vector.<BuildingRecord> = ObjectUtils.clone(records, Class(Vector.<BuildingRecord>)) as Vector.<BuildingRecord>;
+			for each(var cur:BuildingRecord in clone)
+			{
+				cur.race = 0;
+				records.push(cur);
+			}
 			
 			parse(records);
 		}
